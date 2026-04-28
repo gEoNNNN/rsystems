@@ -31,8 +31,8 @@ function Header() {
               </div>
             )}
           </div>
-          <a href="#solutii" className="nav-item">Solutii & Echipamente</a>
-          <a href="#preturi" className="nav-item">Preturi</a>
+          <a href="#solutii" className="nav-item">Soluții & Echipamente</a>
+          <a href="#preturi" className="nav-item">Prețuri</a>
           <a href="#blog" className="nav-item">Blog</a>
           <a href="#despre" className="nav-item">Despre noi</a>
         </nav>
@@ -47,7 +47,7 @@ function Header() {
             <img src="/img/email.svg" alt="Email" className="icon" />
             <span>welcome@rsistems.ro</span>
           </a>
-          <a href="https://wa.me/40517508772?text=Bună! Vreau să încep să folosesc RSistems." className="cta-button" target="_blank" rel="noopener noreferrer">Incepe acum</a>
+          <a href="https://wa.me/40517508772?text=Bună! Vreau să încep să folosesc RSistems." className="cta-button" target="_blank" rel="noopener noreferrer">Începe acum</a>
         </div>
       </div>
     </header>

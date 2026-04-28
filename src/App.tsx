@@ -58,7 +58,7 @@ function App() {
               <span className="hero-title-accent">Crește profitul.</span>
             </h1>
             <p className="hero-description">
-              Soluția completă pentru afacerea ta în HoReCa. Comenzi, stocuri şi rapoarte în timp real, într-o singură platformă.
+              Soluția completă pentru afacerea ta în HoReCa. Comenzi, stocuri și rapoarte în timp real, într-o singură platformă.
             </p>
             <div className="hero-buttons">
               <a href="https://wa.me/40517508772?text=Bună! Vreau să încep să folosesc RSistems." className="hero-cta-primary" target="_blank" rel="noopener noreferrer">
@@ -207,7 +207,7 @@ function App() {
               </li>
               <li className="comparison-item">
                 <span className="icon-check">✓</span>
-                <span>Rapoarte și analize in timp real</span>
+                <span>Rapoarte și analize în timp real</span>
               </li>
               <li className="comparison-item">
                 <span className="icon-check">✓</span>
@@ -250,7 +250,7 @@ function App() {
             <div className="feature-content">
               <h3 className="feature-title">Rapoarte avansate</h3>
               <p className="feature-description">
-                Analiza detaliată despre vânzări, produsele, clienți și angajați!
+                Analiză detaliată despre vânzări, produse, clienți și angajați!
               </p>
             </div>
           </div>

@@ -9,7 +9,7 @@ function Footer() {
           <div className="footer-logo">
             <img src="/img/Logo.svg" alt="RSistems Logo" />
           </div>
-          <p className="footer-brand-text">Software de managment complet
+          <p className="footer-brand-text">Software de management complet
 pentru afacerea ta  </p>
           <div className="footer-social">
             <a href="#facebook" className="social-link" aria-label="Facebook">
@@ -37,7 +37,7 @@ pentru afacerea ta  </p>
             <li><a href="#pos">POS</a></li>
             <li><a href="#gestiune">Gestiune stocuri</a></li>
             <li><a href="#rapoarte">Rapoarte & analize</a></li>
-            <li><a href="#management">Managemente clienți</a></li>
+            <li><a href="#management">Management clienți</a></li>
           </ul>
         </div>
 
