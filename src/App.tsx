@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import './App.css'
 import Header from './components/Header'
 import Footer from './components/Footer'
+import { XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Area, AreaChart } from 'recharts'
 
 function App() {
   const [currentSlide, setCurrentSlide] = useState(0)
@@ -14,6 +15,22 @@ function App() {
     '/img/LogoDesktop 4.svg',
     '/img/LogoDesktop 5.svg',
     '/img/LogoDesktop 6.svg',
+    '/img/LogoDesktop 7.svg',
+    '/img/LogoDesktop 8.svg',
+    '/img/LogoDesktop 9.svg',
+    '/img/LogoDesktop 10.svg',
+    '/img/LogoDesktop 11.svg',
+    '/img/LogoDesktop 12.svg',
+  ]
+
+  // Date pentru graficul de vânzări
+  const salesData = [
+    { time: '00:00', value: 12500 },
+    { time: '06:00', value: 14200 },
+    { time: '06:00', value: 15800 },
+    { time: '12:00', value: 19500 },
+    { time: '18:00', value: 24300 },
+    { time: '24:00', value: 28542 },
   ]
 
   // Auto-slide effect with seamless loop
@@ -67,7 +84,7 @@ function App() {
                   <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </a>
-              <a href="https://wa.me/40517508772?text=Bună! Aș dori să văd o demonstrație a sistemului RSistems." className="hero-cta-secondary" target="_blank" rel="noopener noreferrer">
+              <a href="/demo" className="hero-cta-secondary">
                 Vezi demo
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
                   <path d="M10 2C5.58 2 2 5.58 2 10C2 14.42 5.58 18 10 18C14.42 18 18 14.42 18 10C18 5.58 14.42 2 10 2ZM8 14.5V5.5L14 10L8 14.5Z"/>
@@ -97,7 +114,7 @@ function App() {
           <div 
             className="carousel-track"
             style={{
-              transform: `translateX(-${currentSlide * 25}%)`
+              transform: `translateX(-${currentSlide * 16.6667}%)`
             }}
           >
             {/* Double the logos for seamless infinite loop */}
@@ -166,7 +183,6 @@ function App() {
       {/* Challenges vs Solutions Section */}
       <section className="comparison-section">
         <div className="comparison-container">
-          {/* Challenges Column */}
           <div className="comparison-column challenges-column">
             <h2 className="comparison-title1">Provocările tale zilnice</h2>
             <ul className="comparison-list">
@@ -192,10 +208,8 @@ function App() {
               </li>
             </ul>
           </div>
-
-          {/* Solutions Column */}
           <div className="comparison-column solutions-column">
-            <h2 className="comparison-title">Provocările tale zilnice</h2>
+            <h2 className="comparison-title">Soluția RSistems</h2>
             <ul className="comparison-list">
               <li className="comparison-item">
                 <span className="icon-check">✓</span>
@@ -219,10 +233,90 @@ function App() {
               </li>
             </ul>
           </div>
+        </div>
+      </section>
 
-          {/* Graph Column */}
-          <div className="comparison-column graph-column">
-            <img src="/img/graph.svg" alt="Growth Graph" className="graph-image" />
+      {/* Dashboard Section - Separate */}
+      <section className="dashboard-section-separate">
+        <div className="dashboard-container-new">
+          <div className="dashboard-header-main">
+            <div className="dashboard-title-section">
+              <h2 className="dashboard-section-title">Performanța în timp real</h2>
+              <p className="dashboard-section-subtitle">Monitorizează toate datele importante dintr-o singură privire</p>
+            </div>
+          </div>
+
+          <div className="dashboard-grid">
+            <div className="dashboard-card main-card">
+              <div className="card-header">
+                <span className="card-label">Vânzări azi</span>
+                <span className="card-badge">↑ 12.5%</span>
+              </div>
+              <div className="card-value">28.542 <span className="value-currency">RON</span></div>
+              <div className="card-subtext">față de ieri</div>
+            </div>
+
+            <div className="dashboard-card chart-card">
+              <ResponsiveContainer width="100%" height={220}>
+                <AreaChart data={salesData} margin={{ top: 10, right: 20, left: 0, bottom: 0 }}>
+                  <defs>
+                    <linearGradient id="colorValue" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="5%" stopColor="#1FB6B2" stopOpacity={0.3}/>
+                      <stop offset="95%" stopColor="#1FB6B2" stopOpacity={0}/>
+                    </linearGradient>
+                  </defs>
+                  <CartesianGrid strokeDasharray="3 3" stroke="#e0e0e0" />
+                  <XAxis 
+                    dataKey="time" 
+                    stroke="#666"
+                    style={{ fontSize: '11px' }}
+                  />
+                  <YAxis 
+                    stroke="#666"
+                    style={{ fontSize: '11px' }}
+                    tickFormatter={(value) => `${(value / 1000).toFixed(0)}k`}
+                    width={40}
+                  />
+                  <Tooltip 
+                    contentStyle={{ 
+                      background: 'white', 
+                      border: '1px solid #e0e0e0',
+                      borderRadius: '8px',
+                      padding: '10px'
+                    }}
+                    formatter={(value) => [`${Number(value).toLocaleString()} RON`, 'Vânzări']}
+                  />
+                  <Area 
+                    type="monotone" 
+                    dataKey="value" 
+                    stroke="#1FB6B2" 
+                    strokeWidth={2}
+                    fill="url(#colorValue)" 
+                  />
+                </AreaChart>
+              </ResponsiveContainer>
+            </div>
+
+            <div className="dashboard-card stats-card">
+              <div className="stat-row">
+                <div className="stat-info">
+                  <div className="stat-label">Comenzi</div>
+                  <div className="stat-number">356 <span className="stat-change">↑ 12.5%</span></div>
+                </div>
+              </div>
+              <div className="stat-row">
+                <div className="stat-info">
+                  <div className="stat-label">Clienți</div>
+                  <div className="stat-number">248 <span className="stat-change">↑ 8.1%</span></div>
+                </div>
+              </div>
+              <div className="stat-row">
+                <div className="stat-info">
+                  <div className="stat-label">Bon mediu</div>
+                  <div className="stat-number">81 RON <span className="stat-change">↑ 16.3%</span></div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -384,7 +478,7 @@ function App() {
               Programează o demonstrație gratuită și descoperă cum te putem ajuta.
             </p>
           </div>
-          <a href="https://wa.me/40517508772?text=Bună! Vreau să programez o demonstrație gratuită a sistemului RSistems." className="cta-button-large" target="_blank" rel="noopener noreferrer">
+          <a href="/demo" className="cta-button-large">
             Programează demo gratuit
             <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
               <path d="M8 5v14l11-7z"/>
