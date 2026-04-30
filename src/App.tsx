@@ -7,6 +7,19 @@ import { XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Area, AreaCh
 function App() {
   const [currentSlide, setCurrentSlide] = useState(0)
   const [openFaq, setOpenFaq] = useState<number | null>(null)
+
+  const getItemWidthPercent = () => {
+    if (window.innerWidth <= 768) return 25
+    if (window.innerWidth <= 1024) return 33.333
+    return 16.6667
+  }
+  const [itemWidthPercent, setItemWidthPercent] = useState(getItemWidthPercent)
+
+  useEffect(() => {
+    const handleResize = () => setItemWidthPercent(getItemWidthPercent())
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
   
   const partnerLogos = [
     '/img/LogoDesktop 1.svg',
@@ -114,7 +127,7 @@ function App() {
           <div 
             className="carousel-track"
             style={{
-              transform: `translateX(-${currentSlide * 16.6667}%)`
+              transform: `translateX(-${currentSlide * itemWidthPercent}%)`
             }}
           >
             {/* Double the logos for seamless infinite loop */}

@@ -3,12 +3,10 @@ import './Header.css'
 
 function Header() {
   const [dropdownOpen, setDropdownOpen] = useState(false)
-  const [solutiiOpen, setSolutiiOpen] = useState(false)
-  const [echipamenteOpen, setEchipamenteOpen] = useState(false)
+  const [solutiiEchipamenteOpen, setSolutiiEchipamenteOpen] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
   const [mobileRestaurante, setMobileRestaurante] = useState(false)
-  const [mobileSolutii, setMobileSolutii] = useState(false)
-  const [mobileEchipamente, setMobileEchipamente] = useState(false)
+  const [mobileSolutiiEchipamente, setMobileSolutiiEchipamente] = useState(false)
 
   return (
     <header className="header">
@@ -39,32 +37,18 @@ function Header() {
           </div>
           <div
             className="nav-item dropdown"
-            onMouseEnter={() => setSolutiiOpen(true)}
-            onMouseLeave={() => setSolutiiOpen(false)}
+            onMouseEnter={() => setSolutiiEchipamenteOpen(true)}
+            onMouseLeave={() => setSolutiiEchipamenteOpen(false)}
           >
-            <span>Soluții</span>
+            <span>Soluții & Echipamente</span>
             <svg className="arrow-down" width="12" height="8" viewBox="0 0 12 8" fill="none">
               <path d="M1 1L6 6L11 1" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
             </svg>
-            {solutiiOpen && (
+            {solutiiEchipamenteOpen && (
               <div className="dropdown-menu">
                 <a href="#solutii1">Soluție 1</a>
                 <a href="#solutii2">Soluție 2</a>
                 <a href="#solutii3">Soluție 3</a>
-              </div>
-            )}
-          </div>
-          <div
-            className="nav-item dropdown"
-            onMouseEnter={() => setEchipamenteOpen(true)}
-            onMouseLeave={() => setEchipamenteOpen(false)}
-          >
-            <span>Echipamente</span>
-            <svg className="arrow-down" width="12" height="8" viewBox="0 0 12 8" fill="none">
-              <path d="M1 1L6 6L11 1" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-            </svg>
-            {echipamenteOpen && (
-              <div className="dropdown-menu">
                 <a href="#echipamente1">Echipament 1</a>
                 <a href="#echipamente2">Echipament 2</a>
                 <a href="#echipamente3">Echipament 3</a>
@@ -117,27 +101,17 @@ function Header() {
               <a href="#restaurant3" onClick={() => setMobileOpen(false)}>Restaurant tip 3</a>
             </div>
           )}
-          <div className="mobile-nav-item" onClick={() => setMobileSolutii(!mobileSolutii)}>
-            <span>Soluții</span>
-            <svg className={`arrow-down${mobileSolutii ? ' rotated' : ''}`} width="12" height="8" viewBox="0 0 12 8" fill="none">
+          <div className="mobile-nav-item" onClick={() => setMobileSolutiiEchipamente(!mobileSolutiiEchipamente)}>
+            <span>Soluții & Echipamente</span>
+            <svg className={`arrow-down${mobileSolutiiEchipamente ? ' rotated' : ''}`} width="12" height="8" viewBox="0 0 12 8" fill="none">
               <path d="M1 1L6 6L11 1" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
             </svg>
           </div>
-          {mobileSolutii && (
+          {mobileSolutiiEchipamente && (
             <div className="mobile-submenu">
               <a href="#solutii1" onClick={() => setMobileOpen(false)}>Soluție 1</a>
               <a href="#solutii2" onClick={() => setMobileOpen(false)}>Soluție 2</a>
               <a href="#solutii3" onClick={() => setMobileOpen(false)}>Soluție 3</a>
-            </div>
-          )}
-          <div className="mobile-nav-item" onClick={() => setMobileEchipamente(!mobileEchipamente)}>
-            <span>Echipamente</span>
-            <svg className={`arrow-down${mobileEchipamente ? ' rotated' : ''}`} width="12" height="8" viewBox="0 0 12 8" fill="none">
-              <path d="M1 1L6 6L11 1" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-            </svg>
-          </div>
-          {mobileEchipamente && (
-            <div className="mobile-submenu">
               <a href="#echipamente1" onClick={() => setMobileOpen(false)}>Echipament 1</a>
               <a href="#echipamente2" onClick={() => setMobileOpen(false)}>Echipament 2</a>
               <a href="#echipamente3" onClick={() => setMobileOpen(false)}>Echipament 3</a>
