@@ -297,6 +297,39 @@ function RestaurantPage({
         </div>
       </section>
 
+      {/* Blog Section */}
+      <section className="restaurant-blog-section">
+        <div className="restaurant-blog-container">
+          <h2 className="restaurant-blog-title">Blog</h2>
+          <div className="restaurant-blog-cards">
+            <div className="restaurant-blog-card">
+              <img src="/img/blog1.svg" alt="Blog 1" className="restaurant-blog-card-image" />
+              <div className="restaurant-blog-card-content">
+                <h3 className="restaurant-blog-card-title">Cum funcționează RSystems – partea 10: call center</h3>
+                <p className="restaurant-blog-card-description">A zecea ediție din seria „Cum funcționează RSystems" a apărut, abordând comentele externe...</p>
+                <p className="restaurant-blog-card-date">20 februarie 2026</p>
+              </div>
+            </div>
+            <div className="restaurant-blog-card">
+              <img src="/img/blog2.svg" alt="Blog 2" className="restaurant-blog-card-image" />
+              <div className="restaurant-blog-card-content">
+                <h3 className="restaurant-blog-card-title">Cum să-ți pregătești restaurantul pentru 2026</h3>
+                <p className="restaurant-blog-card-description">Un sector al restaurantelor aflat în criză. Trebuie pentru afaceri să crească vânzările...</p>
+                <p className="restaurant-blog-card-date">20 ianuarie 2026</p>
+              </div>
+            </div>
+            <div className="restaurant-blog-card">
+              <img src="/img/blog3.svg" alt="Blog 3" className="restaurant-blog-card-image" />
+              <div className="restaurant-blog-card-content">
+                <h3 className="restaurant-blog-card-title">Lansare de noi funcționalități RSistems – Iarna 2025/2026</h3>
+                <p className="restaurant-blog-card-description">Clienții vă vorbesc, iar noi am ascultat. Iată actualizarea curentă funcționalității mature...</p>
+                <p className="restaurant-blog-card-date">02 aprilie 2026</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <Footer />
     </div>
   )
