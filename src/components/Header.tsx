@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import './Header.css'
 
 function Header() {
@@ -29,9 +30,15 @@ function Header() {
             </svg>
             {dropdownOpen && (
               <div className="dropdown-menu">
-                <a href="#restaurant1">Restaurant tip 1</a>
-                <a href="#restaurant2">Restaurant tip 2</a>
-                <a href="#restaurant3">Restaurant tip 3</a>
+                <Link to="/cafenea">Cafenea & Coffee Shop</Link>
+                <Link to="/fastfood">Fast Food</Link>
+                <Link to="/pizzerie">Pizzerie</Link>
+                <Link to="/bar">Bar & Pub</Link>
+                <Link to="/finedining">Fine Dining</Link>
+                <Link to="/casual">Restaurant Casual</Link>
+                <Link to="/bistrou">Bistrou</Link>
+                <Link to="/foodtruck">Food Truck</Link>
+                <Link to="/catering">Catering & Evenimente</Link>
               </div>
             )}
           </div>
@@ -96,9 +103,15 @@ function Header() {
           </div>
           {mobileRestaurante && (
             <div className="mobile-submenu">
-              <a href="#restaurant1" onClick={() => setMobileOpen(false)}>Restaurant tip 1</a>
-              <a href="#restaurant2" onClick={() => setMobileOpen(false)}>Restaurant tip 2</a>
-              <a href="#restaurant3" onClick={() => setMobileOpen(false)}>Restaurant tip 3</a>
+              <Link to="/cafenea" onClick={() => setMobileOpen(false)}>Cafenea & Coffee Shop</Link>
+              <Link to="/fastfood" onClick={() => setMobileOpen(false)}>Fast Food</Link>
+              <Link to="/pizzerie" onClick={() => setMobileOpen(false)}>Pizzerie</Link>
+              <Link to="/bar" onClick={() => setMobileOpen(false)}>Bar & Pub</Link>
+              <Link to="/finedining" onClick={() => setMobileOpen(false)}>Fine Dining</Link>
+              <Link to="/casual" onClick={() => setMobileOpen(false)}>Restaurant Casual</Link>
+              <Link to="/bistrou" onClick={() => setMobileOpen(false)}>Bistrou</Link>
+              <Link to="/foodtruck" onClick={() => setMobileOpen(false)}>Food Truck</Link>
+              <Link to="/catering" onClick={() => setMobileOpen(false)}>Catering & Evenimente</Link>
             </div>
           )}
           <div className="mobile-nav-item" onClick={() => setMobileSolutiiEchipamente(!mobileSolutiiEchipamente)}>
