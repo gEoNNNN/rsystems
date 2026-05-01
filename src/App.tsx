@@ -7,6 +7,15 @@ import { XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Area, AreaCh
 function App() {
   const [currentSlide, setCurrentSlide] = useState(0)
   const [openFaq, setOpenFaq] = useState<number | null>(null)
+  const [showCookieConsent, setShowCookieConsent] = useState(() => {
+    const saved = localStorage.getItem('cookieConsent')
+    return saved === null
+  })
+
+  const handleCookieConsent = (accepted: boolean) => {
+    localStorage.setItem('cookieConsent', accepted ? 'accepted' : 'declined')
+    setShowCookieConsent(false)
+  }
 
   const getItemWidthPercent = () => {
     if (window.innerWidth <= 768) return 25
@@ -193,85 +202,39 @@ function App() {
         </div>
       </section>
 
-      {/* Challenges vs Solutions Section */}
-      <section className="comparison-section">
-        <div className="comparison-container">
-          <div className="comparison-column challenges-column">
-            <h2 className="comparison-title1">Provocările tale zilnice</h2>
-            <ul className="comparison-list">
-              <li className="comparison-item">
-                <span className="icon-x">✕</span>
-                <span>Pierderi din stocuri și inventar incorect</span>
-              </li>
-              <li className="comparison-item">
-                <span className="icon-x">✕</span>
-                <span>Lipsă de control asupra operațiunilor</span>
-              </li>
-              <li className="comparison-item">
-                <span className="icon-x">✕</span>
-                <span>Decizii luate fără date reale</span>
-              </li>
-              <li className="comparison-item">
-                <span className="icon-x">✕</span>
-                <span>Timp pierdut cu rapoarte manuale</span>
-              </li>
-              <li className="comparison-item">
-                <span className="icon-x">✕</span>
-                <span>Erori de comunicare între echipe</span>
-              </li>
+      {/* Challenges vs Solutions + Dashboard Section */}
+      <section className="cdash-section">
+        <div className="cdash-grid">
+
+          {/* Challenges Column */}
+          <div className="cdash-col cdash-dark">
+            <h2 className="cdash-heading cdash-heading-white">Provocările tale zilnice</h2>
+            <ul className="cdash-list">
+              <li className="cdash-item"><span className="cdash-icon-x">✕</span><span>Pierderi din stocuri și inventar incorect</span></li>
+              <li className="cdash-item"><span className="cdash-icon-x">✕</span><span>Lipsă de control asupra operațiunilor</span></li>
+              <li className="cdash-item"><span className="cdash-icon-x">✕</span><span>Decizii luate fără date reale</span></li>
+              <li className="cdash-item"><span className="cdash-icon-x">✕</span><span>Timp pierdut cu rapoarte manuale</span></li>
+              <li className="cdash-item"><span className="cdash-icon-x">✕</span><span>Erori de comunicare între echipe</span></li>
             </ul>
           </div>
-          <div className="comparison-column solutions-column">
-            <h2 className="comparison-title">Soluția RSistems</h2>
-            <ul className="comparison-list">
-              <li className="comparison-item">
-                <span className="icon-check">✓</span>
-                <span>Transformă datele în profit, automat.</span>
-              </li>
-              <li className="comparison-item">
-                <span className="icon-check">✓</span>
-                <span>Control total asupra afacerii tale</span>
-              </li>
-              <li className="comparison-item">
-                <span className="icon-check">✓</span>
-                <span>Rapoarte și analize în timp real</span>
-              </li>
-              <li className="comparison-item">
-                <span className="icon-check">✓</span>
-                <span>Reducerea pierderilor și optimizarea costurilor</span>
-              </li>
-              <li className="comparison-item">
-                <span className="icon-check">✓</span>
-                <span>Decizii bazate pe date reale</span>
-              </li>
+
+          {/* Solutions Column */}
+          <div className="cdash-col cdash-light">
+            <h2 className="cdash-heading cdash-heading-dark">Soluția RSistems</h2>
+            <ul className="cdash-list">
+              <li className="cdash-item cdash-item-light"><span className="cdash-icon-check">✓</span><span>Transformă datele în profit, automat.</span></li>
+              <li className="cdash-item cdash-item-light"><span className="cdash-icon-check">✓</span><span>Control total asupra afacerii tale</span></li>
+              <li className="cdash-item cdash-item-light"><span className="cdash-icon-check">✓</span><span>Rapoarte și analize în timp real</span></li>
+              <li className="cdash-item cdash-item-light"><span className="cdash-icon-check">✓</span><span>Reducerea pierderilor și optimizarea costurilor</span></li>
+              <li className="cdash-item cdash-item-light"><span className="cdash-icon-check">✓</span><span>Decizii bazate pe date reale</span></li>
             </ul>
           </div>
-        </div>
-      </section>
 
-      {/* Dashboard Section - Separate */}
-      <section className="dashboard-section-separate">
-        <div className="dashboard-container-new">
-          <div className="dashboard-header-main">
-            <div className="dashboard-title-section">
-              <h2 className="dashboard-section-title">Performanța în timp real</h2>
-              <p className="dashboard-section-subtitle">Monitorizează toate datele importante dintr-o singură privire</p>
-            </div>
-          </div>
-
-          <div className="dashboard-grid">
-            <div className="dashboard-card main-card">
-              <div className="card-header">
-                <span className="card-label">Vânzări azi</span>
-                <span className="card-badge">↑ 12.5%</span>
-              </div>
-              <div className="card-value">28.542 <span className="value-currency">RON</span></div>
-              <div className="card-subtext">față de ieri</div>
-            </div>
-
-            <div className="dashboard-card chart-card">
-              <ResponsiveContainer width="100%" height={220}>
-                <AreaChart data={salesData} margin={{ top: 10, right: 20, left: 0, bottom: 0 }}>
+          {/* Dashboard Column */}
+          <div className="cdash-col cdash-white">
+            <div className="cdash-chart-wrap">
+              <ResponsiveContainer width="100%" height={260}>
+                <AreaChart data={salesData} margin={{ top: 10, right: 10, left: 0, bottom: 0 }}>
                   <defs>
                     <linearGradient id="colorValue" x1="0" y1="0" x2="0" y2="1">
                       <stop offset="5%" stopColor="#1FB6B2" stopOpacity={0.3}/>
@@ -279,58 +242,35 @@ function App() {
                     </linearGradient>
                   </defs>
                   <CartesianGrid strokeDasharray="3 3" stroke="#e0e0e0" />
-                  <XAxis 
-                    dataKey="time" 
-                    stroke="#666"
-                    style={{ fontSize: '11px' }}
-                  />
-                  <YAxis 
-                    stroke="#666"
-                    style={{ fontSize: '11px' }}
-                    tickFormatter={(value) => `${(value / 1000).toFixed(0)}k`}
-                    width={40}
-                  />
-                  <Tooltip 
-                    contentStyle={{ 
-                      background: 'white', 
-                      border: '1px solid #e0e0e0',
-                      borderRadius: '8px',
-                      padding: '10px'
-                    }}
+                  <XAxis dataKey="time" stroke="#666" tick={{ fontSize: 11 }} />
+                  <YAxis stroke="#666" tick={{ fontSize: 11 }} tickFormatter={(v) => `${(v/1000).toFixed(0)}k`} width={35} />
+                  <Tooltip
+                    contentStyle={{ background: 'white', border: '1px solid #e0e0e0', borderRadius: '8px', padding: '10px' }}
                     formatter={(value) => [`${Number(value).toLocaleString()} RON`, 'Vânzări']}
                   />
-                  <Area 
-                    type="monotone" 
-                    dataKey="value" 
-                    stroke="#1FB6B2" 
-                    strokeWidth={2}
-                    fill="url(#colorValue)" 
-                  />
+                  <Area type="monotone" dataKey="value" stroke="#1FB6B2" strokeWidth={2} fill="url(#colorValue)" />
                 </AreaChart>
               </ResponsiveContainer>
             </div>
-
-            <div className="dashboard-card stats-card">
-              <div className="stat-row">
-                <div className="stat-info">
-                  <div className="stat-label">Comenzi</div>
-                  <div className="stat-number">356 <span className="stat-change">↑ 12.5%</span></div>
-                </div>
+            <div className="cdash-stats">
+              <div className="cdash-stat">
+                <div className="cdash-stat-label">Comenzi</div>
+                <div className="cdash-stat-value">356</div>
+                <div className="cdash-stat-change">↑ 12.5%</div>
               </div>
-              <div className="stat-row">
-                <div className="stat-info">
-                  <div className="stat-label">Clienți</div>
-                  <div className="stat-number">248 <span className="stat-change">↑ 8.1%</span></div>
-                </div>
+              <div className="cdash-stat">
+                <div className="cdash-stat-label">Clienți</div>
+                <div className="cdash-stat-value">248</div>
+                <div className="cdash-stat-change">↑ 8.1%</div>
               </div>
-              <div className="stat-row">
-                <div className="stat-info">
-                  <div className="stat-label">Bon mediu</div>
-                  <div className="stat-number">81 RON <span className="stat-change">↑ 16.3%</span></div>
-                </div>
+              <div className="cdash-stat">
+                <div className="cdash-stat-label">Bon mediu</div>
+                <div className="cdash-stat-value">81 RON</div>
+                <div className="cdash-stat-change">↑ 16.3%</div>
               </div>
             </div>
           </div>
+
         </div>
       </section>
 
@@ -578,6 +518,36 @@ function App() {
 
       {/* Footer */}
       <Footer />
+
+      {/* Cookie Consent Popup */}
+      {showCookieConsent && (
+        <div className="cookie-consent-overlay">
+          <div className="cookie-consent">
+            <div className="cookie-content">
+              <p className="cookie-text">
+                Acest site utilizează cookie-uri pentru a îmbunătăți experiența ta de navigare. Folosim aceste informații pentru a personaliza conținutul și pentru analiză.
+              </p>
+              <p className="cookie-text-secondary">
+                Dacă refuzi, informațiile tale nu vor fi urmărite când vizitezi acest site. Un singur cookie va fi folosit în browser-ul tău pentru a reține preferința ta de a nu fi urmărit.
+              </p>
+            </div>
+            <div className="cookie-actions">
+              <button 
+                className="cookie-btn cookie-accept"
+                onClick={() => handleCookieConsent(true)}
+              >
+                Accept
+              </button>
+              <button 
+                className="cookie-btn cookie-decline"
+                onClick={() => handleCookieConsent(false)}
+              >
+                Decline
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </>
   )
 }

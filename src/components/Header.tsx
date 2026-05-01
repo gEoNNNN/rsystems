@@ -3,45 +3,20 @@ import { Link } from 'react-router-dom'
 import './Header.css'
 
 function Header() {
-  const [dropdownOpen, setDropdownOpen] = useState(false)
   const [solutiiEchipamenteOpen, setSolutiiEchipamenteOpen] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
-  const [mobileRestaurante, setMobileRestaurante] = useState(false)
   const [mobileSolutiiEchipamente, setMobileSolutiiEchipamente] = useState(false)
 
   return (
     <header className="header">
       <div className="header-container">
         {/* Logo */}
-        <div className="logo">
+        <Link to="/" className="logo">
           <img src="/img/Logo.svg" alt="Logo" />
-        </div>
+        </Link>
 
         {/* Desktop Navigation */}
         <nav className="nav">
-          <div 
-            className="nav-item dropdown"
-            onMouseEnter={() => setDropdownOpen(true)}
-            onMouseLeave={() => setDropdownOpen(false)}
-          >
-            <span>Tipuri de Restaurante</span>
-            <svg className="arrow-down" width="12" height="8" viewBox="0 0 12 8" fill="none">
-              <path d="M1 1L6 6L11 1" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-            </svg>
-            {dropdownOpen && (
-              <div className="dropdown-menu">
-                <Link to="/cafenea">Cafenea & Coffee Shop</Link>
-                <Link to="/fastfood">Fast Food</Link>
-                <Link to="/pizzerie">Pizzerie</Link>
-                <Link to="/bar">Bar & Pub</Link>
-                <Link to="/finedining">Fine Dining</Link>
-                <Link to="/casual">Restaurant Casual</Link>
-                <Link to="/bistrou">Bistrou</Link>
-                <Link to="/foodtruck">Food Truck</Link>
-                <Link to="/catering">Catering & Evenimente</Link>
-              </div>
-            )}
-          </div>
           <div
             className="nav-item dropdown"
             onMouseEnter={() => setSolutiiEchipamenteOpen(true)}
@@ -62,6 +37,7 @@ function Header() {
               </div>
             )}
           </div>
+          <Link to="/cafenea" className="nav-item">Tipuri de Restaurante</Link>
           <a href="#preturi" className="nav-item">Prețuri</a>
           <a href="#blog" className="nav-item">Blog</a>
           <a href="#despre" className="nav-item">Despre noi</a>
@@ -95,25 +71,6 @@ function Header() {
       {/* Mobile Menu */}
       {mobileOpen && (
         <div className="mobile-menu">
-          <div className="mobile-nav-item" onClick={() => setMobileRestaurante(!mobileRestaurante)}>
-            <span>Tipuri de Restaurante</span>
-            <svg className={`arrow-down${mobileRestaurante ? ' rotated' : ''}`} width="12" height="8" viewBox="0 0 12 8" fill="none">
-              <path d="M1 1L6 6L11 1" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-            </svg>
-          </div>
-          {mobileRestaurante && (
-            <div className="mobile-submenu">
-              <Link to="/cafenea" onClick={() => setMobileOpen(false)}>Cafenea & Coffee Shop</Link>
-              <Link to="/fastfood" onClick={() => setMobileOpen(false)}>Fast Food</Link>
-              <Link to="/pizzerie" onClick={() => setMobileOpen(false)}>Pizzerie</Link>
-              <Link to="/bar" onClick={() => setMobileOpen(false)}>Bar & Pub</Link>
-              <Link to="/finedining" onClick={() => setMobileOpen(false)}>Fine Dining</Link>
-              <Link to="/casual" onClick={() => setMobileOpen(false)}>Restaurant Casual</Link>
-              <Link to="/bistrou" onClick={() => setMobileOpen(false)}>Bistrou</Link>
-              <Link to="/foodtruck" onClick={() => setMobileOpen(false)}>Food Truck</Link>
-              <Link to="/catering" onClick={() => setMobileOpen(false)}>Catering & Evenimente</Link>
-            </div>
-          )}
           <div className="mobile-nav-item" onClick={() => setMobileSolutiiEchipamente(!mobileSolutiiEchipamente)}>
             <span>Soluții & Echipamente</span>
             <svg className={`arrow-down${mobileSolutiiEchipamente ? ' rotated' : ''}`} width="12" height="8" viewBox="0 0 12 8" fill="none">
@@ -130,6 +87,7 @@ function Header() {
               <a href="#echipamente3" onClick={() => setMobileOpen(false)}>Echipament 3</a>
             </div>
           )}
+          <Link to="/cafenea" className="mobile-nav-link" onClick={() => setMobileOpen(false)}>Tipuri de Restaurante</Link>
           <a href="#preturi" className="mobile-nav-link" onClick={() => setMobileOpen(false)}>Prețuri</a>
           <a href="#blog" className="mobile-nav-link" onClick={() => setMobileOpen(false)}>Blog</a>
           <a href="#despre" className="mobile-nav-link" onClick={() => setMobileOpen(false)}>Despre noi</a>
