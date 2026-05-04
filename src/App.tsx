@@ -208,26 +208,30 @@ function App() {
 
           {/* Challenges Column */}
           <div className="cdash-col cdash-dark">
-            <h2 className="cdash-heading cdash-heading-white">Provocările tale zilnice</h2>
-            <ul className="cdash-list">
-              <li className="cdash-item"><span className="cdash-icon-x">✕</span><span>Pierderi din stocuri și inventar incorect</span></li>
-              <li className="cdash-item"><span className="cdash-icon-x">✕</span><span>Lipsă de control asupra operațiunilor</span></li>
-              <li className="cdash-item"><span className="cdash-icon-x">✕</span><span>Decizii luate fără date reale</span></li>
-              <li className="cdash-item"><span className="cdash-icon-x">✕</span><span>Timp pierdut cu rapoarte manuale</span></li>
-              <li className="cdash-item"><span className="cdash-icon-x">✕</span><span>Erori de comunicare între echipe</span></li>
-            </ul>
+            <div className="cdash-content">
+              <h2 className="cdash-heading cdash-heading-white">Provocările tale zilnice</h2>
+              <ul className="cdash-list">
+                <li className="cdash-item"><span className="cdash-icon-x">✕</span><span>Pierderi din stocuri și inventar incorect</span></li>
+                <li className="cdash-item"><span className="cdash-icon-x">✕</span><span>Lipsă de control asupra operațiunilor</span></li>
+                <li className="cdash-item"><span className="cdash-icon-x">✕</span><span>Decizii luate fără date reale</span></li>
+                <li className="cdash-item"><span className="cdash-icon-x">✕</span><span>Timp pierdut cu rapoarte manuale</span></li>
+                <li className="cdash-item"><span className="cdash-icon-x">✕</span><span>Erori de comunicare între echipe</span></li>
+              </ul>
+            </div>
           </div>
 
           {/* Solutions Column */}
           <div className="cdash-col cdash-light">
-            <h2 className="cdash-heading cdash-heading-dark">Soluția RSistems</h2>
-            <ul className="cdash-list">
-              <li className="cdash-item cdash-item-light"><span className="cdash-icon-check">✓</span><span>Transformă datele în profit, automat.</span></li>
-              <li className="cdash-item cdash-item-light"><span className="cdash-icon-check">✓</span><span>Control total asupra afacerii tale</span></li>
-              <li className="cdash-item cdash-item-light"><span className="cdash-icon-check">✓</span><span>Rapoarte și analize în timp real</span></li>
-              <li className="cdash-item cdash-item-light"><span className="cdash-icon-check">✓</span><span>Reducerea pierderilor și optimizarea costurilor</span></li>
-              <li className="cdash-item cdash-item-light"><span className="cdash-icon-check">✓</span><span>Decizii bazate pe date reale</span></li>
-            </ul>
+            <div className="cdash-content">
+              <h2 className="cdash-heading cdash-heading-dark">Soluția RSistems</h2>
+              <ul className="cdash-list">
+                <li className="cdash-item cdash-item-light"><span className="cdash-icon-check">✓</span><span>Transformă datele în profit, automat.</span></li>
+                <li className="cdash-item cdash-item-light"><span className="cdash-icon-check">✓</span><span>Control total asupra afacerii tale</span></li>
+                <li className="cdash-item cdash-item-light"><span className="cdash-icon-check">✓</span><span>Rapoarte și analize în timp real</span></li>
+                <li className="cdash-item cdash-item-light"><span className="cdash-icon-check">✓</span><span>Reducerea pierderilor și optimizarea costurilor</span></li>
+                <li className="cdash-item cdash-item-light"><span className="cdash-icon-check">✓</span><span>Decizii bazate pe date reale</span></li>
+              </ul>
+            </div>
           </div>
 
           {/* Dashboard Column */}
@@ -431,7 +435,7 @@ function App() {
               Programează o demonstrație gratuită și descoperă cum te putem ajuta.
             </p>
           </div>
-          <a href="/demo" className="cta-button-large">
+          <a href="https://wa.me/40517508772?text=Bună! Vreau să programez un demo gratuit." className="cta-button-large" target="_blank" rel="noopener noreferrer">
             Programează demo gratuit
             <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
               <path d="M8 5v14l11-7z"/>

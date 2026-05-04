@@ -1,1054 +1,611 @@
-/* Restaurant Page - Shared Styles */
-.restaurant-page {
+/* ============================================================
+   RestaurantPage — uses vw-based sizing throughout
+   ============================================================ */
+
+.rp-page {
   min-height: 100vh;
-}
-
-/* Hero Section */
-.restaurant-hero {
-  min-height: calc(100vh - 80px);
-  background-color: #ffffff;
-  display: flex;
-  align-items: center;
-  position: relative;
-  overflow: hidden;
-}
-
-.restaurant-hero-bg {
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  height: 200%;
-  width: auto;
-  max-width: 105%;
-  object-fit: contain;
-  z-index: 0;
-  margin-top: -3vw;
-}
-
-.restaurant-hero-container {
-  max-width: 1600px;
-  margin: 0 auto;
-  padding: 60px 40px;
-  width: 100%;
-  position: relative;
-  z-index: 1;
-}
-
-.restaurant-hero-left {
-  max-width: 600px;
-  position: relative;
-  z-index: 2;
-}
-
-.restaurant-pre-title {
-  font-size: 72px;
-  font-weight: 700;
-  color: #ffffff;
-  margin: 0 0 8px 0;
-  line-height: 1.1;
-}
-
-.restaurant-mid-title {
-  font-size: 72px;
-  font-weight: 700;
-  color: #ffffff;
-  margin: 0 0 12px 0;
-  line-height: 1.1;
-}
-
-.restaurant-main-title {
-  font-size: 72px;
-  font-weight: 700;
-  color: #1FB6B2;
-  margin: 0 0 24px 0;
-  line-height: 1.1;
-}
-
-.restaurant-description {
-  font-size: 20px;
-  color: #ffffff;
-  line-height: 1.6;
-  margin: 0 0 32px 0;
-}
-
-.restaurant-demo-button {
-  background: #ffffff;
-  color: #1FB6B2;
-  border: 2px solid #ffffff;
-  padding: 16px 32px;
-  border-radius: 8px;
-  font-size: 18px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  text-decoration: none;
-  margin-bottom: 48px;
-}
-
-.restaurant-demo-button:hover {
-  background: rgba(255, 255, 255, 0.9);
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.3);
-}
-
-.restaurant-stats {
-  display: flex;
-  gap: 48px;
-  flex-wrap: wrap;
-}
-
-.restaurant-stat {
   display: flex;
   flex-direction: column;
 }
 
-.restaurant-stat-value {
-  font-size: 56px;
-  font-weight: 700;
-  color: #1FB6B2;
-  line-height: 1;
-  margin-bottom: 8px;
-}
-
-.restaurant-stat-label {
-  font-size: 16px;
-  color: #ffffff;
-  line-height: 1.4;
-  white-space: nowrap;
-}
-
-/* Partners Carousel */
-.restaurant-partners-section {
-  max-width: 2200px;
-  margin: -5vw auto;
-  padding: 25px 20px;
-}
-
-.carousel-container {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  max-width: 1800px;
-  margin: 0 auto;
-}
-
-.carousel-track {
+/* ── De ce alegi RSistems ─────────────────────────────────── */
+.rp-why {
   display: flex;
-  transition: transform 1s ease-in-out;
-  will-change: transform;
+  align-items: flex-start;
+  gap: 5vw;
+  padding: 5vw 7vw;
+  background: #ffffff;
 }
 
-.carousel-item {
-  flex: 0 0 16.6667%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 40px;
-  box-sizing: border-box;
+.rp-why-text {
+  flex: 1;
   min-width: 0;
 }
 
-.carousel-item img {
-  max-width: 100%;
-  max-height: 150px;
-  width: auto;
-  height: auto;
-  object-fit: contain;
-  transition: all 0.3s ease;
-}
-
-.carousel-item img:hover {
-  transform: scale(1.05);
-}
-
-/* Info & Benefits Section */
-.restaurant-info-section {
-  padding: 40px 40px;
-}
-
-.restaurant-info-container {
-  max-width: 1400px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 80px;
-  align-items: start;
-}
-
-.restaurant-info-left {
-  padding-right: 40px;
-}
-
-.restaurant-info-title {
-  font-size: 36px;
+.rp-why-title {
+  font-size: clamp(1.3rem, 2.4vw, 2.6rem);
   font-weight: 700;
   color: #1a1a1a;
-  margin: 0 0 24px 0;
-  line-height: 1.3;
+  margin: 0 0 1.2vw 0;
+  line-height: 1.25;
 }
 
-.restaurant-info-description {
-  font-size: 16px;
-  color: #333;
-  line-height: 1.8;
+.rp-why-subtitle {
+  font-size: clamp(0.9rem, 1.3vw, 1.25rem);
+  color: #1FB6B2;
+  font-weight: 600;
+  margin: 0 0 1.5vw 0;
+  line-height: 1.5;
+}
+
+.rp-why-body {
+  font-size: clamp(0.82rem, 1.05vw, 1.05rem);
+  color: #555;
+  line-height: 1.75;
   margin: 0;
 }
 
-.restaurant-info-right {
-  padding-left: 40px;
-}
-
-.restaurant-benefits-title {
-  font-size: 24px;
-  font-weight: 600;
-  color: #1a1a1a;
-  margin: 0 0 24px 0;
-}
-
-.restaurant-benefits-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.restaurant-benefits-list li {
-  font-size: 16px;
-  color: #333;
-  line-height: 1.8;
-  margin-bottom: 16px;
-  padding-left: 24px;
-  position: relative;
-}
-
-.restaurant-benefits-list li::before {
-  content: '•';
-  position: absolute;
-  left: 0;
-  color: #1FB6B2;
-  font-size: 24px;
-  line-height: 1.4;
-}
-
-/* CTA Section */
-.restaurant-cta-section {
-  background: #ffffff;
-  padding: 40px 40px;
-  text-align: center;
-}
-
-.restaurant-cta-heading {
-  font-size: 48px;
-  font-weight: 700;
-  color: #1a1a1a;
-  max-width: 1000px;
-  margin: 0 auto 48px;
-  line-height: 1.3;
-}
-
-.restaurant-cta-button {
-  display: inline-flex;
-  align-items: center;
-  gap: 12px;
-  background: #ffffff;
-  color: #1a1a1a;
-  border: 2px solid #1a1a1a;
-  padding: 18px 40px;
-  border-radius: 8px;
-  font-size: 18px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s;
-  text-decoration: none;
-}
-
-.restaurant-cta-button:hover {
-  background: #1a1a1a;
-  color: #ffffff;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(26, 26, 26, 0.2);
-}
-
-.restaurant-cta-button svg {
-  transition: transform 0.3s;
-}
-
-.restaurant-cta-button:hover svg {
-  transform: translateX(4px);
-}
-
-/* FAQ Section */
-.restaurant-faq-section {
-  background: #ffffff;
-  padding: 40px 40px;
-}
-
-.restaurant-faq-container {
-  max-width: 1400px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 80px;
-  align-items: start;
-}
-
-.restaurant-faq-left {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.restaurant-faq-item {
-  border-bottom: 1px solid #e0e0e0;
-}
-
-.restaurant-faq-question {
-  width: 100%;
-  background: none;
-  border: none;
-  padding: 24px 0;
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  cursor: pointer;
-  text-align: left;
-  transition: all 0.3s;
-}
-
-.restaurant-faq-question:hover {
-  opacity: 0.7;
-}
-
-.restaurant-faq-number {
-  font-size: 24px;
-  font-weight: 700;
-  color: #1FB6B2;
-  min-width: 40px;
-}
-
-.restaurant-faq-question-text {
+.rp-why-img-wrap {
   flex: 1;
-  font-size: 18px;
-  font-weight: 600;
-  color: #1a1a1a;
-  line-height: 1.4;
-}
-
-.restaurant-faq-arrow {
-  flex-shrink: 0;
-  transition: transform 0.3s;
-  color: #1a1a1a;
-}
-
-.restaurant-faq-question.active .restaurant-faq-arrow {
-  transform: rotate(180deg);
-}
-
-.restaurant-faq-answer {
-  padding: 0 0 24px 56px;
-  font-size: 16px;
-  color: #666;
-  line-height: 1.8;
-  animation: fadeIn 0.3s ease-in;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.restaurant-faq-right {
+  min-width: 0;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 40px;
+  justify-content: flex-end;
 }
 
-.restaurant-faq-image {
+.rp-why-img {
   width: 100%;
-  max-width: 500px;
+  max-width: 48vw;
   height: auto;
-  object-fit: contain;
+  border-radius: 16px;
+  object-fit: cover;
+  display: block;
 }
 
-/* Why RSistems Section */
-.restaurant-why-section {
-  background: #ffffff;
-  padding: 40px 40px;
-  text-align: center;
-}
-
-.restaurant-why-container {
-  max-width: 1400px;
-  margin: 0 auto;
-}
-
-.restaurant-why-title {
-  font-size: 48px;
-  font-weight: 700;
-  color: #1a1a1a;
-  margin: 0 0 24px 0;
-  line-height: 1.3;
-}
-
-.restaurant-why-description {
-  font-size: 18px;
-  color: #666;
-  max-width: 900px;
-  margin: 0 auto 40px;
-  line-height: 1.6;
-}
-
-.restaurant-why-button {
-  display: inline-flex;
-  align-items: center;
-  gap: 12px;
-  background: #ffffff;
-  color: #1a1a1a;
-  border: 2px solid #1a1a1a;
-  padding: 16px 36px;
-  border-radius: 8px;
-  font-size: 18px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s;
-  text-decoration: none;
-  margin-bottom: 60px;
-}
-
-.restaurant-why-button:hover {
-  background: #1a1a1a;
-  color: #ffffff;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(26, 26, 26, 0.2);
-}
-
-.restaurant-why-button svg {
-  transition: transform 0.3s;
-}
-
-.restaurant-why-button:hover svg {
-  transform: translateX(4px);
-}
-
-.restaurant-why-cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 80px;
-  margin-top: 60px;
-}
-
-.restaurant-why-card {
+/* ── FAQ + Contact form ───────────────────────────────────── */
+.rp-faq-section {
   display: flex;
-  flex-direction: column;
+  gap: 4vw;
+  padding: 5vw 7vw;
+  background: #f9fafb;
   align-items: flex-start;
 }
 
-.restaurant-why-card-image {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  margin-bottom: 20px;
+.rp-faq-list {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
 }
 
-.restaurant-why-card-title {
-  font-size: 18px;
-  font-weight: 600;
-  color: #1a1a1a;
-  margin: 0;
-  line-height: 1.4;
-  text-align: left;
+.rp-faq-item {
+  background: #ffffff;
+  border: 1.5px solid #e5e5e5;
+  border-radius: 10px;
+  padding: 1.2vw 1.6vw;
+  cursor: pointer;
+  transition: border-color 0.2s;
 }
 
-/* Contact Form Section */
-.restaurant-contact-section {
-  background: transparent;
-  padding: 40px 40px;
+.rp-faq-item:hover,
+.rp-faq-item.open {
+  border-color: #1FB6B2;
 }
 
-.restaurant-contact-container {
-  max-width: 1400px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0;
-  align-items: stretch;
-}
-
-.restaurant-contact-left {
-  position: relative;
-  overflow: hidden;
-  min-height: 600px;
+.rp-faq-row {
   display: flex;
   align-items: center;
-  padding: 80px 60px;
+  gap: 1vw;
 }
 
-.restaurant-contact-bg {
+.rp-faq-icon {
+  width: clamp(18px, 1.8vw, 28px);
+  height: clamp(18px, 1.8vw, 28px);
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.rp-faq-q {
+  flex: 1;
+  font-size: clamp(0.82rem, 1.05vw, 1.05rem);
+  font-weight: 500;
+  color: #1a1a1a;
+  line-height: 1.4;
+}
+
+.rp-faq-chevron {
+  flex-shrink: 0;
+  width: clamp(10px, 1vw, 14px);
+  height: clamp(10px, 1vw, 14px);
+  border-right: 2px solid #aaa;
+  border-bottom: 2px solid #aaa;
+  transform: rotate(45deg);
+  transition: transform 0.3s ease, border-color 0.25s;
+  margin-bottom: 3px;
+}
+
+.rp-faq-item.open .rp-faq-chevron {
+  transform: rotate(-135deg);
+  border-color: #1FB6B2;
+  margin-bottom: -2px;
+}
+
+.rp-faq-answer-wrap {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.35s ease;
+}
+
+.rp-faq-item.open .rp-faq-answer-wrap {
+  grid-template-rows: 1fr;
+}
+
+.rp-faq-answer-inner {
+  overflow: hidden;
+  min-height: 0;
+}
+
+.rp-faq-answer {
+  font-size: clamp(0.78rem, 0.95vw, 0.95rem);
+  color: #555;
+  margin: 0;
+  padding: 1vw 0 0.4vw calc(clamp(18px, 1.8vw, 28px) + 1vw);
+  line-height: 1.65;
+}
+
+/* ── Contact form ─────────────────────────────────────────── */
+.rp-contact-form {
+  flex: 1;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 2.5vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6vw;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+}
+
+.rp-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vw;
+}
+
+.rp-form-group label {
+  font-size: clamp(0.78rem, 1vw, 1rem);
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.rp-form-group input {
+  border: 1.5px solid #d0d0d0;
+  border-radius: 8px;
+  padding: 0.8vw 1vw;
+  font-size: clamp(0.78rem, 1vw, 1rem);
+  color: #1a1a1a;
+  outline: none;
+  transition: border-color 0.2s;
+  background: #fff;
+}
+
+.rp-form-group input:focus {
+  border-color: #1FB6B2;
+}
+
+.rp-form-row {
+  display: flex;
+  gap: 1.5vw;
+}
+
+.rp-form-row .rp-form-group {
+  flex: 1;
+}
+
+.rp-form-submit {
+  background: #1FB6B2;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 1vw 2.5vw;
+  font-size: clamp(0.85rem, 1.1vw, 1.1rem);
+  font-weight: 700;
+  cursor: pointer;
+  align-self: flex-start;
+  transition: background 0.2s;
+}
+
+.rp-form-submit:hover {
+  background: #17a09c;
+}
+
+/* ── Responsive: why + faq ───────────────────────────────── */
+@media (max-width: 900px) {
+  .rp-why {
+    flex-direction: column;
+    gap: 5vw;
+  }
+
+  .rp-why-img {
+    max-width: 100%;
+  }
+
+  .rp-faq-section {
+    flex-direction: column;
+    gap: 6vw;
+  }
+
+  .rp-faq-item {
+    padding: 3vw 4vw;
+  }
+
+  .rp-faq-row {
+    gap: 3vw;
+  }
+
+  .rp-contact-form {
+    width: 100%;
+    padding: 5vw;
+    gap: 4vw;
+  }
+
+  .rp-form-group input {
+    padding: 2.5vw 3vw;
+  }
+
+  .rp-form-submit {
+    padding: 2.5vw 6vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .rp-form-row {
+    flex-direction: column;
+    gap: 4vw;
+  }
+}
+
+/* ── Hero ──────────────────────────────────────────────────── */
+.rp-hero {
+  position: relative;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.rp-hero-bg {
   position: absolute;
-  top: 0;
-  left: 0;
+  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
   z-index: 0;
 }
 
-.restaurant-contact-left-content {
+.rp-hero-content {
   position: relative;
   z-index: 1;
+  padding: 8vw 7vw;
+  max-width: 65vw;
 }
 
-.restaurant-contact-left-title {
-  font-size: 52px;
+.rp-hero-heading {
+  font-size: clamp(1.6rem, 3.8vw, 4.2rem);
   font-weight: 700;
   color: #ffffff;
-  margin: 0 0 32px 0;
   line-height: 1.2;
+  margin: 0 0 1.5vw 0;
 }
 
-.restaurant-contact-left-description {
-  font-size: 20px;
-  color: #ffffff;
-  line-height: 1.6;
+.rp-hero-accent {
+  font-size: clamp(1.6rem, 3.8vw, 4.2rem);
+  font-weight: 700;
+  color: #1FB6B2;
+  margin: 0 0 2vw 0;
+}
+
+.rp-hero-description {
+  font-size: clamp(0.85rem, 1.2vw, 1.2rem);
+  color: rgba(255, 255, 255, 0.88);
+  line-height: 1.75;
+  max-width: 52vw;
   margin: 0;
 }
 
-.restaurant-contact-right {
-  background: #ffffff;
-  padding: 80px 60px;
+/* ── Main section: content + sidebar ──────────────────────── */
+.rp-main {
+  display: flex;
+  align-items: flex-start;
+  gap: 4vw;
+  padding: 5vw 7vw;
+  flex: 1;
 }
 
-.restaurant-contact-form-title {
-  font-size: 32px;
+/* ── Content area ─────────────────────────────────────────── */
+.rp-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.rp-content-title {
+  font-size: clamp(1.3rem, 2.5vw, 3rem);
   font-weight: 700;
   color: #1a1a1a;
-  margin: 0 0 40px 0;
+  text-align: center;
+  margin: 0 0 2.5vw 0;
 }
 
-.restaurant-contact-form {
+.rp-content-img {
+  width: 100%;
+  height: auto;
+  border-radius: 14px;
+  display: block;
+  margin-bottom: 3vw;
+}
+
+/* ── 2-column info row ─────────────────────────────────────── */
+.rp-info-row {
+  display: flex;
+  gap: 4vw;
+  align-items: flex-start;
+}
+
+.rp-info-col {
+  flex: 1;
+  min-width: 0;
+}
+
+.rp-info-col h3 {
+  font-size: clamp(1rem, 1.6vw, 1.6rem);
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 1.2vw 0;
+}
+
+.rp-info-col p {
+  font-size: clamp(0.85rem, 1.1vw, 1.1rem);
+  color: #444;
+  line-height: 1.75;
+  margin: 0;
+}
+
+.rp-info-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 1vw;
 }
 
-.restaurant-contact-form-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
+.rp-info-col ul li {
+  font-size: clamp(0.85rem, 1.1vw, 1.1rem);
+  color: #444;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8vw;
+  line-height: 1.6;
 }
 
-.restaurant-contact-form-group {
+.rp-info-col ul li::before {
+  content: '';
+  display: inline-block;
+  width: clamp(8px, 0.7vw, 10px);
+  height: clamp(8px, 0.7vw, 10px);
+  border-radius: 50%;
+  background: #1FB6B2;
+  flex-shrink: 0;
+  margin-top: 0.4em;
+}
+
+/* ── Sidebar menu ─────────────────────────────────────────── */
+.rp-sidebar {
+  width: 22vw;
+  min-width: 200px;
+  max-width: 300px;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 0.6vw;
+  position: sticky;
+  top: 90px;
+  flex-shrink: 0;
 }
 
-.restaurant-contact-form-group label {
-  font-size: 16px;
+.rp-sidebar-item {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+  padding: 1vw 1.4vw;
+  border-radius: 10px;
+  border: 1.5px solid #e5e5e5;
+  background: #ffffff;
+  cursor: pointer;
+  font-size: clamp(0.78rem, 1.05vw, 1rem);
   font-weight: 500;
   color: #1a1a1a;
+  text-align: left;
+  transition: border-color 0.2s, color 0.2s, background 0.2s;
+  width: 100%;
+  line-height: 1.3;
 }
 
-.restaurant-contact-form-group input {
-  padding: 16px 18px;
-  border: 1px solid #d0d0d0;
-  border-radius: 8px;
-  font-size: 16px;
-  color: #1a1a1a;
-  transition: all 0.3s;
-  background: #ffffff;
-}
-
-.restaurant-contact-form-group input:focus {
-  outline: none;
+.rp-sidebar-item:hover {
   border-color: #1FB6B2;
-  box-shadow: 0 0 0 3px rgba(31, 182, 178, 0.1);
+  color: #1FB6B2;
 }
 
-.restaurant-contact-form-submit {
+.rp-sidebar-item.active {
   background: #1FB6B2;
+  border-color: #1FB6B2;
   color: #ffffff;
-  border: none;
-  padding: 18px 40px;
-  border-radius: 8px;
-  font-size: 18px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s;
-  align-self: flex-start;
 }
 
-.restaurant-contact-form-submit:hover {
-  background: #1a9e9a;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(31, 182, 178, 0.3);
+.rp-sidebar-icon {
+  width: clamp(18px, 1.8vw, 28px);
+  height: clamp(18px, 1.8vw, 28px);
+  object-fit: contain;
+  flex-shrink: 0;
 }
 
-/* Responsive */
+.rp-sidebar-item.active .rp-sidebar-icon {
+  filter: brightness(0) invert(1);
+}
+
+/* ── Responsive: tablet ───────────────────────────────────── */
 @media (max-width: 1024px) {
-  .restaurant-hero-bg {
-    max-width: 65%;
-    height: 100%;
+  .rp-hero-content {
+    max-width: 80vw;
   }
 
-  .restaurant-pre-title,
-  .restaurant-mid-title,
-  .restaurant-main-title {
-    font-size: 56px;
+  .rp-hero-description {
+    max-width: 70vw;
   }
 
-  .restaurant-partners-section {
-    padding: 30px 30px;
-  }
-
-  .carousel-item {
-    flex: 0 0 33.333%;
-  }
-
-  .carousel-item img {
-    max-height: 100px;
-  }
-
-  .restaurant-info-section {
-    padding: 30px 30px;
-  }
-
-  .restaurant-info-container {
-    gap: 60px;
-  }
-
-  .restaurant-info-title {
-    font-size: 32px;
-  }
-
-  .restaurant-cta-section {
-    padding: 30px 30px;
-  }
-
-  .restaurant-cta-heading {
-    font-size: 38px;
-  }
-
-  .restaurant-faq-section {
-    padding: 30px 30px;
-  }
-
-  .restaurant-faq-container {
-    gap: 60px;
-  }
-
-  .restaurant-faq-question-text {
-    font-size: 17px;
-  }
-
-  .restaurant-why-section {
-    padding: 30px 30px;
-  }
-
-  .restaurant-why-title {
-    font-size: 38px;
-  }
-
-  .restaurant-why-cards {
-    gap: 60px;
-  }
-
-  .restaurant-contact-section {
-    padding: 30px 30px;
-  }
-
-  .restaurant-contact-container {
-    gap: 0;
-  }
-
-  .restaurant-contact-left {
-    padding: 60px 40px;
-    min-height: 500px;
-  }
-
-  .restaurant-contact-left-title {
-    font-size: 42px;
-  }
-
-  .restaurant-contact-left-description {
-    font-size: 18px;
-  }
-
-  .restaurant-contact-right {
-    padding: 60px 40px;
+  .rp-sidebar {
+    width: 26vw;
   }
 }
 
+/* ── Responsive: tablet ── 2-col becomes 1-col ────────────── */
 @media (max-width: 768px) {
-  .restaurant-hero {
-    min-height: auto;
-    padding: 40px 0;
+  .rp-info-row {
+    flex-direction: column;
+    gap: 6vw;
+  }
+}
+
+/* ── Responsive: mobile ───────────────────────────────────── */
+@media (max-width: 768px) {
+  .rp-hero {
+    min-height: 50vh;
   }
 
-  .restaurant-hero-bg {
-    top: auto;
-    bottom: 0;
-    left: 50%;
-    right: auto;
-    transform: translateX(-50%);
-    height: auto;
-    width: 90%;
-    max-width: 400px;
-    opacity: 0.3;
-  }
-
-  .restaurant-hero-container {
-    padding: 40px 20px 320px 20px;
-  }
-  
-  .restaurant-hero-left {
+  .rp-hero-content {
+    padding: 12vw 5vw;
     max-width: 100%;
   }
 
-  .restaurant-pre-title,
-  .restaurant-mid-title,
-  .restaurant-main-title {
-    font-size: 42px;
+  .rp-hero-description {
+    max-width: 100%;
   }
 
-  .restaurant-description {
-    font-size: 16px;
+  .rp-main {
+    flex-direction: column;
+    padding: 7vw 5vw;
+    gap: 6vw;
   }
 
-  .restaurant-demo-button {
-    padding: 14px 28px;
-    font-size: 16px;
-    margin-bottom: 32px;
-  }
-
-  .restaurant-stats {
-    gap: 32px;
-  }
-
-  .restaurant-stat-value {
-    font-size: 42px;
-  }
-
-  .restaurant-stat-label {
-    font-size: 14px;
-  }
-
-  .restaurant-partners-section {
-    padding: 20px 20px;
-  }
-
-  .carousel-item {
-    flex: 0 0 25%;
-    padding: 20px 10px;
-  }
-
-  .carousel-item img {
-    max-height: 60px;
-  }
-
-  .restaurant-info-section {
-    padding: 20px 20px;
-  }
-
-  .restaurant-info-container {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-
-  .restaurant-info-left,
-  .restaurant-info-right {
-    padding: 0;
-  }
-
-  .restaurant-info-title {
-    font-size: 28px;
-  }
-
-  .restaurant-benefits-title {
-    font-size: 20px;
-  }
-
-  .restaurant-info-description,
-  .restaurant-benefits-list li {
-    font-size: 15px;
-  }
-
-  .restaurant-cta-section {
-    padding: 20px 20px;
-  }
-
-  .restaurant-cta-heading {
-    font-size: 28px;
-    margin-bottom: 32px;
-  }
-
-  .restaurant-cta-button {
-    padding: 14px 32px;
-    font-size: 16px;
-  }
-
-  .restaurant-faq-section {
-    padding: 20px 20px;
-  }
-
-  .restaurant-faq-container {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-
-  .restaurant-faq-right {
-    order: -1;
-    padding: 20px 0;
-  }
-
-  .restaurant-faq-image {
-    max-width: 350px;
-  }
-
-  .restaurant-faq-number {
-    font-size: 20px;
-    min-width: 32px;
-  }
-
-  .restaurant-faq-question-text {
-    font-size: 16px;
-  }
-
-  .restaurant-faq-answer {
-    padding: 0 0 20px 48px;
-    font-size: 15px;
-  }
-
-  .restaurant-why-section {
-    padding: 20px 20px;
-  }
-
-  .restaurant-why-title {
-    font-size: 28px;
-  }
-
-  .restaurant-why-description {
-    font-size: 16px;
-    margin-bottom: 32px;
-  }
-
-  .restaurant-why-button {
-    padding: 14px 32px;
-    font-size: 16px;
-    margin-bottom: 40px;
-  }
-
-  .restaurant-why-cards {
-    grid-template-columns: 1fr;
-    gap: 40px;
-    margin-top: 40px;
-  }
-
-  .restaurant-why-card-title {
-    font-size: 16px;
-  }
-
-  .restaurant-contact-section {
-    padding: 20px 20px;
-  }
-
-  .restaurant-contact-container {
-    grid-template-columns: 1fr;
-    gap: 0;
-  }
-
-  .restaurant-contact-left {
-    padding: 50px 30px;
-    min-height: 400px;
-  }
-
-  .restaurant-contact-left-title {
-    font-size: 32px;
-  }
-
-  .restaurant-contact-left-description {
-    font-size: 17px;
-  }
-
-  .restaurant-contact-right {
-    padding: 50px 30px;
-  }
-
-  .restaurant-contact-form-title {
-    font-size: 24px;
-    margin-bottom: 24px;
-  }
-
-  .restaurant-contact-form {
-    gap: 20px;
-  }
-
-  .restaurant-contact-form-row {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  .restaurant-contact-form-submit {
+  .rp-sidebar {
     width: 100%;
+    max-width: 100%;
+    min-width: unset;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2.5vw;
+    position: static;
+  }
+
+  .rp-sidebar-item {
+    flex: 1 1 auto;
+    min-width: calc(50% - 1.5vw);
+    padding: 3vw 3.5vw;
+    gap: 2.5vw;
+    font-size: clamp(0.75rem, 3.5vw, 0.95rem);
+    border-radius: 8px;
+  }
+
+  .rp-sidebar-icon {
+    width: clamp(16px, 5vw, 24px);
+    height: clamp(16px, 5vw, 24px);
   }
 }
 
-/* Blog Section */
-.restaurant-blog-section {
-  background: #ffffff;
-  padding: 80px 40px;
-}
-
-.restaurant-blog-container {
-  max-width: 1400px;
-  margin: 0 auto;
-}
-
-.restaurant-blog-title {
-  font-size: 48px;
-  font-weight: 600;
-  color: #333333;
-  text-align: center;
-  margin: 0 0 60px 0;
-}
-
-.restaurant-blog-cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
-  align-items: stretch;
-}
-
-.restaurant-blog-card {
-  background: #ffffff;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  display: flex;
-  flex-direction: column;
-  cursor: pointer;
-}
-
-.restaurant-blog-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
-}
-
-.restaurant-blog-card-image {
+/* ── Benefits section ─────────────────────────────────────── */
+.rp-benefits {
   width: 100%;
-  height: 240px;
-  object-fit: cover;
-  display: block;
+  background: #f9fafb;
+  padding: 5vw 7vw;
+  box-sizing: border-box;
 }
 
-.restaurant-blog-card-content {
-  padding: 30px;
+.rp-benefits-title {
+  font-size: clamp(1.3rem, 2.5vw, 2.8rem);
+  font-weight: 700;
+  color: #1a1a1a;
+  text-align: center;
+  margin: 0 0 3.5vw 0;
+}
+
+.rp-benefits-grid {
+  display: flex;
+  gap: 1.5vw;
+  justify-content: center;
+}
+
+.rp-benefit-card {
+  flex: 1;
+  background: #1a4a47;
+  border-radius: 16px;
+  padding: 2.5vw 1.8vw;
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
+  align-items: center;
+  text-align: center;
+  gap: 1.2vw;
+  min-width: 0;
 }
 
-.restaurant-blog-card-title {
-  font-size: 22px;
-  font-weight: 600;
-  color: #333333;
-  margin: 0 0 16px 0;
-  line-height: 1.4;
+.rp-benefit-icon {
+  width: clamp(36px, 4.5vw, 70px);
+  height: clamp(36px, 4.5vw, 70px);
+  object-fit: contain;
+  filter: brightness(0) invert(1);
 }
 
-.restaurant-blog-card-description {
-  font-size: 16px;
-  color: #666666;
-  line-height: 1.6;
-  margin: 0 0 20px 0;
-  flex-grow: 1;
-}
-
-.restaurant-blog-card-date {
-  font-size: 14px;
-  color: #999999;
+.rp-benefit-card h3 {
+  font-size: clamp(0.85rem, 1.15vw, 1.15rem);
+  font-weight: 700;
+  color: #ffffff;
   margin: 0;
-  margin-top: auto;
+  line-height: 1.3;
 }
 
-/* Responsive - Tablet */
-@media (max-width: 1024px) {
-  .restaurant-blog-section {
-    padding: 60px 30px;
+.rp-benefit-card p {
+  font-size: clamp(0.75rem, 0.95vw, 0.95rem);
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0;
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .rp-benefits-grid {
+    flex-wrap: wrap;
+    gap: 3vw;
   }
 
-  .restaurant-blog-title {
-    font-size: 40px;
-    margin: 0 0 50px 0;
-  }
-
-  .restaurant-blog-cards {
-    gap: 30px;
-  }
-
-  .restaurant-blog-card-image {
-    height: 200px;
-  }
-
-  .restaurant-blog-card-content {
-    padding: 24px;
-  }
-
-  .restaurant-blog-card-title {
-    font-size: 20px;
-  }
-
-  .restaurant-blog-card-description {
-    font-size: 15px;
+  .rp-benefit-card {
+    flex: 1 1 calc(33.333% - 3vw);
+    padding: 4vw 3vw;
+    gap: 2.5vw;
   }
 }
 
-/* Responsive - Mobile */
-@media (max-width: 768px) {
-  .restaurant-blog-section {
-    padding: 50px 20px;
+@media (max-width: 600px) {
+  .rp-benefits {
+    padding: 8vw 5vw;
   }
 
-  .restaurant-blog-title {
-    font-size: 32px;
-    margin: 0 0 40px 0;
+  .rp-benefits-title {
+    margin: 0 0 6vw 0;
   }
 
-  .restaurant-blog-cards {
-    grid-template-columns: 1fr;
-    gap: 24px;
+  .rp-benefit-card {
+    flex: 1 1 calc(50% - 3vw);
+    padding: 5vw 4vw;
+    gap: 3vw;
   }
 
-  .restaurant-blog-card-image {
-    height: 220px;
-  }
-
-  .restaurant-blog-card-content {
-    padding: 20px;
-  }
-
-  .restaurant-blog-card-title {
-    font-size: 18px;
-    margin: 0 0 12px 0;
-  }
-
-  .restaurant-blog-card-description {
-    font-size: 14px;
-    margin: 0 0 16px 0;
-  }
-
-  .restaurant-blog-card-date {
-    font-size: 13px;
+  .rp-benefit-icon {
+    width: clamp(30px, 9vw, 50px);
+    height: clamp(30px, 9vw, 50px);
   }
 }

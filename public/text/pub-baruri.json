@@ -1,0 +1,19 @@
+{
+  "description": "Automatizarea unui bar sau pub în România înseamnă implementarea unui sistem POS fiscal, software de gestiune HoReCa și flux digital de comenzi, complet conforme ANAF, pentru a elimina pierderile, a accelera servirea și a crește profitul. RSistems oferă soluții complete de automatizare pentru baruri – de la cocktail bar și pub, până la cluburi cu volum mare de comenzi.",
+  "bullets": [
+    "Sistem POS bar rapid și rezistent",
+    "Integrare casă de marcat fiscală conform ANAF",
+    "Display comenzi bar (KDS / printer)",
+    "Management stocuri avansate (alcool, ingrediente)",
+    "Integrare plăți card și contactless",
+    "Sisteme de fidelizare clienți"
+  ],
+  "faq": [
+    { "q": "Ce este automatizarea unui bar?", "a": "Automatizarea unui bar este utilizarea unui sistem POS și software HoReCa pentru gestionarea digitală a comenzilor, stocurilor și vânzărilor." },
+    { "q": "Cât costă un sistem POS pentru bar?", "a": "Costul depinde de dimensiunea barului și funcționalități, existând soluții scalabile pentru orice buget." },
+    { "q": "Este obligatorie casa de marcat fiscală?", "a": "Da. În România, este obligatorie utilizarea unei case de marcat fiscale pentru emiterea bonurilor fiscale conform ANAF." },
+    { "q": "Cum ajută la reducerea pierderilor?", "a": "Prin monitorizarea exactă a stocurilor și a vânzărilor, sistemul identifică diferențele și previne pierderile de alcool sau ingrediente." },
+    { "q": "Este potrivit pentru cluburi?", "a": "Da. Sistemele sunt optimizate pentru volum mare de comenzi și trafic intens în orele de vârf." },
+    { "q": "Cum se gestionează orele de vârf?", "a": "Sistemul procesează comenzile rapid chiar și în nopțile aglomerate, cu display dedicat și flux optimizat pentru bar." }
+  ]
+}

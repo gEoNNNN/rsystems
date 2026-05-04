@@ -1,0 +1,19 @@
+{
+  "description": "Industria ospitalității din România necesită soluții integrate care acoperă restaurantul, barul, room service-ul și evenimentele – toate dintr-un singur sistem. RSistems oferă platforme complete pentru hoteluri, resort-uri și unități cu servicii complexe, complet conforme ANAF.",
+  "bullets": [
+    "Sistem POS integrat hotel + restaurant + bar",
+    "Management room service și comenzi camere",
+    "Integrare cu sisteme de management hotelier (PMS)",
+    "Rapoarte financiare consolidate per departament",
+    "Integrare casă de marcat fiscală conform ANAF",
+    "Sisteme de fidelizare pentru oaspeți"
+  ],
+  "faq": [
+    { "q": "Ce informații sunt necesare în evidență?", "a": "Sistemul gestionează comenzile, consumul pe cameră, vânzările per departament și toate datele fiscale." },
+    { "q": "Cum se integrează cu sistemul hotelier?", "a": "Sistemul se integrează cu principalele PMS-uri hoteliere pentru sincronizarea comenzilor cu rezervările." },
+    { "q": "Cum asigurați satisfacția completă?", "a": "Prin servicii rapide, comenzi corecte și o experiență digitalizată pentru oaspeții hotelului." },
+    { "q": "Cum controlez costurile și stocurile?", "a": "Sistemul monitorizează stocurile pe fiecare departament și generează rapoarte de cost și profitabilitate." },
+    { "q": "Cum gestionez mai multe puncte de vânzare?", "a": "Toate punctele (restaurant, bar, room service) sunt centralizate într-un singur dashboard." },
+    { "q": "Este potrivit pentru resort-uri mari?", "a": "Da. Sistemele sunt scalabile și optimizate pentru volume mari de comenzi și operațiuni complexe." }
+  ]
+}

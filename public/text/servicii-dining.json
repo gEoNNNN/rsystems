@@ -1,0 +1,19 @@
+{
+  "description": "Automatizarea unui serviciu de dining în România presupune un sistem POS complet integrat cu gestionarea meselor, rezervărilor și comenzilor în timp real. RSistems oferă soluții complete pentru restaurante cu serviciu la masă, optimizate pentru experiența clienților și eficiența personalului.",
+  "bullets": [
+    "Sistem POS cu management mese și rezervări",
+    "Integrare casă de marcat fiscală conform ANAF",
+    "Transmitere comenzi la bucătărie (KDS)",
+    "Rapoarte vânzări și performanță personal",
+    "Integrare plăți card și contactless",
+    "Sisteme de fidelizare și programe loialitate"
+  ],
+  "faq": [
+    { "q": "Ce informații sunt necesare în evidență?", "a": "Sistemul gestionează automat comenzile, stocurile, vânzările și datele fiscale necesare pentru raportare." },
+    { "q": "Cum se gestionează rezervările?", "a": "Sistemul include un modul de management al meselor și rezervărilor, cu vizualizare în timp real a disponibilității." },
+    { "q": "Cum asigurați satisfacția completă?", "a": "Prin reducerea timpilor de așteptare, eliminarea erorilor în comenzi și o experiență digitalizată pentru clienți." },
+    { "q": "Cum controlez costurile și stocurile?", "a": "Sistemul monitorizează stocurile în timp real și generează rapoarte detaliate de cost și profitabilitate." },
+    { "q": "Cum gestionez personalul?", "a": "Urmărești activitatea și performanța fiecărui angajat: vânzări, bonuri emise și prezență." },
+    { "q": "Cum afliez preferințele clienților?", "a": "Prin sistemul de fidelizare și istoricul comenzilor, identifici preferințele și obiceiurile clienților." }
+  ]
+}

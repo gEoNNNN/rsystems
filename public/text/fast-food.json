@@ -1,0 +1,19 @@
+{
+  "description": "Automatizarea unui fast food în România presupune implementarea unui sistem POS fiscal, software HoReCa și flux digital de comenzi, complet conforme ANAF, pentru a procesa rapid volume mari, a elimina erorile și a crește profitul. RSistems oferă soluții complete pentru fast food, take away și food court, optimizate pentru trafic intens și timpi de servire reduși.",
+  "bullets": [
+    "Sistem POS fast food ultra rapid",
+    "Kitchen Display System (KDS) pentru bucătărie",
+    "Self-order kiosk pentru automatizare completă",
+    "Integrare livrări: Glovo, Tazz, Bolt Food",
+    "Management stocuri și rețete",
+    "Panouri digitale meniu (Digital Signage)"
+  ],
+  "faq": [
+    { "q": "Ce este automatizarea unui fast food?", "a": "Automatizarea fast food-ului este utilizarea unui sistem POS și software HoReCa pentru gestionarea digitală a comenzilor, stocurilor și vânzărilor." },
+    { "q": "Cât costă un sistem POS fast food?", "a": "Costul variază în funcție de dimensiune și funcționalități, existând soluții scalabile pentru orice tip de business." },
+    { "q": "Ce este KDS (Kitchen Display System)?", "a": "KDS este un ecran digital care afișează comenzile direct în bucătărie, eliminând hârtia și erorile de comunicare." },
+    { "q": "Este obligatorie casa de marcat fiscală?", "a": "Da. În România, este obligatorie pentru emiterea bonurilor fiscale conform ANAF." },
+    { "q": "Se poate integra cu livrări online?", "a": "Da. Sistemele RSistems se integrează cu Glovo, Tazz și Bolt Food." },
+    { "q": "Cum se gestionează volumul mare de comenzi?", "a": "Sistemele sunt optimizate pentru sute de comenzi pe oră, fără blocaje operaționale." }
+  ]
+}

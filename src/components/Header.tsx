@@ -28,6 +28,7 @@ function Header() {
             </svg>
             {solutiiEchipamenteOpen && (
               <div className="dropdown-menu">
+                <Link to="/cafenea" onClick={() => setSolutiiEchipamenteOpen(false)}>Automatizare HoReCa</Link>
                 <a href="#solutii1">Soluție 1</a>
                 <a href="#solutii2">Soluție 2</a>
                 <a href="#solutii3">Soluție 3</a>
@@ -37,7 +38,6 @@ function Header() {
               </div>
             )}
           </div>
-          <Link to="/cafenea" className="nav-item">Tipuri de Restaurante</Link>
           <a href="#preturi" className="nav-item">Prețuri</a>
           <a href="#blog" className="nav-item">Blog</a>
           <a href="#despre" className="nav-item">Despre noi</a>
@@ -79,6 +79,7 @@ function Header() {
           </div>
           {mobileSolutiiEchipamente && (
             <div className="mobile-submenu">
+              <Link to="/cafenea" onClick={() => setMobileOpen(false)}>Automatizare HoReCa</Link>
               <a href="#solutii1" onClick={() => setMobileOpen(false)}>Soluție 1</a>
               <a href="#solutii2" onClick={() => setMobileOpen(false)}>Soluție 2</a>
               <a href="#solutii3" onClick={() => setMobileOpen(false)}>Soluție 3</a>
@@ -87,7 +88,6 @@ function Header() {
               <a href="#echipamente3" onClick={() => setMobileOpen(false)}>Echipament 3</a>
             </div>
           )}
-          <Link to="/cafenea" className="mobile-nav-link" onClick={() => setMobileOpen(false)}>Tipuri de Restaurante</Link>
           <a href="#preturi" className="mobile-nav-link" onClick={() => setMobileOpen(false)}>Prețuri</a>
           <a href="#blog" className="mobile-nav-link" onClick={() => setMobileOpen(false)}>Blog</a>
           <a href="#despre" className="mobile-nav-link" onClick={() => setMobileOpen(false)}>Despre noi</a>

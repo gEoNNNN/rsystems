@@ -1,0 +1,19 @@
+{
+  "description": "Automatizarea unei pizzerii în România înseamnă un sistem POS fiscal integrat cu gestionarea comenzilor telefonice, online și la fața locului, complet conform ANAF. RSistems oferă soluții complete pentru pizzerii – de la localuri mici la rețele cu livrare proprie – optimizate pentru viteză și control al costurilor.",
+  "bullets": [
+    "Sistem POS pizzerie cu gestionare comenzi multiple",
+    "Integrare livrări: Glovo, Tazz, Bolt Food",
+    "Kitchen Display System (KDS) pentru bucătărie",
+    "Management stocuri și rețete pe porții",
+    "Integrare casă de marcat fiscală conform ANAF",
+    "Rapoarte vânzări pe produse și intervale orare"
+  ],
+  "faq": [
+    { "q": "Ce informații sunt necesare în evidență?", "a": "Sistemul gestionează rețetele, consumul de ingrediente, comenzile și încasările în timp real." },
+    { "q": "Cum se gestionează comenzile telefonice?", "a": "Comenzile telefonice sunt introduse direct în POS și transmise automat la bucătărie." },
+    { "q": "Cum asigurați satisfacția completă?", "a": "Prin timpi de pregătire reduși, comenzi corecte și integrare completă cu platformele de livrare." },
+    { "q": "Cum controlez costurile și stocurile?", "a": "Sistemul calculează consumul pe rețetă și alertează când stocurile scad sub pragul minim." },
+    { "q": "Cum gestionez livrările?", "a": "Comenzile de pe Glovo, Tazz și Bolt Food ajung automat în sistem, fără introducere manuală." },
+    { "q": "Este potrivit pentru pizzerii mici?", "a": "Da. Există soluții scalabile adaptate pentru orice dimensiune de afacere." }
+  ]
+}

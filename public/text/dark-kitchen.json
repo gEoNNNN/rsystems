@@ -1,0 +1,19 @@
+{
+  "description": "Automatizarea unui dark kitchen (cloud kitchen) în România înseamnă integrarea tuturor comenzilor online într-un singur sistem, cu transmitere automată la bucătărie și emitere bon fiscal conform ANAF. RSistems oferă soluții complete pentru dark kitchen – modelul de business optimizat exclusiv pentru livrare.",
+  "bullets": [
+    "Integrare comenzi: Glovo, Tazz, Bolt Food",
+    "Kitchen Display System (KDS) pentru bucătărie",
+    "Integrare casă de marcat fiscală conform ANAF",
+    "Management multi-brand dintr-un singur sistem",
+    "Rapoarte vânzări per platformă și produs",
+    "Gestionare stocuri și rețete pe porții"
+  ],
+  "faq": [
+    { "q": "Ce este un dark kitchen?", "a": "Un dark kitchen (cloud kitchen) este o bucătărie dedicată exclusiv livrărilor, fără spațiu de servire pentru clienți." },
+    { "q": "Se pot integra toate platformele de livrare?", "a": "Da. Sistemele RSistems se integrează cu Glovo, Tazz și Bolt Food într-un singur flux." },
+    { "q": "Cum asigurați conformitatea fiscală?", "a": "Fiecare comandă este fiscalizată automat prin integrarea cu casa de marcat fiscală conform ANAF." },
+    { "q": "Pot gestiona mai multe branduri?", "a": "Da. Sistemul suportă operarea mai multor concepte culinare din aceeași bucătărie." },
+    { "q": "Cum controlez costurile și stocurile?", "a": "Sistemul calculează consumul pe rețetă la fiecare comandă și monitorizează stocurile în timp real." },
+    { "q": "Este potrivit pentru dark kitchen-uri mici?", "a": "Da. Soluțiile sunt scalabile, de la un singur brand la operațiuni complexe cu volum mare." }
+  ]
+}

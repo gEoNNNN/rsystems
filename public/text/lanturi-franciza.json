@@ -1,0 +1,19 @@
+{
+  "description": "Gestionarea unui lanț de franciză HoReCa necesită un sistem centralizat care oferă vizibilitate completă asupra tuturor locațiilor. RSistems oferă soluții multi-locație cu raportare consolidată, control stocuri și standarde uniforme de operare – ideal pentru francize în expansiune.",
+  "bullets": [
+    "Management multi-locație dintr-un singur dashboard",
+    "Rapoarte consolidate pe toate unitățile",
+    "Standarde uniforme de meniu și prețuri",
+    "Control stocuri centralizat și alerte automate",
+    "Integrare casă de marcat fiscală conform ANAF",
+    "Suport tehnic dedicat pentru toate locațiile"
+  ],
+  "faq": [
+    { "q": "Cum funcționează managementul multi-locație?", "a": "Dintr-un singur dashboard central poți vedea vânzările, stocurile și performanța fiecărei unități în timp real." },
+    { "q": "Se pot seta prețuri diferite per locație?", "a": "Da. Sistemul permite configurarea de meniuri și prețuri personalizate pentru fiecare locație sau uniforme pentru tot lanțul." },
+    { "q": "Cum asigurați consistența serviciului?", "a": "Prin standardizarea rețetelor, procedurilor și raportării la nivel de lanț." },
+    { "q": "Cum controlez costurile și stocurile?", "a": "Sistemul monitorizează stocurile per locație și centralizat, cu alerte automate la praguri minime." },
+    { "q": "Cum gestionez angajații din multiple locații?", "a": "Urmărești performanța fiecărui angajat per locație, cu rapoarte detaliate de vânzări și prezență." },
+    { "q": "Ce suport tehnic oferiți pentru franciză?", "a": "Oferim suport tehnic dedicat și intervenții rapide pentru toate unitățile franciizei, cu acoperire națională." }
+  ]
+}

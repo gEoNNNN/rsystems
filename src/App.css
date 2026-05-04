@@ -199,6 +199,10 @@
   .hero-buttons {
     justify-content: center;
   }
+
+  .hero-trust {
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 768px) {
@@ -265,14 +269,13 @@
 
 /* Partners Section */
 .partners-section {
-  max-width: 1600px;
-  margin: 0 auto;
+  width: 100%;
   padding: 50px 20px;
-  text-align: center;
+  box-sizing: border-box;
 }
 
 .partners-title {
-  font-size: 36px;
+  font-size: clamp(20px, 2.5vw, 36px);
   font-weight: 700;
   color: #1a1a1a;
   margin: 0 0 60px 0;
@@ -294,18 +297,18 @@
 }
 
 .carousel-item {
-  flex: 0 0 16.6667%; /* Each item takes 16.6667% of container (6 visible) */
+  flex: 0 0 16.6667%;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 40px;
+  padding: 20px;
   box-sizing: border-box;
   min-width: 0;
 }
 
 .carousel-item img {
   max-width: 100%;
-  max-height: 150px;
+  max-height: 80px;
   width: auto;
   height: auto;
   object-fit: contain;
@@ -319,40 +322,39 @@
 /* Responsive Design for Partners */
 @media (max-width: 1024px) {
   .partners-section {
-    padding: 60px 30px;
+    padding: 40px 20px;
   }
-  
+
   .partners-title {
-    font-size: 30px;
-    margin: 0 0 40px 0;
+    font-size: clamp(18px, 2.8vw, 30px);
   }
   
   .carousel-item {
     flex: 0 0 33.333%;
+    padding: 10px 8px;
   }
   
   .carousel-item img {
-    max-height: 100px;
+    max-height: 70px;
   }
 }
 
 @media (max-width: 768px) {
   .partners-section {
-    padding: 40px 20px;
+    padding: 30px 16px;
   }
   
   .partners-title {
-    font-size: 24px;
-    margin-left:-200px;
+    font-size: 18px;
   }
   
   .carousel-item {
     flex: 0 0 25%;
-    padding: 20px 10px;
+    padding: 10px 6px;
   }
   
   .carousel-item img {
-    max-height: 60px;
+    max-height: 50px;
   }
 }
 
@@ -367,7 +369,7 @@
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 15px;
+  gap: 30px;
 }
 
 .feature-card {
@@ -420,6 +422,29 @@
   color: #666;
   line-height: 1.7;
   margin: 0;
+}
+
+/* 4-column features section: horizontal layout (icon inline with text), smaller icon */
+.features-container .feature-card {
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 28px 24px;
+  gap: 16px;
+}
+
+.features-container .feature-icon {
+  width: 100px;
+  height: 100px;
+  margin-top: -10px;
+}
+
+.features-container .feature-icon img {
+  width: 60px;
+  height: 60px;
+}
+
+.features-container .feature-content {
+  gap: 10px;
 }
 
 /* Responsive Design for Features */
@@ -706,7 +731,7 @@
 }
 
 .stat-number {
-  font-size: 48px;
+  font-size: clamp(24px, 3.5vw, 48px);
   font-weight: 700;
   color: #1a1a1a;
   margin: 0 0 4px 0;
@@ -714,7 +739,7 @@
 }
 
 .stat-label {
-  font-size: 20px;
+  font-size: clamp(13px, 1.5vw, 20px);
   color: #666;
   margin: 0;
   line-height: 1.4;
@@ -1120,6 +1145,10 @@
 /* Base column */
 .cdash-col {
   padding: 50px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .cdash-dark {
@@ -1185,6 +1214,12 @@
 }
 
 /* Lists */
+.cdash-content {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 .cdash-list {
   list-style: none;
   padding: 0;
@@ -1197,6 +1232,7 @@
 .cdash-item {
   display: flex;
   align-items: center;
+  justify-content: flex-start;
   gap: 14px;
   font-size: 16px;
   line-height: 1.5;
@@ -1299,6 +1335,8 @@
     padding: 36px 28px;
     border: none;
     border-bottom: 1px solid #e0e0e0;
+    align-items: center;
+    text-align: center;
   }
 
   .cdash-light {

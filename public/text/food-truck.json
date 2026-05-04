@@ -1,0 +1,19 @@
+{
+  "description": "Automatizarea unui food truck în România înseamnă un sistem POS compact, rapid și conform ANAF, care funcționează și offline. RSistems oferă soluții mobile complete pentru food truck-uri și street food – de la preluarea comenzilor la emiterea bonului fiscal și gestionarea stocurilor zilnice.",
+  "bullets": [
+    "Sistem POS mobil compact și rezistent",
+    "Funcționare offline cu sincronizare automată",
+    "Integrare casă de marcat fiscală conform ANAF",
+    "Gestionare stocuri zilnice și rețete",
+    "Integrare plăți card și contactless",
+    "Rapoarte vânzări pe locație și interval"
+  ],
+  "faq": [
+    { "q": "Funcționează sistemul fără internet?", "a": "Da. Sistemul funcționează offline și sincronizează automat datele când conexiunea este restabilită." },
+    { "q": "Ce echipamente sunt necesare?", "a": "O tabletă sau terminal compact, o casă de marcat fiscală și opțional un cititor de card portabil." },
+    { "q": "Cum asigurați conformitatea fiscală?", "a": "Sistemul este integrat cu case de marcat fiscale certificate ANAF, cu emitere automată de bon." },
+    { "q": "Cum controlez stocurile zilnice?", "a": "Sistemul scade automat stocurile la fiecare comandă și alertează când se apropie de epuizare." },
+    { "q": "Este potrivit pentru mai multe food truck-uri?", "a": "Da. Poți gestiona mai multe unități dintr-un singur cont, cu rapoarte per locație." },
+    { "q": "Cât costă soluția pentru food truck?", "a": "Există pachete scalabile adaptate pentru food truck-uri, cu costuri reduse față de soluțiile pentru restaurant." }
+  ]
+}

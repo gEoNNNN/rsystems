@@ -4,15 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './index.css'
 import App from './App.tsx'
 import Demo from './components/Demo.tsx'
-import FastFood from './components/FastFood.tsx'
-import Pizzerie from './components/Pizzerie.tsx'
-import Cafenea from './components/Cafenea.tsx'
-import Bar from './components/Bar.tsx'
-import Finedining from './components/Finedining.tsx'
-import Casual from './components/Casual.tsx'
-import Bistrou from './components/Bistrou.tsx'
-import FoodTruck from './components/FoodTruck.tsx'
-import Catering from './components/Catering.tsx'
+import RestaurantPage from './components/RestaurantPage.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -20,15 +12,15 @@ createRoot(document.getElementById('root')!).render(
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/demo" element={<Demo />} />
-        <Route path="/fastfood" element={<FastFood />} />
-        <Route path="/pizzerie" element={<Pizzerie />} />
-        <Route path="/cafenea" element={<Cafenea />} />
-        <Route path="/bar" element={<Bar />} />
-        <Route path="/finedining" element={<Finedining />} />
-        <Route path="/casual" element={<Casual />} />
-        <Route path="/bistrou" element={<Bistrou />} />
-        <Route path="/foodtruck" element={<FoodTruck />} />
-        <Route path="/catering" element={<Catering />} />
+        <Route path="/fastfood"   element={<RestaurantPage />} />
+        <Route path="/pizzerie"   element={<RestaurantPage />} />
+        <Route path="/cafenea"    element={<RestaurantPage />} />
+        <Route path="/bar"        element={<RestaurantPage />} />
+        <Route path="/finedining" element={<RestaurantPage />} />
+        <Route path="/casual"     element={<RestaurantPage />} />
+        <Route path="/bistrou"    element={<RestaurantPage />} />
+        <Route path="/foodtruck"  element={<RestaurantPage />} />
+        <Route path="/catering"   element={<RestaurantPage />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>,
