@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import './App.css'
 import Header from './components/Header'
 import Footer from './components/Footer'
@@ -7,6 +7,11 @@ import { XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Area, AreaCh
 function App() {
   const [currentSlide, setCurrentSlide] = useState(0)
   const [openFaq, setOpenFaq] = useState<number | null>(null)
+  const videoRef = useRef<HTMLVideoElement>(null)
+
+  useEffect(() => {
+    if (videoRef.current) videoRef.current.playbackRate = 0.4
+  }, [])
   const [showCookieConsent, setShowCookieConsent] = useState(() => {
     const saved = localStorage.getItem('cookieConsent')
     return saved === null
@@ -108,6 +113,7 @@ function App() {
       {/* Hero Section */}
       <section className="hero-section">
         <video
+          ref={videoRef}
           className="hero-video-bg"
           src="/img/main.mp4"
           autoPlay
