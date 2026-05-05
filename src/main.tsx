@@ -12,15 +12,12 @@ createRoot(document.getElementById('root')!).render(
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/demo" element={<Demo />} />
-        <Route path="/fastfood"   element={<RestaurantPage />} />
-        <Route path="/pizzerie"   element={<RestaurantPage />} />
-        <Route path="/cafenea"    element={<RestaurantPage />} />
-        <Route path="/bar"        element={<RestaurantPage />} />
-        <Route path="/finedining" element={<RestaurantPage />} />
-        <Route path="/casual"     element={<RestaurantPage />} />
-        <Route path="/bistrou"    element={<RestaurantPage />} />
-        <Route path="/foodtruck"  element={<RestaurantPage />} />
-        <Route path="/catering"   element={<RestaurantPage />} />
+        <Route path="/cafenea"         element={<RestaurantPage />} />
+        <Route path="/bar"             element={<RestaurantPage />} />
+        <Route path="/fast-food"       element={<RestaurantPage />} />
+        <Route path="/livrare"         element={<RestaurantPage />} />
+        <Route path="/restaurant"      element={<RestaurantPage />} />
+        <Route path="/sala-evenimente" element={<RestaurantPage />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>,

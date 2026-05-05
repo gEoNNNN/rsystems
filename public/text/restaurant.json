@@ -1,0 +1,38 @@
+{
+  "heroTitle": "Automatizare Restaurante în România",
+  "heroDescription": "Control total asupra operațiunilor, vânzărilor și stocurilor – sisteme POS HoReCa complete, conforme ANAF.",
+  "description": "Automatizarea unui restaurant presupune integrarea unui sistem POS, software de gestiune, comenzi digitale și monitorizare în timp real pentru a crește viteza, controlul și profitabilitatea. RSistems oferă soluții complete pentru restaurante de orice dimensiune.",
+  "bullets": [
+    "Preluare comenzi prin POS, tabletă sau kiosk self-order",
+    "Transmitere instant comenzi în bucătărie (KDS)",
+    "Emitere bon fiscal – casă de marcat conformă ANAF",
+    "Gestiune stocuri și inventar automatizat",
+    "Monitorizare vânzări și performanță în timp real",
+    "Integrare livrări: Glovo, Bolt Food, Tazz",
+    "Rapoarte detaliate pe produse, angajați și intervale"
+  ],
+  "solutions": [
+    "Sistem POS restaurant (touchscreen)",
+    "Software gestiune HoReCa",
+    "Kitchen Display System (KDS)",
+    "Self-order kiosk și tabletă",
+    "Integrare livrări online",
+    "Monitorizare video și securitate",
+    "Panouri digitale meniu (Digital Signage)",
+    "Management multi-locație"
+  ],
+  "whyBody": "RSistems are expertiză reală în HoReCa, cu implementări pentru restaurante, fast-food și lanțuri multi-location. Configurăm sistemul în funcție de fluxul tău operațional – nu oferim soluții generice. Instalare și training fără întreruperea activității, suport tehnic dedicat și tehnologie premium.",  "whyReasons": [
+    { "title": "Expertiză în HoReCa România", "desc": "Implementări pentru restaurante, fast-food și lanțuri multi-locație." },
+    { "title": "Soluții personalizate", "desc": "Configurăm sistemul în funcție de fluxul tău operațional – nu soluții generice." },
+    { "title": "Implementare fără downtime", "desc": "Instalare și training complet fără întreruperea activității restaurantului." },
+    { "title": "Suport tehnic dedicat", "desc": "Intervenții rapide și mentenanță continuă, disponibil non-stop." },
+    { "title": "Tehnologie premium", "desc": "Hardware + software de top, optimizate pentru restaurante de toate tipurile." }
+  ],  "faq": [
+    { "q": "Ce este automatizarea unui restaurant?", "a": "Automatizarea restaurantului este utilizarea unui sistem POS și software HoReCa pentru gestionarea comenzilor, stocurilor și vânzărilor în mod digital." },
+    { "q": "Cât costă automatizarea unui restaurant?", "a": "Costul variază în funcție de dimensiune și funcționalități, cu soluții scalabile pentru orice buget." },
+    { "q": "Ce include un sistem POS pentru restaurant?", "a": "Un sistem POS include preluare comenzi, emitere bon fiscal, rapoarte vânzări și integrare cu bucătăria și gestiunea." },
+    { "q": "Este potrivit pentru restaurante mici?", "a": "Da. Automatizarea este esențială inclusiv pentru restaurante mici, deoarece reduce costurile și crește eficiența." },
+    { "q": "Se poate integra cu aplicații de livrare?", "a": "Da. Sistemele RSistems se integrează cu Glovo, Bolt Food și Tazz." },
+    { "q": "Cât durează implementarea?", "a": "Implementarea durează de regulă 2–4 zile, fără întreruperea activității restaurantului." }
+  ]
+}

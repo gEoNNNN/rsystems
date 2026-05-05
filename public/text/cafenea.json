@@ -1,0 +1,40 @@
+{
+  "heroTitle": "Automatizare Cafenea în România",
+  "heroDescription": "Servire mai rapidă, control complet și profit crescut cu sistemul POS RSistems – conform ANAF.",
+  "description": "Automatizarea cafenelei înseamnă digitalizarea tuturor operațiunilor zilnice: preluare comenzi prin POS touchscreen, emitere bon fiscal, transmitere comenzi la barista, gestiune stocuri și monitorizare vânzări în timp real. Rezultat: servire rapidă, costuri reduse și control complet.",
+  "bullets": [
+    "Preluare comenzi rapidă prin POS touchscreen sau tabletă",
+    "Emitere bon fiscal – casă de marcat conformă ANAF",
+    "Transmitere comenzi instant la barista (display / imprimantă)",
+    "Gestiune stocuri: cafea, lapte, siropuri, produse auxiliare",
+    "Integrare livrări: Glovo, Tazz, Bolt Food",
+    "Self-order kiosk și panouri digitale meniu",
+    "Sisteme de fidelizare clienți"
+  ],
+  "solutions": [
+    "Sistem POS cafenea rapid și intuitiv",
+    "Software gestiune HoReCa",
+    "Integrare casă de marcat fiscală",
+    "Display comenzi pentru bar (KDS / printer)",
+    "Self-order kiosk și tabletă",
+    "Integrare Glovo, Tazz, Bolt Food",
+    "Sisteme de fidelizare clienți",
+    "Panouri digitale meniu (Digital Signage)"
+  ],
+  "whyBody": "RSistems implementează soluții reale pentru cafenele și lanțuri locale din România. Configurăm sistemul în funcție de fluxul tău – coffee-to-go, specialty sau lanț. Instalare și training complet fără downtime, suport tehnic dedicat și sisteme optimizate pentru volum mare de comenzi.",
+  "whyReasons": [
+    { "title": "Expertiză în HoReCa România", "desc": "Implementări reale pentru cafenele și lanțuri locale din toată țara." },
+    { "title": "Soluții personalizate", "desc": "Configurăm sistemul în funcție de fluxul tău: coffee-to-go, specialty sau lanț." },
+    { "title": "Implementare rapidă, fără downtime", "desc": "Instalare și training complet pentru echipă, fără întreruperea activității." },
+    { "title": "Suport tehnic dedicat", "desc": "Intervenții rapide și mentenanță continuă, oriunde în România." },
+    { "title": "Tehnologie stabilă", "desc": "Sisteme optimizate pentru volum mare de comenzi, inclusiv în orele de vârf." }
+  ],
+  "faq": [
+    { "q": "Ce este automatizarea unei cafenele?", "a": "Automatizarea unei cafenele este utilizarea unui sistem POS și software HoReCa pentru gestionarea digitală a comenzilor, stocurilor și vânzărilor." },
+    { "q": "Cât costă un sistem POS pentru cafenea în România?", "a": "Costul variază în funcție de dimensiune și funcționalități, dar există soluții scalabile pentru orice buget, de la pachete de bază la sisteme complete." },
+    { "q": "Este obligatorie casa de marcat fiscală?", "a": "Da. În România, orice cafenea trebuie să utilizeze o casă de marcat fiscală pentru emiterea bonurilor fiscale conform ANAF." },
+    { "q": "Se poate integra cu aplicații de livrare?", "a": "Da. Sistemele RSistems se integrează cu Glovo, Tazz și Bolt Food." },
+    { "q": "Este potrivit pentru cafenele mici?", "a": "Da. Automatizarea ajută cafenelele mici să reducă costurile și să crească viteza de servire." },
+    { "q": "Există suport tehnic după implementare?", "a": "Da. RSistems oferă suport tehnic dedicat cu intervenții rapide și mentenanță continuă." }
+  ]
+}

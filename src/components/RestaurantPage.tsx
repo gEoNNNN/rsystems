@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { useLocation } from 'react-router-dom'
 import './RestaurantPage.css'
 import Header from './Header'
 import Footer from './Footer'
@@ -13,8 +14,13 @@ const faqIcons = [
 ]
 
 type ContentData = {
+  heroTitle?: string
+  heroDescription?: string
   description: string
   bullets: string[]
+  solutions?: string[]
+  whyBody?: string
+  whyReasons?: { title: string; desc: string }[]
   faq: { q: string; a: string }[]
 }
 
@@ -26,26 +32,49 @@ const benefits = [
   { icon: '/img/stea.svg',    title: 'Experiență mai bună',   desc: 'Plăți rapide și servicii eficiente.' },
 ]
 
+const whyFallback = [
+  { title: 'Expertiză în HoReCa România', desc: 'Implementări reale în afaceri HoReCa din toată țara.' },
+  { title: 'Soluții personalizate', desc: 'Configurăm sistemul în funcție de fluxul tău operațional.' },
+  { title: 'Implementare rapidă', desc: 'Instalare și training complet fără downtime.' },
+  { title: 'Suport tehnic dedicat', desc: 'Intervenții rapide și mentenanță continuă.' },
+  { title: 'Tehnologie stabilă', desc: 'Sisteme optimizate pentru volum mare de comenzi.' },
+]
+
 const menuItems = [
-  { id: 'cafenele',                label: 'Cafenele',                icon: '/img/Cafenele.svg' },
-  { id: 'servicii-dining',         label: 'Servicii Dining',         icon: '/img/Servicii Dining.svg' },
-  { id: 'pub-baruri',              label: 'Pub-uri și Baruri',       icon: '/img/Pub-uri și Baruri.svg' },
-  { id: 'pizzerii',                label: 'Pizzerii',                icon: '/img/Pizzerii.svg' },
-  { id: 'lanturi-franciza',        label: 'Lanțuri de franciză',     icon: '/img/Lanțuri de franciză.svg' },
-  { id: 'fast-food',               label: 'Fast-food',               icon: '/img/Fast-food.svg' },
-  { id: 'industria-ospitalitatii', label: 'Industria ospitalității', icon: '/img/Industria ospitalității.svg' },
-  { id: 'food-truck',              label: 'Food truck',              icon: '/img/Food truck.svg' },
-  { id: 'dark-kitchen',            label: 'Dark Kitchen',            icon: '/img/Dark Kitchen.svg' },
+  { id: 'cafenea',         label: 'Cafenea',             icon: '/img/Cafenele.svg',                    bg: '/img/Cafenele bg.svg',                    bg2: '/img/Cafenele bg2.svg' },
+  { id: 'bar',             label: 'Bar',                 icon: '/img/Pub-uri și Baruri.svg',            bg: '/img/Pub-uri și Baruri bg.svg',            bg2: '/img/Pub-uri și Baruri bg2.svg' },
+  { id: 'fast-food',       label: 'Fast Food',           icon: '/img/Fast-food.svg',                    bg: '/img/Fast-food bg.svg',                    bg2: '/img/Fast-food bg2.svg' },
+  { id: 'livrare',         label: 'Livrare',             icon: '/img/Food truck.svg',                   bg: '/img/Food truck bg.svg',                   bg2: '/img/Food truck bg2.svg' },
+  { id: 'restaurant',      label: 'Restaurant',          icon: '/img/Servicii Dining.svg',              bg: '/img/Servicii Dining bg.svg',              bg2: '/img/Servicii Dining bg2.svg' },
+  { id: 'sala-evenimente', label: 'Sală de Evenimente',  icon: '/img/Industria ospitalității.svg',       bg: '/img/Industria ospitalității bg.svg',       bg2: '/img/Industria ospitalității bg2.svg' },
 ]
 
 function RestaurantPage() {
-  const [activeItem, setActiveItem] = useState('cafenele')
+  const location = useLocation()
+  const pathId = location.pathname.slice(1)
+  const [activeItem, setActiveItem] = useState(() =>
+    menuItems.find(m => m.id === pathId)?.id ?? 'cafenea'
+  )
   const [openFaq, setOpenFaq] = useState<number | null>(null)
   const [content, setContent] = useState<ContentData | null>(null)
+  const [formData, setFormData] = useState({ phone: '', firstName: '', lastName: '', email: '' })
+  const [formStatus, setFormStatus] = useState<'idle' | 'sending' | 'sent' | 'error'>('idle')
 
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('is-visible') }),
+      { threshold: 0.05 }
+    )
+    document.querySelectorAll('[data-animate], [data-stagger]').forEach(el => {
+      el.classList.remove('is-visible')
+      observer.observe(el)
+    })
+    return () => observer.disconnect()
+  }, [content])
 
   useEffect(() => {
     setContent(null)
@@ -55,6 +84,34 @@ function RestaurantPage() {
       .then((data: ContentData) => setContent(data))
       .catch(() => setContent(null))
   }, [activeItem])
+
+  const handleSubmit = async () => {
+    if (!formData.phone && !formData.email) return
+    setFormStatus('sending')
+    const text =
+      `📋 *Lead nou RSistems*\n` +
+      `📞 Telefon: ${formData.phone || '—'}\n` +
+      `👤 Nume: ${formData.lastName || '—'} ${formData.firstName || '—'}\n` +
+      `📧 Email: ${formData.email || '—'}`
+    try {
+      const res = await fetch(
+        `https://api.telegram.org/bot8689527569:AAHHCHXuJW1D9bio0dsnjnSRyIUSDH7sMQ4/sendMessage`,
+        {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ chat_id: 5599538468, text, parse_mode: 'Markdown' }),
+        }
+      )
+      if (res.ok) {
+        setFormStatus('sent')
+        setFormData({ phone: '', firstName: '', lastName: '', email: '' })
+      } else {
+        setFormStatus('error')
+      }
+    } catch {
+      setFormStatus('error')
+    }
+  }
 
   return (
     <div className="rp-page">
@@ -97,15 +154,15 @@ function RestaurantPage() {
             const active = menuItems.find(i => i.id === activeItem)!
             return (
               <>
-                <h2 className="rp-content-title">{active.label}</h2>
+                <h2 className="rp-content-title" data-animate>{content?.heroTitle ?? active.label}</h2>
                 <img
-                  src={`/img/${active.label} bg.svg`}
+                  src={active.bg}
                   alt={active.label}
                   className="rp-content-img"
                 />
-                <div className="rp-info-row">
+                <div className="rp-info-row" data-stagger>
                   <div className="rp-info-col">
-                    <h3>Despre {active.label}</h3>
+                    <h3>Ce este automatizarea?</h3>
                     <p>{content?.description ?? 'Conținut în lucru...'}</p>
                   </div>
                   <div className="rp-info-col">
@@ -128,7 +185,7 @@ function RestaurantPage() {
       </section>
 
       {/* Benefits */}
-      <section className="rp-benefits">
+      <section className="rp-benefits" data-animate>
         <h2 className="rp-benefits-title">
           Beneficii pentru {menuItems.find(i => i.id === activeItem)?.label.toLowerCase()}
         </h2>
@@ -145,20 +202,32 @@ function RestaurantPage() {
 
       {/* De ce alegi RSistems */}
       <section className="rp-why">
-        <div className="rp-why-text">
+        <div className="rp-why-left" data-animate>
           <h2 className="rp-why-title">De ce alegi compania RSistems</h2>
           <p className="rp-why-subtitle">Soluții complete care aduc eficiență, creștere și clienți mulțumiți.</p>
-          <p className="rp-why-body">Conținut detaliat în lucru — va fi adăugat în curând.</p>
+          <div className="rp-why-cards" data-stagger>
+            {(content?.whyReasons ?? whyFallback).map((r, i) => (
+              <div key={i} className="rp-why-card">
+                <span className="rp-why-card-num">{String(i + 1).padStart(2, '0')}</span>
+                <div className="rp-why-card-body">
+                  <h3 className="rp-why-card-title">{r.title}</h3>
+                  <p className="rp-why-card-desc">{r.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
-        <img
-          src={`/img/${menuItems.find(i => i.id === activeItem)?.label} bg2.svg`}
-          alt="De ce RSistems"
-          className="rp-why-img"
-        />
+        <div className="rp-why-right">
+          <img
+            src={menuItems.find(i => i.id === activeItem)?.bg2 ?? ''}
+            alt="De ce RSistems"
+            className="rp-why-img"
+          />
+        </div>
       </section>
 
       {/* FAQ + Contact form */}
-      <section className="rp-faq-section">
+      <section className="rp-faq-section" data-animate>
         <div className="rp-faq-list">
           {(content?.faq ?? []).map((item, idx) => (
             <div
@@ -183,23 +252,51 @@ function RestaurantPage() {
         <div className="rp-contact-form">
           <div className="rp-form-group">
             <label>Telefon de serviciu</label>
-            <input type="tel" placeholder="" />
+            <input
+              type="tel"
+              placeholder=""
+              value={formData.phone}
+              onChange={e => setFormData(p => ({ ...p, phone: e.target.value }))}
+            />
           </div>
           <div className="rp-form-row">
             <div className="rp-form-group">
               <label>Nume</label>
-              <input type="text" placeholder="" />
+              <input
+                type="text"
+                placeholder=""
+                value={formData.lastName}
+                onChange={e => setFormData(p => ({ ...p, lastName: e.target.value }))}
+              />
             </div>
             <div className="rp-form-group">
               <label>Prenume</label>
-              <input type="text" placeholder="" />
+              <input
+                type="text"
+                placeholder=""
+                value={formData.firstName}
+                onChange={e => setFormData(p => ({ ...p, firstName: e.target.value }))}
+              />
             </div>
           </div>
           <div className="rp-form-group">
             <label>Adresă de e-mail de serviciu</label>
-            <input type="email" placeholder="" />
+            <input
+              type="email"
+              placeholder=""
+              value={formData.email}
+              onChange={e => setFormData(p => ({ ...p, email: e.target.value }))}
+            />
           </div>
-          <button className="rp-form-submit">Trimite</button>
+          <button
+            className="rp-form-submit"
+            onClick={handleSubmit}
+            disabled={formStatus === 'sending'}
+          >
+            {formStatus === 'sending' ? 'Se trimite...' : formStatus === 'sent' ? 'Trimis ✓' : 'Trimite'}
+          </button>
+          {formStatus === 'sent' && <p className="rp-form-success">Mesajul a fost trimis cu succes!</p>}
+          {formStatus === 'error' && <p className="rp-form-error">Eroare la trimitere. Încearcă din nou.</p>}
         </div>
       </section>
 

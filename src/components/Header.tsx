@@ -31,9 +31,6 @@ function Header() {
             {solutiiOpen && (
               <div className="dropdown-menu">
                 <Link to="/cafenea" onClick={() => setSolutiiOpen(false)}>Automatizare HoReCa</Link>
-                <a href="#solutii1">Soluție 1</a>
-                <a href="#solutii2">Soluție 2</a>
-                <a href="#solutii3">Soluție 3</a>
               </div>
             )}
           </div>
@@ -96,9 +93,6 @@ function Header() {
           {mobileSolutii && (
             <div className="mobile-submenu">
               <Link to="/cafenea" onClick={() => setMobileOpen(false)}>Automatizare HoReCa</Link>
-              <a href="#solutii1" onClick={() => setMobileOpen(false)}>Soluție 1</a>
-              <a href="#solutii2" onClick={() => setMobileOpen(false)}>Soluție 2</a>
-              <a href="#solutii3" onClick={() => setMobileOpen(false)}>Soluție 3</a>
             </div>
           )}
           <div className="mobile-nav-item" onClick={() => setMobileProduse(!mobileProduse)}>

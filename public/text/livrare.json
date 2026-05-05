@@ -1,0 +1,40 @@
+{
+  "heroTitle": "Automatizare Livrare (Delivery) în România",
+  "heroDescription": "Gestionează toate comenzile dintr-un singur sistem și livrează mai rapid – integrat cu Glovo, Tazz și Bolt Food.",
+  "description": "Automatizarea livrării înseamnă integrarea POS-ului fiscal, comenzilor online și aplicațiilor de livrare într-un sistem unic, complet conform ANAF. Scopul: eliminarea erorilor, reducerea timpilor și creșterea profitului pentru restaurante, fast food și cloud kitchen.",
+  "bullets": [
+    "Preluare comenzi din multiple surse (POS, website, aplicații)",
+    "Integrare Glovo, Tazz, Bolt Food într-un singur ecran",
+    "Transmitere automată comenzi în bucătărie (KDS)",
+    "Emitere bon fiscal pentru fiecare comandă – ANAF",
+    "Gestionare status comenzi și livratori",
+    "Monitorizare în timp real a comenzilor",
+    "Panou central comenzi unificat"
+  ],
+  "solutions": [
+    "Sistem POS integrat delivery",
+    "Software gestiune HoReCa",
+    "Integrare Glovo, Tazz, Bolt Food",
+    "Kitchen Display System (KDS)",
+    "Management comenzi online",
+    "Integrare casă de marcat fiscală",
+    "Management livratori (opțional)",
+    "Panou central comenzi"
+  ],
+  "whyBody": "RSistems are expertiză în HoReCa și delivery, cu implementări pentru business-uri cu volum mare de livrări din România. Toate platformele sunt integrate într-un singur sistem, fără întreruperea activității. Suport dedicat și intervenții rapide pentru continuitate operațională.",
+  "whyReasons": [
+    { "title": "Expertiză HoReCa & Delivery", "desc": "Implementări pentru business-uri cu volum mare de livrări din întreaga țară." },
+    { "title": "Integrare completă", "desc": "Glovo, Tazz, Bolt Food și POS local într-un singur sistem centralizat." },
+    { "title": "Implementare rapidă", "desc": "Fără întreruperea activității, cu training inclus pentru echipă." },
+    { "title": "Suport dedicat", "desc": "Intervenții rapide și mentenanță continuă pentru continuitate operațională." },
+    { "title": "Tehnologie stabilă", "desc": "Optimizată pentru volum mare de comenzi și operațiuni 24/7." }
+  ],
+  "faq": [
+    { "q": "Ce este automatizarea livrării?", "a": "Automatizarea livrării este integrarea comenzilor online, POS-ului și bucătăriei într-un sistem unic pentru procesare rapidă și corectă." },
+    { "q": "Se pot integra toate platformele de livrare?", "a": "Da. Sistemele RSistems se integrează cu Glovo, Tazz și Bolt Food." },
+    { "q": "Este obligatorie emiterea bonului fiscal?", "a": "Da. În România, fiecare comandă trebuie fiscalizată conform ANAF, inclusiv comenzile online." },
+    { "q": "Pot gestiona livratorii din sistem?", "a": "Da. Sistemul permite monitorizarea statusului comenzilor și urmărirea livratorilor." },
+    { "q": "Este potrivit pentru cloud kitchen?", "a": "Da. Este una dintre cele mai eficiente soluții pentru modelul cloud kitchen, cu zero front-of-house." },
+    { "q": "Ce se întâmplă dacă o platformă are downtime?", "a": "Sistemul continuă să proceseze comenzile din celelalte canale și prin POS-ul local fără întreruperi." }
+  ]
+}

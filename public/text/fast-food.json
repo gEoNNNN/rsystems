@@ -1,19 +1,40 @@
 {
-  "description": "Automatizarea unui fast food în România presupune implementarea unui sistem POS fiscal, software HoReCa și flux digital de comenzi, complet conforme ANAF, pentru a procesa rapid volume mari, a elimina erorile și a crește profitul. RSistems oferă soluții complete pentru fast food, take away și food court, optimizate pentru trafic intens și timpi de servire reduși.",
+  "heroTitle": "Automatizare Fast Food în România",
+  "heroDescription": "Viteză maximă, comenzi corecte și flux optimizat pentru volum mare – soluții POS fiscale conforme ANAF.",
+  "description": "Automatizarea unui fast food înseamnă implementarea unui sistem POS fiscal, software HoReCa și flux digital de comenzi pentru a procesa rapid volume mari, elimina erorile și crește profitul. Soluții pentru fast food, take away și food court, optimizate pentru trafic intens și timpi de servire reduși.",
   "bullets": [
-    "Sistem POS fast food ultra rapid",
-    "Kitchen Display System (KDS) pentru bucătărie",
-    "Self-order kiosk pentru automatizare completă",
+    "Preluare rapidă comenzi: POS, self-order kiosk, tabletă",
+    "Emitere bon fiscal – conformitate ANAF",
+    "Transmitere instant comenzi în bucătărie (KDS)",
+    "Gestionare stocuri și rețete automat",
+    "Upsell automat: meniuri combo, sugestii produse extra",
     "Integrare livrări: Glovo, Tazz, Bolt Food",
+    "Panouri digitale meniu (Digital Signage)"
+  ],
+  "solutions": [
+    "Sistem POS fast food ultra rapid",
+    "Software gestiune HoReCa",
+    "Integrare casă de marcat fiscală",
+    "Kitchen Display System (KDS)",
+    "Self-order kiosk (automatizare completă)",
+    "Integrare livrări online",
     "Management stocuri și rețete",
     "Panouri digitale meniu (Digital Signage)"
   ],
+  "whyBody": "RSistems are implementări reale pentru fast food-uri și lanțuri din România. Sistemele sunt gândite pentru sute de comenzi pe oră, cu instalare și training fără întreruperea activității. Hardware și software optimizat pentru trafic intens, suport tehnic dedicat și intervenții rapide.",
+  "whyReasons": [
+    { "title": "Expertiză în HoReCa România", "desc": "Implementări reale pentru fast food-uri și lanțuri din toată țara." },
+    { "title": "Optimizare pentru volum mare", "desc": "Sistemele sunt gândite pentru sute de comenzi pe oră, fără erori." },
+    { "title": "Implementare rapidă", "desc": "Instalare și training fără întreruperea activității restaurantului." },
+    { "title": "Suport tehnic dedicat", "desc": "Intervenții rapide și mentenanță continuă pentru funcționare non-stop." },
+    { "title": "Tehnologie stabilă", "desc": "Hardware + software optimizat pentru trafic intens și ore de vârf." }
+  ],
   "faq": [
     { "q": "Ce este automatizarea unui fast food?", "a": "Automatizarea fast food-ului este utilizarea unui sistem POS și software HoReCa pentru gestionarea digitală a comenzilor, stocurilor și vânzărilor." },
-    { "q": "Cât costă un sistem POS fast food?", "a": "Costul variază în funcție de dimensiune și funcționalități, existând soluții scalabile pentru orice tip de business." },
+    { "q": "Cât costă un sistem POS fast food în România?", "a": "Costul variază în funcție de dimensiune și funcționalități, existând soluții scalabile pentru orice tip de business." },
     { "q": "Ce este KDS (Kitchen Display System)?", "a": "KDS este un ecran digital care afișează comenzile direct în bucătărie, eliminând hârtia și erorile de comunicare." },
     { "q": "Este obligatorie casa de marcat fiscală?", "a": "Da. În România, este obligatorie pentru emiterea bonurilor fiscale conform ANAF." },
     { "q": "Se poate integra cu livrări online?", "a": "Da. Sistemele RSistems se integrează cu Glovo, Tazz și Bolt Food." },
-    { "q": "Cum se gestionează volumul mare de comenzi?", "a": "Sistemele sunt optimizate pentru sute de comenzi pe oră, fără blocaje operaționale." }
+    { "q": "Este potrivit pentru food court?", "a": "Da. Soluțiile sunt optimizate pentru spații cu volum mare și multipli operatori, specific food court-urilor." }
   ]
 }

@@ -347,13 +347,13 @@ function App() {
       <section className="pos-screens-section" data-animate>
         <div className="pos-screens-container">
           <div className="pos-screen">
-            <img src="/img/POS 1.svg" alt="POS Screen 1" />
+            <img src="/img/POS 1.jpg" alt="POS Screen 1" />
           </div>
           <div className="pos-screen">
-            <img src="/img/POS 2.svg" alt="POS Screen 2" />
+            <img src="/img/POS 2.jpg" alt="POS Screen 2" />
           </div>
           <div className="pos-screen">
-            <img src="/img/POS 3.svg" alt="POS Screen 3" />
+            <img src="/img/POS 3.jpg" alt="POS Screen 3" />
           </div>
         </div>
       </section>

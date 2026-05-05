@@ -1,0 +1,40 @@
+{
+  "heroTitle": "Automatizare Sală de Evenimente în România",
+  "heroDescription": "Organizează evenimente fără erori, cu control total asupra costurilor, rezervărilor și încasărilor – conform ANAF.",
+  "description": "Automatizarea unei săli de evenimente înseamnă implementarea unui sistem POS fiscal, software de gestiune și management al evenimentelor, pentru a coordona eficient rezervările, meniurile, stocurile și plățile. RSistems oferă soluții pentru nunți, botezuri, corporate și săli premium.",
+  "bullets": [
+    "Management rezervări și calendar evenimente",
+    "Configurare meniuri și pachete (cost/porție, marje)",
+    "Preluare comenzi și POS mobil în timpul evenimentului",
+    "Emitere bon fiscal sau factură – conformitate ANAF",
+    "Gestiune stocuri și consum pe eveniment",
+    "Rapoarte financiare: venit, cost și profit per eveniment",
+    "Panouri digitale (welcome / program eveniment)"
+  ],
+  "solutions": [
+    "Sistem POS mobil (tabletă / terminal)",
+    "Software gestiune HoReCa",
+    "Management evenimente și rezervări",
+    "Configurare meniuri și pachete",
+    "Integrare casă de marcat fiscală",
+    "Rapoarte financiare per eveniment",
+    "Monitorizare video și securitate",
+    "Panouri digitale (welcome / program)"
+  ],
+  "whyBody": "RSistems are experiență în implementări pentru săli de evenimente și locații premium din România. Configurăm soluția adaptată fluxului tău de evenimente, cu instalare și training pentru echipă fără întreruperi. Asistență rapidă și mentenanță continuă pentru desfășurarea evenimentelor fără probleme.",
+  "whyReasons": [
+    { "title": "Experiență în HoReCa România", "desc": "Implementări pentru săli de evenimente și locații premium din toată țara." },
+    { "title": "Soluții personalizate", "desc": "Configurare adaptată fluxului de evenimente: nunți, conferințe, gale, banchete." },
+    { "title": "Implementare fără întreruperi", "desc": "Instalare și training complet pentru echipă, fără a afecta evenimentele programate." },
+    { "title": "Suport tehnic dedicat", "desc": "Asistență rapidă și mentenanță continuă pentru desfășurarea evenimentelor fără probleme." },
+    { "title": "Tehnologie stabilă", "desc": "Sisteme optimizate pentru evenimente complexe și volum mare de comenzi simultan." }
+  ],
+  "faq": [
+    { "q": "Ce este automatizarea unei săli de evenimente?", "a": "Automatizarea unei săli de evenimente este utilizarea unui sistem software pentru gestionarea rezervărilor, meniurilor, stocurilor și plăților." },
+    { "q": "Cum ajută la calculul costurilor per eveniment?", "a": "Sistemul calculează automat costurile pe meniu și profitul per eveniment, oferind vizibilitate completă." },
+    { "q": "Este necesară casa de marcat fiscală?", "a": "Da. În România, este obligatorie pentru emiterea bonurilor fiscale conform ANAF." },
+    { "q": "Se poate folosi POS mobil în timpul evenimentului?", "a": "Da. Personalul poate prelua comenzi direct de pe tabletă sau terminal mobil în toată sala." },
+    { "q": "Este potrivit pentru nunți și evenimente mari?", "a": "Da. Sistemele sunt optimizate pentru evenimente complexe și volum mare de comenzi simultan." },
+    { "q": "Poate gestiona mai multe evenimente simultan?", "a": "Da. Sistemul permite gestionarea calendarului și a mai multor săli sau evenimente concomitent." }
+  ]
+}

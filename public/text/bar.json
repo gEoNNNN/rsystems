@@ -1,0 +1,40 @@
+{
+  "heroTitle": "Automatizare Bar în România",
+  "heroDescription": "Control total pe comenzi, stocuri și încasări – soluții POS fiscale complete pentru baruri, puburi și cluburi.",
+  "description": "Automatizarea unui bar înseamnă implementarea unui sistem POS fiscal, software de gestiune și flux digital de comenzi, complet conforme ANAF. Scopul: eliminarea pierderilor, accelerarea servirii și creșterea profitului – de la cocktail bar la cluburi cu volum mare.",
+  "bullets": [
+    "Preluare comenzi rapidă prin POS touchscreen",
+    "Emitere bon fiscal – conformitate ANAF",
+    "Transmitere comenzi instant la bar (display / imprimantă)",
+    "Gestiune stocuri: alcool, băuturi, ingrediente cocktail",
+    "Monitorizare performanță angajați (cine vinde, cât, când)",
+    "Integrare plăți card și contactless",
+    "Sisteme de fidelizare clienți"
+  ],
+  "solutions": [
+    "Sistem POS bar rapid și rezistent",
+    "Software gestiune HoReCa",
+    "Integrare casă de marcat fiscală",
+    "Display comenzi bar (KDS / printer)",
+    "Management stocuri avansat",
+    "Integrare plăți card / contactless",
+    "Sisteme de fidelizare clienți",
+    "Monitorizare video și securitate"
+  ],
+  "whyBody": "RSistems are experiență reală în implementări pentru baruri și cluburi din România. Configurăm soluții adaptate fluxului de bar: volum mare, noapte, rotație rapidă. Instalare și training rapid pentru echipă, suport tehnic dedicat și sisteme optimizate pentru trafic intens.",
+  "whyReasons": [
+    { "title": "Experiență în HoReCa România", "desc": "Implementări reale în baruri și cluburi din toată România." },
+    { "title": "Soluții personalizate", "desc": "Configurare adaptată fluxului de bar: volum mare, program de noapte, rotație rapidă." },
+    { "title": "Implementare fără întreruperi", "desc": "Instalare și training rapid pentru echipă, fără downtime." },
+    { "title": "Suport tehnic dedicat", "desc": "Intervenții rapide și mentenanță continuă pentru funcționare non-stop." },
+    { "title": "Tehnologie stabilă", "desc": "Sisteme optimizate pentru trafic intens și volum mare de comenzi." }
+  ],
+  "faq": [
+    { "q": "Ce este automatizarea unui bar?", "a": "Automatizarea unui bar este utilizarea unui sistem POS și software HoReCa pentru gestionarea digitală a comenzilor, stocurilor și vânzărilor." },
+    { "q": "Cât costă un sistem POS pentru bar în România?", "a": "Costul depinde de dimensiunea barului și funcționalități, existând soluții scalabile pentru orice buget." },
+    { "q": "Este obligatorie casa de marcat fiscală?", "a": "Da. În România, este obligatorie utilizarea unei case de marcat fiscale pentru emiterea bonurilor fiscale." },
+    { "q": "Cum ajută la reducerea pierderilor?", "a": "Prin monitorizarea exactă a stocurilor și a vânzărilor, sistemul identifică diferențele și previne pierderile de alcool sau numerar." },
+    { "q": "Este potrivit pentru cluburi?", "a": "Da. Sistemele sunt optimizate pentru volum mare de comenzi și trafic intens, specifice cluburilor." },
+    { "q": "Poate urmări performanța barmanilor?", "a": "Da. Sistemul permite monitorizarea vânzărilor per angajat, identificând cei mai productivi membri ai echipei." }
+  ]
+}

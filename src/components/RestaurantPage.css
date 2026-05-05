@@ -2,6 +2,30 @@
    RestaurantPage — uses vw-based sizing throughout
    ============================================================ */
 
+/* Scroll Animations */
+[data-animate] {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+[data-animate].is-visible {
+  opacity: 1;
+  transform: none;
+}
+[data-stagger] > * {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+[data-stagger].is-visible > * { opacity: 1; transform: none; }
+[data-stagger].is-visible > *:nth-child(2) { transition-delay: 0.1s; }
+[data-stagger].is-visible > *:nth-child(3) { transition-delay: 0.2s; }
+[data-stagger].is-visible > *:nth-child(4) { transition-delay: 0.3s; }
+[data-stagger].is-visible > *:nth-child(5) { transition-delay: 0.4s; }
+[data-stagger].is-visible > *:nth-child(6) { transition-delay: 0.5s; }
+[data-stagger].is-visible > *:nth-child(7) { transition-delay: 0.6s; }
+[data-stagger].is-visible > *:nth-child(8) { transition-delay: 0.7s; }
+
 .rp-page {
   min-height: 100vh;
   display: flex;
@@ -13,61 +37,113 @@
   display: flex;
   align-items: flex-start;
   gap: 5vw;
-  padding: 5vw 7vw;
-  background: #ffffff;
+  padding: 3vw 7vw;
+  background: #f5f5f5;
 }
 
-.rp-why-text {
+.rp-why-left {
   flex: 1;
   min-width: 0;
+}
+
+.rp-why-right {
+  flex-shrink: 0;
+  width: 32vw;
+  max-width: 420px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: sticky;
+  top: 100px;
+  padding-top: 3vw;
+}
+
+.rp-why-img {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  object-fit: contain;
+  display: block;
 }
 
 .rp-why-title {
   font-size: clamp(1.3rem, 2.4vw, 2.6rem);
   font-weight: 700;
   color: #1a1a1a;
-  margin: 0 0 1.2vw 0;
+  margin: 0 0 0.8vw 0;
   line-height: 1.25;
 }
 
 .rp-why-subtitle {
-  font-size: clamp(0.9rem, 1.3vw, 1.25rem);
+  font-size: clamp(0.85rem, 1.15vw, 1.15rem);
   color: #1FB6B2;
   font-weight: 600;
-  margin: 0 0 1.5vw 0;
+  margin: 0 0 2vw 0;
   line-height: 1.5;
 }
 
-.rp-why-body {
-  font-size: clamp(0.82rem, 1.05vw, 1.05rem);
-  color: #555;
-  line-height: 1.75;
-  margin: 0;
+/* ── Why cards ──────────────────────────────────────────── */
+.rp-why-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.1vw;
 }
 
-.rp-why-img-wrap {
+.rp-why-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1vw;
+  padding: 1.3vw 1.5vw;
+  background: #f9fafb;
+  border-radius: 12px;
+  border: 1.5px solid #ebebeb;
+  transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+}
+
+.rp-why-card:hover {
+  border-color: #1FB6B2;
+  box-shadow: 0 4px 18px rgba(31, 182, 178, 0.10);
+  transform: translateY(-2px);
+}
+
+.rp-why-card-num {
+  font-size: clamp(1rem, 1.5vw, 1.5rem);
+  font-weight: 800;
+  color: #1FB6B2;
+  opacity: 0.35;
+  flex-shrink: 0;
+  line-height: 1;
+  margin-top: 2px;
+  font-variant-numeric: tabular-nums;
+}
+
+.rp-why-card-body {
   flex: 1;
   min-width: 0;
-  display: flex;
-  justify-content: flex-end;
 }
 
-.rp-why-img {
-  width: 100%;
-  max-width: 48vw;
-  height: auto;
-  border-radius: 16px;
-  object-fit: cover;
-  display: block;
+.rp-why-card-title {
+  font-size: clamp(0.85rem, 1.05vw, 1.05rem);
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 0.4vw 0;
+  line-height: 1.35;
+}
+
+.rp-why-card-desc {
+  font-size: clamp(0.8rem, 0.95vw, 0.95rem);
+  color: #666;
+  margin: 0;
+  line-height: 1.6;
 }
 
 /* ── FAQ + Contact form ───────────────────────────────────── */
 .rp-faq-section {
   display: flex;
   gap: 4vw;
-  padding: 5vw 7vw;
+  padding: 3vw 7vw;
   background: #f9fafb;
-  align-items: flex-start;
+  align-items: stretch;
 }
 
 .rp-faq-list {
@@ -217,15 +293,64 @@
   background: #17a09c;
 }
 
+.rp-form-submit:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.rp-form-error {
+  font-size: clamp(0.78rem, 0.95vw, 0.95rem);
+  color: #e53e3e;
+  margin: 0;
+}
+
+.rp-form-success {
+  font-size: clamp(0.82rem, 1vw, 1rem);
+  color: #1FB6B2;
+  font-weight: 600;
+  margin: 0;
+}
+
 /* ── Responsive: why + faq ───────────────────────────────── */
+@media (max-width: 1024px) {
+  .rp-why-right {
+    width: 34vw;
+  }
+  .rp-why-cards {
+    gap: 1.5vw;
+  }
+}
+
 @media (max-width: 900px) {
   .rp-why {
     flex-direction: column;
     gap: 5vw;
   }
 
-  .rp-why-img {
+  .rp-why-right {
+    width: 100%;
     max-width: 100%;
+    position: static;
+  }
+
+  .rp-why-img {
+    max-width: 55vw;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .rp-why-cards {
+    grid-template-columns: 1fr;
+    gap: 3vw;
+  }
+
+  .rp-why-card {
+    padding: 3vw 4vw;
+    gap: 3vw;
+  }
+
+  .rp-why-card-num {
+    font-size: clamp(1rem, 3.5vw, 1.4rem);
   }
 
   .rp-faq-section {
@@ -316,8 +441,10 @@
   display: flex;
   align-items: flex-start;
   gap: 4vw;
-  padding: 5vw 7vw;
-  flex: 1;
+  padding: 3vw 7vw;
+  background: #F5F5F5;
+  position: relative;
+  z-index: 2;
 }
 
 /* ── Content area ─────────────────────────────────────────── */
@@ -336,22 +463,28 @@
 
 .rp-content-img {
   width: 100%;
+  max-height: 40vh;
   height: auto;
+  object-fit: contain;
   border-radius: 14px;
   display: block;
-  margin-bottom: 3vw;
+  margin-bottom: 2.5vw;
 }
 
 /* ── 2-column info row ─────────────────────────────────────── */
 .rp-info-row {
   display: flex;
   gap: 4vw;
-  align-items: flex-start;
+  align-items: stretch;
 }
 
 .rp-info-col {
   flex: 1;
   min-width: 0;
+  background: #ffffff;
+  border-radius: 14px;
+  border: 1.5px solid #e5e5e5;
+  padding: 2vw 2.5vw;
 }
 
 .rp-info-col h3 {
@@ -397,6 +530,63 @@
   margin-top: 0.4em;
 }
 
+/* ── Solutions section ────────────────────────────────────── */
+.rp-solutions {
+  margin-top: 2.5vw;
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 2vw 2.5vw;
+  border: 1.5px solid #e5e5e5;
+}
+
+.rp-solutions-title {
+  font-size: clamp(1rem, 1.5vw, 1.5rem);
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 1.5vw 0;
+}
+
+.rp-solutions-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.8vw 2vw;
+}
+
+.rp-solutions-list li {
+  font-size: clamp(0.82rem, 1vw, 1rem);
+  color: #444;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6vw;
+  line-height: 1.5;
+}
+
+.rp-solutions-list li::before {
+  content: '';
+  display: inline-block;
+  width: clamp(7px, 0.6vw, 9px);
+  height: clamp(7px, 0.6vw, 9px);
+  border-radius: 50%;
+  background: #1FB6B2;
+  flex-shrink: 0;
+  margin-top: 0.35em;
+}
+
+@media (max-width: 768px) {
+  .rp-solutions-list {
+    grid-template-columns: 1fr;
+    gap: 2.5vw;
+  }
+
+  .rp-solutions {
+    margin-top: 5vw;
+    padding: 4vw;
+  }
+}
+
 /* ── Sidebar menu ─────────────────────────────────────────── */
 .rp-sidebar {
   width: 22vw;
@@ -408,6 +598,7 @@
   position: sticky;
   top: 90px;
   flex-shrink: 0;
+  padding-top: 2vw;
 }
 
 .rp-sidebar-item {
@@ -598,7 +789,7 @@
     font-size: clamp(0.85rem, 4.5vw, 1.1rem);
   }
 
-  .rp-why-body {
+  .rp-why-card-desc {
     font-size: clamp(0.78rem, 3.8vw, 1rem);
   }
 
@@ -644,7 +835,7 @@
 .rp-benefits {
   width: 100%;
   background: #f9fafb;
-  padding: 5vw 7vw;
+  padding: 3vw 7vw;
   box-sizing: border-box;
 }
 
