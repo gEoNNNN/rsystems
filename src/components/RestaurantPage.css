@@ -89,6 +89,14 @@
   gap: 1.1vw;
 }
 
+.rp-why-cards > *:last-child:nth-child(2n+1) {
+  grid-column: 1 / -1;
+  max-width: calc(50% - 0.55vw);
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
 .rp-why-card {
   display: flex;
   align-items: flex-start;
@@ -291,6 +299,48 @@
 
 .rp-form-submit:hover {
   background: #17a09c;
+}
+
+.rp-info-more-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5vw;
+  margin-top: 1.2vw;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #1FB6B2;
+  font-size: clamp(0.78rem, 1vw, 1rem);
+  font-weight: 600;
+  padding: 0;
+  transition: opacity 0.2s;
+}
+
+.rp-info-more-btn:hover {
+  opacity: 0.75;
+}
+
+.rp-info-chevron {
+  transition: transform 0.3s ease;
+}
+
+.rp-info-more-btn.open .rp-info-chevron {
+  transform: rotate(180deg);
+}
+
+.rp-info-collapse {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.35s ease;
+}
+
+.rp-info-collapse.open {
+  grid-template-rows: 1fr;
+}
+
+.rp-info-collapse-inner {
+  overflow: hidden;
+  min-height: 0;
 }
 
 .rp-form-submit:disabled {

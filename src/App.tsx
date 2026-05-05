@@ -109,7 +109,6 @@ function App() {
       <section className="hero-section">
         <div className="hero-container">
           <div className="hero-left">
-            <p className="hero-label">SOFTWARE MANAGEMENT</p>
             <h1 className="hero-title">
               <span className="hero-title-dark">Controlează.</span><br />
               <span className="hero-title-dark">Optimizează.</span><br />

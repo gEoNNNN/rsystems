@@ -57,6 +57,8 @@ function RestaurantPage() {
   )
   const [openFaq, setOpenFaq] = useState<number | null>(null)
   const [content, setContent] = useState<ContentData | null>(null)
+  const [bulletsOpen, setBulletsOpen] = useState(false)
+  const [descOpen, setDescOpen] = useState(false)
   const [formData, setFormData] = useState({ phone: '', firstName: '', lastName: '', email: '' })
   const [formStatus, setFormStatus] = useState<'idle' | 'sending' | 'sent' | 'error'>('idle')
 
@@ -163,19 +165,57 @@ function RestaurantPage() {
                 <div className="rp-info-row" data-stagger>
                   <div className="rp-info-col">
                     <h3>Ce este automatizarea?</h3>
-                    <p>{content?.description ?? 'Conținut în lucru...'}</p>
+                    <p className="rp-info-preview">
+                      {(() => {
+                        const full = content?.description ?? 'Automatizarea înseamnă digitalizarea tuturor operațiunilor zilnice: comenzi prin POS touchscreen, bon fiscal, transmitere comenzi, gestiune stocuri și monitorizare vânzări în timp real.'
+                        const preview = full.slice(0, 90) + (full.length > 90 ? '...' : '')
+                        return descOpen ? full : preview
+                      })()}
+                    </p>
+                    <button
+                      className={`rp-info-more-btn${descOpen ? ' open' : ''}`}
+                      onClick={() => setDescOpen(o => !o)}
+                    >
+                      <span>{descOpen ? 'Ascunde' : 'Citește mai mult'}</span>
+                      <svg className="rp-info-chevron" width="12" height="8" viewBox="0 0 12 8" fill="none">
+                        <path d="M1 1L6 6L11 1" stroke="#1FB6B2" strokeWidth="2" strokeLinecap="round"/>
+                      </svg>
+                    </button>
                   </div>
                   <div className="rp-info-col">
                     <h3>Funcționalități cheie</h3>
-                    <ul>
-                      {(content?.bullets ?? [
+                    {(() => {
+                      const bullets = content?.bullets ?? [
                         'Gestionare comenzi în timp real',
                         'Rapoarte de vânzări zilnice și lunare',
                         'Control stocuri și inventar',
                         'Integrare cu case de marcat fiscale',
                         'Suport multi-locație și franciză',
-                      ]).map((b, i) => <li key={i}>{b}</li>)}
-                    </ul>
+                      ]
+                      return (
+                        <>
+                          <ul>
+                            {bullets.slice(0, 2).map((b, i) => <li key={i}>{b}</li>)}
+                          </ul>
+                          <div className={`rp-info-collapse${bulletsOpen ? ' open' : ''}`}>
+                            <div className="rp-info-collapse-inner">
+                              <ul>
+                                {bullets.slice(2).map((b, i) => <li key={i}>{b}</li>)}
+                              </ul>
+                            </div>
+                          </div>
+                          <button
+                            className={`rp-info-more-btn${bulletsOpen ? ' open' : ''}`}
+                            onClick={() => setBulletsOpen(o => !o)}
+                          >
+                            <span>{bulletsOpen ? 'Ascunde' : 'Citește mai mult'}</span>
+                            <svg className="rp-info-chevron" width="12" height="8" viewBox="0 0 12 8" fill="none">
+                              <path d="M1 1L6 6L11 1" stroke="#1FB6B2" strokeWidth="2" strokeLinecap="round"/>
+                            </svg>
+                          </button>
+                        </>
+                      )
+                    })()}
                   </div>
                 </div>
               </>
@@ -227,7 +267,7 @@ function RestaurantPage() {
       </section>
 
       {/* FAQ + Contact form */}
-      <section className="rp-faq-section" data-animate>
+      <section className="rp-faq-section" id="rp-faq" data-animate>
         <div className="rp-faq-list">
           {(content?.faq ?? []).map((item, idx) => (
             <div
