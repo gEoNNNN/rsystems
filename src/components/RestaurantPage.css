@@ -519,6 +519,127 @@
   }
 }
 
+/* ── Responsive: small mobile ≤500px ────────────────── */
+@media (max-width: 500px) {
+  .rp-hero-content {
+    padding: 14vw 5vw 10vw;
+  }
+
+  .rp-hero-heading {
+    font-size: clamp(1.25rem, 7vw, 1.9rem);
+  }
+
+  .rp-hero-accent {
+    font-size: clamp(1.1rem, 6vw, 1.6rem);
+  }
+
+  .rp-hero-description {
+    font-size: clamp(0.8rem, 3.8vw, 1rem);
+  }
+
+  .rp-main {
+    padding: 8vw 4vw;
+    gap: 6vw;
+  }
+
+  .rp-content-title {
+    font-size: clamp(1.1rem, 6vw, 1.6rem);
+  }
+
+  .rp-info-col h3 {
+    font-size: clamp(0.95rem, 5vw, 1.2rem);
+  }
+
+  .rp-info-col p,
+  .rp-info-col ul li {
+    font-size: clamp(0.8rem, 3.8vw, 1rem);
+    gap: 3vw;
+  }
+
+  .rp-sidebar-item {
+    min-width: calc(50% - 2vw);
+    padding: 3.5vw 3vw;
+    font-size: clamp(0.7rem, 3.2vw, 0.88rem);
+    gap: 2vw;
+  }
+
+  .rp-benefits {
+    padding: 8vw 4vw;
+  }
+
+  .rp-benefits-title {
+    font-size: clamp(1.05rem, 6vw, 1.5rem);
+    margin-bottom: 6vw;
+  }
+
+  .rp-benefit-card {
+    padding: 6vw 4vw;
+    gap: 3.5vw;
+    flex: 1 1 calc(50% - 3vw);
+  }
+
+  .rp-benefit-card h3 {
+    font-size: clamp(0.78rem, 3.5vw, 1rem);
+  }
+
+  .rp-benefit-card p {
+    font-size: clamp(0.72rem, 3.2vw, 0.9rem);
+  }
+
+  .rp-why {
+    padding: 8vw 4vw;
+  }
+
+  .rp-why-title {
+    font-size: clamp(1.05rem, 6vw, 1.5rem);
+  }
+
+  .rp-why-subtitle {
+    font-size: clamp(0.85rem, 4.5vw, 1.1rem);
+  }
+
+  .rp-why-body {
+    font-size: clamp(0.78rem, 3.8vw, 1rem);
+  }
+
+  .rp-faq-section {
+    padding: 8vw 4vw;
+  }
+
+  .rp-faq-item {
+    padding: 4vw 4.5vw;
+  }
+
+  .rp-faq-q {
+    font-size: clamp(0.78rem, 3.5vw, 0.95rem);
+  }
+
+  .rp-faq-answer {
+    font-size: clamp(0.75rem, 3.5vw, 0.92rem);
+  }
+
+  .rp-contact-form {
+    padding: 6vw 5vw;
+    gap: 5vw;
+  }
+
+  .rp-form-group label {
+    font-size: clamp(0.78rem, 3.5vw, 0.95rem);
+  }
+
+  .rp-form-group input {
+    padding: 3vw 3.5vw;
+    font-size: clamp(0.78rem, 3.5vw, 0.95rem);
+  }
+
+  .rp-form-submit {
+    padding: 3vw 7vw;
+    font-size: clamp(0.82rem, 4vw, 1rem);
+    align-self: stretch;
+    text-align: center;
+  }
+}
+
 /* ── Benefits section ─────────────────────────────────────── */
 .rp-benefits {
   width: 100%;

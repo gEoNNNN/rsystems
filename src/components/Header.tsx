@@ -3,9 +3,11 @@ import { Link } from 'react-router-dom'
 import './Header.css'
 
 function Header() {
-  const [solutiiEchipamenteOpen, setSolutiiEchipamenteOpen] = useState(false)
+  const [solutiiOpen, setSolutiiOpen] = useState(false)
+  const [produseOpen, setProduseOpen] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
-  const [mobileSolutiiEchipamente, setMobileSolutiiEchipamente] = useState(false)
+  const [mobileSolutii, setMobileSolutii] = useState(false)
+  const [mobileProduse, setMobileProduse] = useState(false)
 
   return (
     <header className="header">
@@ -19,22 +21,36 @@ function Header() {
         <nav className="nav">
           <div
             className="nav-item dropdown"
-            onMouseEnter={() => setSolutiiEchipamenteOpen(true)}
-            onMouseLeave={() => setSolutiiEchipamenteOpen(false)}
+            onMouseEnter={() => setSolutiiOpen(true)}
+            onMouseLeave={() => setSolutiiOpen(false)}
           >
-            <span>Soluții & Echipamente</span>
+            <span>Soluții</span>
             <svg className="arrow-down" width="12" height="8" viewBox="0 0 12 8" fill="none">
               <path d="M1 1L6 6L11 1" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
             </svg>
-            {solutiiEchipamenteOpen && (
+            {solutiiOpen && (
               <div className="dropdown-menu">
-                <Link to="/cafenea" onClick={() => setSolutiiEchipamenteOpen(false)}>Automatizare HoReCa</Link>
+                <Link to="/cafenea" onClick={() => setSolutiiOpen(false)}>Automatizare HoReCa</Link>
                 <a href="#solutii1">Soluție 1</a>
                 <a href="#solutii2">Soluție 2</a>
                 <a href="#solutii3">Soluție 3</a>
-                <a href="#echipamente1">Echipament 1</a>
-                <a href="#echipamente2">Echipament 2</a>
-                <a href="#echipamente3">Echipament 3</a>
+              </div>
+            )}
+          </div>
+          <div
+            className="nav-item dropdown"
+            onMouseEnter={() => setProduseOpen(true)}
+            onMouseLeave={() => setProduseOpen(false)}
+          >
+            <span>Produse</span>
+            <svg className="arrow-down" width="12" height="8" viewBox="0 0 12 8" fill="none">
+              <path d="M1 1L6 6L11 1" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+            </svg>
+            {produseOpen && (
+              <div className="dropdown-menu">
+                <a href="#produs1">Produs 1</a>
+                <a href="#produs2">Produs 2</a>
+                <a href="#produs3">Produs 3</a>
               </div>
             )}
           </div>
@@ -71,21 +87,31 @@ function Header() {
       {/* Mobile Menu */}
       {mobileOpen && (
         <div className="mobile-menu">
-          <div className="mobile-nav-item" onClick={() => setMobileSolutiiEchipamente(!mobileSolutiiEchipamente)}>
-            <span>Soluții & Echipamente</span>
-            <svg className={`arrow-down${mobileSolutiiEchipamente ? ' rotated' : ''}`} width="12" height="8" viewBox="0 0 12 8" fill="none">
+          <div className="mobile-nav-item" onClick={() => setMobileSolutii(!mobileSolutii)}>
+            <span>Soluții</span>
+            <svg className={`arrow-down${mobileSolutii ? ' rotated' : ''}`} width="12" height="8" viewBox="0 0 12 8" fill="none">
               <path d="M1 1L6 6L11 1" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
             </svg>
           </div>
-          {mobileSolutiiEchipamente && (
+          {mobileSolutii && (
             <div className="mobile-submenu">
               <Link to="/cafenea" onClick={() => setMobileOpen(false)}>Automatizare HoReCa</Link>
               <a href="#solutii1" onClick={() => setMobileOpen(false)}>Soluție 1</a>
               <a href="#solutii2" onClick={() => setMobileOpen(false)}>Soluție 2</a>
               <a href="#solutii3" onClick={() => setMobileOpen(false)}>Soluție 3</a>
-              <a href="#echipamente1" onClick={() => setMobileOpen(false)}>Echipament 1</a>
-              <a href="#echipamente2" onClick={() => setMobileOpen(false)}>Echipament 2</a>
-              <a href="#echipamente3" onClick={() => setMobileOpen(false)}>Echipament 3</a>
+            </div>
+          )}
+          <div className="mobile-nav-item" onClick={() => setMobileProduse(!mobileProduse)}>
+            <span>Produse</span>
+            <svg className={`arrow-down${mobileProduse ? ' rotated' : ''}`} width="12" height="8" viewBox="0 0 12 8" fill="none">
+              <path d="M1 1L6 6L11 1" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+            </svg>
+          </div>
+          {mobileProduse && (
+            <div className="mobile-submenu">
+              <a href="#produs1" onClick={() => setMobileOpen(false)}>Produs 1</a>
+              <a href="#produs2" onClick={() => setMobileOpen(false)}>Produs 2</a>
+              <a href="#produs3" onClick={() => setMobileOpen(false)}>Produs 3</a>
             </div>
           )}
           <a href="#preturi" className="mobile-nav-link" onClick={() => setMobileOpen(false)}>Prețuri</a>

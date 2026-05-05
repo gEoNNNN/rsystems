@@ -18,9 +18,8 @@ function App() {
   }
 
   const getItemWidthPercent = () => {
-    if (window.innerWidth <= 768) return 25
-    if (window.innerWidth <= 1024) return 33.333
-    return 16.6667
+    if (window.innerWidth <= 700) return 20
+    return 12.5
   }
   const [itemWidthPercent, setItemWidthPercent] = useState(getItemWidthPercent)
 
@@ -43,6 +42,12 @@ function App() {
     '/img/LogoDesktop 10.svg',
     '/img/LogoDesktop 11.svg',
     '/img/LogoDesktop 12.svg',
+    '/img/LogoDesktop 13.svg',
+    '/img/LogoDesktop 14.svg',
+    '/img/LogoDesktop 15.svg',
+    '/img/LogoDesktop 16.svg',
+    '/img/LogoDesktop 17.svg',
+    '/img/LogoDesktop 18.svg',
   ]
 
   // Date pentru graficul de vânzări
@@ -81,6 +86,20 @@ function App() {
       }, 1000);
     }
   }, [currentSlide, partnerLogos.length]);
+
+  // Scroll animations
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) entry.target.classList.add('is-visible')
+        })
+      },
+      { threshold: 0.12 }
+    )
+    document.querySelectorAll('[data-animate], [data-stagger]').forEach((el) => observer.observe(el))
+    return () => observer.disconnect()
+  }, [])
 
   return (
     <>
@@ -130,7 +149,7 @@ function App() {
       </section>
 
       {/* Partners Section */}
-      <section className="partners-section">
+      <section className="partners-section" data-animate>
         <h2 className="partners-title">Parteneri care folosesc RSistem</h2>
         <div className="carousel-container">
           <div 
@@ -140,18 +159,22 @@ function App() {
             }}
           >
             {/* Double the logos for seamless infinite loop */}
-            {[...partnerLogos, ...partnerLogos].map((logo, index) => (
-              <div key={index} className="carousel-item">
-                <img src={logo} alt={`Partner ${(index % partnerLogos.length) + 1}`} />
-              </div>
-            ))}
+            {[...partnerLogos, ...partnerLogos].map((logo, index) => {
+              const realIndex = index % partnerLogos.length
+              const isLarge = realIndex >= 9 && realIndex <= 12
+              return (
+                <div key={index} className={`carousel-item${isLarge ? ' carousel-item-large' : ''}`}>
+                  <img src={logo} alt={`Partner ${realIndex + 1}`} />
+                </div>
+              )
+            })}
           </div>
         </div>
       </section>
 
       {/* Features Section */}
-      <section className="features-section">
-        <div className="features-container">
+      <section className="features-section" data-animate>
+        <div className="features-container" data-stagger>
           <div className="feature-card">
             <div className="feature-icon">
               <img src="/img/comenzi.svg" alt="Comenzi" />
@@ -203,7 +226,7 @@ function App() {
       </section>
 
       {/* Challenges vs Solutions + Dashboard Section */}
-      <section className="cdash-section">
+      <section className="cdash-section" data-animate>
         <div className="cdash-grid">
 
           {/* Challenges Column */}
@@ -279,7 +302,7 @@ function App() {
       </section>
 
        {/* All-in-One System Section */}
-      <section className="allinone-section">
+      <section className="allinone-section" data-animate>
         <h2 className="allinone-title">Tot ce ai nevoie, într-un singur sistem</h2>
         <div className="allinone-container">
           <div className="feature-card">
@@ -321,7 +344,7 @@ function App() {
       </section>
 
       {/* POS Screens Section */}
-      <section className="pos-screens-section">
+      <section className="pos-screens-section" data-animate>
         <div className="pos-screens-container">
           <div className="pos-screen">
             <img src="/img/POS 1.svg" alt="POS Screen 1" />
@@ -336,10 +359,10 @@ function App() {
       </section>
 
       {/* Why Choose RSistems Section */}
-      <section className="why-choose-section">
+      <section className="why-choose-section" data-animate>
         <div className="why-choose-container">
           <h2 className="why-choose-title">De ce să alegi RSistems?</h2>
-          <div className="why-choose-grid">
+          <div className="why-choose-grid" data-stagger>
             <div className="why-choose-card">
               <div className="why-choose-icon">
                 <img src="/img/implementare.svg" alt="Implementare" />
@@ -392,8 +415,8 @@ function App() {
       </section>
 
       {/* Stats Section */}
-      <section className="stats-section">
-        <div className="stats-container">
+      <section className="stats-section" data-animate>
+        <div className="stats-container" data-stagger>
           <div className="stat-card">
             <div className="stat-icon">
               <img src="/img/case.svg" alt="Business-uri" />
@@ -427,7 +450,7 @@ function App() {
       </section>
 
       {/* CTA Section */}
-      <section className="cta-section">
+      <section className="cta-section" data-animate>
         <div className="cta-container">
           <div className="cta-content">
             <h2 className="cta-title">Vrei să vezi cât profit pierzi acum?</h2>
@@ -445,7 +468,7 @@ function App() {
       </section>
 
       {/* FAQ Section */}
-      <section className="faq-section">
+      <section className="faq-section" data-animate>
         <h2 className="faq-title">Întrebări frecvente</h2>
         <div className="faq-container">
           <div className="faq-grid">
