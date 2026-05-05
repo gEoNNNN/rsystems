@@ -107,6 +107,15 @@ function App() {
 
       {/* Hero Section */}
       <section className="hero-section">
+        <video
+          className="hero-video-bg"
+          src="/img/main.mp4"
+          autoPlay
+          muted
+          loop
+          playsInline
+        />
+        <div className="hero-video-overlay" />
         <div className="hero-container">
           <div className="hero-left">
             <h1 className="hero-title">
@@ -140,9 +149,6 @@ function App() {
                 au încredere în RSistems
               </p>
             </div>
-          </div>
-          <div className="hero-right">
-            <img src="/img/Hero-right.svg" alt="Hero" className="hero-illustration" />
           </div>
         </div>
       </section>
