@@ -10,7 +10,7 @@ function App() {
   const videoRef = useRef<HTMLVideoElement>(null)
 
   useEffect(() => {
-    if (videoRef.current) videoRef.current.playbackRate = 0.4
+    if (videoRef.current) videoRef.current.playbackRate = 0.99
   }, [])
   const [showCookieConsent, setShowCookieConsent] = useState(() => {
     const saved = localStorage.getItem('cookieConsent')
@@ -262,7 +262,7 @@ function App() {
                 <li className="cdash-item cdash-item-light"><span className="cdash-icon-check">✓</span><span>Transformă datele în profit, automat.</span></li>
                 <li className="cdash-item cdash-item-light"><span className="cdash-icon-check">✓</span><span>Control total asupra afacerii tale</span></li>
                 <li className="cdash-item cdash-item-light"><span className="cdash-icon-check">✓</span><span>Rapoarte și analize în timp real</span></li>
-                <li className="cdash-item cdash-item-light"><span className="cdash-icon-check">✓</span><span>Reducerea pierderilor și optimizarea costurilor</span></li>
+                <li className="cdash-item cdash-item-light"><span className="cdash-icon-check">✓</span><span>Reducerea pierderilor și costurilor</span></li>
                 <li className="cdash-item cdash-item-light"><span className="cdash-icon-check">✓</span><span>Decizii bazate pe date reale</span></li>
               </ul>
             </div>
