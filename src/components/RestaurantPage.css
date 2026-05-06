@@ -394,6 +394,13 @@
     gap: 3vw;
   }
 
+  .rp-why-cards > *:last-child:nth-child(2n+1) {
+    grid-column: auto;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
   .rp-why-card {
     padding: 3vw 4vw;
     gap: 3vw;
@@ -648,7 +655,7 @@
   position: sticky;
   top: 90px;
   flex-shrink: 0;
-  padding-top: 9vw;
+  padding-top: 6.5vw;
 }
 
 .rp-sidebar-item {

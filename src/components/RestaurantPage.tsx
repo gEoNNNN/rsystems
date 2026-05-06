@@ -168,7 +168,7 @@ function RestaurantPage() {
                     <p className="rp-info-preview">
                       {(() => {
                         const full = content?.description ?? 'Automatizarea înseamnă digitalizarea tuturor operațiunilor zilnice: comenzi prin POS touchscreen, bon fiscal, transmitere comenzi, gestiune stocuri și monitorizare vânzări în timp real.'
-                        const preview = full.slice(0, 90) + (full.length > 90 ? '...' : '')
+                        const preview = full.slice(0, 40) + (full.length > 40 ? '...' : '')
                         return descOpen ? full : preview
                       })()}
                     </p>
@@ -195,12 +195,12 @@ function RestaurantPage() {
                       return (
                         <>
                           <ul>
-                            {bullets.slice(0, 2).map((b, i) => <li key={i}>{b}</li>)}
+                            {bullets.slice(0, 1).map((b, i) => <li key={i}>{b}</li>)}
                           </ul>
                           <div className={`rp-info-collapse${bulletsOpen ? ' open' : ''}`}>
                             <div className="rp-info-collapse-inner">
                               <ul>
-                                {bullets.slice(2).map((b, i) => <li key={i}>{b}</li>)}
+                                {bullets.slice(1).map((b, i) => <li key={i}>{b}</li>)}
                               </ul>
                             </div>
                           </div>
