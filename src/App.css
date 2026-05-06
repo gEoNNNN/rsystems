@@ -670,12 +670,12 @@
 }
 
 .demo-tab:hover {
-  color: #16a34a;
-  background: #f0fdf4;
+  color: #1a5456;
+  background: #e8f0f0;
 }
 
 .demo-tab.active {
-  background: #16a34a;
+  background: #1a5456;
   color: #fff;
 }
 
