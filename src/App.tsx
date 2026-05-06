@@ -2,11 +2,14 @@ import { useState, useEffect, useRef } from 'react'
 import './App.css'
 import Header from './components/Header'
 import Footer from './components/Footer'
+import { NomenclatorUI as NomenclatorPreview, BasicIndicatorsUI as BasicIndicatorsPreview, ProfitLossUI as ProfitLossPreview } from './components/PosModal'
 import { XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Area, AreaChart } from 'recharts'
 
 function App() {
   const [currentSlide, setCurrentSlide] = useState(0)
   const [openFaq, setOpenFaq] = useState<number | null>(null)
+  const [posModal, setPosModal] = useState<'pos' | 'rapoarte' | 'management' | null>('pos')
+  const [demoFullscreen, setDemoFullscreen] = useState(false)
   const videoRef = useRef<HTMLVideoElement>(null)
 
   useEffect(() => {
@@ -316,7 +319,7 @@ function App() {
       <section className="allinone-section" data-animate>
         <h2 className="allinone-title">Tot ce ai nevoie, într-un singur sistem</h2>
         <div className="allinone-container">
-          <div className="feature-card">
+          <div className="feature-card" style={{cursor:'pointer'}} onClick={() => setPosModal('pos')}>
             <div className="feature-icon">
               <img src="/img/pos.svg" alt="POS" />
             </div>
@@ -328,7 +331,7 @@ function App() {
             </div>
           </div>
 
-          <div className="feature-card">
+          <div className="feature-card" style={{cursor:'pointer'}} onClick={() => setPosModal('rapoarte')}>
             <div className="feature-icon">
               <img src="/img/stocuri.svg" alt="Rapoarte" />
             </div>
@@ -340,7 +343,7 @@ function App() {
             </div>
           </div>
 
-          <div className="feature-card">
+          <div className="feature-card" style={{cursor:'pointer'}} onClick={() => setPosModal('management')}>
             <div className="feature-icon">
               <img src="/img/clienti.svg" alt="Management" />
             </div>
@@ -354,18 +357,33 @@ function App() {
         </div>
       </section>
 
-      {/* POS Screens Section */}
-      <section className="pos-screens-section" data-animate>
-        <div className="pos-screens-container">
-          <div className="pos-screen">
-            <img src="/img/POS 1.jpg" alt="POS Screen 1" />
+      {/* Interactive Demo Section */}
+      <section className="demo-section" data-animate>
+        <h2 className="demo-section-title">Vezi sistemul în acțiune</h2>
+        <p className="demo-section-sub">Descoperă cât de ușor este să îți gestionezi afacerea.</p>
+        <div className="demo-tabs">
+          {([
+            { id: 'pos',        label: 'POS inteligent',    icon: '/img/pos.svg' },
+            { id: 'rapoarte',   label: 'Rapoarte avansate', icon: '/img/stocuri.svg' },
+            { id: 'management',label: 'Management complet', icon: '/img/clienti.svg' },
+          ] as const).map(tab => (
+            <button
+              key={tab.id}
+              className={`demo-tab${posModal === tab.id ? ' active' : ''}`}
+              onClick={() => setPosModal(tab.id)}
+            >
+              <img src={tab.icon} alt="" className="demo-tab-icon" />
+              {tab.label}
+            </button>
+          ))}
+        </div>
+        <div className="demo-preview" onClick={() => setDemoFullscreen(true)} title="Click pentru fullscreen">
+          <div className="demo-preview-frame">
+            {posModal === 'pos'        && <NomenclatorPreview />}
+            {posModal === 'rapoarte'   && <BasicIndicatorsPreview />}
+            {posModal === 'management' && <ProfitLossPreview />}
           </div>
-          <div className="pos-screen">
-            <img src="/img/POS 2.jpg" alt="POS Screen 2" />
-          </div>
-          <div className="pos-screen">
-            <img src="/img/POS 3.jpg" alt="POS Screen 3" />
-          </div>
+          <div className="demo-preview-hint">🔍 Click pentru fullscreen</div>
         </div>
       </section>
 
@@ -586,6 +604,19 @@ function App() {
           </div>
         </div>
       )}
+
+      {/* Demo Fullscreen Modal */}
+      {demoFullscreen && (
+        <div className="demo-fs-overlay" onClick={() => setDemoFullscreen(false)}>
+          <button className="demo-fs-close" onClick={() => setDemoFullscreen(false)}>✕</button>
+          <div className="demo-fs-window" onClick={e => e.stopPropagation()}>
+            {posModal === 'pos'        && <NomenclatorPreview />}
+            {posModal === 'rapoarte'   && <BasicIndicatorsPreview />}
+            {posModal === 'management' && <ProfitLossPreview />}
+          </div>
+        </div>
+      )}
+
     </>
   )
 }
