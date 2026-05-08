@@ -448,7 +448,7 @@
 /* ── Hero ──────────────────────────────────────────────────── */
 .rp-hero {
   position: relative;
-  min-height: 60vh;
+  min-height: 38vh;
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -466,7 +466,7 @@
 .rp-hero-content {
   position: relative;
   z-index: 1;
-  padding: 8vw 7vw;
+  padding: 4vw 7vw;
   max-width: 65vw;
 }
 
@@ -490,7 +490,27 @@
   color: rgba(255, 255, 255, 0.88);
   line-height: 1.75;
   max-width: 52vw;
-  margin: 0;
+  margin: 0 0 2rem 0;
+}
+
+.rp-hero-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: transparent;
+  border: 2px solid #1FB6B2;
+  color: #ffffff;
+  padding: 0.75rem 2rem;
+  border-radius: 50px;
+  font-size: clamp(0.85rem, 1.1vw, 1.1rem);
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+
+.rp-hero-btn:hover {
+  background: #1FB6B2;
+  color: #ffffff;
 }
 
 /* ── Main section: content + sidebar ──────────────────────── */

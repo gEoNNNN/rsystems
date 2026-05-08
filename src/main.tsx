@@ -5,6 +5,7 @@ import './index.css'
 import App from './App.tsx'
 import Demo from './components/Demo.tsx'
 import RestaurantPage from './components/RestaurantPage.tsx'
+import FrontOfHousePage from './components/FrontOfHousePage.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -18,6 +19,7 @@ createRoot(document.getElementById('root')!).render(
         <Route path="/livrare"         element={<RestaurantPage />} />
         <Route path="/restaurant"      element={<RestaurantPage />} />
         <Route path="/sala-evenimente" element={<RestaurantPage />} />
+        <Route path="/front-of-house" element={<FrontOfHousePage />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>,

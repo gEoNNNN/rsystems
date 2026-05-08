@@ -45,7 +45,7 @@ function Header() {
             </svg>
             {produseOpen && (
               <div className="dropdown-menu">
-                <a href="#produs1">Produs 1</a>
+                <Link to="/front-of-house" onClick={() => setProduseOpen(false)}>Front-of-House</Link>
                 <a href="#produs2">Produs 2</a>
                 <a href="#produs3">Produs 3</a>
               </div>
@@ -103,7 +103,7 @@ function Header() {
           </div>
           {mobileProduse && (
             <div className="mobile-submenu">
-              <a href="#produs1" onClick={() => setMobileOpen(false)}>Produs 1</a>
+              <Link to="/front-of-house" onClick={() => setMobileOpen(false)}>Front-of-House</Link>
               <a href="#produs2" onClick={() => setMobileOpen(false)}>Produs 2</a>
               <a href="#produs3" onClick={() => setMobileOpen(false)}>Produs 3</a>
             </div>
