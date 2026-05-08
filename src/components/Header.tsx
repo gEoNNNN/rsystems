@@ -46,14 +46,15 @@ function Header() {
             {produseOpen && (
               <div className="dropdown-menu">
                 <Link to="/front-of-house" onClick={() => setProduseOpen(false)}>Front-of-House</Link>
+                <Link to="/integrations" onClick={() => setProduseOpen(false)}>Integrations</Link>
                 <a href="#produs2">Produs 2</a>
                 <a href="#produs3">Produs 3</a>
               </div>
             )}
           </div>
-          <a href="#preturi" className="nav-item">Prețuri</a>
-          <a href="#blog" className="nav-item">Blog</a>
-          <a href="#despre" className="nav-item">Despre noi</a>
+          <Link to="/" className="nav-item">Prețuri</Link>
+          <Link to="/" className="nav-item">Blog</Link>
+          <Link to="/" className="nav-item">Despre noi</Link>
         </nav>
 
         {/* Contact & CTA */}
@@ -108,9 +109,9 @@ function Header() {
               <a href="#produs3" onClick={() => setMobileOpen(false)}>Produs 3</a>
             </div>
           )}
-          <a href="#preturi" className="mobile-nav-link" onClick={() => setMobileOpen(false)}>Prețuri</a>
-          <a href="#blog" className="mobile-nav-link" onClick={() => setMobileOpen(false)}>Blog</a>
-          <a href="#despre" className="mobile-nav-link" onClick={() => setMobileOpen(false)}>Despre noi</a>
+          <Link to="/preturi" className="mobile-nav-link" onClick={() => setMobileOpen(false)}>Prețuri</Link>
+          <Link to="/blog" className="mobile-nav-link" onClick={() => setMobileOpen(false)}>Blog</Link>
+          <Link to="/despre" className="mobile-nav-link" onClick={() => setMobileOpen(false)}>Despre noi</Link>
           <div className="mobile-actions">
             <a href="tel:+40517508772" className="mobile-contact">
               <img src="/img/phone.svg" alt="Phone" className="icon" />
