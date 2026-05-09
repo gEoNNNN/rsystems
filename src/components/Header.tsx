@@ -52,9 +52,9 @@ function Header() {
               </div>
             )}
           </div>
-          <Link to="/" className="nav-item">Prețuri</Link>
-          <Link to="/" className="nav-item">Blog</Link>
-          <Link to="/" className="nav-item">Despre noi</Link>
+          <Link to="/preturi" className="nav-item">Prețuri</Link>
+          <Link to="/blog" className="nav-item">Blog</Link>
+          <Link to="/despre" className="nav-item">Despre noi</Link>
         </nav>
 
         {/* Contact & CTA */}

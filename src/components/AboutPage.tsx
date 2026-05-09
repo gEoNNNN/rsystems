@@ -11,10 +11,10 @@ const team = [
 ]
 
 const values = [
-  { title: 'Inovație', desc: 'Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis.' },
-  { title: 'Inovație', desc: 'Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis.' },
-  { title: 'Inovație', desc: 'Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis.' },
-  { title: 'Inovație', desc: 'Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis.' },
+  { title: 'Inovație', desc: 'Suntem mereu în căutarea celor mai noi tehnologii pentru a oferi soluții moderne, scalabile și eficiente afacerilor HoReCa din România.' },
+  { title: 'Fiabilitate', desc: 'Sistemele noastre funcționează non-stop, fără întreruperi. Clienții noștri se pot baza pe RSistems în fiecare zi de lucru.' },
+  { title: 'Simplitate', desc: 'Credem că tehnologia trebuie să fie ușor de utilizat. Interfețele noastre sunt intuitive, fără training complex, gata de folosit din prima zi.' },
+  { title: 'Parteneriat', desc: 'Nu suntem doar un furnizor — suntem partenerul tău pe termen lung. Suportul nostru este disponibil pentru orice nevoie apărută în activitatea zilnică.' },
 ]
 
 function AboutPage() {
@@ -42,14 +42,14 @@ function AboutPage() {
       {/* ── Story ── */}
       <section className="about-section" data-animate>
         <h2 className="about-section-heading">Povestea noastră</h2>
-        <p className="about-text">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi  pretium tellus duis convallis. Tempus leo eu aenean sed diam uma  tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.  Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit  semper vel class aptent taciti sociosqu. Ad litora torquent per conubia  nostra inceptos himenaeos.</p>
-        <p className="about-text">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium  tellus duis convallis. Tempus leo eu aenean sed diam uma tempor.</p>
+        <p className="about-text">RSistems s-a născut din dorința de a transforma modul în care funcționează afacerile din industria HoReCa. Într-o piață competitivă și în continuă schimbare, am văzut cum restaurantele, cafenelele și fast food-urile se confruntau zilnic cu procese manuale lente, erori de comunicare și lipsă de control asupra operațiunilor. Am decis să schimbăm asta.</p>
+        <p className="about-text">De la primele implementări și până astăzi, RSistems a crescut alături de clienții săi — oferind soluții complete de automatizare care conectează sala, bucătăria, gestiunea și raportarea într-un singur ecosistem digital, adaptat realităților din România.</p>
       </section>
 
       {/* ── Mission ── */}
       <section className="about-section" data-animate>
         <h2 className="about-section-heading">Misiunea noastră</h2>
-        <p className="about-text">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi  pretium tellus duis convallis. Tempus leo eu aenean sed diam uma  tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.  Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit  semper vel class aptent taciti sociosqu. Ad litora torquent per conubia  nostra inceptos himenaeos.</p>
+        <p className="about-text">Misiunea RSistems este să ofere afacerilor HoReCa din România acces la tehnologii moderne de automatizare — sisteme POS inteligente, gestiune automată a stocurilor, kitchen display, comenzi digitale, meniuri QR, rapoarte în timp real și integrare fiscală completă. Credem că fiecare restaurant, cafenea sau bar merită să funcționeze eficient, profitabil și fără erori, indiferent de dimensiunea afacerii.</p>
       </section>
 
       {/* ── Team ── */}

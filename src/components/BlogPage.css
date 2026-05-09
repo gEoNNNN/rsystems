@@ -243,10 +243,34 @@
   color: #444;
   text-decoration: none;
   transition: color 0.15s;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.blog-sidebar-list li a strong {
+  color: #222;
+  font-weight: 600;
+}
+
+.blog-sidebar-list li a span {
+  font-size: clamp(0.65rem, 0.75vw, 0.78rem);
+  color: #777;
 }
 
 .blog-sidebar-list li a:hover {
   color: #1FB6B2;
+}
+
+/* ── SEO Footer Text ── */
+.blog-seo-text {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 5vw 3rem;
+  font-size: clamp(0.8rem, 0.9vw, 0.9rem);
+  color: #888;
+  line-height: 1.7;
+  text-align: center;
 }
 
 /* ── Responsive ── */

@@ -4,42 +4,74 @@ import Header from './Header'
 import Footer from './Footer'
 
 const featured = {
-  title: 'Titlu cu text foarte lung și interesant despre industria HoReCa',
-  subtitle: 'Subtitlu cu text foarte lung și subtitext foarte lung și subtiretext foarte lung și subtiretext foarte lung și subtire text foarte lung si subtire text foarte lung si subtire  text  foarte lung si subtire text foarte lung si subtire text foarte lung si subtire',
-  date: '25 martie 2024',
+  title: 'Cum Automatizarea HoReCa Crește Profitul și Reduce Pierderile',
+  subtitle: 'Digitalizarea nu mai este un avantaj opțional în industria HoReCa — este o necesitate. De la sisteme POS inteligente și gestiune automatizată, până la comenzi digitale și rapoarte în timp real, tehnologia RSistems ajută afacerile să funcționeze mai rapid, mai eficient și mai profitabil. Descoperă cum poți optimiza procesele din restaurant, reduce erorile umane și oferi clienților o experiență modernă și rapidă.',
+  date: '25 Martie 2026',
   readTime: '10 minute',
-  href: '/blog/featured',
+  href: '/blog/automatizare-horeca',
 }
 
 const articles = [
   {
-    title: 'React 19: Noi Funcții și Îmbunătățiri',
-    desc: 'Descoperă funcțiile noi din React 19 și cum să le folosești în proiectele tale.',
-    date: '22 iulie 2024',
-    readTime: '10 minute',
-    href: '/blog/react-19',
+    title: 'Automatizare Restaurant: Tot Ce Trebuie să Știi în 2026',
+    desc: 'Transformă operațiunile restaurantului tău cu soluții inteligente de gestiune, POS și automatizare completă pentru servire rapidă și control eficient.',
+    category: 'Restaurante',
+    readTime: '8 minute',
+    href: '/blog/automatizare-restaurant-2026',
     img: '/img/blogph.svg',
   },
   {
-    title: 'React 19: Noi Funcții și Îmbunătățiri',
-    desc: 'Descoperă funcțiile noi din React 19 și cum să le folosești în proiectele tale.',
-    date: '20 martie 2024',
-    readTime: '10 minute',
-    href: '/blog/react-19-2',
+    title: 'Sisteme POS Moderne pentru Cafenele și Coffee Shop-uri',
+    desc: 'Află cum un sistem POS performant poate accelera comenzile, simplifica gestiunea stocurilor și îmbunătăți experiența clienților.',
+    category: 'Cafenea',
+    readTime: '6 minute',
+    href: '/blog/pos-cafenele',
     img: '/img/blogph.svg',
   },
   {
-    title: 'React 19: Noi Funcții și Îmbunătățiri',
-    desc: 'Descoperă funcțiile noi din React 19 și cum să le folosești în proiectele tale.',
-    date: '25 iunie 2024',
-    readTime: '10 minute',
-    href: '/blog/react-19-3',
+    title: 'Cum Reduci Pierderile și Erorile în HoReCa',
+    desc: 'Descoperă cele mai eficiente metode pentru controlul stocurilor, monitorizarea vânzărilor și prevenirea pierderilor operaționale.',
+    category: 'Management HoReCa',
+    readTime: '9 minute',
+    href: '/blog/reducere-pierderi-horeca',
+    img: '/img/blogph.svg',
+  },
+  {
+    title: 'Ghid Complet pentru Automatizarea Fast Food-urilor',
+    desc: 'Optimizează timpul de preparare și fluxul comenzilor cu soluții digitale dedicate fast food-urilor moderne.',
+    category: 'Fast Food',
+    readTime: '7 minute',
+    href: '/blog/automatizare-fast-food',
+    img: '/img/blogph.svg',
+  },
+  {
+    title: 'Panouri Digitale pentru Restaurante și Meniuri Interactive',
+    desc: 'Modernizează experiența clienților prin afișaje digitale atractive, meniuri interactive și promoții automate.',
+    category: 'Digital Signage',
+    readTime: '5 minute',
+    href: '/blog/panouri-digitale-restaurante',
     img: '/img/blogph.svg',
   },
 ]
 
-const categories = ['Categorie', 'Categorie mica', 'Categorie mare mare mare mica', 'Categorie foarte mare']
-const popular = ['Cea mai populara', 'Oleac mai putin', 'Inca oleac mai putin']
+const categories = [
+  'Automatizare Restaurante',
+  'Automatizare Cafenele',
+  'Automatizare Baruri',
+  'Fast Food & Delivery',
+  'Gestiune HoReCa',
+  'POS & Fiscalizare',
+  'Digital Signage',
+  'Supraveghere Video',
+  'Sisteme Retail',
+  'Sisteme de Parcare',
+]
+
+const popular = [
+  { title: 'Top 5 Greșeli Care Încetinesc un Restaurant', desc: 'Cum identifici problemele operaționale care afectează servirea și profitabilitatea.' },
+  { title: 'Ce Înseamnă Gestiune Integrată pentru HoReCa', desc: 'Explicație completă despre automatizarea stocurilor, rapoartelor și vânzărilor.' },
+  { title: 'Cum Alegi Cel Mai Bun Sistem POS pentru Afacerea Ta', desc: 'Ghid practic pentru alegerea unui sistem modern și scalabil pentru HoReCa.' },
+]
 
 function BlogPage() {
   useEffect(() => {
@@ -59,7 +91,7 @@ function BlogPage() {
         <img src="/img/blogbg.svg" alt="" className="blog-hero-bg" />
         <div className="blog-hero-content">
           <h1 className="blog-hero-heading">Descoperă articolele RSistems pentru industria HoReCa</h1>
-          <p className="blog-hero-sub">Ghiduri practice, idei și tendințe pentru dezvoltarea afacerii tale</p>
+          <p className="blog-hero-sub">Ghiduri practice, soluții inteligente și strategii moderne pentru restaurante, cafenele, baruri și retail. Află cum automatizarea îți poate reduce costurile, accelera servirea și crește profitabilitatea afacerii.</p>
         </div>
       </section>
 
@@ -94,7 +126,7 @@ function BlogPage() {
                 <img src={a.img} alt={a.title} className="blog-card-img" />
                 <div className="blog-card-body">
                   <div className="blog-card-meta">
-                    <span>{a.date}</span>
+                    <span>{a.category}</span>
                     <span>·</span>
                     <span>{a.readTime}</span>
                   </div>
@@ -128,11 +160,21 @@ function BlogPage() {
             <div className="blog-sidebar-divider" />
             <ul className="blog-sidebar-list">
               {popular.map((p, i) => (
-                <li key={i}><a href="#">{p}</a></li>
+                <li key={i}>
+                  <a href="#">
+                    <strong>{p.title}</strong>
+                    <span>{p.desc}</span>
+                  </a>
+                </li>
               ))}
             </ul>
           </div>
         </aside>
+      </section>
+
+      {/* ── SEO Footer Text ── */}
+      <section className="blog-seo-text" data-animate>
+        <p>Blogul RSistems oferă informații actuale despre automatizare HoReCa, sisteme POS, gestiune inteligentă, fiscalizare, digital signage și tehnologii moderne pentru restaurante, cafenele, baruri și retail. Publicăm constant ghiduri practice, studii de caz și soluții reale pentru optimizarea afacerilor din România.</p>
       </section>
 
       <Footer />
