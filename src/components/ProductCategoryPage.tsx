@@ -147,13 +147,7 @@ function ProductCard({ product, categorySlug }: { product: Product; categorySlug
             {product.stock_status}
           </span>
         )}
-        {product.images?.length > 1 && (
-          <div className="pc-card-img-dots">
-            {product.images.slice(0, 3).map((_, i) => (
-              <span key={i} className={imgIdx === i ? 'dot active' : 'dot'} />
-            ))}
-          </div>
-        )}
+
       </div>
       <div className="pc-card-body">
         {product.category && <span className="pc-card-tag">{product.category}</span>}
