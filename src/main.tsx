@@ -15,6 +15,7 @@ import ProductCategoryPage from './components/ProductCategoryPage.tsx'
 import ProductDetailPage from './components/ProductDetailPage.tsx'
 import TermsPage from './components/TermsPage.tsx'
 import PrivacyPage from './components/PrivacyPage.tsx'
+import ChatBot from './components/ChatBot.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -39,6 +40,7 @@ createRoot(document.getElementById('root')!).render(
         <Route path="/termeni" element={<TermsPage />} />
         <Route path="/confidentialitate" element={<PrivacyPage />} />
       </Routes>
+      <ChatBot />
     </BrowserRouter>
   </StrictMode>,
 )

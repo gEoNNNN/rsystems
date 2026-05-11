@@ -13,11 +13,11 @@
       "stock_status": "In stoc",
       "price": "",
       "images": [
-        "/img/products/36ac4b78-26e4-4356-8ef2-b5187b02f4d0.jpg",
-        "/img/products/2b245ea6-7863-4d09-995a-0ee157e14503.jpg",
-        "/img/products/74568fa2-6bdb-4f58-afce-0d712ae45b9c.jpg",
-        "/img/products/9b6b7751-3c62-41d2-a4e3-3583bfcd00dd.jpg",
-        "/img/products/14d67c68-5b8d-4a3b-a617-c9be19aa6b36.jpg"
+        "/img/products/36ac4b78-26e4-4356-8ef2-b5187b02f4d0.png",
+        "/img/products/2b245ea6-7863-4d09-995a-0ee157e14503.png",
+        "/img/products/74568fa2-6bdb-4f58-afce-0d712ae45b9c.png",
+        "/img/products/9b6b7751-3c62-41d2-a4e3-3583bfcd00dd.png",
+        "/img/products/14d67c68-5b8d-4a3b-a617-c9be19aa6b36.png"
       ],
       "description": "Mini buton de iesire din plastic NF-10. Specificatii: NO，NC，COM iesire Cu deschiderea si inchiderea interfatei Dimensiuni: 76x14x14 (mm) Greutate: 0.02kg",
       "characteristics": "",
@@ -55,7 +55,7 @@
       "stock_status": "In stoc",
       "price": "",
       "images": [
-        "/img/products/d0c47eeb-7dc3-4da1-9591-aeda181224dc.jpg"
+        "/img/products/d0c47eeb-7dc3-4da1-9591-aeda181224dc.png"
       ],
       "description": "Card inteligent fara contact, interactioneaza cu si este alimentat de cititor utilizand tehnologia de inductie RF, inclusiv ID, Mifare, HID Card. Necesita componente de baza, si anume circuite integrate si antene pentru comunicatii, si este definit in ISO/IEC 14443 si ISO/IEC 15693. Cardul contactless poate fi utilizat pentru identificare, autentificare si stocare a datelor si ofera instrumente flexibile, sigure, standard de executie a afacerii tranzactii cu interventie umana minima. Cardurile ISO sunt disponibile in trei frecvente RFID principale: Carduri de joasa frecventa cu 125 kHz Carduri de inalta frecventa cu o frecventa de 13,56 MHz Carduri Ultra High Frequency (UHF) 886-915 MHz",
       "characteristics": "",
@@ -105,9 +105,9 @@
       "stock_status": "In stoc",
       "price": "",
       "images": [
-        "/img/products/9bdf93ba-f9ce-4b3a-9392-8ae6854825fb.jpg",
-        "/img/products/5febf275-a81f-420e-ae67-66be57b31dfd.jpg",
-        "/img/products/93fdcc96-4e05-4eda-9517-1f2affc312a4.jpg"
+        "/img/products/9bdf93ba-f9ce-4b3a-9392-8ae6854825fb.png",
+        "/img/products/5febf275-a81f-420e-ae67-66be57b31dfd.png",
+        "/img/products/93fdcc96-4e05-4eda-9517-1f2affc312a4.png"
       ],
       "description": "Butonul NF-30 este comutator de acces din otel inoxidabil, potrivit pentru diferite rame de usi. Este un design simplu si ultra-subtire, rafinat si elegant. Butonul de iesire este cea mai buna alegere pentru sistemele de control acces. Specificatii: Calitate de incredere cu otel inoxidabil importat pentru rama Instalare usoara Durata lunga de viata, 500.000 de teste reusite Optiune disponibila pentru iesire NO/NC/COM",
       "characteristics": "Material: SUS304 Stainless steel Panel, Steel Button\nCurrent Rating: 3A@36VDC Max\nOutput Contact: NO,COM Output\nOptional Functions: NO/NC/COM Output\nLED Nigh: Available option for Blue,Green or Red\nMechanical Life: 500000 Successful Test\nSuitable for Door: hollow door frame and electrical box use\nOperating Temp.: -10～+55℃(14-131F)\nOperating humidity: 0-95% (Non- condensing)\nDimensions: 83Lx32Wx25H(mm)\nWeight: 0.2kg",
@@ -182,7 +182,7 @@
       "stock_status": "In stoc",
       "price": "",
       "images": [
-        "/img/products/7d6c88be-f0f7-46c9-b59a-0741fe9ed144.jpg"
+        "/img/products/7d6c88be-f0f7-46c9-b59a-0741fe9ed144.png"
       ],
       "description": "Specificatii tehnice: Functionarea simulanta in doua intervale 13,56 MHz и 125 kHz Alimentarea si port USB Carcasa eleganta Sa integreaza cu 1C Frecventa de operare: 13,56 MHz si 125 kHz in acelasi timp ID-uri de citire: EM-Marine, HID ProxCard II, Mifare, Mifare Plus, Mifare-UL (citire/inregistrare) Temic (citire/inregistrare), Cotag (оptional) Interval de citire: 4-8 cm Alimentarea: USB Control extern al LED-urilor si sunetului Materialul carcasei: plastic ABS Culoarea carcasei: negru Interfata de iesire: USB Lungimea maxima a liniei de la cititor la controler: – Dallas Touch Memory: nu mai mult de 15 m – Wiegand: nu mai mult de 100 m Temperatura de operare: +5°С +40°С Dimensiuni (mm): 110х80х25",
       "characteristics": "",
@@ -223,7 +223,7 @@
       "stock_status": "In stoc",
       "price": "",
       "images": [
-        "/img/products/a079a3c0-259a-4519-9cc8-f881123eb708.jpg"
+        "/img/products/a079a3c0-259a-4519-9cc8-f881123eb708.png"
       ],
       "description": "Specificatii tehnice: Dispozitiv 3in1: adapter/cititor/encoder Pentru lucru cu “Lacata desteapta” Iron Logic Pentru lucru cu PO Lock’s Manager Compatibil cu 1С Frecventa de operare: 125 kHz ID-uri de citire (bibelouri, bratare): EM-Marine, Temic Interval de citire: 2-5 cm Interval de transmisie(comunicator): 0-3 cm Materialul carcasei: plastic ABS Culoarea carcasei: negru Interfata de iesire: USB Lungimea maxima a liniei de la cititor la controler: Dallas Touch Memory: nu mai mult de 15m Wiegand: nu mai mult de 100m Temperatura de operare: de la +5°С pana la +40°С Dimensiuni (mm): 110х80х25",
       "characteristics": "",
@@ -242,7 +242,7 @@
       "stock_status": "In stoc",
       "price": "",
       "images": [
-        "/img/products/1cac38f6-3670-4b8e-90b1-15c1f5d714b1.jpg"
+        "/img/products/1cac38f6-3670-4b8e-90b1-15c1f5d714b1.png"
       ],
       "description": "Cititorul de carduri KR200 este folosit pentru a organiza sisteme de control acces extrem de sigure cu trecere prin usi, turnichete, cabine de blocare. Cititorul are indicatii luminoase si sonore ale lucrarii. Carcasa impermeabila IP65 pentru utilizare in exterior. Specificatii: Sonerie externa Instalare usoara Cititor IP65 Protectie inversa polaritatii Port de iesire Wiegand <300 ms viteza de citire Citirea cardurilor de proximitate pana la 10 cm distanta Indicatie LED Dimensiuni KR200: 86x86x17,3mm Dimensiuni KR201: 77,5x42,8x17,3mm",
       "characteristics": "",
@@ -261,7 +261,7 @@
       "stock_status": "In stoc",
       "price": "",
       "images": [
-        "/img/products/56974d93-642d-40a3-97fe-ab1d03a84466.jpg"
+        "/img/products/56974d93-642d-40a3-97fe-ab1d03a84466.png"
       ],
       "description": "Specificatii tehnice: Distanta de identificare: pana la 100 cm Interfata Wiegand 26/34 biti (implicit) Usor de instalat pe rama sau cadrul metalic al usii Control extern al alarmelor (beep / LED) Se utilizeaza in strada si in interiorul cladirii Carcasa rezistenta din polimer Functionarea in medii umede IP65 Protectie impotriva conexiunii incorecte",
       "characteristics": "Read Range: Up to 100 CM\nReading time ( Card ): < 200 ms\nPower: DC 10-15V / Max.300mA\nInput Port: 2ea (External LED Control, External Buzzer Control)\nOutput Card Format: 26bit Wiegand\nLED Indicator: 2 Color LED Indicators (Red and Green)\nBeeper: yes\nTemperatura de funcționare: -20° to +65°C\nOperating humidity: 10% to 90% (relative humidity non-considered)\nMaterial: ABS+PC with texture\nColor: Black\nDimensions: 240*235*35 mm\nWeight: 430 g\nIndex of Protection: IP65",
@@ -325,7 +325,7 @@
       "stock_status": "In stoc",
       "price": "",
       "images": [
-        "/img/products/f5721c1a-7027-4202-a468-c935d152ebe7.jpg"
+        "/img/products/f5721c1a-7027-4202-a468-c935d152ebe7.png"
       ],
       "description": "Specificatii tehnice: Cel mai mic in lume colector de date Protectia impotriva cheilor de copiere (ID de criptare) Integrarea in sisteme PO Base Z-5R Sustinerea functiunei pastilei DS1996* Carcasa rezistenta la umiditate si praf Carcasa tip antivandal Frecventa de operare: 13,56 kHz ID-uri de citire( bibelouri, bratare): Mifare Ultralight, Mifare Standard (Classic) 1K si 4К, Mifare ID Interval de citire: 1-4 cm Tensiunea de alimentare: 8 – 18V DC Consumul curent: 35mA Indicatie de lumina: intotdeauna este lumina rosie( dupa dorinta) Materialul carcasei: poliamida Culoarea carcasei: gri deschis, negru, gri metalic inchis Control extern al LED-urilor si sunetului Materialul carcasei: plastic ABS Culoarea carcasei: metalic Interfata de iesire: Dallas Touch Memory, Wiegand 26(34) Lungimea maxima a liniei de la cititor la controler: Dallas Touch Memory: nu mai mult de 15m – Wiegand: nu mai mult de 100m Temperatura de operare: -30°С +40°С Dimensiuni (mm): D45XH25",
       "characteristics": "",
@@ -344,7 +344,7 @@
       "stock_status": "In stoc",
       "price": "",
       "images": [
-        "/img/products/33ba482f-977a-43f3-b7d5-f3068d7b7111.jpg"
+        "/img/products/33ba482f-977a-43f3-b7d5-f3068d7b7111.png"
       ],
       "description": "Specificatii tehnice: Interval de citire: pana la 10 cm Timp de citire (card): ≤300ms Putere/curent DC 6-14V/Max.70mA Port de intrare 2ea (control extern cu LED, control extern sonerie) Format de iesire card 26 biti Wiegand (implicit) Format de iesire PIN: 8 biti Indicator LED: Indicatori LED cu 2 culori (rosu si verde) Beeper: Da Temperatura de functionare: de la -20° pana la +65°C Umiditate de functionare 10% pana la 90% umiditate relativa fara condensare Culoare: negru Material: ABS+PC cu textura Dimensiune: 75x116x16 Greutate: 60g Indice de protectie: IP64",
       "characteristics": "",

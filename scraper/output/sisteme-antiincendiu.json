@@ -32,10 +32,10 @@
       "stock_status": "In stoc",
       "price": "",
       "images": [
-        "/img/products/87f9ae86-1d60-4fb6-b019-7c06fad8b583.jpg",
-        "/img/products/a3c5d835-90cd-44c4-a839-6eb1626c41f1.jpg",
-        "/img/products/7315c2ce-eb0f-4135-8f60-ae9a8c84c1ea.jpg",
-        "/img/products/1215fcce-e267-4dbb-986e-e638190ba54d.jpg"
+        "/img/products/87f9ae86-1d60-4fb6-b019-7c06fad8b583.png",
+        "/img/products/a3c5d835-90cd-44c4-a839-6eb1626c41f1.png",
+        "/img/products/7315c2ce-eb0f-4135-8f60-ae9a8c84c1ea.png",
+        "/img/products/1215fcce-e267-4dbb-986e-e638190ba54d.png"
       ],
       "description": "Centrala Integral IP MX este un sistem de detectie si alarmare de incendiu modular decentralizat, conceput pentru a proteja obiectele de dimensiuni medii si mari. Structura modulara a centralei va permite sa creati pe baza acestuia atat un sistem simplu de securitate antiincendiu, cit si retele complexe de mai multe nivele. Centralele Integral IP MX sunt disponibile in mai multe variante: cu sau fara imprimanta, cu sau fara panou intern de operare, cu panou-indicator cu LED-uri suplimentare. Principalele caracteristici ale centralei Integral IP MX: Structura modulara, decentralizata; Structura cu 100% redundanta; Pina la 16 bucle X-Line; Pina la 4000 de elemente; Gestionarea functiei de stingere a focului; Gestionarea alertei, functiei de eliminare a fumului, ventilatiei, etc; Includerea in reteaua Integral LAN; Interfata-LAN pentru concectarea sistemului de monitorizare si integrarea lui cu alte sisteme de inginerie.",
       "characteristics": "",
@@ -54,9 +54,9 @@
       "stock_status": "In stoc",
       "price": "",
       "images": [
-        "/img/products/bffe477b-6faf-4df1-839d-2d12f1552929.jpg",
-        "/img/products/3d223317-be6d-4d2f-829f-398c2097a378.jpg",
-        "/img/products/00c63b91-d397-433d-be03-41ecdc071dc0.jpg"
+        "/img/products/bffe477b-6faf-4df1-839d-2d12f1552929.png",
+        "/img/products/3d223317-be6d-4d2f-829f-398c2097a378.png",
+        "/img/products/00c63b91-d397-433d-be03-41ecdc071dc0.png"
       ],
       "description": "Centrala de alarma antiincendiu Integral IP CX este proiectata pentru protectia obiectelor mici si mijlocii impotriva incendiului. Compozitia fiecarei centrale include: o carcasa, plata principala de comanda cu un conector pentru extindere si sursa de alimentare. Alimentarea de rezerva se realizeaza prin intermediul acumulatorilor, care sunt instalati in interiorul carcasei. Centrala Integral IP CXF este disponibila in mai multe variante: cu sau fara imprimanta, cu sau fara panou intern de operare. Principalele caracteristici a statiei Integral IP CX: Panou de control integrat, cu un set de unitati de control, un slot de extindere; Redundanta Software; Pina la 4 bucle X-Line in mod autonom; 2 bucle adresabile X-Line in cazul conexiunii in reteaua Integral LAN; Pina la 1000 de elemente in mod autonom; pina la 500 de elemente in cazul conexiunii in reteaua Integral LAN; Gestionarea functiei de stingere a focului; Gestionarea alertei de eliminare a fumului, ventilare, etc.; Includerea in reteaua Integral LAN; Interfata-LAN pentru conectarea sistemului de monitorizare si integrarea lui cu alte sisteme de inginerie.",
       "characteristics": "",
@@ -75,7 +75,7 @@
       "stock_status": "In stoc",
       "price": "",
       "images": [
-        "/img/products/ad104977-7b88-4b7a-8f7a-9b2123f611bf.jpg"
+        "/img/products/ad104977-7b88-4b7a-8f7a-9b2123f611bf.png"
       ],
       "description": "Centrala Integral IP BX este conceputa pentru a proteja obiecte mici, inclusiv, cele care nu au un punct de paza non-stop. Pe o bucla pot fi conectate pana la 250 elemente X-LINE in lungime de pana la 3500 metri. Datorita functiilor software centrala BX permite operarea la distanta, mesajele de la centrala pot fi retransmise catre PC, telefon mobil ori dispozitiv tip tableta. Principalele caracteristici a statiei Integral IP BX: Panou de control integrat cu un set de unitati e control; Redundanta Software; 1 bucla de retea X-Line; Pina la 250 de elemente adresabile; Gestionarea functiei de stingere a focului; Gestionarea alertei de eliminare a fumului, ventilare, etc.; Interfata-LAN pentru conectarea la sistemul de monitorizare, integrarea cu alte sisteme de inginerie.",
       "characteristics": "",
@@ -94,9 +94,9 @@
       "stock_status": "In stoc",
       "price": "",
       "images": [
-        "/img/products/af06bfe1-f399-47d7-81f1-330464ef11c5.jpg",
-        "/img/products/3f3d6746-3a7b-4c3a-947d-c6f9369cb916.jpg",
-        "/img/products/db4076e8-d84c-4924-a2bc-d404c58b8067.jpg"
+        "/img/products/af06bfe1-f399-47d7-81f1-330464ef11c5.png",
+        "/img/products/3f3d6746-3a7b-4c3a-947d-c6f9369cb916.png",
+        "/img/products/db4076e8-d84c-4924-a2bc-d404c58b8067.png"
       ],
       "description": "Acest tip de aparat este proiectat pentru alarma de incendiu cu semnal acustic si optic. Semnalizarea este conectata direct catre bucla inelara a sistemului de alarma de incendiu cu trehnologia Integral X-LINE. Setarea tipului si volumului sunetului, precum si alegerea fregventei semnalului are loc prin intermediul comutatoarelor DIP de pe placa de circuit a aparatului. Toate dispozitivele sunt certificate EN 54.",
       "characteristics": "",
@@ -115,8 +115,8 @@
       "stock_status": "In stoc",
       "price": "",
       "images": [
-        "/img/products/5049f578-6969-451c-b118-60bab5c327cc.jpeg",
-        "/img/products/9b45e5f7-274b-4fb5-bbcb-5f7d0377b05c.jpg"
+        "/img/products/5049f578-6969-451c-b118-60bab5c327cc.png",
+        "/img/products/9b45e5f7-274b-4fb5-bbcb-5f7d0377b05c.png"
       ],
       "description": "Detectoarele de incendiu SCHRACK sunt echipate cu tehnologia Cubus levelling® - reglarea automata a parametrilor in functie de mediul ambiant, sunt capabile sa detecteze focul deschis si inchis in primele etape ale incendiului prin intermediul senzorilor de fum si caldura. Detectoarele sunt echipate cu un izolator scurt circuit incorporat care asigura lucrul buclei inelare adresabile in cazul de intrerupere. Detectoarele de fum sunt disponibile in mai multe versiuni: cu senzori de fum, de caldura si combinate. Pentru utilizare in mediul agresiv, exista modele cu protectie impotriva umiditatii. Caracteristicile principale: Adaptarea automata la conditiile mediului ambiant; Reglarea sensibilitatii cu ajutorul software-ului conform EN 54; Analiza fumului in dependenta de temperatura; Emiterea unui semnal de alarma de avertizare (nivel de 50% si 70%); Izolator de scurt circuit incorporat; Filtru pentru suprimarea alarmei false; Indicator LED cu un unghi de vizualizare de 360°.",
       "characteristics": "",
@@ -135,9 +135,9 @@
       "stock_status": "In stoc",
       "price": "",
       "images": [
-        "/img/products/03bb0f7b-1ff1-439d-a7f7-10a8d7615a5f.jpg",
-        "/img/products/2ab40e96-7821-4198-9318-76e40fe034f8.jpg",
-        "/img/products/a36c72af-3554-4d3d-b534-c29398d97b4d.jpg"
+        "/img/products/03bb0f7b-1ff1-439d-a7f7-10a8d7615a5f.png",
+        "/img/products/2ab40e96-7821-4198-9318-76e40fe034f8.png",
+        "/img/products/a36c72af-3554-4d3d-b534-c29398d97b4d.png"
       ],
       "description": "SCHRACK-SECONET butoane de alarmare manuala in versiuni diferite si cu diferite clase de protectie. Ele sunt folosite pentru a activa manual alarma de incendiu in deplina conformitate cu EN 54-11. Aceste dispozitive sunt incluse in bucla inelara adresabila a sistemului de alarma incendiu, cu tehnologia Integral X-LINE. Toate dispozitivele de acest tip sunt dotate cu un izolator scurt circuit incorporat. In plus, exista detectoare de alte culori, precum si butoane pentru activarea manuala a stingerii focului ( conform art. EN 12094-3) – inscriptiile pot fi selectate individual.",
       "characteristics": "",
