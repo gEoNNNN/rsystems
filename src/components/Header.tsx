@@ -2,33 +2,27 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import './Header.css'
 
-const produseColumns = [
-  [
-    { label: 'POS/PC specializat',                icon: '/img/iPOS.svg',          href: '/produse/pos-pc' },
-    { label: 'Echipamente fiscale',               icon: '/img/iEchipamente.svg',  href: '/produse/echipamente-fiscale' },
-    { label: 'Imprimante',                        icon: '/img/iImprimante.svg',   href: '/produse/imprimante' },
-    { label: 'Cantare comerciale',                icon: '/img/iCantare.svg',      href: '/produse/cantare-comerciale' },
-    { label: 'Scanare coduri de bare',            icon: '/img/iScanare.svg',      href: '/produse/scanare-coduri-de-bare' },
-  ],
-  [
-    { label: 'Terminale colectare date',          icon: '/img/iTerminale.svg',    href: '/produse/terminale-colectare-date' },
-    { label: 'Case de autoservire',               icon: '/img/iCase.svg',         href: '/produse/case-de-autoservire' },
-    { label: 'Sistem numarare vizitatori',        icon: '/img/iSistem.svg',       href: '/produse/sistem-numarare-vizitatori' },
-    { label: 'Sistem antifurt',                   icon: '/img/iSistem1.svg',      href: '/produse/sistem-antifurt' },
-    { label: 'Echipamente de parcare',            icon: '/img/iEchipamente1.svg', href: '/produse/echipamente-de-parcare' },
-  ],
-  [
-    { label: 'Sisteme supraveghere video',        icon: '/img/iSisteme.svg',      href: '/produse/sisteme-supraveghere-video' },
-    { label: 'Sisteme audio',                     icon: '/img/iSisteme1.svg',     href: '/produse/sisteme-audio' },
-    { label: 'Sistem control acces',              icon: '/img/iSistem2.svg',      href: '/produse/sistem-control-acces' },
-    { label: 'Echipament primire/emitere numerar',   icon: '/img/iEchipament.svg',   href: '/produse/echipament-primire-emitere-numerar' },
-    { label: 'Echipament industriale alimentare',    icon: '/img/iEchipament1.svg',  href: '/produse/echipament-industriale-alimentare' },
-  ],
+const produseItems = [
+  { label: 'POS/PC specializat',          icon: '/img/iPOS.svg',        href: '/produse/pos-pc' },
+  { label: 'Imprimante',                  icon: '/img/iImprimante.svg', href: '/produse/imprimante' },
+  { label: 'Cântare comerciale',           icon: '/img/iCantare.svg',    href: '/produse/cantare-comerciale' },
+  { label: 'Scanare coduri de bare',      icon: '/img/iScanare.svg',    href: '/produse/scanare-coduri-de-bare' },
+  { label: 'Sistem numărare vizitatori',  icon: '/img/iSistem.svg',     href: '/produse/sistem-numarare-vizitatori' },
+  /* ASCUNS TEMPORAR – nu șterge
+  { label: 'Echipamente fiscale',               icon: '/img/iEchipamente.svg',  href: '/produse/echipamente-fiscale' },
+  { label: 'Terminale colectare date',          icon: '/img/iTerminale.svg',    href: '/produse/terminale-colectare-date' },
+  { label: 'Case de autoservire',               icon: '/img/iCase.svg',         href: '/produse/case-de-autoservire' },
+  { label: 'Sistem antifurt',                   icon: '/img/iSistem1.svg',      href: '/produse/sistem-antifurt' },
+  { label: 'Echipamente de parcare',            icon: '/img/iEchipamente1.svg', href: '/produse/echipamente-de-parcare' },
+  { label: 'Sisteme supraveghere video',        icon: '/img/iSisteme.svg',      href: '/produse/sisteme-supraveghere-video' },
+  { label: 'Sisteme audio',                     icon: '/img/iSisteme1.svg',     href: '/produse/sisteme-audio' },
+  { label: 'Sistem control acces',              icon: '/img/iSistem2.svg',      href: '/produse/sistem-control-acces' },
+  { label: 'Echipament primire/emitere numerar', icon: '/img/iEchipament.svg',  href: '/produse/echipament-primire-emitere-numerar' },
+  { label: 'Echipament industriale alimentare', icon: '/img/iEchipament1.svg', href: '/produse/echipament-industriale-alimentare' },
+  */
 ]
 
 function Header() {
-  const [solutiiOpen, setSolutiiOpen] = useState(false)
-  const [produseOpen, setProduseOpen] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
   const [mobileSolutii, setMobileSolutii] = useState(false)
   const [mobileProduse, setMobileProduse] = useState(false)
@@ -45,43 +39,33 @@ function Header() {
         <nav className="nav">
           <div
             className="nav-item dropdown"
-            onMouseEnter={() => setSolutiiOpen(true)}
-            onMouseLeave={() => setSolutiiOpen(false)}
           >
             <span>Soluții</span>
             <svg className="arrow-down" width="12" height="8" viewBox="0 0 12 8" fill="none">
               <path d="M1 1L6 6L11 1" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
             </svg>
-            {solutiiOpen && (
-              <div className="dropdown-menu">
-                <Link to="/cafenea" onClick={() => setSolutiiOpen(false)}>Automatizare HoReCa</Link>
-                <Link to="/front-of-house" onClick={() => setSolutiiOpen(false)}>Front-of-House</Link>
+            <div className="dropdown-menu">
+                <Link to="/cafenea">Automatizare HoReCa</Link>
+                {/* ASCUNS TEMPORAR – Front-of-House
+                <Link to="/front-of-house">Front-of-House</Link>
+                */}
               </div>
-            )}
           </div>
           <div
             className="nav-item dropdown"
-            onMouseEnter={() => setProduseOpen(true)}
-            onMouseLeave={() => setProduseOpen(false)}
           >
             <span>Produse</span>
             <svg className="arrow-down" width="12" height="8" viewBox="0 0 12 8" fill="none">
               <path d="M1 1L6 6L11 1" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
             </svg>
-            {produseOpen && (
-              <div className="produse-mega">
-                {produseColumns.map((col, ci) => (
-                  <div key={ci} className="produse-mega-col">
-                    {col.map((item, ii) => (
-                      <Link key={ii} to={item.href} className="produse-mega-item" onClick={() => setProduseOpen(false)}>
-                        <img src={item.icon} alt="" className="produse-mega-icon" />
-                        <span>{item.label}</span>
-                      </Link>
-                    ))}
-                  </div>
+            <div className="produse-mega">
+                {produseItems.map((item, ii) => (
+                  <Link key={ii} to={item.href} className="produse-mega-item">
+                    <img src={item.icon} alt="" className="produse-mega-icon" />
+                    <span>{item.label}</span>
+                  </Link>
                 ))}
               </div>
-            )}
           </div>
           <Link to="/preturi" className="nav-item">Prețuri</Link>
           <Link to="/blog" className="nav-item">Blog</Link>
@@ -94,9 +78,8 @@ function Header() {
             <img src="/img/phone.svg" alt="Phone" className="icon" />
             <span>+40517508772</span>
           </a>
-          <a href="mailto:welcome@rsistems.ro" className="contact-item">
+          <a href="mailto:welcome@rsistems.ro" className="contact-item contact-item--icon-only" title="Trimite email">
             <img src="/img/email.svg" alt="Email" className="icon" />
-            <span>welcome@rsistems.ro</span>
           </a>
           <a href="https://wa.me/40517508772?text=Bună! Vreau să încep să folosesc RSistems." className="cta-button" target="_blank" rel="noopener noreferrer">Începe acum</a>
         </div>
@@ -125,7 +108,7 @@ function Header() {
           {mobileSolutii && (
             <div className="mobile-submenu">
               <Link to="/cafenea" onClick={() => setMobileOpen(false)}>Automatizare HoReCa</Link>
-              <Link to="/front-of-house" onClick={() => setMobileOpen(false)}>Front-of-House</Link>
+              {/* ASCUNS TEMPORAR: <Link to="/front-of-house" onClick={() => setMobileOpen(false)}>Front-of-House</Link> */}
             </div>
           )}
           <div className="mobile-nav-item" onClick={() => setMobileProduse(!mobileProduse)}>
@@ -136,7 +119,7 @@ function Header() {
           </div>
           {mobileProduse && (
             <div className="mobile-submenu">
-              {produseColumns.flat().map((item, i) => (
+              {produseItems.map((item, i) => (
                 <Link key={i} to={item.href} className="mobile-produse-item" onClick={() => setMobileOpen(false)}>
                   <img src={item.icon} alt="" className="produse-mega-icon" />
                   <span>{item.label}</span>

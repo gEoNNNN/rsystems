@@ -5,16 +5,21 @@ import Header from './Header'
 import Footer from './Footer'
 import { CATEGORY_MAP, type Product } from './productsData'
 
+const ACTIVE_CATEGORY_SLUGS = [
+  'pos-pc',
+  'imprimante',
+  'cantare-comerciale',
+  'scanare-coduri-de-bare',
+  'sistem-numarare-vizitatori',
+]
+
 function ProductCategoryPage() {
   const { slug } = useParams<{ slug: string }>()
-  const [activeTab, setActiveTab] = useState('Toate')
 
   const config = slug ? CATEGORY_MAP[slug] : undefined
   const products: Product[] = config?.products ?? []
-  const subcategories = ['Toate', ...Array.from(new Set(products.map(p => p.category).filter(Boolean)))]
-  const filtered = activeTab === 'Toate' ? products : products.filter(p => p.category === activeTab)
 
-  useEffect(() => { setActiveTab('Toate') }, [slug])
+  useEffect(() => { window.scrollTo(0, 0) }, [slug])
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -23,7 +28,7 @@ function ProductCategoryPage() {
     )
     document.querySelectorAll('[data-animate], [data-stagger]').forEach(el => observer.observe(el))
     return () => observer.disconnect()
-  }, [slug, activeTab])
+  }, [slug])
 
   if (!config) {
     return (
@@ -69,22 +74,28 @@ function ProductCategoryPage() {
       {/* Body */}
       <div className="pc-body">
         <aside className="pc-sidebar">
+          {/* Category navigation */}
           <div className="pc-sidebar-box">
-            <h3 className="pc-sidebar-title">Subcategorii</h3>
+            <h3 className="pc-sidebar-title">Categorii</h3>
             <ul className="pc-sidebar-list">
-              {subcategories.map(tab => (
-                <li key={tab}>
-                  <button
-                    className={`pc-sidebar-btn${activeTab === tab ? ' active' : ''}`}
-                    onClick={() => setActiveTab(tab)}
-                  >
-                    {tab}
-                    <span className="pc-sidebar-count">
-                      {tab === 'Toate' ? products.length : products.filter(p => p.category === tab).length}
-                    </span>
-                  </button>
-                </li>
-              ))}
+              {ACTIVE_CATEGORY_SLUGS.map(catSlug => {
+                const cat = CATEGORY_MAP[catSlug]
+                if (!cat) return null
+                return (
+                  <li key={catSlug}>
+                    <Link
+                      to={`/produse/${catSlug}`}
+                      className={`pc-sidebar-btn${slug === catSlug ? ' active' : ''}`}
+                    >
+                      <span className="pc-sidebar-cat-label">
+                        <img src={cat.icon} alt="" className="pc-sidebar-cat-icon" />
+                        {cat.label}
+                      </span>
+                      <span className="pc-sidebar-count">{cat.products.length}</span>
+                    </Link>
+                  </li>
+                )
+              })}
             </ul>
           </div>
           <div className="pc-sidebar-cta">
@@ -97,38 +108,18 @@ function ProductCategoryPage() {
         </aside>
 
         <main className="pc-main">
-          {activeTab === 'Toate' ? (
-            subcategories.filter(s => s !== 'Toate').map(sub => {
-              const group = filtered.filter(p => p.category === sub)
-              if (group.length === 0) return null
-              return (
-                <div key={sub} className="pc-subcategory" data-animate>
-                  <div className="pc-sub-header">
-                    <h2 className="pc-sub-heading">{sub}</h2>
-                    <span className="pc-sub-count">{group.length} produse</span>
-                  </div>
-                  <div className="pc-grid" data-stagger>
-                    {group.map((p, i) => (
-                      <ProductCard key={i} product={p} categorySlug={slug!} />
-                    ))}
-                  </div>
-                </div>
-              )
-            })
-          ) : (
-            <div className="pc-subcategory" data-animate>
-              <div className="pc-sub-header">
-                <h2 className="pc-sub-heading">{activeTab}</h2>
-                <span className="pc-sub-count">{filtered.length} produse</span>
-              </div>
-              <div className="pc-grid" data-stagger>
-                {filtered.map((p, i) => (
-                  <ProductCard key={i} product={p} categorySlug={slug!} />
-                ))}
-              </div>
+          <div className="pc-subcategory" data-animate>
+            <div className="pc-sub-header">
+              <h2 className="pc-sub-heading">{config.label}</h2>
+              <span className="pc-sub-count">{products.length} produse</span>
             </div>
-          )}
-          {filtered.length === 0 && <p className="pc-no-results">Niciun produs găsit.</p>}
+            <div className="pc-grid" data-stagger>
+              {products.map((p, i) => (
+                <ProductCard key={i} product={p} categorySlug={slug!} />
+              ))}
+            </div>
+          </div>
+          {products.length === 0 && <p className="pc-no-results">Niciun produs găsit.</p>}
         </main>
       </div>
 

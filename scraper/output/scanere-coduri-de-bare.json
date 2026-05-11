@@ -96,53 +96,6 @@
       "meta_description": ""
     },
     {
-      "slug": "cititor-coduri-bare-2d-datalogic-quickscan-qd2430",
-      "url": "https://rti.md/product/cititor-coduri-bare-2d-datalogic-quickscan-qd2430",
-      "api_url": "https://api.ecommerce.rti.md/api/products/slug/cititor-coduri-bare-2d-datalogic-quickscan-qd2430?lang=ro",
-      "title": "Scaner coduri de bare 2D Datalogic QuickScan QD2430",
-      "category": "Scanere manuale",
-      "stock_status": "In stoc",
-      "price": "",
-      "images": [
-        "/img/products/43b0df05-507f-453b-af54-78bb4e0b5253.png",
-        "/img/products/fcd7ff9c-c668-40ba-b878-4d25a3e50076.jpg",
-        "/img/products/407ba5d9-18b7-4a73-a7e8-eee62d720395.jpg",
-        "/img/products/e62d7c88-f031-4a75-a9a5-17805e35674a.jpg"
-      ],
-      "description": "Modelul Datalogic QuickScan QD2430 este descris in continuare pe scurt. Pentru mai multe detalii va rugam sa ne contactati. Popularitatea codurilor de bare 2D s-a raspandit in toate segmentele de piata ale companiilor industriale de captare a datelor. Acum, cu preturi mai accesibile si practic fara dezavantaje cu tehnologia de imagistica a zonei, cititoarele de coduri de bare 2D sunt in mare cerere cu caracteristici cum ar fi citirea de pe telefonul mobil sau in planificarea pentru viitoarele coduri 2D si imagistica. Scanerul QuickScan QD2430 2D a fost creat special pentru a raspunde nevoilor comerciantilor cu amanuntul si pentru a satisface cererea de pe piata cu citire omnidirectionala de o performanta remarcabila pe aproape toate codurile la un pret accesibil. Detaliile de design elegante sunt incorporate intr-un mica si echilibrata carcasa, usoara, Datalogic fiind bine cunoscut pentru durabilitate. Potrivit pentru aplicatii la punct de vanzare (POS), QuickScan QD2430 are o noua iluminare si sistem de tintire dezvoltat cu intentia unica de a reduce stresul vizual al operatorului in timpul activitatilor de scanare zilnice.",
-      "characteristics": "Scanner type: 2D\n2D (matrix & stacked) barcodes supported: Aztec Code,Data Matrix,MaxiCode,Micro QR Code,QR Code\nWavelength: 650 nm\nTilt reading angle: 0 - 360°\nPitch reading angle: 0 - 65°\nYaw reading angle: 0 - 60°\nConnectivity Technology: Wired\nStandard interfaces: USB\nType: Handheld bar code reader\nInternational Protection (IP) code: IP42\nPower source type: DC\nInput voltage: 4.5 - 14 V\nConsumul de energie: 140 mA\nWeight: 145 g\nWidth: 41 mm\nDepth: 91 mm\nHeight: 163 mm\nOperating temperature (T-T): 0 - 50 °C\nStorage temperature (T-T): -40 - 70 °C\nOperating relative humidity (H-H): 0 - 95%",
-      "specifications": {
-        "Scanner type": "2D",
-        "2D (matrix & stacked) barcodes supported": "Aztec Code,Data Matrix,MaxiCode,Micro QR Code,QR Code",
-        "Wavelength": "650 nm",
-        "Tilt reading angle": "0 - 360°",
-        "Pitch reading angle": "0 - 65°",
-        "Yaw reading angle": "0 - 60°",
-        "Connectivity Technology": "Wired",
-        "Standard interfaces": "USB",
-        "Type": "Handheld bar code reader",
-        "International Protection (IP) code": "IP42",
-        "Power source type": "DC",
-        "Input voltage": "4.5 - 14 V",
-        "Consumul de energie": "140 mA",
-        "Weight": "145 g",
-        "Width": "41 mm",
-        "Depth": "91 mm",
-        "Height": "163 mm",
-        "Operating temperature (T-T)": "0 - 50 °C",
-        "Storage temperature (T-T)": "-40 - 70 °C",
-        "Operating relative humidity (H-H)": "0 - 95%"
-      },
-      "tags": [
-        "scanere",
-        "datalogic",
-        "QuickScan"
-      ],
-      "published_at": "2021-07-20T12:23:20.000Z",
-      "meta_title": "",
-      "meta_description": ""
-    },
-    {
       "slug": "scanner-de-masa-omnidirectional-datalogic-magellan-1500i",
       "url": "https://rti.md/product/scanner-de-masa-omnidirectional-datalogic-magellan-1500i",
       "api_url": "https://api.ecommerce.rti.md/api/products/slug/scanner-de-masa-omnidirectional-datalogic-magellan-1500i?lang=ro",
@@ -315,50 +268,6 @@
       "meta_description": ""
     },
     {
-      "slug": "scaner-coduri-de-bare-rsc-4300",
-      "url": "https://rti.md/product/scaner-coduri-de-bare-rsc-4300",
-      "api_url": "https://api.ecommerce.rti.md/api/products/slug/scaner-coduri-de-bare-rsc-4300?lang=ro",
-      "title": "Scaner 1D coduri de bare manual RScan RSC 4300",
-      "category": "Scanere manuale",
-      "stock_status": "In stoc",
-      "price": "",
-      "images": [
-        "/img/products/de04a103-8384-4d8c-bc74-97d6c3c217f9.png",
-        "/img/products/86e57de6-5052-4f8b-a849-6a7a38f7fdbf.png",
-        "/img/products/e7282278-b2b0-4ec2-a8ea-86712faf19a5.png",
-        "/img/products/ccbacd63-ded1-4fa6-b916-24ac5af550d9.png"
-      ],
-      "description": "RScan RSC 4300 este un scaner coduri de bare manual cu un design modern si caracteristici distinctive. Corpul bine asamblat al scanerului este rezistent la caderi de la o inaltime de pana la 1,5 m si este capabil de asemenea sa retina stropii si praful. RSC 4300 decodifica cu usurinta toate codurile de bare 1D obisnuite, inclusiv cele cu contrast scazut si cele mici de la 3 mil, si le citeste inclusiv si de pe ecranele dispozitivului. Caracteristici cheie: Procesor de 32 de biti Clasa de protectie: IP54 Usor de utilizat, plug-n-play Inclinare/elevatie/unghi de inclinare: ±30°/±65°/± 55° Distanta de lucru: pana la 33 cm Accepta modul de scanare manuala si continua Viteza de citire dinamica: 300 scanari/s Citirea unui cod de bare de pe ecran Interfete: USB (HID, VCP) Folosit pe scara larga cu Alipay, SamsungPay si Apple Pay Design rezistent la impact: rezista la caderi de 1,5 m pe beton",
-      "characteristics": "Size: 170mm x 68mm x 98mm\nWeight: 150g\nCPU: 32 Bit ARM\nScan type: Linear Image\nScan Pattern: 2500 Pixel image\nDecode rate: 300 times per second\nScan depth of field: 30-330mm (13mil, pcs90%)\nInterface: USB-HID, USB-VCP and RS232\nScan mode: Manual & Continue & Automatic\nMaterial: ABS + PC\nCable standart: 2M straight\nVoltage: 5VDC\nOperating Voltage: 120mA\nStand-by current: 36mA\nTemperatura de funcționare: -20°C to 60°C\nStorage temperature: -20°C to 85°C\nHumidity: 5% to 95% relative humidity, non-condensing\nLight levels: Daylight, 0-100,000Lux\nShock: Designed to withstand 1.5m drops\n1D barcodes: Industoal 2 of 5,Standard 25,Matrix 25,China post 25,Code 11,Codabar,MSI/plessey,UK/plessey, Code39(Standard 39 & Full ASCII Code 39),Code 32,Code 93, Code128,UPCA,UPCE,EAN13,EAN8, UPC/EAN add-on 2/5, ISBN,ISSN, GS1(RSS) RSS-14,LIMITED, EXPENDED, Include GS1 STACK\nIP Class: IP54",
-      "specifications": {
-        "Size": "170mm x 68mm x 98mm",
-        "Weight": "150g",
-        "CPU": "32 Bit ARM",
-        "Scan type": "Linear Image",
-        "Scan Pattern": "2500 Pixel image",
-        "Decode rate": "300 times per second",
-        "Scan depth of field": "30-330mm (13mil, pcs90%)",
-        "Interface": "USB-HID, USB-VCP and RS232",
-        "Scan mode": "Manual & Continue & Automatic",
-        "Material": "ABS + PC",
-        "Cable standart": "2M straight",
-        "Voltage": "5VDC",
-        "Operating Voltage": "120mA",
-        "Stand-by current": "36mA",
-        "Temperatura de funcționare": "-20°C to 60°C",
-        "Storage temperature": "-20°C to 85°C",
-        "Humidity": "5% to 95% relative humidity, non-condensing",
-        "Light levels": "Daylight, 0-100,000Lux",
-        "Shock": "Designed to withstand 1.5m drops",
-        "1D barcodes": "Industoal 2 of 5,Standard 25,Matrix 25,China post 25,Code 11,Codabar,MSI/plessey,UK/plessey, Code39(Standard 39 & Full ASCII Code 39),Code 32,Code 93, Code128,UPCA,UPCE,EAN13,EAN8, UPC/EAN add-on 2/5, ISBN,ISSN, GS1(RSS) RSS-14,LIMITED, EXPENDED, Include GS1 STACK",
-        "IP Class": "IP54"
-      },
-      "tags": [],
-      "published_at": "2022-02-17T13:33:34.000Z",
-      "meta_title": "",
-      "meta_description": ""
-    },
-    {
       "slug": "scan-rsc-1105-2d",
       "url": "https://rti.md/product/scan-rsc-1105-2d",
       "api_url": "https://api.ecommerce.rti.md/api/products/slug/scan-rsc-1105-2d?lang=ro",
@@ -472,33 +381,6 @@
       "meta_description": ""
     },
     {
-      "slug": "datalogic-quickscan-qm-2130",
-      "url": "https://rti.md/product/datalogic-quickscan-qm-2130",
-      "api_url": "https://api.ecommerce.rti.md/api/products/slug/datalogic-quickscan-qm-2130?lang=ro",
-      "title": "Datalogic 1D  QuickScan QM 2130",
-      "category": "Scanere manuale",
-      "stock_status": "In stoc",
-      "price": "",
-      "images": [
-        "/img/products/6d418612-0472-42a4-a976-e5b88cbb0ebd.jpg",
-        "/img/products/b6493d23-d675-4ab9-b13c-1013e946b196.png",
-        "/img/products/706a786e-7e67-4b58-b5ea-c55f3edb0e37.jpg"
-      ],
-      "description": "Datalogic QuickScan QM2130 este un cititor de coduri de bare mobil cu transmisie radio.Tehnologia folosita pentru transmisia datelor scanate catre baza de comunicatie si implicit catre calculator se intituleaza STAR. Este o tehnologie brevetata de catre Datalogic ADC ce functioneaza in banda de frecventa 433MHz. Principalele avantaje in folosirea tehnologiei STAR in comparatie cu traditionala tehnologie bluetooth sunt distanta mai mare de transmitere (10 – 18metri), posibilitatea de comunicare in dublu sens (concomitent transmite si primeste informatii) si exclusivitatea frecventei. Cand discutam despre exclusivitatea frecventei ne referim la faptul ca in banda STAR de 433MHz functioneaza doar dispozitive mobile Datalogic – nu aveti interferente cu alte dispozitive dotate cu Wi-Fi sau bluetooth, nu aveti interferente cu mousi si tastaturi wireless, porti automate sau orice alt dispozitiv care transmite prin unde radio. QM2130 este un imager linear pentru coduri de bare 1D. Acest aspect se traduce prin faptul ca poate citi cu usurinta coduri de bare lineare (1D) chiar daca sunt mai putin lizibile, partial deteriorate sau murdare. Rata de defectare al cititoarelor de coduri de bare de tip linear imager este foarte scazuta pentru ca nu exista oglinzi si nici nu exista componente aflate in miscare in interiorul scanerului. Functia Batch cu care este dotat Datalogic QuickScan Mobile 2130 ii permite citirea codurilor de bare chiar si dupa iesirea din raza de actiune a cradle-ului (bazei de comunicatie). Memoria ii permite stocarea a pana la 4.000 de coduri de bare si descarcarea acestora in mod automat la momentul cand se reintra in raza de comunicatie. Tehnologia Green-Spot semnaleaza citirea cu succes a unui cod de bare inverzind-ul. In felul acesta cititorul se poate folosi cu succes in medii de lucru foarte galagioase unde avertizorul sonor nu se aude sau in medii de lucru unde linistea este un amanunt esential.",
-      "characteristics": "Tipul acumulatorului: Li-Ion 700 mAh\nTimpul de încărcare: 6 часов (макс.)\nAutonomie: До 20 000 считываний\nTemperatura de lucru: От 0 до +40C\nTipul de securitate: IP30",
-      "specifications": {
-        "Tipul acumulatorului": "Li-Ion 700 mAh",
-        "Timpul de încărcare": "6 часов (макс.)",
-        "Autonomie": "До 20 000 считываний",
-        "Temperatura de lucru": "От 0 до +40C",
-        "Tipul de securitate": "IP30"
-      },
-      "tags": [],
-      "published_at": "2021-10-27T07:06:33.254Z",
-      "meta_title": "",
-      "meta_description": ""
-    },
-    {
       "slug": "scaner-bi-optic-datalogic-magellan-9550i",
       "url": "https://rti.md/product/scaner-bi-optic-datalogic-magellan-9550i",
       "api_url": "https://api.ecommerce.rti.md/api/products/slug/scaner-bi-optic-datalogic-magellan-9550i?lang=ro",
@@ -539,70 +421,6 @@
       },
       "tags": [],
       "published_at": "2025-10-22T06:52:35.035Z",
-      "meta_title": "",
-      "meta_description": ""
-    },
-    {
-      "slug": "datalogic-heron-hd3430",
-      "url": "https://rti.md/product/datalogic-heron-hd3430",
-      "api_url": "https://api.ecommerce.rti.md/api/products/slug/datalogic-heron-hd3430?lang=ro",
-      "title": "Scaner 1d,2D coduri de bare Datalogic Heron HD3430",
-      "category": "Scanere manuale",
-      "stock_status": "In stoc",
-      "price": "",
-      "images": [
-        "/img/products/672d13a0-5308-486c-ab29-f07962732419.png",
-        "/img/products/98a90d0a-9ac4-4c79-8873-e547d572399d.jpg",
-        "/img/products/2db63813-5033-47ed-bd31-02bb1cfd4bfd.jpg",
-        "/img/products/81dec543-4517-4f5e-86d5-ca9d3785e63d.jpg"
-      ],
-      "description": "Scanerul 2D Heron™ HD3430 ofera eleganta de neegalat si tehnologia de ultima ora a POS-urilor moderne. Modelul HD3430 vine in doua culori uimitoare - grafit negru „Fibra de carbon” sau argintiu si alb „Silver”, care accentuiaza liniile elegante ale corpului sau. Heron HD3430 conclude familia de produse Heron, adaugand capacitate de citire a codurilor 2D la gama actuala de scanere si oferind clientilor o alegere de neegalat in ceea ce priveste preturile si nevoile de scanare. Caracteristici: Performanta de neegalat pentru citirea codurilor 1D, 2D, coduri postale, coduri de stiva, coduri compozite si scanare de imagini Mai multe LED-uri care schimba culoarea pe partile laterale si partea superioara a carcasei Sistem de iluminare si ochire - lider pe piata Difuzor polifonic pentru o gama larga de optiuni de feedback audio Tehnologia „Green Spot” patentata de Datalogic pentru confirmarea cu succes a citirii Comutare automata intre modurile manual si stationar Domenii de utlizare: Magazine de specialitate non-alimentare, cum ar fi magazine de moda, cosmetice, bijuterii, parfumerie etc. Magazine duty-free si alte magazine din aeroporturi Alte servicii comerciale: banci, companii de asigurari si utilitati",
-      "characteristics": "",
-      "specifications": {},
-      "tags": [],
-      "published_at": "2021-10-27T07:32:57.535Z",
-      "meta_title": "",
-      "meta_description": ""
-    },
-    {
-      "slug": "scaner-datalogic-quickscan-i-lite-qw2100",
-      "url": "https://rti.md/product/scaner-datalogic-quickscan-i-lite-qw2100",
-      "api_url": "https://api.ecommerce.rti.md/api/products/slug/scaner-datalogic-quickscan-i-lite-qw2100?lang=ro",
-      "title": "Scaner 1D Datalogic QuickScan Lite QW2100",
-      "category": "Scanere manuale",
-      "stock_status": "In stoc",
-      "price": "",
-      "images": [
-        "/img/products/38025019-285e-4074-8df5-089e3444b566.png",
-        "/img/products/9e4bd90e-3405-410f-ba5d-4fe630a75608.png",
-        "/img/products/34b2785b-41cb-4726-ae30-a8939a9f6ff3.png",
-        "/img/products/450ac2cc-32cb-4fdb-9d5b-0a481a63120e.png"
-      ],
-      "description": "Scanerul din seria QuickScan Datalogic ADC's are ca scop general colectarea de date a produselor. QuickScan Lite QW2100 este un model de baza al gamei Datalogic creat special pentru citirea codurilor de bare lungi si trunchiate care este comun in unele zone ale lumi. Este perfect pentru utilizarea in comerț, fabrici, in procesarea documentelor si proiectelor si in mediile bancare si finanțe. QW2100 este mic, ușor si având un design ergonomic este confortabil de utilizat în timpul operațiunilor de zi cu zi. Acesta oferă performante de citire pe cele mai multe coduri de bare 1D si dispune de un unghi larg de scanare, având o linie de scanare extinsa, ajutând la citirea codurilor de bare mai late decât cele găsite de obicei pe facturile de utilități si utilizate de către producători de piese electronice. In plus având o linie de scanare mai subțire si mai luminoasa permite utilizatorilor scanarea la unghiuri largi, fără a fi nevoie sa mărească distanta de scanare. Când cititorul este in standby. Ledul verde rămâne aprins pentru a arata utilizatorilor unde este poziția codului pentru o citire rapida si intuitiva. QW2100 este disponibil cu 2 opțiuni de interfață : USB sau tastatura Wedge / RS-232, si include diverse opțiuni de pachete, astfel încât poate fi comandat ca un simplu scanner sau ca un scanner cu kit in care se include cablul si suportul de hands-free. Softul de configurare Datalogic Aladdin oferă caracteristici ușor de utilizat care simplifica procedura de pornire, chiar si pentru utilizatori neexperimentați.",
-      "characteristics": "Reads barcodes: 1D, Postal, GS1 Databar\nComm cable: USB\nColour: Black\nIP norm compliance: IP42\nScanner resolution [mm]: 0.1016\nDecoding capability: imager 1D (linear imager)\nOperation temperature: od 0°C do 50°C\nWarranty [months]: 36\nInterfaces: USB\nReading indicators: sound and light\nMinimal code contrast [%]: 25\nDimensiuni [mm]: 170 x 65 x 70\nStorage temperature: od -40°C do 70°C\nMax environment humidity [%]: od 5% do 95%\nDepth of Field @UPC 100% [cm]: 40",
-      "specifications": {
-        "Reads barcodes": "1D, Postal, GS1 Databar",
-        "Comm cable": "USB",
-        "Colour": "Black",
-        "IP norm compliance": "IP42",
-        "Scanner resolution [mm]": "0.1016",
-        "Decoding capability": "imager 1D (linear imager)",
-        "Operation temperature": "od 0°C do 50°C",
-        "Warranty [months]": "36",
-        "Interfaces": "USB",
-        "Reading indicators": "sound and light",
-        "Minimal code contrast [%]": "25",
-        "Dimensiuni [mm]": "170 x 65 x 70",
-        "Storage temperature": "od -40°C do 70°C",
-        "Max environment humidity [%]": "od 5% do 95%",
-        "Depth of Field @UPC 100% [cm]": "40"
-      },
-      "tags": [
-        "scanere",
-        "datalogic",
-        "QuickScan"
-      ],
-      "published_at": "2021-10-28T11:26:09.743Z",
       "meta_title": "",
       "meta_description": ""
     },
@@ -667,44 +485,6 @@
       "published_at": "2021-10-14T08:14:54.441Z",
       "meta_title": "Scaner Bi-optic Datalogic Magellan 9800i",
       "meta_description": "Сканер с имиджевой технологией Magellan™ 9800i имеет низкую высоту сканирующей части и читает линейные (1D), двухмерные (2D) и код Digimarc"
-    },
-    {
-      "slug": "cititor-de-coduri-de-bare-datalogic-quickscan-qm-2130a",
-      "url": "https://rti.md/product/cititor-de-coduri-de-bare-datalogic-quickscan-qm-2130a",
-      "api_url": "https://api.ecommerce.rti.md/api/products/slug/cititor-de-coduri-de-bare-datalogic-quickscan-qm-2130a?lang=ro",
-      "title": "Scaner 1D  de coduri de bare Datalogic QuickScan QM 2130a",
-      "category": "Scanere manuale",
-      "stock_status": "In stoc",
-      "price": "",
-      "images": [
-        "/img/products/2279673a-ee52-4104-8ec8-76f4236f890b.png",
-        "/img/products/845fbfab-31b7-431c-b9e6-8096eb6eb0d7.jpg"
-      ],
-      "description": "Datalogic QuickScan QM2130 este un cititor de coduri de bare mobil cu transmisie radio. Tehnologia folosita pentru transmisia datelor scanate catre baza de comunicatie si implicit catre calculator se intituleaza STAR. Este o tehnologie brevetata de catre Datalogic ADC ce functioneaza in banda de frecventa 433MHz. Principalele avantaje in folosirea tehnologiei STAR in comparatie cu traditionala tehnologie bluetooth sunt distanta mai mare de transmitere (10 – 18metri), posibilitatea de comunicare in dublu sens (concomitent transmite si primeste informatii) si exclusivitatea frecventei. Cand discutam despre exclusivitatea frecventei ne referim la faptul ca in banda STAR de 433MHz functioneaza doar dispozitive mobile Datalogic – nu aveti interferente cu alte dispozitive dotate cu Wi-Fi sau bluetooth, nu aveti interferente cu mousi si tastaturi wireless, porti automate sau orice alt dispozitiv care transmite prin unde radio. QM2130 este un imager linear pentru coduri de bare 1D. Acest aspect se traduce prin faptul ca poate citi cu usurinta coduri de bare lineare (1D) chiar daca sunt mai putin lizibile, partial deteriorate sau murdare. Rata de defectare al cititoarelor de coduri de bare de tip linear imager este foarte scazuta pentru ca nu exista oglinzi si nici nu exista componente aflate in miscare in interiorul scanerului. Functia Batch cu care este dotat Datalogic QuickScan Mobile 2130 ii permite citirea codurilor de bare chiar si dupa iesirea din raza de actiune a cradle-ului (bazei de comunicatie). Memoria ii perimte stocarea a pana la 4.000 de coduri de bare si descarcarea acestora in mod automat la momentul cand se reintra in raza de comunicatie. Tehnologia Green-Spot semnaleaza citirea cu succes a unui cod de bare inverzind-ul. In felul acesta cititorul se poate folosi cu succes in medii de lucru foarte galagioase unde avertizorul sonor nu se aude sau in medii de lucru unde linistea este un amanunt esential.",
-      "characteristics": "Depth of field: between 2-27cm depending on barcode size\nLight source: LED array 630-670nm\nScan rate: 235 Scan/sec\nMin. Resolution: 0.10mm/4 mils\nPrint Contrast: 20% or higher\nLED Safety Class: Class 1 EN60825-1\nReading indicators: LED & Beeper\nInterface: PS2 Keyboard wedge, Standard RS-232, USB\nBattery: Li-ion 700mAh\nOperating time: Typical 20,000 Scans\nRecharge time: 6 Hours\nSymbologies supported: UPC-A/E, EAN8/13/128, JAN8/13, Code128, Codabar, Code93, Code39, Code49, Code11, Interleaved 2 of 5, Standard 2 of 5, IATA, MSI, Plessey, GS1 Databar\nRadio: frequency: 433.92 Mhz Bit Rate 19,200 baud Effective radiated power:  < 10mW Range (in open air): up to 12 m\nBase Station power: 5 VDC Power consumption: 4W when charging\nBase Station indicators: Battery Charging: Red Charge Completed: Green Power/Data: Yellow\nDimensions (H x W x L): Scanner:171 x 68 x 90 mm Base Station: 80 x 90 x 130 mm\nWeight: Scanner:189g without batteries Base Station: 181g",
-      "specifications": {
-        "Depth of field": "between 2-27cm depending on barcode size",
-        "Light source": "LED array 630-670nm",
-        "Scan rate": "235 Scan/sec",
-        "Min. Resolution": "0.10mm/4 mils",
-        "Print Contrast": "20% or higher",
-        "LED Safety Class": "Class 1 EN60825-1",
-        "Reading indicators": "LED & Beeper",
-        "Interface": "PS2 Keyboard wedge, Standard RS-232, USB",
-        "Battery": "Li-ion 700mAh",
-        "Operating time": "Typical 20,000 Scans",
-        "Recharge time": "6 Hours",
-        "Symbologies supported": "UPC-A/E, EAN8/13/128, JAN8/13, Code128, Codabar, Code93, Code39, Code49, Code11, Interleaved 2 of 5, Standard 2 of 5, IATA, MSI, Plessey, GS1 Databar",
-        "Radio": "frequency: 433.92 Mhz Bit Rate 19,200 baud Effective radiated power:  < 10mW Range (in open air): up to 12 m",
-        "Base Station power": "5 VDC Power consumption: 4W when charging",
-        "Base Station indicators": "Battery Charging: Red Charge Completed: Green Power/Data: Yellow",
-        "Dimensions (H x W x L)": "Scanner:171 x 68 x 90 mm Base Station: 80 x 90 x 130 mm",
-        "Weight": "Scanner:189g without batteries Base Station: 181g"
-      },
-      "tags": [],
-      "published_at": "2021-10-27T10:53:51.958Z",
-      "meta_title": "Scaner de coduri de bare Datalogic QuickScan QM2130 cu transmisie radio",
-      "meta_description": "Cititor de coduri de bare Datalogic QuickScan QM2130 este un scaner mobil cu transmisie radio care se foloseste activ pentru a simplifica procesele de inventariere si vanzari"
     }
   ]
 }

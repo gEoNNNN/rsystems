@@ -21,7 +21,7 @@ const plans = [
   },
   {
     id: 'professional',
-    card: '/img/card2.svg',
+    card: '/img/card1.svg',
     name: 'Proffesional',
     tagline: 'Ideal pentru restaurante cu opțiuni QSR, restaurante de lux, pub-uri și baruri',
     price: '59€',
@@ -136,6 +136,21 @@ function PricingPage() {
       { threshold: 0.1 }
     )
     document.querySelectorAll('[data-animate], [data-stagger]').forEach(el => observer.observe(el))
+
+    // Stagger accordion rows when cmp-table enters viewport
+    const tableEl = document.querySelector('[data-cmp-table]')
+    if (tableEl) {
+      const tableObserver = new IntersectionObserver(entries => {
+        entries.forEach(e => {
+          if (e.isIntersecting) {
+            e.target.querySelectorAll('[data-cmp-row]').forEach(row => row.classList.add('cmp-row-visible'))
+            tableObserver.disconnect()
+          }
+        })
+      }, { threshold: 0.05 })
+      tableObserver.observe(tableEl)
+    }
+
     return () => observer.disconnect()
   }, [])
 
@@ -145,9 +160,12 @@ function PricingPage() {
 
       {/* ── Pricing Cards ── */}
       <section className="pricing-section" data-animate>
+        <h2 className="pricing-section-heading">Alege planul potrivit pentru afacerea ta</h2>
+        <p className="pricing-section-sub">Fără costuri ascunse. Poți schimba planul oricând.</p>
         <div className="pricing-cards" data-stagger>
           {plans.map(plan => (
             <div key={plan.id} className={`pricing-card${plan.featured ? ' pricing-card--featured' : ''}`}>
+              {plan.featured && <div className="pricing-badge">⭐ Cel mai popular</div>}
               <img src={plan.card} alt="" className="pricing-card-bg" />
               <div className="pricing-card-content">
                 <h2 className="pricing-card-name">{plan.name}</h2>
@@ -176,11 +194,21 @@ function PricingPage() {
             </div>
           ))}
         </div>
+        {/* Wave transition to comparison section */}
+        <div className="pricing-wave-divider" aria-hidden="true">
+          <svg viewBox="0 0 1440 80" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+            <path d="M0,80 L0,20 C180,70 360,0 540,30 C720,60 900,0 1080,30 C1260,60 1380,10 1440,25 L1440,80 Z" fill="#f5f5f5"/>
+          </svg>
+        </div>
       </section>
 
       {/* ── Comparison Table ── */}
       <section className="cmp-section" data-animate>
-        <div className="cmp-table">
+        <div className="cmp-section-intro">
+          <h2 className="cmp-section-heading">Comparație completă a planurilor</h2>
+          <p className="cmp-section-sub">Descoperă funcționalitățile incluse în fiecare plan și alege soluția potrivită pentru afacerea ta.</p>
+        </div>
+        <div className="cmp-table" data-cmp-table>
           {/* Header row */}
           <div className="cmp-header">
             <div className="cmp-header-title">POS intuitiv pentru vânzări rapide</div>
@@ -193,8 +221,18 @@ function PricingPage() {
           {comparisonSections.map((section, idx) => {
             const firstWord = section.title.split(' ')[0]
             const isOpen = openSection === idx
+            const sortedFeatures = [...section.features].sort((a, b) => {
+              const countA = (a.basic ? 1 : 0) + (a.pro ? 1 : 0) + (a.enterprise ? 1 : 0)
+              const countB = (b.basic ? 1 : 0) + (b.pro ? 1 : 0) + (b.enterprise ? 1 : 0)
+              return countB - countA
+            })
             return (
-              <div key={idx} className="cmp-accordion">
+              <div
+                key={idx}
+                className={`cmp-accordion${isOpen ? ' cmp-accordion--open' : ''}`}
+                data-cmp-row
+                style={{ '--row-delay': `${idx * 60}ms` } as React.CSSProperties}
+              >
                 <button
                   className={`cmp-accordion-header${isOpen ? ' cmp-accordion-header--open' : ''}`}
                   onClick={() => setOpenSection(isOpen ? -1 : idx)}
@@ -210,8 +248,12 @@ function PricingPage() {
 
                 {isOpen && section.features.length > 0 && (
                   <div className="cmp-accordion-body">
-                    {section.features.map((f, fi) => (
-                      <div key={fi} className="cmp-feature-row">
+                    {sortedFeatures.map((f, fi) => (
+                      <div
+                        key={fi}
+                        className="cmp-feature-row"
+                        style={{ '--fi': fi } as React.CSSProperties}
+                      >
                         <div className="cmp-feature-name">{f.name}</div>
                         <div className="cmp-feature-col">{f.basic ? <Checkmark /> : null}</div>
                         <div className="cmp-feature-col">{f.pro ? <Checkmark /> : null}</div>

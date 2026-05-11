@@ -201,9 +201,14 @@
   margin-top: 0.2rem;
 }
 
+.blog-card-date {
+  color: #bbb;
+  font-style: italic;
+}
+
 /* ── Sidebar ── */
 .blog-sidebar {
-  flex: 0 0 270px;
+  flex: 0 0 310px;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;

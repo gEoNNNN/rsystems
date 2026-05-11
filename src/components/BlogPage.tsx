@@ -18,7 +18,8 @@ const articles = [
     category: 'Restaurante',
     readTime: '8 minute',
     href: '/blog/automatizare-restaurant-2026',
-    img: '/img/blogph.svg',
+    img: '/img/blog01.svg',
+    date: '2 zile în urmă',
   },
   {
     title: 'Sisteme POS Moderne pentru Cafenele și Coffee Shop-uri',
@@ -26,7 +27,8 @@ const articles = [
     category: 'Cafenea',
     readTime: '6 minute',
     href: '/blog/pos-cafenele',
-    img: '/img/blogph.svg',
+    img: '/img/blog02.svg',
+    date: '5 zile în urmă',
   },
   {
     title: 'Cum Reduci Pierderile și Erorile în HoReCa',
@@ -34,7 +36,26 @@ const articles = [
     category: 'Management HoReCa',
     readTime: '9 minute',
     href: '/blog/reducere-pierderi-horeca',
-    img: '/img/blogph.svg',
+    img: '/img/blog03.svg',
+    date: '1 săptămână în urmă',
+  },
+  {
+    title: 'Ghid Complet pentru Automatizarea Fast Food-urilor',
+    desc: 'De la comenzi digitale și chioșcuri self-service până la gestiunea automată a stocurilor și livrare optimizată.',
+    category: 'Fast Food & Delivery',
+    readTime: '7 minute',
+    href: '/blog/automatizare-fast-food',
+    img: '/img/blog04.svg',
+    date: '2 săptămâni în urmă',
+  },
+  {
+    title: 'Panouri Digitale pentru Restaurante și Meniuri Interactive',
+    desc: 'Cum digital signage-ul transformă experiența clienților și crește valoarea medie a comenzilor în unitățile HoReCa.',
+    category: 'Digital Signage',
+    readTime: '5 minute',
+    href: '/blog/digital-signage-horeca',
+    img: '/img/blog05.svg',
+    date: '3 săptămâni în urmă',
   },
 ]
 
@@ -113,6 +134,8 @@ function BlogPage() {
                     <span>{a.category}</span>
                     <span>·</span>
                     <span>{a.readTime}</span>
+                    <span>·</span>
+                    <span className="blog-card-date">{a.date}</span>
                   </div>
                   <h3 className="blog-card-title">{a.title}</h3>
                   <p className="blog-card-desc">{a.desc}</p>
@@ -131,15 +154,6 @@ function BlogPage() {
         {/* ── Sidebar ── */}
         <aside className="blog-sidebar">
           <div className="blog-sidebar-box">
-            <h3 className="blog-sidebar-heading">Categorii</h3>
-            <div className="blog-sidebar-divider" />
-            <ul className="blog-sidebar-list">
-              {categories.map((c, i) => (
-                <li key={i}><a href="#">{c}</a></li>
-              ))}
-            </ul>
-          </div>
-          <div className="blog-sidebar-box">
             <h3 className="blog-sidebar-heading">Populare</h3>
             <div className="blog-sidebar-divider" />
             <ul className="blog-sidebar-list">
@@ -151,6 +165,15 @@ function BlogPage() {
                     <span className="blog-pop-time">{p.readTime}</span>
                   </a>
                 </li>
+              ))}
+            </ul>
+          </div>
+          <div className="blog-sidebar-box">
+            <h3 className="blog-sidebar-heading">Categorii</h3>
+            <div className="blog-sidebar-divider" />
+            <ul className="blog-sidebar-list">
+              {categories.map((c, i) => (
+                <li key={i}><a href="#">{c}</a></li>
               ))}
             </ul>
           </div>
