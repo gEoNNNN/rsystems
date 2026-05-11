@@ -1,0 +1,47 @@
+{
+  "category": "echipamente-wireless",
+  "category_title": "Echipamente wireless",
+  "url": "https://rti.md/category/echipamente-wireless",
+  "total": 1,
+  "products": [
+    {
+      "slug": "access-point-zebra-ap6521-single-radio-24ghz5ghz-antena-externa",
+      "url": "https://rti.md/product/access-point-zebra-ap6521-single-radio-24ghz5ghz-antena-externa",
+      "api_url": "https://api.ecommerce.rti.md/api/products/slug/access-point-zebra-ap6521-single-radio-24ghz5ghz-antena-externa?lang=ro",
+      "title": "Punct de acces Zebra AP-6521",
+      "category": "Echipamente wireless",
+      "stock_status": "In stoc",
+      "price": "",
+      "images": [
+        "/img/products/f5e9a6f9-37a6-4b22-a059-547c58ea6851.png",
+        "/img/products/2dd199c3-b561-45a5-9858-2a12290ede63.png",
+        "/img/products/4017b2e4-3392-4ff0-bafe-f0c928f4b365.png"
+      ],
+      "description": "Access Point-ul Zebra AP-6521-60020-EU este ideal pentru birouri mici sau pentru depozite de mici dimensiuni oferind performanta in securitatea si conectivitatea clientilor conectati. AP6521 are abilitatea de a conecta userii locali la o retea remote privata via Wireless folosind standardul de criptare IPSec. Acces Point-ul integreaza un router si un server DHCP pentru conectivitate locala LAN, un Firewall usor de configurat si un motor QoS pentru performanta superioara pentru aplicatii in timp real video si voce. Acces Point-ul Zebra AP6521 este disponibil in configuratie dual-band si antena externa. Versiunea dual-band este capabila sa suporte serviciile de date 802.11n in ambele benzi (2.4 si 5 Ghz). Latime de banda : opereaza in 2.4GHz si 5GHz Standard de conectivitate suportat : 802.11a, 802.11b, 802.11g, 802.11n - maxim 300Mbps Putere maxima : 27 dBn",
+      "characteristics": "PHYSICAL CHARACTERISTICS: \nDimensions: : \nAP 6521 (internal antenna) : 2.0 lbs./.91 kg\nAP 6521 (external antenna): 2.5 lbs./1.14 kg\nWeight: \nLED indicators:: 2 LED indicators with multiple modes indicating 2.4GHz/5 GHz Activity, Power, Adoption and Errors\nWireless Data Communications and Networkig: 802.11b/g: 1,2,5.5,11,6,9,12,18,24,36,48, and 54Mbps802.11a: 6,9,12,18,24,36,48, and 54Mbps 802.11n: MCS 0-15 up to 300Mbps\nNetwork standard: 802.11a, 802.11b, 802.11g, 802.11n\nWireless medium: 0 to 86,100 lux\nOperating channels: 5GHz: All channels from 5180 MHz to 5825 MHz  2.4GHz: 2412-2472 MHz  Actual operating frequencies depend on national regulatory limits\nMaximum available transmit power: 27dBm\nTransmit power Adjustment: 1dB increments\nAntenna configuration: 2x2 MIMO (transmit on two and receive on two antennas)\nOperating bands: FCC EU 2.412 to 2.462 GHz 2.412 to 2.472 GHz 5.150 to 5.250 (UNII -1) 5.150 to 5.250 GHz 5.725 to 5.825 (UNII -3) 5.150 to 5.350 GHz 5.725 to 5.850 (ISM) 5.470 to 5.725 GHz",
+      "specifications": {
+        "PHYSICAL CHARACTERISTICS": "",
+        "Dimensions: ": "",
+        "AP 6521 (internal antenna) ": "2.0 lbs./.91 kg",
+        "AP 6521 (external antenna)": "2.5 lbs./1.14 kg",
+        "Weight": "",
+        "LED indicators:": "2 LED indicators with multiple modes indicating 2.4GHz/5 GHz Activity, Power, Adoption and Errors",
+        "Wireless Data Communications and Networkig": "802.11b/g: 1,2,5.5,11,6,9,12,18,24,36,48, and 54Mbps802.11a: 6,9,12,18,24,36,48, and 54Mbps 802.11n: MCS 0-15 up to 300Mbps",
+        "Network standard": "802.11a, 802.11b, 802.11g, 802.11n",
+        "Wireless medium": "0 to 86,100 lux",
+        "Operating channels": "5GHz: All channels from 5180 MHz to 5825 MHz  2.4GHz: 2412-2472 MHz  Actual operating frequencies depend on national regulatory limits",
+        "Maximum available transmit power": "27dBm",
+        "Transmit power Adjustment": "1dB increments",
+        "Antenna configuration": "2x2 MIMO (transmit on two and receive on two antennas)",
+        "Operating bands": "FCC EU 2.412 to 2.462 GHz 2.412 to 2.472 GHz 5.150 to 5.250 (UNII -1) 5.150 to 5.250 GHz 5.725 to 5.825 (UNII -3) 5.150 to 5.350 GHz 5.725 to 5.850 (ISM) 5.470 to 5.725 GHz"
+      },
+      "tags": [
+        "motorola",
+        "zebra"
+      ],
+      "published_at": "2021-09-23T08:53:09.251Z",
+      "meta_title": "Access Point Zebra AP6521, single radio, 2.4GHz/5GHz, antena externa",
+      "meta_description": "Acces point Motorola AP-6521 fără fir pentru acces la rețea wireless Wi-Fi"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "category": "sistem-numarare-vizitatori",
+  "category_title": "Sistem numarare vizitatori",
+  "url": "https://rti.md/category/sistem-numarare-vizitatori",
+  "total": 1,
+  "products": [
+    {
+      "slug": "contor-flux-de-vizitatori-stereo-3d",
+      "url": "https://rti.md/product/contor-flux-de-vizitatori-stereo-3d",
+      "api_url": "https://api.ecommerce.rti.md/api/products/slug/contor-flux-de-vizitatori-stereo-3d?lang=ro",
+      "title": "Contor flux de vizitatori RCount",
+      "category": "Sistem numarare vizitatori",
+      "stock_status": "In stoc",
+      "price": "",
+      "images": [
+        "/img/products/5491bffb-6750-40ee-807e-f6bec451f374.png",
+        "/img/products/0ca3c1f4-9868-40d2-96dc-bb59599c2c00.png",
+        "/img/products/10abcc70-c4ab-4746-8a64-d6b01979ee12.png",
+        "/img/products/f847b079-9f6c-4df9-a356-06313b14d14c.png"
+      ],
+      "description": "3D contorul de vizitatori RCount este un device specializat pentru numararea precisa a vizitatorilor in magazine si centre comerciale, cu trafic dens si cu iluminare instabila. Numararea vizitatorilor se efectueaza prin determinarea capului fiecarei persoane care trece, astfel se efectuaza o numarare cu precizie sporita. Contorului RCount ofera posibilitatea de a exclude din numaratoare umbrele, razele solare, copiii, carucioarele de bacanie etc. Principiul de functionare: Doi senzori grafici scaneaza si trimit datele catre procesorul contorului. Procesorul compara imaginile primite si cauta asemanari intre ele. Pe baza datelor adunate se calculeaza si se creeaza un model matematic al spatiului 3D. Apoi, folosind software-ul incorporat, procesorul detecteaza vizitatorii care au trecut prin punctul de numarare. Procesorul salveaza datele colectate in memoria flash, apoi le transfera prin retea, catre sistemul de analiza a datelor. Specificatii tehnice: Inaltime de instalare 2.4-6 metri Ajustare automata la factorii externi de lumina - intuneric,raze solare, stralucire Numararea traficului super-dens Filtrare dupa inaltimea umana Elimina din numarare copiii, umbrele, carucioarele, genti, carucioarele de bacanie Racire fara ventilator Posibilitate de grupare a mai multor senzori Indicatori de performanta: Evaluarea traficului generat de campanii de marketing, inainte, in timpul si dupa lansare Cunoasterea in timp real a numarului de vizitatori Descopera orele de varf cu cel mai mare trafic si cele mai mari oportunitati de vanzare Posibilitatea de a realiza analize comparative intre locatiile monitorizate pe datele de trafic, vanzari si campanii Analize pentru rapoartele de marketing: trendul comparativ pe ani Puteti alege raportari pe ora, zi, saptamana, luna, an sau selectii personalizate ale perioadelor Maximizarea vanzarilor prin monitorizarea ratei de conversie Maximizarea performantei individuale a locatiilor din retea prin analize comparative pe zone Monitorizarea eficientei campaniilor de marketing si a canalelor de comunicare Maximizarea veniturilor din inchiriere prin identificarea zonelor cu trafic intens Maximizare eficienta a resursei umane",
+      "characteristics": "Size: 138x65x25mm\nAccuracy: up to 100%\nOperating Systems: DSP BIOS\nMicro SD: 8 GB\nProtocols: FTP, SNTP, DNS, HTTP, TFTP\nDownload: TXT, CSV, XML, JSON, JPG\nSensors: 2 black&white megapixel CMOS\nInstallation height: 2.4m -6m\nProcessor: DSP\nPower: PoE 48 V built in, 3 W use\nData interface: 10/100 Mbps Ethernet PoE\nAutomatic firmware upgrade: TFTP, HTTP",
+      "specifications": {
+        "Size": "138x65x25mm",
+        "Accuracy": "up to 100%",
+        "Operating Systems": "DSP BIOS",
+        "Micro SD": "8 GB",
+        "Protocols": "FTP, SNTP, DNS, HTTP, TFTP",
+        "Download": "TXT, CSV, XML, JSON, JPG",
+        "Sensors": "2 black&white megapixel CMOS",
+        "Installation height": "2.4m -6m",
+        "Processor": "DSP",
+        "Power": "PoE 48 V built in, 3 W use",
+        "Data interface": "10/100 Mbps Ethernet PoE",
+        "Automatic firmware upgrade": "TFTP, HTTP"
+      },
+      "tags": [],
+      "published_at": "2021-12-06T10:02:41.286Z",
+      "meta_title": "",
+      "meta_description": ""
+    }
+  ]
+}

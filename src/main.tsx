@@ -10,6 +10,8 @@ import IntegrationsPage from './components/IntegrationsPage.tsx'
 import PricingPage from './components/PricingPage.tsx'
 import BlogPage from './components/BlogPage.tsx'
 import AboutPage from './components/AboutPage.tsx'
+import ProductCategoryPage from './components/ProductCategoryPage.tsx'
+import ProductDetailPage from './components/ProductDetailPage.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -28,6 +30,8 @@ createRoot(document.getElementById('root')!).render(
         <Route path="/preturi" element={<PricingPage />} />
         <Route path="/blog" element={<BlogPage />} />
         <Route path="/despre" element={<AboutPage />} />
+        <Route path="/produse/:categorySlug/:productSlug" element={<ProductDetailPage />} />
+        <Route path="/produse/:slug" element={<ProductCategoryPage />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>,

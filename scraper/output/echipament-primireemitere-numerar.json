@@ -1,0 +1,106 @@
+{
+  "category": "echipament-primireemitere-numerar",
+  "category_title": "Echipament primire/emitere numerar",
+  "url": "https://rti.md/category/echipament-primireemitere-numerar",
+  "total": 4,
+  "products": [
+    {
+      "slug": "automat-de-schimb",
+      "url": "https://rti.md/product/automat-de-schimb",
+      "api_url": "https://api.ecommerce.rti.md/api/products/slug/automat-de-schimb?lang=ro",
+      "title": "Automat de schimb",
+      "category": "Automate de schimb",
+      "stock_status": "In stoc",
+      "price": "",
+      "images": [
+        "/img/products/0646f5f9-054d-4a80-935e-1bc9546c454e.png",
+        "/img/products/5b47406e-7d31-4fdb-889d-88c86b99659c.png"
+      ],
+      "description": "Automat de schimb pentru receptionarea bancnotelor cu valoare nominala de 10 sau 20 lei, cu schimbul ulterior al bancnotelor introduse si distribuirea acestora in numerar sub forma de monede cu valoare nominala de 2 lei.",
+      "characteristics": "",
+      "specifications": {},
+      "tags": [],
+      "published_at": "2021-12-08T11:45:23.570Z",
+      "meta_title": "",
+      "meta_description": ""
+    },
+    {
+      "slug": "smart-hopper",
+      "url": "https://rti.md/product/smart-hopper",
+      "api_url": "https://api.ecommerce.rti.md/api/products/slug/smart-hopper?lang=ro",
+      "title": "SMART hopper",
+      "category": "Acceptoare monede",
+      "stock_status": "In stoc",
+      "price": "",
+      "images": [
+        "/img/products/1dfbe0fe-83f1-489b-89cf-441836d5a301.jpg",
+        "/img/products/0afeef34-cd30-4501-860d-1f1d7c93b4b7.png",
+        "/img/products/b02ab20c-8864-40c8-9923-58c7debf16eb.png",
+        "/img/products/325eca57-d4cf-4159-a0fd-9076d350d1d7.png"
+      ],
+      "description": "SMART hopper este un dispozitiv pentru receptia si emiterea a monedelor, care poate functiona cu monede de nominal diferit sau diferite tipuri de jetoane. Emitere rapida de monede, dimensiuni compacte, protocol eSSP, aceasta sunt doar cateva avantaje ale acestui model. Grazie acestor caracteristici, nevoia de a folosi mai multe hoppere si diferite buncare de sortare simultan dispare, deoarece totul este disponibil intr-un singur dispozitiv multifunctional. Caracteristici distinctive: Dispozitiv multinominal Functioneaza atat cu monede, cat si cu jetoane Posibilitatea de a accepta si emite monede Asigura cel mai inalt nivel de securitate, datorita blocarii buncarului cu o cheie speciala Detine o capacitate solida de stocare (1500 de monede) Functioneaza cu monede de diferite diametre si grosimi Versatilitate si fiabilitate Rata ridicata de emitere (12 monede pe secunda) Temperatura de operare: +3С - +50С Domenii de uz: Chioscuri de bilete Terminale de schimb Dispozitive pentru depozitarea automata a bancnotelor si monedelor - SmartSafe Distribuitoare automate Module de plata pentru spalatorii auto cu autoservire Terminale de plata pentru achitarea parcarii Parametri monede: Diametru: 18mm - 28.5mm Grosime: 1,65 mm - 3,3 mm Capacitate buncar: 1500 monede de 1 EUR",
+      "characteristics": "",
+      "specifications": {},
+      "tags": [],
+      "published_at": "2022-02-23T15:35:55.000Z",
+      "meta_title": "",
+      "meta_description": ""
+    },
+    {
+      "slug": "validator-numerar-nv200-spectral",
+      "url": "https://rti.md/product/validator-numerar-nv200-spectral",
+      "api_url": "https://api.ecommerce.rti.md/api/products/slug/validator-numerar-nv200-spectral?lang=ro",
+      "title": "Validator numerar NV200 Spectral",
+      "category": "Validator/acceptor numerar",
+      "stock_status": "In stoc",
+      "price": "",
+      "images": [
+        "/img/products/bd7b39fc-1cf6-45d8-bd6a-0d988af89cda.png",
+        "/img/products/21d9ec3d-002c-4a0c-b9aa-cbc662f9d892.png",
+        "/img/products/fe95f6fc-ff2b-4d27-81e2-ae9a9d185731.png"
+      ],
+      "description": "NV200 Spectral este un validator de bancnote extrem de sigur si avansat din punct de vedere tehnologic. Senzorii spectrali de ultima generatie ofera captare completa a imaginilor bancnotelor prin scanarea a peste 4,8 milioane de datapoints pentru a autentifica validitatea bancnotelor. Unitatea se mandreste cu o acceptare de 99% a bacnotelor noi si a celor din circulatie, cu un timp de procesare doar 2 secunde. NV200 Spectral contine o serie de caracteristici de securitate, inclusiv o noua tehnologie optica anti-strimming, care ofera o protectie remarcabila impotriva fraudelor. Mecanismul de ultima ora de centrare a notelor de la NV200 Spectral, impreuna cu acceptarea codului de bare in 4 directii, aduc utilizatorului o gestionare exceptionala a bancnotelor si rate crescute de acceptare a bancnotelor. Caracteristici distinctive: Captura 100% a bancnotelor - 4,8 milioane de datapoints Detectarea bancnotelor patate 99% acceptare a bancnotelor noi si celor folosite Procesarea bancnotei in 2 secunde Detectare si protectie autentica si remarcabila impotriva bancnotelor frauduloase Accelereaza timpul de tranzactie si profitabilitatea operatorului Manipulare si fiabilitate exceptionala Cea mai inalta performanta din clasa sa",
+      "characteristics": "Weight: 3.2 kg\nUSB: 2.0\nProtocols: SSP, ccTalk, GDS\nBill width: 60 - 85 mm\nBill length: 115 - 170 mm\nPower: 12 / 24 V\nStandby: 12V -350mA & 24V - 200mA",
+      "specifications": {
+        "Weight": "3.2 kg",
+        "USB": "2.0",
+        "Protocols": "SSP, ccTalk, GDS",
+        "Bill width": "60 - 85 mm",
+        "Bill length": "115 - 170 mm",
+        "Power": "12 / 24 V",
+        "Standby": "12V -350mA & 24V - 200mA"
+      },
+      "tags": [],
+      "published_at": "2022-02-25T09:23:37.000Z",
+      "meta_title": "Validator numerar NV200 Spectral",
+      "meta_description": ""
+    },
+    {
+      "slug": "validatoracceptor-numerar-nv10-usb",
+      "url": "https://rti.md/product/validatoracceptor-numerar-nv10-usb",
+      "api_url": "https://api.ecommerce.rti.md/api/products/slug/validatoracceptor-numerar-nv10-usb?lang=ro",
+      "title": "Acceptor numerar NV10 USB+",
+      "category": "Validator/acceptor numerar",
+      "stock_status": "In stoc",
+      "price": "",
+      "images": [
+        "/img/products/b531eb98-f8f1-44d0-813a-0c3363b749d3.png",
+        "/img/products/48809c8b-6c55-4681-a2f4-0a34098e2145.png",
+        "/img/products/728567de-250d-425d-b6d4-95ceecb62af1.png"
+      ],
+      "description": "NV10 USB+ este un acceptor de bancnote compact, fara stivuitor potrivit pentru majoritatea aplicatiilor. Acest acceptor de bancnote si-a dovedit eficacitatea sa in practica, accepta protocoale standard, este usor de integrat in sisteme si usor de intretinut. Modelul NV10 USB+ este solutia potrivita pentru domenii de divertisment, automate de jocuri si retail etc. Acesta poate fi echipat cu una dintre cele doua placi frontale diferite, in functie de valuta. NV10 USB+ accepta peste 100 de valute diferite ale lumii si este un produs cu adevarat international. Caracteristici distinctive: Design compact fara stivuitor Un standard pentru aplicare la nivel mondial Fiabilitate dovedita in practica",
+      "characteristics": "Weight: 0.55 kg\nProtocols: SSP, ccTalk, MDB, Pulse, Parallel, Binary, Serial\nBezel options: 66 / 82 mm width\nPower: 12 V\nPower standby: 0.2 A",
+      "specifications": {
+        "Weight": "0.55 kg",
+        "Protocols": "SSP, ccTalk, MDB, Pulse, Parallel, Binary, Serial",
+        "Bezel options": "66 / 82 mm width",
+        "Power": "12 V",
+        "Power standby": "0.2 A"
+      },
+      "tags": [],
+      "published_at": "2022-02-28T15:14:29.000Z",
+      "meta_title": "",
+      "meta_description": ""
+    }
+  ]
+}

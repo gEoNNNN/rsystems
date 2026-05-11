@@ -1,0 +1,274 @@
+{
+  "category": "echipamente-de-parcare",
+  "category_title": "Echipamente de parcare",
+  "url": "https://rti.md/category/echipamente-de-parcare",
+  "total": 9,
+  "products": [
+    {
+      "slug": "bariere",
+      "url": "https://rti.md/product/bariere",
+      "api_url": "https://api.ecommerce.rti.md/api/products/slug/bariere?lang=ro",
+      "title": "Bariera Automata RParking",
+      "category": "Barieră Automată ",
+      "stock_status": "In stoc",
+      "price": "",
+      "images": [
+        "/img/products/b22edda6-6536-4a86-ba8e-b0f2b5c38b05.png",
+        "/img/products/908f0082-3671-46d8-bc45-8cabaa42c49d.png",
+        "/img/products/409a0873-19ee-4673-93a4-447956ffff92.png",
+        "/img/products/b86dbdec-0e24-4c5b-90e2-757608a47c89.png"
+      ],
+      "description": "Barieră automată profesională, echipată cu motor brushless DC de 100W, pentru o funcționare silențioasă, eficientă energetic și extrem de durabilă – peste 5 milioane de cicluri de utilizare. Brațul drept, cu lungime de până la 4 m și iluminare LED integrată, asigură vizibilitate excelentă pe timp de noapte și un aspect modern. Timpul de deschidere și coborâre este complet reglabil, independent, între 1,5 și 6 secunde, cu decelerare în 4 trepte pentru mișcări precise și sigure. Mecanismul „fără arc” include totuși un arc de echilibrare pentru stabilitate optimă, iar cuplul mare permite funcționarea fiabilă chiar și în condiții de vânt. Configurarea se face rapid prin serverul web intern, accesibil prin interfață RJ45 (10/100 Mb). În caz de întrerupere a alimentării, brațul poate fi ridicat manual. Carcasa compactă (340 × 270 × 1090 mm) cu protecție IP54 rezistă la intemperii și funcționează în intervalul -30°C până la +80°C.",
+      "characteristics": "Tensiune de lucru: 24V DC\nPuterea motorului: 100W, motor fără perii\nLungimea brațului: braț drept ≤ 4 m, cu iluminare LED\nTimp de deschidere: reglabil 1,5–6 secunde\nInterfață de rețea: 1 x RJ45 (10/100 Mb)\nClasă de protecție: IP54\nDurată de viață: 5 000 000 cicluri\nTemperatura de funcționare: -30℃ ~ +80℃\nTimp de coborâre al brațului: 1,5 s\nViteză medie: 3 s\nDimensiunea carcasei: 340 mm × 270 mm × 1090 mm",
+      "specifications": {
+        "Tensiune de lucru": "24V DC",
+        "Puterea motorului": "100W, motor fără perii",
+        "Lungimea brațului": "braț drept ≤ 4 m, cu iluminare LED",
+        "Timp de deschidere": "reglabil 1,5–6 secunde",
+        "Interfață de rețea": "1 x RJ45 (10/100 Mb)",
+        "Clasă de protecție": "IP54",
+        "Durată de viață": "5 000 000 cicluri",
+        "Temperatura de funcționare": "-30℃ ~ +80℃",
+        "Timp de coborâre al brațului": "1,5 s",
+        "Viteză medie": "3 s",
+        "Dimensiunea carcasei": "340 mm × 270 mm × 1090 mm"
+      },
+      "tags": [],
+      "published_at": "2022-03-04T08:29:38.604Z",
+      "meta_title": "",
+      "meta_description": ""
+    },
+    {
+      "slug": "terminal-de-intrare",
+      "url": "https://rti.md/product/terminal-de-intrare",
+      "api_url": "https://api.ecommerce.rti.md/api/products/slug/terminal-de-intrare?lang=ro",
+      "title": "Terminal de Intrare Ticket System",
+      "category": "Ticket System",
+      "stock_status": "In stoc",
+      "price": "",
+      "images": [
+        "/img/products/e88c868c-3455-42dd-9b27-8c64b28df132.png",
+        "/img/products/9b1cd930-0804-4e28-9345-4785ac109b9f.png",
+        "/img/products/380e4f8c-546e-4563-be32-be193b45995a.png",
+        "/img/products/290c58a7-e98a-489f-a79d-cd800f734914.png",
+        "/img/products/aa6f2964-b099-43a4-b32f-740b10a9e520.png"
+      ],
+      "description": "Terminal de intrare profesional pentru sisteme de parcare automate, realizat din oțel galvanizat rezistent la exterior. Integrează ecran LCD luminos cu afișare video, imprimantă termică pentru bilete . Suportă comunicare vocală clară cu operatorul (cu reducere zgomot). Include controler intern, ventilator și sistem de încălzire pentru funcționare fiabilă în orice condiții. Ideal pentru parcări comerciale, rezidențiale sau instituționale. Barieră RParking Z601B cu kit integrat (semnalizare LED verde/roșu) și buclă de inducție sau alt sistem de detectare a vehiculelor; Cameră video cu funcție de recunoaștere a numerelor de înmatriculare ale vehiculelor. Disponibil și în variantă dublă (două terminale suprapuse) – special concepută pentru acces rapid al vehiculelor de mare tonaj, precum autobuze sau camioane.",
+      "characteristics": "Ecran: LCD, luminozitate ridicată, posibilitate de afișare video.\nImprimantă termică ( pentru bilete ): rolă Ø15 cm.\nComunicare vocală cu operatorul : \nScanner 2D: \nSisteme de încălzire: \nSisteme de răcire: ",
+      "specifications": {
+        "Ecran": "LCD, luminozitate ridicată, posibilitate de afișare video.",
+        "Imprimantă termică ( pentru bilete )": "rolă Ø15 cm.",
+        "Comunicare vocală cu operatorul ": "",
+        "Scanner 2D": "",
+        "Sisteme de încălzire": "",
+        "Sisteme de răcire": ""
+      },
+      "tags": [],
+      "published_at": "2022-03-04T12:09:44.233Z",
+      "meta_title": "Входная стойка",
+      "meta_description": ""
+    },
+    {
+      "slug": "terminal-de-plata-automata",
+      "url": "https://rti.md/product/terminal-de-plata-automata",
+      "api_url": "https://api.ecommerce.rti.md/api/products/slug/terminal-de-plata-automata?lang=ro",
+      "title": "Terminal de Plata Automată ",
+      "category": "Terminal de Plata",
+      "stock_status": "In stoc",
+      "price": "",
+      "images": [
+        "/img/products/2ae38ef6-a292-45f6-8083-20696600e018.png",
+        "/img/products/16cfab1a-5706-4261-9a7a-5586fb241d81.png"
+      ],
+      "description": "Terminal de plată autonom și securizat, proiectat special pentru sisteme de parcare moderne. Acceptă plăți cu numerar, card bancar sau mobil, validează bilete și coduri QR, și permite comunicare directă cu operatorul. Cum funcționează : Introduceți cardul/ticket primită la intrare în terminalul de plată. Pe ecran apare suma pe care trebuie să o plătiți. Efectuați plata în numerar (bancnote, monede sau card). Terminalul vă oferă restul, dacă este necesar. Terminalul confirmă plata dumneavoastră și tipărește o chitanță. Vă luați cardul/ticket plătit și vă îndreptați spre ieșire. Ideal pentru parcări comerciale, centre logistice sau zone cu trafic intens – funcționare 24/7, fără personal la fața locului. Acest lucru asigură un grad ridicat de accesibilitate, confort pentru utilizatori și crește rata de conversie a plăților.",
+      "characteristics": "Carcasă : Oțel\nProtecție: Mecanică multi-nivel\nImprimantă fiscală: \nScanner 2D: \nEcran : PCAP 19\"\nLuminozitate: ≥ 300 cd/m²\nClasă de protecție: IP67\nControler industrial: Linux",
+      "specifications": {
+        "Carcasă ": "Oțel",
+        "Protecție": "Mecanică multi-nivel",
+        "Imprimantă fiscală": "",
+        "Scanner 2D": "",
+        "Ecran ": "PCAP 19\"",
+        "Luminozitate": "≥ 300 cd/m²",
+        "Clasă de protecție": "IP67",
+        "Controler industrial": "Linux"
+      },
+      "tags": [],
+      "published_at": "2025-11-05T19:07:29.000Z",
+      "meta_title": "",
+      "meta_description": ""
+    },
+    {
+      "slug": "terminal-de-intrare-cardpass-rparking",
+      "url": "https://rti.md/product/terminal-de-intrare-cardpass-rparking",
+      "api_url": "https://api.ecommerce.rti.md/api/products/slug/terminal-de-intrare-cardpass-rparking?lang=ro",
+      "title": "Terminal de Intrare CardPass RParking",
+      "category": "CardPass RParking",
+      "stock_status": "In stoc",
+      "price": "",
+      "images": [
+        "/img/products/8bd092e8-b035-48e9-ad2c-f46bd226c567.png",
+        "/img/products/c017e1ba-ae82-4886-97fd-b24f5065ce60.png",
+        "/img/products/dd6c8cb6-6655-4290-b286-e835b96ad950.png",
+        "/img/products/73ae3ab1-205d-4f0e-8e95-b8a0cfcb2fb3.png"
+      ],
+      "description": "Terminal de intrare profesional pentru sisteme de parcare automate, realizat din oțel galvanizat rezistent la exterior. Integrează ecran LCD luminos cu afișare video, dispenser automat pentru emiterea cardurilor de acces și scanner 2D compatibil cu coduri de pe mobil sau hârtie. Suportă carduri RFID contactless pentru abonamente și legitimații, plus comunicare vocală clară cu operatorul (cu reducere zgomot). Include controler intern, ventilator și sistem de încălzire pentru funcționare fiabilă în orice condiții. Barieră RParking Z601B cu kit integrat (semnalizare LED verde/roșu), buclă de inducție sau alt sistem de detectare a vehiculelor și cameră video cu recunoaștere automată a numerelor de înmatriculare (LPR). Configurare ușoară prin server web, deschidere manuală la pană de curent, protecție IP54. Soluție completă și inteligentă pentru parcări comerciale, rezidențiale sau instituționale.",
+      "characteristics": "Suport carduri : RFID (contactless)\nEcran: LCD\nScanner 2D: \nComunicare vocală cu operatorul : \nControler intern: \nClasă de protecție: IP54",
+      "specifications": {
+        "Suport carduri ": "RFID (contactless)",
+        "Ecran": "LCD",
+        "Scanner 2D": "",
+        "Comunicare vocală cu operatorul ": "",
+        "Controler intern": "",
+        "Clasă de protecție": "IP54"
+      },
+      "tags": [],
+      "published_at": "2025-11-05T13:07:29.238Z",
+      "meta_title": "",
+      "meta_description": ""
+    },
+    {
+      "slug": "terminal-de-iesire-cardpass-rparking",
+      "url": "https://rti.md/product/terminal-de-iesire-cardpass-rparking",
+      "api_url": "https://api.ecommerce.rti.md/api/products/slug/terminal-de-iesire-cardpass-rparking?lang=ro",
+      "title": "Terminal de Ieșire CardPass RParking",
+      "category": "CardPass RParking",
+      "stock_status": "In stoc",
+      "price": "",
+      "images": [
+        "/img/products/ae8fa814-897e-48e0-821a-7ec3894f913b.png",
+        "/img/products/5b97eab9-86cc-43de-a337-ca5958004662.png",
+        "/img/products/1f02a4c2-e283-4e13-be12-1e46427850ff.png"
+      ],
+      "description": "Terminal de ieșire profesional pentru sisteme de parcare automate, realizat din oțel galvanizat rezistent la exterior. Integrează ecran LCD luminos cu afișare video, cititor RFID contactless pentru carduri de abonament și legitimații și scanner 2D pentru coduri mobile/hârtie. Asigură comunicare vocală clară cu operatorul (cu reducere zgomot) și funcționare fiabilă prin controler intern, ventilator și sistem de încălzire. Barieră RParking Z601B cu kit integrat (semnalizare LED roșu/verde), buclă de inducție sau alt sistem de detectare vehicule și cameră video cu recunoaștere automată LPR. Configurare ușoară prin server web, deschidere manuală la pană de curent, protecție IP54. Soluție rapidă și sigură pentru ieșirea din parcări comerciale, rezidențiale sau instituționale.",
+      "characteristics": "Ecran: LCD (cu afișare video)\nTipul de citire: RFID (contactless)\nScanner 2D: \nClasă de protecție: IP54",
+      "specifications": {
+        "Ecran": "LCD (cu afișare video)",
+        "Tipul de citire": "RFID (contactless)",
+        "Scanner 2D": "",
+        "Clasă de protecție": "IP54"
+      },
+      "tags": [],
+      "published_at": "2025-11-05T14:20:37.503Z",
+      "meta_title": "",
+      "meta_description": ""
+    },
+    {
+      "slug": "terminal-de-iesire-ticket-system",
+      "url": "https://rti.md/product/terminal-de-iesire-ticket-system",
+      "api_url": "https://api.ecommerce.rti.md/api/products/slug/terminal-de-iesire-ticket-system?lang=ro",
+      "title": "Terminal de Ieșire Ticket System",
+      "category": "Ticket System",
+      "stock_status": "In stoc",
+      "price": "",
+      "images": [
+        "/img/products/a6d1a89d-3c44-4d98-a5dc-2f6c29bfc39b.png",
+        "/img/products/c91f830d-2dcc-4af4-9e65-8cef5619fdc5.png"
+      ],
+      "description": "Terminal de ieșire profesional pentru sisteme de parcare automate, realizat din oțel galvanizat rezistent la exterior. Integrează ecran LCD luminos cu afișare video și scanner 2D pentru citirea rapidă a codurilor de bare de pe mobil sau hârtie (bilete, aplicații mobile). Suportă comunicare vocală clară cu operatorul (cu reducere zgomot). Include controler intern, ventilator și sistem de încălzire pentru funcționare fiabilă în orice condiții. Ideal pentru parcări comerciale, rezidențiale sau instituționale. Barieră RParking Z601B cu kit integrat (semnalizare LED roșu/verde) și buclă de inducție sau alt sistem de detectare a vehiculelor; Cameră video cu funcție de recunoaștere a numerelor de înmatriculare ale vehiculelor.",
+      "characteristics": "Ecran: LCD (cu afișare video)\nScanner 2D: \ncomunicare vocală clară cu operatorul : \nSisteme de răcire: \nSisteme de încălzire: ",
+      "specifications": {
+        "Ecran": "LCD (cu afișare video)",
+        "Scanner 2D": "",
+        "comunicare vocală clară cu operatorul ": "",
+        "Sisteme de răcire": "",
+        "Sisteme de încălzire": ""
+      },
+      "tags": [],
+      "published_at": "2025-11-05T17:26:54.292Z",
+      "meta_title": "",
+      "meta_description": ""
+    },
+    {
+      "slug": "terminal-de-plata-generatia-2",
+      "url": "https://rti.md/product/terminal-de-plata-generatia-2",
+      "api_url": "https://api.ecommerce.rti.md/api/products/slug/terminal-de-plata-generatia-2?lang=ro",
+      "title": "Terminal de Plată Generația 2",
+      "category": "Terminal de Plata",
+      "stock_status": "In stoc",
+      "price": "",
+      "images": [
+        "/img/products/017fcb38-b3d4-4533-9820-09e944dbc7e3.png",
+        "/img/products/4c8ecd93-1682-4405-b503-b5fa1b33f978.png",
+        "/img/products/8e6c03c6-1e26-4d52-a6f5-d625fdb7c382.png",
+        "/img/products/4f5c8292-4fcd-41eb-be91-001d6da877ee.png"
+      ],
+      "description": "Terminal de plată robust și autonom, cu carcasă din oțel galvanizat de 4 mm, proiectat pentru exterior și echipat cu ușă internă pentru seiful de bani. Oferă dublă protecție antifurt prin încuietori anti-vandal și corp ranforsat tip seif. Include imprimantă fiscală RTI 5000 INB cu transmitere online MEV, scanner 2D pentru bilete, carduri sau coduri de pe telefon (pregătit pentru aplicații mobile), și ecran tactil PCAP 19\" anti-vandalism. Acceptă orice plată : bancnote, monede, carduri bancare – cu rambursare automată în numerar și monede. Sistem de apel suport cu buton, microfon, difuzoare (cameră video opțională). Funcționează pe controler Linux , stabil și configurabil remote. Opțional: integrare aplicație Mia, dispenser carduri și UPS. Ideal pentru parcări cu trafic intens – securizat, ușor de utilizat, funcționare 24/7 fără personal.",
+      "characteristics": "Carcasă : oțel\nImprimantă fiscală: RTI 5000 INB\nScanner 2D: \nEcran: PCAP 19\"\nControler industrial: Linux\nLuminozitate : 300 cd/m²\nAcceptă plăți: card bancar, monede și numerar de la 10 pana la 1000.",
+      "specifications": {
+        "Carcasă ": "oțel",
+        "Imprimantă fiscală": "RTI 5000 INB",
+        "Scanner 2D": "",
+        "Ecran": "PCAP 19\"",
+        "Controler industrial": "Linux",
+        "Luminozitate ": "300 cd/m²",
+        "Acceptă plăți": "card bancar, monede și numerar de la 10 pana la 1000."
+      },
+      "tags": [],
+      "published_at": "2025-11-06T13:35:00.548Z",
+      "meta_title": "",
+      "meta_description": ""
+    },
+    {
+      "slug": "blocator-de-parcare-inteligent-pshare-n01ru",
+      "url": "https://rti.md/product/blocator-de-parcare-inteligent-pshare-n01ru",
+      "api_url": "https://api.ecommerce.rti.md/api/products/slug/blocator-de-parcare-inteligent-pshare-n01ru?lang=ro",
+      "title": " Blocator de Parcare Inteligent - Rparking Lock",
+      "category": "Accesorii de Parcare ",
+      "stock_status": "In stoc",
+      "price": "",
+      "images": [
+        "/img/products/e0c3a866-bfe3-4a30-96c3-2d11be5ddbc3.png"
+      ],
+      "description": "Rparking Lock este o încuietoare inteligentă de parcare, dotată cu conexiune prin cablu și funcție de monitorizare a vehiculului, dezvoltată special pentru stațiile de încărcare a mașinilor electrice. În locațiile unde este posibilă realizarea cu ușurință a șanțurilor și a cablajului, încuietoarea poate fi conectată direct la stația de încărcare prin interfața RS485 , devenind astfel o extensie integrată a acesteia. Dispozitivul este ideal pentru parcări publice , parcări subterane sau alte spații controlate, unde este necesară protejarea locului de parcare dedicat. Controlul se realizează printr-o aplicație mobilă : în momentul în care proprietarul mașinii se conectează, încuietoarea coboară automat pentru a permite accesul. După încărcarea completă a vehiculului sau atunci când șoferul dorește să părăsească locul de parcare, încuietoarea se ridică automat și previne ocuparea neautorizată de către alte vehicule. Astfel, se asigură un control eficient și o utilizare exclusivă a locului de parcare.",
+      "characteristics": "Dimensiuni [mm]: 480mm × 410mm × 75mm\nNet Weight: 6kg\nNominal Voltage: DC7V \\~ DC40V\nOperating current: DC24V,  <  0.25A\nStandby Current: DC24V,  <  20mA\nCommunication Mode: RS485 9600bps 8N1\nIsolation: Photoelectric isolation 2500V\nUltrasonic Detection Distance: 1–40 cm from the top of the cover\nLifting/Lowering Time: ≤ 5 seconds\nOperating Temperature: -20°C \\~ 70°C\nSupported Load: 2000kg (car)",
+      "specifications": {
+        "Dimensiuni [mm]": "480mm × 410mm × 75mm",
+        "Net Weight": "6kg",
+        "Nominal Voltage": "DC7V \\~ DC40V",
+        "Operating current": "DC24V,  <  0.25A",
+        "Standby Current": "DC24V,  <  20mA",
+        "Communication Mode": "RS485 9600bps 8N1",
+        "Isolation": "Photoelectric isolation 2500V",
+        "Ultrasonic Detection Distance": "1–40 cm from the top of the cover",
+        "Lifting/Lowering Time": "≤ 5 seconds",
+        "Operating Temperature": "-20°C \\~ 70°C",
+        "Supported Load": "2000kg (car)"
+      },
+      "tags": [
+        "parcare",
+        "automatizare"
+      ],
+      "published_at": "2025-08-04T12:20:42.139Z",
+      "meta_title": "",
+      "meta_description": ""
+    },
+    {
+      "slug": "detachers-universal",
+      "url": "https://rti.md/product/detachers-universal",
+      "api_url": "https://api.ecommerce.rti.md/api/products/slug/detachers-universal?lang=ro",
+      "title": "Bariera Automată RParking PRO",
+      "category": "Barieră Automată ",
+      "stock_status": "In stoc",
+      "price": "",
+      "images": [
+        "/img/products/0d0c9a93-e741-4b34-b354-ad2ee782b7f6.png"
+      ],
+      "description": "Barierele automate reprezintă soluția perfectă pentru un control al accesului modern, versatil și extrem de eficient , fiind tot mai solicitate pe piață. Aceste sisteme performante îmbină armonios fiabilitatea mecanică cu tehnologia inteligentă , fiind alegerea ideală pentru limitarea și reglementarea accesului în parcări, spații publice, spitale, hoteluri, precum și la obiective industriale și private. Caracteristici și Funcții Esențiale: Design Inovator și Calitate Premium: Baza barierei integrează un panou digital cu indicații vizuale clare , asigurând vizibilitate optimă și o experiență de utilizare intuitivă. Motor de Înaltă Performanță: Motorul este construit din aliaj de aluminiu turnat sub presiune , oferind o precizie remarcabilă și o excelentă capacitate de disipare a căldurii. Securitate Avansată în Operare: Sistemul este dotat cu întrerupătoare de limită de siguranță duble și o funcție esențială de inversare automată a brațului la detectarea unui obstacol, maximizând siguranța. Sisteme de Detecție Suplimentare: Suportă opțional instalarea unei fotocelule în infraroșu pentru protecție anti-șoc sporită.",
+      "characteristics": "Working Voltage: 220V\nMotor specification: 80W/120W\nAmbient temperature: -30℃～80℃\nRemote control distance: ≤30m\nLanding stick time fast: 1.5s/medium speed 3s\nChassis size: 340mm×270mm×1090mm\nLimit length of brake lever: 4.5 meters at medium speed, 6 meters at slow speed, standard use of telescopic rubber bar\nProtection class: IP44",
+      "specifications": {
+        "Working Voltage": "220V",
+        "Motor specification": "80W/120W",
+        "Ambient temperature": "-30℃～80℃",
+        "Remote control distance": "≤30m",
+        "Landing stick time fast": "1.5s/medium speed 3s",
+        "Chassis size": "340mm×270mm×1090mm",
+        "Limit length of brake lever": "4.5 meters at medium speed, 6 meters at slow speed, standard use of telescopic rubber bar",
+        "Protection class": "IP44"
+      },
+      "tags": [],
+      "published_at": "2025-10-24T14:19:22.000Z",
+      "meta_title": "",
+      "meta_description": ""
+    }
+  ]
+}

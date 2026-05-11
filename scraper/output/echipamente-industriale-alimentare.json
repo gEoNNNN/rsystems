@@ -1,0 +1,473 @@
+{
+  "category": "echipamente-industriale-alimentare",
+  "category_title": "Echipamente industriale alimentare",
+  "url": "https://rti.md/category/echipamente-industriale-alimentare",
+  "total": 15,
+  "products": [
+    {
+      "slug": "feliator-graef-euro-1920",
+      "url": "https://rti.md/product/feliator-graef-euro-1920",
+      "api_url": "https://api.ecommerce.rti.md/api/products/slug/feliator-graef-euro-1920?lang=ro",
+      "title": "Feliator GRAEF EURO 1920",
+      "category": "Feliatoare manuale",
+      "stock_status": "In stoc",
+      "price": "",
+      "images": [
+        "/img/products/0eba5773-d8f4-4121-afda-890a88913264.jpg"
+      ],
+      "description": "Graef Euro 1920 este un feliator compact care îndeplineşte toate cerinţele pieţei. Nu trebuie să sacrificaţi calitatea excelentă a felierii chiar dacă doriți să începeți cu un echipament profesional low-cost. Dispozitivul compact vă satisface dorinţa pentru o feliere perfectă, cu respectarea tuturor standardelor de siguranță. ACCESORII: Palet din plastic Lubrifiant special Ascuţitoare pentru lame cu 2 discuri BENEFICII: Self supporting Placă de bază din aluminiu Lama Ø190 mm, din oţel special acoperit cu crom Protecţie pentru lama interioară în timpul transportului Curăţire zilnică ușoară Buton dual-comutator on/off",
+      "characteristics": "Motor power: 185 Watts/ 230 V~alternating\nBlade (Ø mm): 190 mm\nCut length (mm): 200 mm\nCut height (mm): 145 mm\nSlice thickness (mm): 0 - 15 mm\nFootprint: 420 x 280 mm\nExterior dimensions: 455 x 335 x 275 mm\nWorkspace: 535 x 350 x 420 mm\nBlade speed: 99/min\nOperating period: 15 min\nEmission noise level: <  69 dBA\n Total vibration value: <  2,5 m/s²\nNet Weight: 9,4 kg",
+      "specifications": {
+        "Motor power": "185 Watts/ 230 V~alternating",
+        "Blade (Ø mm)": "190 mm",
+        "Cut length (mm)": "200 mm",
+        "Cut height (mm)": "145 mm",
+        "Slice thickness (mm)": "0 - 15 mm",
+        "Footprint": "420 x 280 mm",
+        "Exterior dimensions": "455 x 335 x 275 mm",
+        "Workspace": "535 x 350 x 420 mm",
+        "Blade speed": "99/min",
+        "Operating period": "15 min",
+        "Emission noise level": "<  69 dBA",
+        " Total vibration value": "<  2,5 m/s²",
+        "Net Weight": "9,4 kg"
+      },
+      "tags": [],
+      "published_at": "2021-11-23T15:03:14.260Z",
+      "meta_title": "",
+      "meta_description": ""
+    },
+    {
+      "slug": "feliator-graef-euro-2550",
+      "url": "https://rti.md/product/feliator-graef-euro-2550",
+      "api_url": "https://api.ecommerce.rti.md/api/products/slug/feliator-graef-euro-2550?lang=ro",
+      "title": "Feliator GRAEF EURO 2550",
+      "category": "Feliatoare manuale",
+      "stock_status": "In stoc",
+      "price": "",
+      "images": [
+        "/img/products/bbc9d17d-4d86-40fd-bb30-6dffe25b6d50.jpg"
+      ],
+      "description": "GRAEF EURO 2550 este un feliator cu o lamă zimțată specială, care va oferi întotdeauna performanțe extraordinare și garantează un rezultat excelent la tăierea diferitelor tipuri de pâine. Modelul EURO 2550 este conceput pentru uz industrial si este echipat cu un cuțit pentru felierea pâinii care oferă întotdeauna rezultate excelente, fie că evorba de felierea unei pâini rotunde sau a unei de formă dreptunghiulară. Este garantată o feliere excelentă a diverselor sortimente de pâine. BENEFICII: Plată de bază detaşabilă din oţel inoxidabil Motor cu alimentare avansată a lamelor – cuplu motor ridicat pentru utilizare dispozitivului în regim continuu Lama Ø250 din oțel inoxidabil Protejarea mâinilor pentru lucru în condiții de siguranță Buton de pornire/oprire. Buton dublu ACCESORII: Lubrifiant special",
+      "characteristics": "Motor power: 300 Watt / 230V~ alternating or 400 V~ three-phase current\nBlade (Ø mm): 250 mm\nCut length (mm): 230 mm\nCut height (mm): 165 mm\nSlice thickness (mm): 0 - 15 mm\nFootprint: 460 x 320 mm\nExterior dimensions: 510 x 420 x 370 mm\nWorkspace: 600 x 510 x 480 mm\nBlade speed: 199/min\nOperating period: Continuous duty\nEmission noise level: <  69 dBA\nNet Weight: 20,5 kg",
+      "specifications": {
+        "Motor power": "300 Watt / 230V~ alternating or 400 V~ three-phase current",
+        "Blade (Ø mm)": "250 mm",
+        "Cut length (mm)": "230 mm",
+        "Cut height (mm)": "165 mm",
+        "Slice thickness (mm)": "0 - 15 mm",
+        "Footprint": "460 x 320 mm",
+        "Exterior dimensions": "510 x 420 x 370 mm",
+        "Workspace": "600 x 510 x 480 mm",
+        "Blade speed": "199/min",
+        "Operating period": "Continuous duty",
+        "Emission noise level": "<  69 dBA",
+        "Net Weight": "20,5 kg"
+      },
+      "tags": [],
+      "published_at": "2021-11-24T15:19:38.798Z",
+      "meta_title": "",
+      "meta_description": ""
+    },
+    {
+      "slug": "feliator-graef-profi-euro-2560",
+      "url": "https://rti.md/product/feliator-graef-profi-euro-2560",
+      "api_url": "https://api.ecommerce.rti.md/api/products/slug/feliator-graef-profi-euro-2560?lang=ro",
+      "title": "Feliator GRAEF Profi EURO 2560",
+      "category": "Feliatoare manuale",
+      "stock_status": "In stoc",
+      "price": "",
+      "images": [
+        "/img/products/b64cb6dc-9bde-4bf0-a5cb-a42a47a296ad.jpg"
+      ],
+      "description": "EURO 2560 Feliatorul gravitaţional este folosit în principal pentru tăierea produselor mari. Panta lamei contribuie la o mai bună acţionare a produsului în timpul felierii. ACCESORII: Lubrifiant special Ascuţitoare pentru o lamă cu 2 discuri BENEFICII: Feliator gravitaţional Self-supporting Plată de bază detaşabilă din oţel inoxidabil Motor cu alimentare avansată a lamelor – cuplu motor ridicat pentru utilizare dispozitivului în regim continuu Lama Ø250 din oțel cromat special, producători germani Înveliş de acoperire a lamei interioare Ascuţire uşoară şi rapidă cu ajutorul ascuţitoarei de lame Graef Buton de pornire/oprire. Buton dublu.",
+      "characteristics": "Motor power: 300 Watt / 230V~ alternating or 400 V~ three-phase current\nBlade (Ø mm): 250 mm\nCut length (mm): 230 mm\nCut height (mm): 165 mm\nSlice thickness (mm): 0 - 15 mm\nFootprint: 460 x 320 mm\nExterior dimensions: 520 x 410 x 425 mm\nWorkspace: 600 x 450 x 560 mm\nBlade speed: 199/min\nOperating period: Continuous duty\nEmission noise level: <  69 dBA\nNet Weight: 21,1 kg",
+      "specifications": {
+        "Motor power": "300 Watt / 230V~ alternating or 400 V~ three-phase current",
+        "Blade (Ø mm)": "250 mm",
+        "Cut length (mm)": "230 mm",
+        "Cut height (mm)": "165 mm",
+        "Slice thickness (mm)": "0 - 15 mm",
+        "Footprint": "460 x 320 mm",
+        "Exterior dimensions": "520 x 410 x 425 mm",
+        "Workspace": "600 x 450 x 560 mm",
+        "Blade speed": "199/min",
+        "Operating period": "Continuous duty",
+        "Emission noise level": "<  69 dBA",
+        "Net Weight": "21,1 kg"
+      },
+      "tags": [],
+      "published_at": "2021-11-25T08:27:18.346Z",
+      "meta_title": "",
+      "meta_description": ""
+    },
+    {
+      "slug": "feliator-graef-master-euro-2720",
+      "url": "https://rti.md/product/feliator-graef-master-euro-2720",
+      "api_url": "https://api.ecommerce.rti.md/api/products/slug/feliator-graef-master-euro-2720?lang=ro",
+      "title": "Feliator GRAEF Master EURO 2720",
+      "category": "Feliatoare manuale",
+      "stock_status": "In stoc",
+      "price": "",
+      "images": [
+        "/img/products/a55ee048-a72a-4c3a-ae96-425077a91864.jpg"
+      ],
+      "description": "Designul compact al feliatorului 2720 EURO îl face deosebit de potrivit pentru utilizarea pe tejghele și în zonele de prelucrare a mărfii. Sistemul bine organizat al motorului și o lamă specială de înaltă performanță garantează cea mai bună feliere a mezelurilor şi şuncii. ACCESORII: Lubrifiant special Ascuţitoare pentru o lamă cu 2 discuri BENEFICII: Lame speciale cromate de înaltă performanță Ø 270 mm Capac de lamă închis, fix Cuplu motor ridicat, motor cu dublu rulment, 300Wt Sistem de răcire cu aer pentru a proteja carcasa şi lama de supraîncălzire Lungime feliere 230 mm Placă de bază acoperită Comutator sigur, rezistent la apă Potrivit atât pentru dreptaci, cât și pentru stângaci Slice product support Grosime de tăiere, 0 – 15 mm",
+      "characteristics": "Motor power: 300 Watt/ 230 V~ alternating or 400 V~ three-phase current\nBlade (Ø mm): 270 mm\nCut length (mm): 230 mm\nCut height (mm): 167 mm\nSlice thickness (mm): 0 - 15 mm\nFootprint: 470 x 370 mm\nExterior dimensions: 540 x 510 x 390 mm\nWorkspace: 545 x 520 x 490 mm\nBlade speed: 190/min\nOperating period: Continuous duty\nEmission noise level: <  69 dBA\nNet Weight: 25,2 kg",
+      "specifications": {
+        "Motor power": "300 Watt/ 230 V~ alternating or 400 V~ three-phase current",
+        "Blade (Ø mm)": "270 mm",
+        "Cut length (mm)": "230 mm",
+        "Cut height (mm)": "167 mm",
+        "Slice thickness (mm)": "0 - 15 mm",
+        "Footprint": "470 x 370 mm",
+        "Exterior dimensions": "540 x 510 x 390 mm",
+        "Workspace": "545 x 520 x 490 mm",
+        "Blade speed": "190/min",
+        "Operating period": "Continuous duty",
+        "Emission noise level": "<  69 dBA",
+        "Net Weight": "25,2 kg"
+      },
+      "tags": [],
+      "published_at": "2021-11-26T14:07:28.567Z",
+      "meta_title": "",
+      "meta_description": ""
+    },
+    {
+      "slug": "feliator-graef-profi-euro-3000",
+      "url": "https://rti.md/product/feliator-graef-profi-euro-3000",
+      "api_url": "https://api.ecommerce.rti.md/api/products/slug/feliator-graef-profi-euro-3000?lang=ro",
+      "title": "Feliator GRAEF Profi EURO 3000",
+      "category": "Feliatoare manuale",
+      "stock_status": "In stoc",
+      "price": "",
+      "images": [
+        "/img/products/674aec6e-eaa7-4d3b-84bd-cefdd9c06515.jpg"
+      ],
+      "description": "Feliatorul GRAEF EURO 3000 este alegerea optima care satisface toate nevoile clientului. Datorita capacitatii motorului de 300 V cu cuplu ridicat, în combinație cu lama cromată oferă rezultatele ideale de tăierea produselor cu volum mare. Funcționare fiabilă a tuturor componentelor face ca activitatea aparatului să fie sigură şi lipsită de pericole. ACCESORII: Lubrifiant special Ascuţitoare pentru o lamă cu 2 discuri BENEFICII: Self-supporting Placă de bază detașabilă din oțel inoxidabil, pentru curățare ușoară Cuplu motor ridicat permite utilizarea dispozitivului în regim continuu Lamă Ø 300 mm, confecționată din oțel cromat, producători germani Capac interior pentru lame Accesul liber la suprafață și la partea din spate a lamei permite curățarea rapidă a acestora Buton de pornire/oprire. Buton dublu",
+      "characteristics": "Motor power: 300 Watt/ 230 V~ alternating or 400 V~ three-phase current\nBlade (Ø mm): 300 mm\nCut length (mm): 230 mm\nCut height (mm): 190 mm\nSlice thickness (mm): 0 - 15 mm\nFootprint: 460 x 320 mm\nExterior dimensions: 575 x 420 x 395 mm\nWorkspace: 670 x 540 x 485 mm\nBlade speed: 190/min\nOperating period: Continuous duty\nEmission noise level: <  69 dBA\nNet Weight: 21,8 kg",
+      "specifications": {
+        "Motor power": "300 Watt/ 230 V~ alternating or 400 V~ three-phase current",
+        "Blade (Ø mm)": "300 mm",
+        "Cut length (mm)": "230 mm",
+        "Cut height (mm)": "190 mm",
+        "Slice thickness (mm)": "0 - 15 mm",
+        "Footprint": "460 x 320 mm",
+        "Exterior dimensions": "575 x 420 x 395 mm",
+        "Workspace": "670 x 540 x 485 mm",
+        "Blade speed": "190/min",
+        "Operating period": "Continuous duty",
+        "Emission noise level": "<  69 dBA",
+        "Net Weight": "21,8 kg"
+      },
+      "tags": [],
+      "published_at": "2021-11-29T08:54:01.300Z",
+      "meta_title": "",
+      "meta_description": ""
+    },
+    {
+      "slug": "feliator-graef-euro-3020",
+      "url": "https://rti.md/product/feliator-graef-euro-3020",
+      "api_url": "https://api.ecommerce.rti.md/api/products/slug/feliator-graef-euro-3020?lang=ro",
+      "title": "Feliator GRAEF EURO 3020",
+      "category": "Feliatoare automate/semi-automate",
+      "stock_status": "In stoc",
+      "price": "",
+      "images": [
+        "/img/products/cee7a0f2-6d12-4562-82b5-2ac6aa3a53e7.jpg"
+      ],
+      "description": "Feliatorul GRAEF EURO 3020 este un model universal pentru restaurante și supermarketuri. Modelul EURO 3020 este alegerea perfecta care ameliorează procesele zilnice de lucru. Caracteristicile produsului: Determină greutatea 100%, poate fi calibrat Lame speciale cromate, de înaltă performanță, Ø300 mm, cu cuţite înguste Capac de lamă închis, fix Cuplu motor ridicat Sistem de răcire cu aer al lamelor Lamă detaşabilă (260mm) pentru comoditatea curăţării Placă de bază acoperită Grosime de feliere: 0-24 mm Talerul pentru cântărire poate fi îndepărtat",
+      "characteristics": "Motor power: 500 Watts/ 230 V~ alternating or 400 V~ three-phase current\nBlade (Ø mm): 300 mm\nCut length (mm): 260 mm\nCut height (mm): 195 mm\nSlice thickness (mm): 0 - 24 mm\nFootprint: 540 x 440 mm\nExterior dimensions: 600 x 570 x 420 mm\nWorkspace: 680 x 690 x 570 mm\nBlade speed: 230/min\nOperating period: Continuous duty\nEmission noise level: <  69 dBA\nNet Weight: 37,1 kg",
+      "specifications": {
+        "Motor power": "500 Watts/ 230 V~ alternating or 400 V~ three-phase current",
+        "Blade (Ø mm)": "300 mm",
+        "Cut length (mm)": "260 mm",
+        "Cut height (mm)": "195 mm",
+        "Slice thickness (mm)": "0 - 24 mm",
+        "Footprint": "540 x 440 mm",
+        "Exterior dimensions": "600 x 570 x 420 mm",
+        "Workspace": "680 x 690 x 570 mm",
+        "Blade speed": "230/min",
+        "Operating period": "Continuous duty",
+        "Emission noise level": "<  69 dBA",
+        "Net Weight": "37,1 kg"
+      },
+      "tags": [],
+      "published_at": "2021-11-29T09:02:07.737Z",
+      "meta_title": "",
+      "meta_description": ""
+    },
+    {
+      "slug": "feliator-graef-euro-3060",
+      "url": "https://rti.md/product/feliator-graef-euro-3060",
+      "api_url": "https://api.ecommerce.rti.md/api/products/slug/feliator-graef-euro-3060?lang=ro",
+      "title": "Feliator GRAEF EURO 3060",
+      "category": "Feliatoare automate/semi-automate",
+      "stock_status": "In stoc",
+      "price": "",
+      "images": [
+        "/img/products/5440feb7-a469-48e3-b60c-e407b2f1feed.jpg"
+      ],
+      "description": "GRAEF EURO 3060 este un feliator gravitaţional, folosit în principal pentru tăierea produselor mari. Panta lamei contribuie la o mai bună aderenţă a produsului atunci când tăiați. Caracteristicile produsului: Feliator gravitaţional Placă de bază detașabilă din oțel inoxidabil, pentru curățare ușoară Cuplu motor ridicat;lamă cu Ø250 mm, din oţel cromat special Capac interior al lamei Mecanism ameliorat pentru scoaterea rapidă a feliilor tăiate Accesorii: Ulei special Ascutitoare pentru 2 lame de disc",
+      "characteristics": "Motor power: 300 Watts/ 230 V~ alterning or 400 V~ three-phase current\nBlade (Ø mm): 300 mm\nCut length (mm): 230 mm\nCut height (mm): 190 mm\nSlice thickness (mm): 0 - 15 mm\nFootprint: 460 x 320 mm\nExterior dimensions: 575 x 410 x 420 mm\nWorkspace: 670 x 490 x 590 mm\nBlade speed: 198/min\nOperating period: Continuous duty\nEmission noise level: <  69 dBA\nNet Weight: 21,7 kg",
+      "specifications": {
+        "Motor power": "300 Watts/ 230 V~ alterning or 400 V~ three-phase current",
+        "Blade (Ø mm)": "300 mm",
+        "Cut length (mm)": "230 mm",
+        "Cut height (mm)": "190 mm",
+        "Slice thickness (mm)": "0 - 15 mm",
+        "Footprint": "460 x 320 mm",
+        "Exterior dimensions": "575 x 410 x 420 mm",
+        "Workspace": "670 x 490 x 590 mm",
+        "Blade speed": "198/min",
+        "Operating period": "Continuous duty",
+        "Emission noise level": "<  69 dBA",
+        "Net Weight": "21,7 kg"
+      },
+      "tags": [],
+      "published_at": "2021-11-29T09:22:45.919Z",
+      "meta_title": "",
+      "meta_description": ""
+    },
+    {
+      "slug": "feliator-graef-euro-3310",
+      "url": "https://rti.md/product/feliator-graef-euro-3310",
+      "api_url": "https://api.ecommerce.rti.md/api/products/slug/feliator-graef-euro-3310?lang=ro",
+      "title": "Feliator GRAEF EURO 3310",
+      "category": "Feliatoare manuale",
+      "stock_status": "In stoc",
+      "price": "",
+      "images": [
+        "/img/products/5d38c11c-3f63-4696-9f29-12a11f01b9bb.png"
+      ],
+      "description": "Feliator GRAEF EURO 3310 a fost special conceput pentru uz profesional. Acesta asigură o utilizare facilă, operare ergonomică și curățare ușoară. Caracteristicile produsului: Lame speciale Ø330 mm din oţel cromat de înaltă performanţă Capac de lamă închis, fix Cuplu motor ridicat Sistem de răcire cu aer pentru protejarea carcasei şi lamei de supraîncălzire Accesul liber la partea din spate a lamei permite curățarea rapidă a inelului de protecţie a lamei Placă de bază acoperită Grosime de feliere: 0-24 mm Accesorii: Ulei special Ascuţitoare pentru lame cu 2 discuri",
+      "characteristics": "Motor power: 500 Watts/ 230 V~ alternating or 400 V~ three-phase current\nBlade (Ø mm): 330 mm\nCut length (mm): 300 mm\nCut height (mm): 223 mm\nSlice thickness (mm): 0 - 24 mm\nFootprint: 540 x 440 mm\nExterior dimensions: 650 x 605 x 445 mm\nWorkspace: 740 x 725 x 600 mm\nBlade speed: 230/min\nOperating period: Continuous duty\nEmission noise level: <  69 dBA\nNet Weight: 37,9 kg",
+      "specifications": {
+        "Motor power": "500 Watts/ 230 V~ alternating or 400 V~ three-phase current",
+        "Blade (Ø mm)": "330 mm",
+        "Cut length (mm)": "300 mm",
+        "Cut height (mm)": "223 mm",
+        "Slice thickness (mm)": "0 - 24 mm",
+        "Footprint": "540 x 440 mm",
+        "Exterior dimensions": "650 x 605 x 445 mm",
+        "Workspace": "740 x 725 x 600 mm",
+        "Blade speed": "230/min",
+        "Operating period": "Continuous duty",
+        "Emission noise level": "<  69 dBA",
+        "Net Weight": "37,9 kg"
+      },
+      "tags": [],
+      "published_at": "2021-11-29T11:38:48.038Z",
+      "meta_title": "",
+      "meta_description": ""
+    },
+    {
+      "slug": "feliator-graef-euro-3370",
+      "url": "https://rti.md/product/feliator-graef-euro-3370",
+      "api_url": "https://api.ecommerce.rti.md/api/products/slug/feliator-graef-euro-3370?lang=ro",
+      "title": "Feliator GRAEF EURO 3370",
+      "category": "Feliatoare manuale",
+      "stock_status": "In stoc",
+      "price": "",
+      "images": [
+        "/img/products/380b9119-1898-4a40-b5a9-12e3141e8598.jpg"
+      ],
+      "description": "Euro 3370 feliază meşteşugit, profesional şi fără eforturi inutile orice tip de produse, chiar şi de dimensiuni mari. Caracteristicile produsului: Lame speciale din crom dur de înaltă performanță cu Ø 330 mm Lamă protejată de capac Motor puternic pentru un lucru optim (450 Wt) Sistem de răcire cu aer pentru protejarea carcasei de supraîncălzire Plăci de lame închise Placă de bază acoperită Grosime de feliere: 0-24 mm Lamă tratată pentru a preveni aderența Accesorii: Ulei special Ascuţitoare pentru lame cu 2 discuri",
+      "characteristics": "Motor power: 450 Watts/ 230 V~ alternating or 400 V~ three-phase current\nBlade (Ø mm): 330 mm\nCut length (mm): 300 mm\nCut height (mm): 244 mm\nSlice thickness (mm): 0 - 24 mm\nFootprint: 585 x 440 mm\nExterior dimensions: 660 x 620 x 470 mm\nWorkspace: 750 x 700 x 680 mm\nBlade speed: 229/min\nOperating period: Continuous duty\nEmission noise level: <  69 dBA\nNet Weight: 40,3 kg",
+      "specifications": {
+        "Motor power": "450 Watts/ 230 V~ alternating or 400 V~ three-phase current",
+        "Blade (Ø mm)": "330 mm",
+        "Cut length (mm)": "300 mm",
+        "Cut height (mm)": "244 mm",
+        "Slice thickness (mm)": "0 - 24 mm",
+        "Footprint": "585 x 440 mm",
+        "Exterior dimensions": "660 x 620 x 470 mm",
+        "Workspace": "750 x 700 x 680 mm",
+        "Blade speed": "229/min",
+        "Operating period": "Continuous duty",
+        "Emission noise level": "<  69 dBA",
+        "Net Weight": "40,3 kg"
+      },
+      "tags": [],
+      "published_at": "2021-11-29T13:04:53.707Z",
+      "meta_title": "",
+      "meta_description": ""
+    },
+    {
+      "slug": "feliator-graef-va-802",
+      "url": "https://rti.md/product/feliator-graef-va-802",
+      "api_url": "https://api.ecommerce.rti.md/api/products/slug/feliator-graef-va-802?lang=ro",
+      "title": "Feliator GRAEF VA 802",
+      "category": "Feliatoare automate/semi-automate",
+      "stock_status": "In stoc",
+      "price": "",
+      "images": [
+        "/img/products/b57f8dc6-2d2f-4d4e-a137-2aa58ed5dd1e.jpg"
+      ],
+      "description": "GRAEF VA 802 este un feliator robust și fiabil, complet automatizat, cu un sistem de ghidare intuitiv. Feliatoarele GRAEF din seria VA sunt nişte feliatoare automate de înaltă calitate cu posibilitatea de a taia produse cu lungimea de 230, 420 și 600 mm, cu sau fără bandă transportoare. Feliatoarele din Seria VA au un dispozitiv de acţionare, precum și o masă mobilă sau un transportor pentru dispunerea automată a produsului. Astfel, feliatoarele din aceasta serie sunt potrivite pentru industrii unde există necesitatea felierii unui volum mare de produse. Tot ce se cere de la operator este ca acesta să pună produsul în tava de alimentare, să seteze grosimea feliei şi parametrii dispunerii. După pornire, aparatul va felia și va stivui produsul automat. Panoul de comandă cu display LCD vă permite să setaţi parametrii de lucru ai feliatorului, precum și să salvaţi programul pentru un acces rapid la aceasta. Feliatoarele au o construcţie uşoară, bine gândită, care facilitează curățarea și întreținerea lor. Echipamente speciale pentru felierea caşcavalului: Cadru pentru specialitatea \"caşcaval\" Placă de protecție Acoperire din teflon pentru reducerea frecării și curățare ușoară Dispozitiv de tăiere brevetat care asigură felierea perfectă de la prima până la ultima felie",
+      "characteristics": "Motor power: 500 Watts/ 230 V~ alternating or 400 V~ three-phase current\nBlade (Ø mm): 330 mm\nCut length (mm): 250 mm\nCut height (mm): 180 mm\nSlice thickness (mm): 0,5 - 10 mm\nSlicing speed: 30 - 70 strokes / min.\nInterface: Serial\nRestraint length: 230 mm\nFootprint: 540 x 440 mm\nExterior dimensions: 600 x 880 x 500 mm\nWorkspace: 700 x 900 x 640 mm\nBlade speed: 229/min\nSlices per minute max.: max. 70/min.\nOperating period: Continuous duty\nEmission noise level: <  69 dBA\nNet Weight: 69 kg",
+      "specifications": {
+        "Motor power": "500 Watts/ 230 V~ alternating or 400 V~ three-phase current",
+        "Blade (Ø mm)": "330 mm",
+        "Cut length (mm)": "250 mm",
+        "Cut height (mm)": "180 mm",
+        "Slice thickness (mm)": "0,5 - 10 mm",
+        "Slicing speed": "30 - 70 strokes / min.",
+        "Interface": "Serial",
+        "Restraint length": "230 mm",
+        "Footprint": "540 x 440 mm",
+        "Exterior dimensions": "600 x 880 x 500 mm",
+        "Workspace": "700 x 900 x 640 mm",
+        "Blade speed": "229/min",
+        "Slices per minute max.": "max. 70/min.",
+        "Operating period": "Continuous duty",
+        "Emission noise level": "<  69 dBA",
+        "Net Weight": "69 kg"
+      },
+      "tags": [],
+      "published_at": "2021-11-29T13:09:15.944Z",
+      "meta_title": "",
+      "meta_description": ""
+    },
+    {
+      "slug": "detector-de-metale-dibal-mds-5700",
+      "url": "https://rti.md/product/detector-de-metale-dibal-mds-5700",
+      "api_url": "https://api.ecommerce.rti.md/api/products/slug/detector-de-metale-dibal-mds-5700?lang=ro",
+      "title": "Detector de metale Dibal MDS-5700",
+      "category": "Detectoare industriale de metale",
+      "stock_status": "In stoc",
+      "price": "",
+      "images": [
+        "/img/products/11406a06-342f-4a68-bc49-52c63bf5ff69.png"
+      ],
+      "description": "Detectorul de metale Dibal MDS-5700 a fost special conceput pentru industria alimentara. Creat cu scopul pentru inspectia si detectarea metalelor in mezeluri si alte produse transportate prin conducta (lichide, sosuri etc.). Una dintre caracteristicile remarcabile ale acestui sistem este sensibilitatea ridicata de detectare a metalelor cu mai multe frecvente. Functii remarcabile Dibal MDS-5700: Multi-frecvente Siguranta: acces protejat de trei nivele de parola „Setare automata” cu suprimarea interferentelor si calibrarea automata a sensibilitatii Multi-filtru digital: pentru a garanta stabilitate maxima in medii dure Auto-monitorizare: pentru a controla functionarea corecta a echipamentului Auto-echilibrare: detectarea si compensarea automata a modificarilor semnalului (exemplu: variatii de temperatura) Anularea automata a efectului produsului, cu capacitatea de a masura parametrii produsului in timp real Automonitorizare dinamica (monitorizarea modificarilor caracteristicilor produsului). Garanteaza sensibilitate maxima in fiecare operatie Zona de detectare precisa: locatia exacta a particulei de metal in campul de detectare pentru o separare usoara Constructie: Tunel din otel inoxidabil Cadru din otel inoxidabil Protectie IP69K 4 roti cu frane incluse Alarme vizuale si sonore incluse Consola: Ecran tactil color de 5,7” (protector inclus) Comunicatii cui PC: RS-232 Ethernet Wi-Fi optional Port USB: Pentru a exporta rapoarte de detectari si modificari ale configuratiei, precum si pentru backup Posibilitate de integrare cu alte echipamente: Umplere cu vid Handtmann (flanse de conectare incluse) Umplere cu vid Vemag Dispozitiv de rasucire Handtmann",
+      "characteristics": "Power Supply: 100-240 V AC, 50/60 Hz.\nTOUCH SCREEN: 5.7” colour touch screen (protector included)",
+      "specifications": {
+        "Power Supply": "100-240 V AC, 50/60 Hz.",
+        "TOUCH SCREEN": "5.7” colour touch screen (protector included)"
+      },
+      "tags": [],
+      "published_at": "2021-11-25T13:19:21.449Z",
+      "meta_title": "",
+      "meta_description": ""
+    },
+    {
+      "slug": "detector-de-metale-dibal-md-5700",
+      "url": "https://rti.md/product/detector-de-metale-dibal-md-5700",
+      "api_url": "https://api.ecommerce.rti.md/api/products/slug/detector-de-metale-dibal-md-5700?lang=ro",
+      "title": "Detector de metale Dibal MD-5700",
+      "category": "Detectoare industriale de metale",
+      "stock_status": "In stoc",
+      "price": "",
+      "images": [
+        "/img/products/ace134a1-7980-44d0-bfc2-116133725be8.png"
+      ],
+      "description": "Dibal MD-5700 este un detector de metale special conceput pentru industria alimentara. Este un sistem de detectare a metalelor cu mai multe frecvente, furnizat cu un tunel si o banda transportoare. Dibal MD-5700 este bine cunoscut pentru caracteristica sa remarcabila, mai cu seama sensibilitatea sa ridicata. Caracteristici distinctive: Multi-frecvente Viteza variabila a benzii transportoare Securitate: acces protejat de trei nivele de parola Zona de detectare precisa: locatia exacta a particulei de metal in campul de detectare pentru o separare usoara „Setare automata” cu suprimarea interferentelor si calibrarea automata a sensibilitatii Multi-filtru digital: pentru a garanta stabilitate maxima in medii dure Auto-echilibrare: detectarea si compensarea automata a oricaror modificari ale semnalului (de exemplu: variatii de temperatura) Auto-monitorizare: pentru a controla performanta corespunzatoare a echipamentului Anularea automata a efectului produsului, cu posibilitatea de a masura parametrii produsului in timp real Automonitorizare dinamica (monitorizarea modificarilor caracteristicilor produsului). Garanteaza sensibilitate maxima in fiecare operatie Structura: Tunel din otel inoxidabil AISI 304, cu protectie IP66 (IP69K, optional) Protectie IP66 (IP69K, optional) Cadru din aluminiu anodizat (otel inoxidabil AISI 304, optional) Transportorul este actionat de un motor cu protectie IP54 (IP65 sau IP69K, optional) Cutie electrica din otel inoxidabil AISI 304 Curele: netede, rigide sau modulare Ecran tactil color de 5,7” (capac de protectie inclus) Comunicatii cu PC: RS-232 Ethernet Wi-Fi, optional Port USB: pentru a exporta rapoarte de detectare si modificari ale configuratiei, precum si pentru backup Integrare cu alte echipamente disponibila: Dibal LS-4500 si CLS-4500. etichetatoare automate de cantarire-pret Cantarire de verificare Dibal CW-4500 Dibal GW-4500 grader",
+      "characteristics": "Аксессуар: Внешний Держатель Рулона Этикеток\nМощность: Electrical: 100 - 240 V AC, 50/60 Hz.\nТач-скрин: 5.7” colour touch screen",
+      "specifications": {
+        "Аксессуар": "Внешний Держатель Рулона Этикеток",
+        "Мощность": "Electrical: 100 - 240 V AC, 50/60 Hz.",
+        "Тач-скрин": "5.7” colour touch screen"
+      },
+      "tags": [],
+      "published_at": "2021-11-25T15:08:51.186Z",
+      "meta_title": "",
+      "meta_description": ""
+    },
+    {
+      "slug": "dibal-la-4500-series-automatic-labelling-machine",
+      "url": "https://rti.md/product/dibal-la-4500-series-automatic-labelling-machine",
+      "api_url": "https://api.ecommerce.rti.md/api/products/slug/dibal-la-4500-series-automatic-labelling-machine?lang=ro",
+      "title": "Masina automata de etichetat Dibal LA 4500 series",
+      "category": "Masini automate de etichetare",
+      "stock_status": "In stoc",
+      "price": "",
+      "images": [
+        "/img/products/8045a163-ddf4-4a86-85a3-520ed19ad7cc.png"
+      ],
+      "description": "Masina automata de etichetat fara cantarire Dibal LA 4500 series este cea mai buna alegere pentru etichetarea automata a produselor cu greutate si pret fix. Designul mobil al LA 4500 faciliteaza integrarea in orice punct al liniei de productie. Acesta poate fi livrat cu transportor sau fara. Caracteristici remarcabile: Etichetare greutate/pret fix/variabil Adaptat pentru a respecta Regulamentul UE 1169/2011 referitor la informatiile alimentare Coduri de bare: EAN-8, EAN-13, EAN-128, CODE 128, ITF-14, cod QR, GS1 Datamatrix si GS1 Databar (pana la 4 coduri de bare per eticheta) Trasabilitate generica in eticheta Aplicator de aer: productivitate maxima Imprimanta de 4”. Etichetare in orice pozitie 8.000 de memorie PLUS Ecran tactil (optional) Ethernet",
+      "characteristics": "Printer Specifications: Types: Direct Thermal (DT) Thermal Transfer (TT) 102mm 8 dots / mm print resolution Up to 250mm / sec print speed 40mm (W) x 40mm (L) minimum label size 102mm (W) x 120mm (L) maximum label size 110mm maximum backing paper width 76mm maximum inner core diameter of label roll\nConstruction:: AISI 304L stainless steel and anodised aluminium\nDisplay console:: 15-inch TFT touch screen (if applicable)\nConnectivity:: TCP/IP Ethernet Serial RS232\nPower:: 230v AC single-phase\nHigh speed printing: : Up to 250 mm/s\nPerformance:: 100 labels/minute (with W60 x L60 mm labels)",
+      "specifications": {
+        "Printer Specifications": "Types: Direct Thermal (DT) Thermal Transfer (TT) 102mm 8 dots / mm print resolution Up to 250mm / sec print speed 40mm (W) x 40mm (L) minimum label size 102mm (W) x 120mm (L) maximum label size 110mm maximum backing paper width 76mm maximum inner core diameter of label roll",
+        "Construction:": "AISI 304L stainless steel and anodised aluminium",
+        "Display console:": "15-inch TFT touch screen (if applicable)",
+        "Connectivity:": "TCP/IP Ethernet Serial RS232",
+        "Power:": "230v AC single-phase",
+        "High speed printing: ": "Up to 250 mm/s",
+        "Performance:": "100 labels/minute (with W60 x L60 mm labels)"
+      },
+      "tags": [],
+      "published_at": "2022-06-15T08:21:01.090Z",
+      "meta_title": "",
+      "meta_description": ""
+    },
+    {
+      "slug": "feliator-graef-euro-2500",
+      "url": "https://rti.md/product/feliator-graef-euro-2500",
+      "api_url": "https://api.ecommerce.rti.md/api/products/slug/feliator-graef-euro-2500?lang=ro",
+      "title": "Feliator GRAEF EURO 2500",
+      "category": "Feliatoare manuale",
+      "stock_status": "In stoc",
+      "price": "",
+      "images": [
+        "/img/products/b9db16fe-63c0-4d18-9654-2c861153ffd7.jpg"
+      ],
+      "description": "GRAEF EURO 2500 este ideal pentru felierea unor produse mari și voluminoase. Combinația inteligentă dintre tehnologia lamei şi a motorului asigură o activitate bine pusă la punct şi rezultate performante. BENEFICII: Plată de bază detaşabilă pentru o curăţare uşoară din oţel inoxidabil Motor cu alimentare avansată a lamelor – cuplu motor ridicat pentru utilizare dispozitivului în regim continuu Lama Ø250 din oțel cromat special, producător german Înveliş de acoperire a lamei interioare Protejarea mâinilor pentru lucru în condiții de siguranță Buton de pornire/oprire. Buton dublu ACCESORII: Lubrifiant special Ascuţitoare pentru lame cu 2 discuri",
+      "characteristics": "Motor power: 300 Watt / 230V~ alternating or 400 V~ three-phase current\nBlade (Ø mm): 250 mm\nCut length (mm): 230 mm\nCut height (mm): 165 mm\nSlice thickness (mm): 0 - 15 mm\nFootprint: 460 x 320 mm\nExterior dimensions: 510 x 420 x 370 mm\nWorkspace: 600 x 510 x 480 mm\nBlade speed: 199/min\nOperating period: Continuous duty\nEmission noise level: <  69 dBA\nNet Weight: 20,1 kg",
+      "specifications": {
+        "Motor power": "300 Watt / 230V~ alternating or 400 V~ three-phase current",
+        "Blade (Ø mm)": "250 mm",
+        "Cut length (mm)": "230 mm",
+        "Cut height (mm)": "165 mm",
+        "Slice thickness (mm)": "0 - 15 mm",
+        "Footprint": "460 x 320 mm",
+        "Exterior dimensions": "510 x 420 x 370 mm",
+        "Workspace": "600 x 510 x 480 mm",
+        "Blade speed": "199/min",
+        "Operating period": "Continuous duty",
+        "Emission noise level": "<  69 dBA",
+        "Net Weight": "20,1 kg"
+      },
+      "tags": [],
+      "published_at": "2021-11-24T15:12:35.807Z",
+      "meta_title": "",
+      "meta_description": ""
+    },
+    {
+      "slug": "feliator-graef-va-806-fb",
+      "url": "https://rti.md/product/feliator-graef-va-806-fb",
+      "api_url": "https://api.ecommerce.rti.md/api/products/slug/feliator-graef-va-806-fb?lang=ro",
+      "title": "Feliator automat GRAEF VA 806 FB",
+      "category": "Feliatoare automate/semi-automate",
+      "stock_status": "In stoc",
+      "price": "",
+      "images": [
+        "/img/products/c7a42f5b-3346-4809-b1d4-a5e36752b533.jpg"
+      ],
+      "description": "GRAEF VA 806 FB este un feliator complet automat pentru felierea, ambalarea și transportarea produsului, cu bandă de transport de 1300 mm. Caracteristicile produsului: Dacă feliatorul este folosit doar pentru brânzeturi, este recomandat să utilizați opţiunea \"caşcaval\". Această versiune include următoarele facilități: Rama “caşcaval” ca bază, un element al mașinii cu o canulă + dispozitive speciale pentru feliere Lamă şi cuţit speciale Acoperire de teflon pentru reducerea frecării și pentru a facilita curățarea Sistemul de control al punerii uniforme a produsului în stivă Configurarea și stocarea diferitelor variante de stivuire a feliilor Transportor din oțel inoxidabil Lungimea transportorului de 690mm sau 1300mm, în funcție de modelul feliatorului Instalare facilă și rapidă a benzii transportoare Lățimea transportorului: 250 mm Feliatorul este echipat cu un căruţ automat cu deplasare lină Caruciorul detașabil permite o curătare uşoară Numărul reglabil de tăieri este de 30-55 tăieri/minut Dispunerea mecanică a produsului pentru feliere Fixarea rapidă și ușoară a produsului datorită unei tehnologii patentate",
+      "characteristics": "Motor power: 500 Watts / 230 V~ alternating- or 400 V~ three-phase current\nBlade (Ø mm): 300 mm\nCut length (mm): 250 mm\nCut height (mm): 180 mm\nSlice thickness (mm): 0,5 - 10 mm\nSlicing speed: 30 - 55 strokes / min.\nInterface: Serial\nRestraint length: 600 mm\nFootprint: 540 x 440 mm\nExterior dimensions: 600 x 1240 x 500 mm\nWorkspace: 700 x 1280 x 640 mm\nBlade speed: 229/min\nSlices per minute max.: max. 55/min.\nOperating period: Continuous duty\nEmission noise level: <  69 dBA\nNet Weight: 78 kg",
+      "specifications": {
+        "Motor power": "500 Watts / 230 V~ alternating- or 400 V~ three-phase current",
+        "Blade (Ø mm)": "300 mm",
+        "Cut length (mm)": "250 mm",
+        "Cut height (mm)": "180 mm",
+        "Slice thickness (mm)": "0,5 - 10 mm",
+        "Slicing speed": "30 - 55 strokes / min.",
+        "Interface": "Serial",
+        "Restraint length": "600 mm",
+        "Footprint": "540 x 440 mm",
+        "Exterior dimensions": "600 x 1240 x 500 mm",
+        "Workspace": "700 x 1280 x 640 mm",
+        "Blade speed": "229/min",
+        "Slices per minute max.": "max. 55/min.",
+        "Operating period": "Continuous duty",
+        "Emission noise level": "<  69 dBA",
+        "Net Weight": "78 kg"
+      },
+      "tags": [],
+      "published_at": "2021-11-29T14:26:49.544Z",
+      "meta_title": "",
+      "meta_description": ""
+    }
+  ]
+}

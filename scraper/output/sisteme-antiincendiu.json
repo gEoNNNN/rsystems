@@ -1,0 +1,151 @@
+{
+  "category": "sisteme-antiincendiu",
+  "category_title": "Sisteme antiincendiu",
+  "url": "https://rti.md/category/sisteme-antiincendiu",
+  "total": 7,
+  "products": [
+    {
+      "slug": "integral-x-line",
+      "url": "https://rti.md/product/integral-x-line",
+      "api_url": "https://api.ecommerce.rti.md/api/products/slug/integral-x-line?lang=ro",
+      "title": "Bucla de retea adresabila Integral X-Line",
+      "category": "Dispozitive periferice",
+      "stock_status": "In stoc",
+      "price": "",
+      "images": [
+        "/img/products/e93ea77c-0258-4ea4-b167-080a069571e4.png"
+      ],
+      "description": "Aceasta tehnologie este proiectata folosind principiul de redundanta completa. Toate conexiunile sunt realizate conform schemelor inelare, ceea ce garanteaza functionarea continua a buclei in cazul unui scurt circuit. O bucla inelara Integral X-Line are lungimea maxima de 3500 de metri si va permite sa combinati pina la 250 de elemente adresabile, cum ar fi: detectoare de incendiu automate, butoane manuale de alarmare, dispozitive de semnalizare acustice si optice, dispozitive de intrare si iesire – acestea pot fi sisteme de control in momentul incendiului si sisteme de control a instalatiilor de stingere a incendiului, detectori speciali sau linii pentru monitorizarea zonelor cu risc de explozie. Pe baza centralelor universale de alarma de incendiu produse de “Schrack Seconet AG” puteti crea, atit sisteme simple, cit si o retele complexa cu mai multe nivele. Monitorizarea starii sistemului este realizata prin utilizarea resurselor standarde si a unui singur pachet de software, indiferent de marimea sistemului. Specificatii: Pina la 250 de dispozitive intr-o bucla cu lungimea pina la 3500m; Timpul de initializare a buclei de la 250 unitati <100 sec.; Izolatoare K3 integrate in fiecare dispozitiv a buclei; Nivelul ridicat de compatibilitate reciproca; Simplitatea extinderii si modernizarii; Punerea rapida in functiune; Productie europeana – calitate superioara.",
+      "characteristics": "",
+      "specifications": {},
+      "tags": [],
+      "published_at": "2021-09-23T13:52:25.143Z",
+      "meta_title": "",
+      "meta_description": ""
+    },
+    {
+      "slug": "centrala-integral-ip-mx",
+      "url": "https://rti.md/product/centrala-integral-ip-mx",
+      "api_url": "https://api.ecommerce.rti.md/api/products/slug/centrala-integral-ip-mx?lang=ro",
+      "title": "Centrala Integral IP MX",
+      "category": "Centrale de detectie si semnalizare incendiu",
+      "stock_status": "In stoc",
+      "price": "",
+      "images": [
+        "/img/products/87f9ae86-1d60-4fb6-b019-7c06fad8b583.jpg",
+        "/img/products/a3c5d835-90cd-44c4-a839-6eb1626c41f1.jpg",
+        "/img/products/7315c2ce-eb0f-4135-8f60-ae9a8c84c1ea.jpg",
+        "/img/products/1215fcce-e267-4dbb-986e-e638190ba54d.jpg"
+      ],
+      "description": "Centrala Integral IP MX este un sistem de detectie si alarmare de incendiu modular decentralizat, conceput pentru a proteja obiectele de dimensiuni medii si mari. Structura modulara a centralei va permite sa creati pe baza acestuia atat un sistem simplu de securitate antiincendiu, cit si retele complexe de mai multe nivele. Centralele Integral IP MX sunt disponibile in mai multe variante: cu sau fara imprimanta, cu sau fara panou intern de operare, cu panou-indicator cu LED-uri suplimentare. Principalele caracteristici ale centralei Integral IP MX: Structura modulara, decentralizata; Structura cu 100% redundanta; Pina la 16 bucle X-Line; Pina la 4000 de elemente; Gestionarea functiei de stingere a focului; Gestionarea alertei, functiei de eliminare a fumului, ventilatiei, etc; Includerea in reteaua Integral LAN; Interfata-LAN pentru concectarea sistemului de monitorizare si integrarea lui cu alte sisteme de inginerie.",
+      "characteristics": "",
+      "specifications": {},
+      "tags": [],
+      "published_at": "2021-09-23T09:17:10.812Z",
+      "meta_title": "",
+      "meta_description": ""
+    },
+    {
+      "slug": "centrala-integral-ip-cx",
+      "url": "https://rti.md/product/centrala-integral-ip-cx",
+      "api_url": "https://api.ecommerce.rti.md/api/products/slug/centrala-integral-ip-cx?lang=ro",
+      "title": "Centrala Integral IP CX",
+      "category": "Centrale de detectie si semnalizare incendiu",
+      "stock_status": "In stoc",
+      "price": "",
+      "images": [
+        "/img/products/bffe477b-6faf-4df1-839d-2d12f1552929.jpg",
+        "/img/products/3d223317-be6d-4d2f-829f-398c2097a378.jpg",
+        "/img/products/00c63b91-d397-433d-be03-41ecdc071dc0.jpg"
+      ],
+      "description": "Centrala de alarma antiincendiu Integral IP CX este proiectata pentru protectia obiectelor mici si mijlocii impotriva incendiului. Compozitia fiecarei centrale include: o carcasa, plata principala de comanda cu un conector pentru extindere si sursa de alimentare. Alimentarea de rezerva se realizeaza prin intermediul acumulatorilor, care sunt instalati in interiorul carcasei. Centrala Integral IP CXF este disponibila in mai multe variante: cu sau fara imprimanta, cu sau fara panou intern de operare. Principalele caracteristici a statiei Integral IP CX: Panou de control integrat, cu un set de unitati de control, un slot de extindere; Redundanta Software; Pina la 4 bucle X-Line in mod autonom; 2 bucle adresabile X-Line in cazul conexiunii in reteaua Integral LAN; Pina la 1000 de elemente in mod autonom; pina la 500 de elemente in cazul conexiunii in reteaua Integral LAN; Gestionarea functiei de stingere a focului; Gestionarea alertei de eliminare a fumului, ventilare, etc.; Includerea in reteaua Integral LAN; Interfata-LAN pentru conectarea sistemului de monitorizare si integrarea lui cu alte sisteme de inginerie.",
+      "characteristics": "",
+      "specifications": {},
+      "tags": [],
+      "published_at": "2021-09-23T13:38:52.233Z",
+      "meta_title": "",
+      "meta_description": ""
+    },
+    {
+      "slug": "centrala-integral-ip-bx",
+      "url": "https://rti.md/product/centrala-integral-ip-bx",
+      "api_url": "https://api.ecommerce.rti.md/api/products/slug/centrala-integral-ip-bx?lang=ro",
+      "title": "Centrala Integral IP BX",
+      "category": "Centrale de detectie si semnalizare incendiu",
+      "stock_status": "In stoc",
+      "price": "",
+      "images": [
+        "/img/products/ad104977-7b88-4b7a-8f7a-9b2123f611bf.jpg"
+      ],
+      "description": "Centrala Integral IP BX este conceputa pentru a proteja obiecte mici, inclusiv, cele care nu au un punct de paza non-stop. Pe o bucla pot fi conectate pana la 250 elemente X-LINE in lungime de pana la 3500 metri. Datorita functiilor software centrala BX permite operarea la distanta, mesajele de la centrala pot fi retransmise catre PC, telefon mobil ori dispozitiv tip tableta. Principalele caracteristici a statiei Integral IP BX: Panou de control integrat cu un set de unitati e control; Redundanta Software; 1 bucla de retea X-Line; Pina la 250 de elemente adresabile; Gestionarea functiei de stingere a focului; Gestionarea alertei de eliminare a fumului, ventilare, etc.; Interfata-LAN pentru conectarea la sistemul de monitorizare, integrarea cu alte sisteme de inginerie.",
+      "characteristics": "",
+      "specifications": {},
+      "tags": [],
+      "published_at": "2021-09-23T13:39:08.269Z",
+      "meta_title": "",
+      "meta_description": ""
+    },
+    {
+      "slug": "dispozitive-de-alarmare-pentru-semnalizarea-optica-si-acustica",
+      "url": "https://rti.md/product/dispozitive-de-alarmare-pentru-semnalizarea-optica-si-acustica",
+      "api_url": "https://api.ecommerce.rti.md/api/products/slug/dispozitive-de-alarmare-pentru-semnalizarea-optica-si-acustica?lang=ro",
+      "title": "Dispozitive de alarmare pentru semnalizarea optica si acustica",
+      "category": "Dispozitive periferice",
+      "stock_status": "In stoc",
+      "price": "",
+      "images": [
+        "/img/products/af06bfe1-f399-47d7-81f1-330464ef11c5.jpg",
+        "/img/products/3f3d6746-3a7b-4c3a-947d-c6f9369cb916.jpg",
+        "/img/products/db4076e8-d84c-4924-a2bc-d404c58b8067.jpg"
+      ],
+      "description": "Acest tip de aparat este proiectat pentru alarma de incendiu cu semnal acustic si optic. Semnalizarea este conectata direct catre bucla inelara a sistemului de alarma de incendiu cu trehnologia Integral X-LINE. Setarea tipului si volumului sunetului, precum si alegerea fregventei semnalului are loc prin intermediul comutatoarelor DIP de pe placa de circuit a aparatului. Toate dispozitivele sunt certificate EN 54.",
+      "characteristics": "",
+      "specifications": {},
+      "tags": [],
+      "published_at": "2021-10-01T08:29:59.861Z",
+      "meta_title": "",
+      "meta_description": ""
+    },
+    {
+      "slug": "detectoare-automate",
+      "url": "https://rti.md/product/detectoare-automate",
+      "api_url": "https://api.ecommerce.rti.md/api/products/slug/detectoare-automate?lang=ro",
+      "title": "Detectoare automate",
+      "category": "Dispozitive periferice",
+      "stock_status": "In stoc",
+      "price": "",
+      "images": [
+        "/img/products/5049f578-6969-451c-b118-60bab5c327cc.jpeg",
+        "/img/products/9b45e5f7-274b-4fb5-bbcb-5f7d0377b05c.jpg"
+      ],
+      "description": "Detectoarele de incendiu SCHRACK sunt echipate cu tehnologia Cubus levelling® - reglarea automata a parametrilor in functie de mediul ambiant, sunt capabile sa detecteze focul deschis si inchis in primele etape ale incendiului prin intermediul senzorilor de fum si caldura. Detectoarele sunt echipate cu un izolator scurt circuit incorporat care asigura lucrul buclei inelare adresabile in cazul de intrerupere. Detectoarele de fum sunt disponibile in mai multe versiuni: cu senzori de fum, de caldura si combinate. Pentru utilizare in mediul agresiv, exista modele cu protectie impotriva umiditatii. Caracteristicile principale: Adaptarea automata la conditiile mediului ambiant; Reglarea sensibilitatii cu ajutorul software-ului conform EN 54; Analiza fumului in dependenta de temperatura; Emiterea unui semnal de alarma de avertizare (nivel de 50% si 70%); Izolator de scurt circuit incorporat; Filtru pentru suprimarea alarmei false; Indicator LED cu un unghi de vizualizare de 360°.",
+      "characteristics": "",
+      "specifications": {},
+      "tags": [],
+      "published_at": "2021-10-01T08:29:28.645Z",
+      "meta_title": "",
+      "meta_description": ""
+    },
+    {
+      "slug": "butoane-de-alarmare-manuala",
+      "url": "https://rti.md/product/butoane-de-alarmare-manuala",
+      "api_url": "https://api.ecommerce.rti.md/api/products/slug/butoane-de-alarmare-manuala?lang=ro",
+      "title": "Butoane de alarmare manuala",
+      "category": "Dispozitive periferice",
+      "stock_status": "In stoc",
+      "price": "",
+      "images": [
+        "/img/products/03bb0f7b-1ff1-439d-a7f7-10a8d7615a5f.jpg",
+        "/img/products/2ab40e96-7821-4198-9318-76e40fe034f8.jpg",
+        "/img/products/a36c72af-3554-4d3d-b534-c29398d97b4d.jpg"
+      ],
+      "description": "SCHRACK-SECONET butoane de alarmare manuala in versiuni diferite si cu diferite clase de protectie. Ele sunt folosite pentru a activa manual alarma de incendiu in deplina conformitate cu EN 54-11. Aceste dispozitive sunt incluse in bucla inelara adresabila a sistemului de alarma incendiu, cu tehnologia Integral X-LINE. Toate dispozitivele de acest tip sunt dotate cu un izolator scurt circuit incorporat. In plus, exista detectoare de alte culori, precum si butoane pentru activarea manuala a stingerii focului ( conform art. EN 12094-3) – inscriptiile pot fi selectate individual.",
+      "characteristics": "",
+      "specifications": {},
+      "tags": [],
+      "published_at": "2021-10-01T08:29:45.933Z",
+      "meta_title": "",
+      "meta_description": ""
+    }
+  ]
+}

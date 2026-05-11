@@ -786,3 +786,42 @@
     max-width: 90vw;
   }
 }
+
+@media (max-width: 500px) {
+  .foh-platform-images {
+    flex-direction: column;
+    gap: 3vw;
+  }
+  .foh-platform-img {
+    display: none;
+  }
+  .foh-mid-card {
+    width: 100%;
+    border-radius: 12px;
+    padding: 4vw 5vw;
+    gap: 0;
+  }
+  .foh-mid-item {
+    gap: 3vw;
+    padding: 3vw 0;
+  }
+  .foh-mid-icon {
+    width: 28px;
+    height: 28px;
+  }
+  .foh-mid-title {
+    font-size: clamp(0.88rem, 3.5vw, 1rem);
+  }
+  .foh-mid-sub {
+    font-size: clamp(0.75rem, 3vw, 0.88rem);
+  }
+  .foh-stats-dark-card {
+    flex-direction: column;
+    gap: 0;
+  }
+  .foh-stats-divider {
+    width: 80%;
+    height: 1px;
+    align-self: center;
+  }
+}

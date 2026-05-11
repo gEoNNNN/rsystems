@@ -242,12 +242,17 @@
     flex: 0 0 auto;
     width: 100%;
     max-width: 400px;
-    min-height: 480px;
+    height: auto;
+    min-height: 0;
     transform: none;
   }
 
   .pricing-card-content {
     padding: 6vw 5vw;
+  }
+
+  .pricing-features {
+    flex: 0 0 auto;
   }
 }
 
@@ -381,4 +386,15 @@
   .cmp-header-col { font-size: 0.75rem; padding: 0.9rem 0; }
   .cmp-feature-row { grid-template-columns: 1fr repeat(3, 80px); }
   .cmp-feature-name { font-size: 0.72rem; padding: 0.75rem 0.8rem; }
+}
+
+@media (max-width: 450px) {
+  .cmp-section { padding: 0 2vw 6vw; }
+  .cmp-header { grid-template-columns: 1fr repeat(3, 52px); }
+  .cmp-header-col { font-size: 0.65rem; padding: 0.75rem 0; }
+  .cmp-feature-row { grid-template-columns: 1fr repeat(3, 52px); }
+  .cmp-feature-name { font-size: 0.68rem; padding: 0.65rem 0.6rem; }
+  .cmp-feature-col { padding: 0.65rem 0; }
+  .cmp-accordion-left { font-size: 0.78rem; }
+  .cmp-accordion-header { padding: 0.85rem 0.8rem; }
 }

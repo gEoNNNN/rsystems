@@ -1,0 +1,340 @@
+{
+  "category": "pospc-specializat",
+  "category_title": "POS/PC specializat",
+  "url": "https://rti.md/category/pospc-specializat",
+  "total": 10,
+  "products": [
+    {
+      "slug": "rsistems-folding-stand-pos",
+      "url": "https://rti.md/product/rsistems-folding-stand-pos",
+      "api_url": "https://api.ecommerce.rti.md/api/products/slug/rsistems-folding-stand-pos?lang=ro",
+      "title": "RSistems POS cu suport pliabil",
+      "category": "Sistem POS",
+      "stock_status": "In stoc",
+      "price": "",
+      "images": [
+        "/img/products/244a8eaf-dc87-40be-a4e3-3d9f81958861.png",
+        "/img/products/ad042968-2975-40ad-942a-d35eb7b6962c.png",
+        "/img/products/a403d7e4-3aa7-4ef4-b0aa-f64d46e82ba8.png"
+      ],
+      "description": "Acest POS all-in-one cu ecran tactil este ideal pentru retail și HoReCa, oferind un design compact și profesional. Carcasa metalică și suportul reglabil asigură stabilitate și durabilitate, iar sistemul permite instalarea liberă a software-ului dorit.",
+      "characteristics": "Ecran: 15,6”\nRezolutie: 1920×1080\nFormat: 16:9\nTouch capacitiv: 10 puncte\nProcesor: J6412\nMemorie RAM: 8 GB\nStocare: SSD de 128 GB\nCarcasă : metalică\nSuport: metalic reglabil\nSistem de operare: Windows 10\nSuport pilabil: MS-10",
+      "specifications": {
+        "Ecran": "15,6”",
+        "Rezolutie": "1920×1080",
+        "Format": "16:9",
+        "Touch capacitiv": "10 puncte",
+        "Procesor": "J6412",
+        "Memorie RAM": "8 GB",
+        "Stocare": "SSD de 128 GB",
+        "Carcasă ": "metalică",
+        "Suport": "metalic reglabil",
+        "Sistem de operare": "Windows 10",
+        "Suport pilabil": "MS-10"
+      },
+      "tags": [
+        "pos"
+      ],
+      "published_at": "2026-03-04T08:11:32.000Z",
+      "meta_title": "",
+      "meta_description": ""
+    },
+    {
+      "slug": "rsistems-pos-aluminium-design",
+      "url": "https://rti.md/product/rsistems-pos-aluminium-design",
+      "api_url": "https://api.ecommerce.rti.md/api/products/slug/rsistems-pos-aluminium-design?lang=ro",
+      "title": "RSistems Aluminium POS – Premium Design",
+      "category": "Sistem POS",
+      "stock_status": "In stoc",
+      "price": "",
+      "images": [
+        "/img/products/a9b782f4-35c7-4d6b-8c77-71f70fd6d3ca.jpg",
+        "/img/products/764f9ac3-e093-4754-8eaa-09dbac4f1496.jpg",
+        "/img/products/8fe104e7-597e-4f03-9265-1a14b84981fe.jpg"
+      ],
+      "description": "Terminal POS premium cu ecran dublu – performanță și eleganță într-un singur dispozitiv Acest POS all-in-one impresionează prin designul său modern și robust , având o carcasă din aluminiu argintiu și un stand solid , ideal pentru spații comerciale cu trafic intens. Este alegerea perfectă pentru retail, HoReCa sau servicii, unde fiabilitatea și prezentarea contează. - Ecran principal de 15.6\" Full HD cu touch capacitiv în 10 puncte – interfață tactilă fluidă și intuitivă pentru operatori. - Ecran secundar de 11.6\" Full HD , conectat prin Type-C , perfect pentru afișarea detaliilor comenzii, reclame sau mesaje personalizate pentru client. - Construcție premium : aluminiu durabil, finisaj elegant, perfect integrat într-un mediu profesional. Cu un design dublu-display elegant și eficient , acest POS aduce o experiență completă atât pentru personal, cât și pentru clienți – totul într-un singur echipament fiabil și stilat.",
+      "characteristics": "Display: 15.6\"\nResolution: 1920x1080\nSecond Display: 11.6\"\nProcessor: Intel J6412\nRAM (standard Memory): 8GB\nColor: Argintiu\nStorage capacity: SSD :128GB",
+      "specifications": {
+        "Display": "15.6\"",
+        "Resolution": "1920x1080",
+        "Second Display": "11.6\"",
+        "Processor": "Intel J6412",
+        "RAM (standard Memory)": "8GB",
+        "Color": "Argintiu",
+        "Storage capacity": "SSD :128GB"
+      },
+      "tags": [
+        "pos",
+        "rsistems"
+      ],
+      "published_at": "2025-07-31T08:25:56.000Z",
+      "meta_title": "",
+      "meta_description": ""
+    },
+    {
+      "slug": "monitor-pentru-clienti-fec",
+      "url": "https://rti.md/product/monitor-pentru-clienti-fec",
+      "api_url": "https://api.ecommerce.rti.md/api/products/slug/monitor-pentru-clienti-fec?lang=ro",
+      "title": "POS display cumparator FEC AM-1008W",
+      "category": "Echipamente POS suplimentare",
+      "stock_status": "In stoc",
+      "price": "",
+      "images": [
+        "/img/products/3c3dc223-85a2-4836-ae58-1289d584e6f6.jpg"
+      ],
+      "description": "POS afisaj AM-1008W POS este primul produs FEC cu un modul NFC incorporat pentru a permite tranzactiile RFID fara fir. Toate tranzactiile sunt procesate prin atingerea unui card sau dispozitiv NFC compatibil. AM-1008 este un pionier al afisajelor multifunctionale pentru utilizatori cu rezolutie HD, NFC optional incorporat, emulare VFD 20x2 si design unificat de conector. Acest afisaj subtire si elegant este ideal pentru ghiseele de vanzare cu amanuntul unde spatiul este limitat. Echipat cu un panou LCD HD de 8 inchi, cu o rezolutie inalta de 1024x600, o luminozitate ridicata de 600 nit si un raport de contrast ridicat de 800:1. Datorita configuratiei sale cu ecran lat, afiseaza mai bine continutul.",
+      "characteristics": "Display: 8\" TFT, 1024 x 600\nBrightness: 450 nits\nPower: 12V\nMounting: VESA 75x75 mm\nCertification: FCC / CE Class B\nOperation temperature: 0˚C ~ 40˚C (32˚F ~ 104˚F)\nStorage temperatures: -20˚C ~ 60˚C (-4˚F ~ 130˚F)\nDimensions (W x H x D): Display Only: 211.5 x 134.6 x 18.4 mm Display with Stand: 212 x 474.2 x 38.9 mm Carton: 302 x 220 x 276 mm\nWeight: Display Only (Net): 0.38 Kg Display with Stand (Net): 0.736 Kg Display with Stand (Gross): 2.3 Kg",
+      "specifications": {
+        "Display": "8\" TFT, 1024 x 600",
+        "Brightness": "450 nits",
+        "Power": "12V",
+        "Mounting": "VESA 75x75 mm",
+        "Certification": "FCC / CE Class B",
+        "Operation temperature": "0˚C ~ 40˚C (32˚F ~ 104˚F)",
+        "Storage temperatures": "-20˚C ~ 60˚C (-4˚F ~ 130˚F)",
+        "Dimensions (W x H x D)": "Display Only: 211.5 x 134.6 x 18.4 mm Display with Stand: 212 x 474.2 x 38.9 mm Carton: 302 x 220 x 276 mm",
+        "Weight": "Display Only (Net): 0.38 Kg Display with Stand (Net): 0.736 Kg Display with Stand (Gross): 2.3 Kg"
+      },
+      "tags": [],
+      "published_at": "2021-12-29T12:17:29.881Z",
+      "meta_title": "",
+      "meta_description": ""
+    },
+    {
+      "slug": "pos-terminal-rsistem-j4125",
+      "url": "https://rti.md/product/pos-terminal-rsistem-j4125",
+      "api_url": "https://api.ecommerce.rti.md/api/products/slug/pos-terminal-rsistem-j4125?lang=ro",
+      "title": "POS terminal RSistem J4125",
+      "category": "Sistem POS",
+      "stock_status": "In stoc",
+      "price": "",
+      "images": [
+        "/img/products/754832b6-66c4-4d6c-a067-1207fb8e5a63.jpg"
+      ],
+      "description": "Acest terminal all-in-one este ideal pentru aplicații industriale, comerciale, HoReCa și retail, oferind un echilibru excelent între performanță, funcționalitate și design compact. Cu 4GB RAM și SSD de 128GB , sistemul asigură operare fluentă pentru soluții POS, info-chioșcuri sau automatizări. Dispune de un ecran LED de 15,6\" cu iluminare din spate , touchscreen rezistiv sau capacitiv proiectat, adaptabil diferitelor medii de utilizare. Rama ultra subțire și carcasa din plastic contribuie la un design modern, ușor de integrat în spații restrânse. Standul robust din aluminiu, cu sistem de gestionare a cablurilor , oferă o instalare curată. SSD-ul/HDD-ul detașabil permite întreținerea rapidă. Rulează Windows 10 IoT , garantând compatibilitate cu aplicații profesionale.",
+      "characteristics": "RAM (standard Memory): 4GB\nColor: Aluminiu\nDisplay: 15'6\"\nStorage capacity: SSD 128GB\nOperating system: Windows IOT 10",
+      "specifications": {
+        "RAM (standard Memory)": "4GB",
+        "Color": "Aluminiu",
+        "Display": "15'6\"",
+        "Storage capacity": "SSD 128GB",
+        "Operating system": "Windows IOT 10"
+      },
+      "tags": [],
+      "published_at": "2022-06-30T11:53:02.507Z",
+      "meta_title": "",
+      "meta_description": ""
+    },
+    {
+      "slug": "pos-terminal-beetle-ipos-plus-diebold-nixdorf",
+      "url": "https://rti.md/product/pos-terminal-beetle-ipos-plus-diebold-nixdorf",
+      "api_url": "https://api.ecommerce.rti.md/api/products/slug/pos-terminal-beetle-ipos-plus-diebold-nixdorf?lang=ro",
+      "title": "POS terminal BEETLE/iPOS plus Diebold Nixdorf",
+      "category": "Sistem POS",
+      "stock_status": "In stoc",
+      "price": "",
+      "images": [
+        "/img/products/f95d0359-5ffa-4dfe-9f3e-3b6c420f7e54.jpg",
+        "/img/products/a58837b7-c20b-4723-bac9-f39149850265.jpg",
+        "/img/products/eab8004b-ca7e-4ad6-b070-3730e7a078cf.jpg",
+        "/img/products/a65e0b66-deb7-49a8-84a7-a958c146af92.jpg"
+      ],
+      "description": "BEETLE/iPOS plus este un terminal POS si un sistem chiosc inovator, cu ecran tactil all-in-one de 15 inchi care stabileste un nou nivel pentru industrie. Cu un design elegant si durabil, BEETLE/iPOS plus este sistemul ideal pentru comerciantii cu amanuntul care cauta un sistem POS de ultima generatie in domeniul de retail. Dotat cu functionalitati extinse si tehnologie de economisire a energiei intr-o amprenta compacta, si un ciclu de viata extins pentru a oferi retailerilor solutia perfecta pentru magazine si restaurante din intreaga lume. Mai mult, urmatoarele optiuni sunt disponibile ca dispozitive integrate: Cititor de carduri magnetice Cititor de amprente Afisaj pentru clienti Cititor de chei iButton Dallas",
+      "characteristics": "Processor: Intel Atom D2560 2x 2.0 GHz\nMemory: 4 GB\nDisplay: 15“ CCFL backlight, 4:3  Max. resolution: 1024 x 768  Projected capacitive multi-touch\nInterfaces: RS232 (standard/powered): - / 2  USB (standard): 2  PoweredUSB: 1(12V)  Second display: VGA  LAN (MBit/s): 10/100/1000  Cash drawer: 1  Audio / line out: yes\nStorage media: 2.5” hard disk or  Solid state disk (SSD)\nIntegrable peripherals (option): MSR  Rear-mounted customer display  Fingerprint reader  iButton key reader\nSystem management: Desktop Management Interface (DMI)  Preboot Execution Environment (PXE)  Wake on LAN (WoL)  Advanced Configuration and Power Interface (ACPI)  Management Agents (BEETLEINFO)\n Dimensions (W x D x H in mm): 375 x 305 x 46 (including stand)",
+      "specifications": {
+        "Processor": "Intel Atom D2560 2x 2.0 GHz",
+        "Memory": "4 GB",
+        "Display": "15“ CCFL backlight, 4:3  Max. resolution: 1024 x 768  Projected capacitive multi-touch",
+        "Interfaces": "RS232 (standard/powered): - / 2  USB (standard): 2  PoweredUSB: 1(12V)  Second display: VGA  LAN (MBit/s): 10/100/1000  Cash drawer: 1  Audio / line out: yes",
+        "Storage media": "2.5” hard disk or  Solid state disk (SSD)",
+        "Integrable peripherals (option)": "MSR  Rear-mounted customer display  Fingerprint reader  iButton key reader",
+        "System management": "Desktop Management Interface (DMI)  Preboot Execution Environment (PXE)  Wake on LAN (WoL)  Advanced Configuration and Power Interface (ACPI)  Management Agents (BEETLEINFO)",
+        " Dimensions (W x D x H in mm)": "375 x 305 x 46 (including stand)"
+      },
+      "tags": [
+        "pos"
+      ],
+      "published_at": "2021-10-03T06:59:07.000Z",
+      "meta_title": "POS terminal BEETLE /iPOS plus (DIEBOLD-NIXDORF)",
+      "meta_description": ""
+    },
+    {
+      "slug": "pos-terminal-rsistems-j1900",
+      "url": "https://rti.md/product/pos-terminal-rsistems-j1900",
+      "api_url": "https://api.ecommerce.rti.md/api/products/slug/pos-terminal-rsistems-j1900?lang=ro",
+      "title": "POS terminal RSistems J1900",
+      "category": "Sistem POS",
+      "stock_status": "In stoc",
+      "price": "",
+      "images": [
+        "/img/products/f720f9ed-6f8d-4968-bf3a-0a30186ca955.jpg",
+        "/img/products/cebecc85-481e-4f41-8263-279402c522a7.jpg"
+      ],
+      "description": "Acest terminal POS all-in-one este echipat cu procesor J1900 , 4GB RAM , SSD de 128GB și WiFi , fiind optimizat pentru aplicații comerciale, retail și HoReCa. Rulează Windows 10 IoT , asigurând compatibilitate cu o gamă largă de soluții software profesionale. Dispune de un ecran LED de 15,6\" cu iluminare din spate , cu opțiune de touchscreen rezistiv sau capacitiv proiectat , ideal pentru interacțiuni rapide și precise. Rama ultra subțire și carcasa din plastic oferă un design modern, compact și ușor de integrat în orice spațiu de lucru. Terminalul vine cu un stand solid din aluminiu , prevăzut cu sistem de gestionare a cablurilor , pentru o instalare curată și organizată. De asemenea, include SSD/HDD detașabil , pentru întreținere și upgrade-uri facile. Fiabil, compact și ușor de utilizat, acest terminal este alegerea perfectă pentru puncte de vânzare, chioșcuri interactive sau aplicații de automatizare.",
+      "characteristics": "Display: 15'6\"\nProcesor: J1900\nColor: aluminiu\nStorage capacity: SSD 128GB\nOperating system: WiFi +Windows IOT 10",
+      "specifications": {
+        "Display": "15'6\"",
+        "Procesor": "J1900",
+        "Color": "aluminiu",
+        "Storage capacity": "SSD 128GB",
+        "Operating system": "WiFi +Windows IOT 10"
+      },
+      "tags": [
+        "pos",
+        "rsistems"
+      ],
+      "published_at": "2022-02-17T12:07:04.000Z",
+      "meta_title": "POS терминал RSistems J1900",
+      "meta_description": ""
+    },
+    {
+      "slug": "pos-terminal-pos-rs156-aw",
+      "url": "https://rti.md/product/pos-terminal-pos-rs156-aw",
+      "api_url": "https://api.ecommerce.rti.md/api/products/slug/pos-terminal-pos-rs156-aw?lang=ro",
+      "title": "POS terminal RSistems RS156-AW ",
+      "category": "Sistem POS",
+      "stock_status": "In stoc",
+      "price": "",
+      "images": [
+        "/img/products/c1be0217-86b7-40f7-8b29-b59f540c81ab.jpg",
+        "/img/products/7f25a749-cac1-48ba-ba0e-8a413ada2aa3.jpg",
+        "/img/products/1b524409-2f6b-41c4-8f3f-d1e36b535efd.jpg",
+        "/img/products/3bf17417-6110-48ba-aeae-2d8db2fcd3ac.jpg"
+      ],
+      "description": "Sistemul POS RSistems RS156-AW poate fi integrat cu o multitudine de tipuri de dispozitive periferice în funcție de cerințele clienților. Acest model este potrivit pentru toate tipurile de aplicații (magazin, restaurant, bar) și în special pentru afacerile ce presupun vânzarea cu amănuntul. Trebuie remarcat ecranul touchscreen rezistiv, cu o diagonală de 15.6 inch și display suplimentar de 11.6inch , foarte precis, calibrat din fabrică, rezistent la praf și apă, cu o rezoluție excelentă și o bună luminozitate. Are capacitate de stocare 8GB, 2 GB memorie operativă, WiFi+Bluetooth. Funcționează pe sistem de operare Android 7.1.",
+      "characteristics": "Display: 15.6\"\nSecond Display: 11.6\"\nRAM: 2Gb\nStorage capacity: 8Gb\nSystem: Android 7.1\nWi-Fi: yes\nBluetooth: Yes\nBattery: yes\nCombo Card Reader: yes\nColor: White",
+      "specifications": {
+        "Display": "15.6\"",
+        "Second Display": "11.6\"",
+        "RAM": "2Gb",
+        "Storage capacity": "8Gb",
+        "System": "Android 7.1",
+        "Wi-Fi": "yes",
+        "Bluetooth": "Yes",
+        "Battery": "yes",
+        "Combo Card Reader": "yes",
+        "Color": "White"
+      },
+      "tags": [
+        "pos",
+        "rsistems"
+      ],
+      "published_at": "2022-01-20T12:25:42.000Z",
+      "meta_title": "POS terminal RSistems RS156-AW ",
+      "meta_description": ""
+    },
+    {
+      "slug": "sertar-de-bani-hs-410a",
+      "url": "https://rti.md/product/sertar-de-bani-hs-410a",
+      "api_url": "https://api.ecommerce.rti.md/api/products/slug/sertar-de-bani-hs-410a?lang=ro",
+      "title": "Sertar de bani HS-410A",
+      "category": "Echipamente POS suplimentare",
+      "stock_status": "In stoc",
+      "price": "",
+      "images": [
+        "/img/products/d8470884-9571-4160-ac7d-f261dbe26604.jpg"
+      ],
+      "description": "Sertarul pentru numerar HS-410A este convenabil pentru utilizare în supermarketuri, hipermarketuri, Cash & Carry, restaurante, hoteluri, farmacii, FastFood. Setul include un lacat standard cu trei poziții și două chei. Puteți deschide cutia într-unul din următoarele moduri: folosind un impuls electric de la un dispozitiv POS (casă de marcat, registrator fiscal, imprimantă de chitanțe), sau cu o cheie. Sertarul are o cutie de monede detașabilă pentru depozitarea bancnotelor mari. Dimensiuni: 410x415x110 mm Compartimente pentru monede: 8 Compartimente pentru bancnote: 5",
+      "characteristics": "Dimensions (W×L×H): 410×415×100mm   16.1×16.3×3.9inches\nNet Weight: 8kg\nBill & Coin: 5B/5C,5B/8C 4B/5C\nKey lock: Three position key lock\nSolenoid: 6-24V\nNote gripper: Wire,metal,plastic gripper available\nLockable lids: Available unpon request\nCheque slot: one or two\nConnectors: RJ11(USB,RS232,Serial Connector available\nOther Features: Concise Safe Durable: 1. The casting of cash drawer adopts 1.5mm SPCC cold rolling steel plate shell and 1.5mm SECC-N5 fingerprint resistant sheet   2. The inner structure of cash drawer adopts high-strength ABS plastic  3. Slide rails under till make cash drawer more durable and can bear a heavier load  4. Under the tray,Storage area for larege bill,checks and coin rolls available",
+      "specifications": {
+        "Dimensions (W×L×H)": "410×415×100mm   16.1×16.3×3.9inches",
+        "Net Weight": "8kg",
+        "Bill & Coin": "5B/5C,5B/8C 4B/5C",
+        "Key lock": "Three position key lock",
+        "Solenoid": "6-24V",
+        "Note gripper": "Wire,metal,plastic gripper available",
+        "Lockable lids": "Available unpon request",
+        "Cheque slot": "one or two",
+        "Connectors": "RJ11(USB,RS232,Serial Connector available",
+        "Other Features: Concise Safe Durable": "1. The casting of cash drawer adopts 1.5mm SPCC cold rolling steel plate shell and 1.5mm SECC-N5 fingerprint resistant sheet   2. The inner structure of cash drawer adopts high-strength ABS plastic  3. Slide rails under till make cash drawer more durable and can bear a heavier load  4. Under the tray,Storage area for larege bill,checks and coin rolls available"
+      },
+      "tags": [
+        "display",
+        "fec"
+      ],
+      "published_at": "2021-11-19T11:27:49.955Z",
+      "meta_title": "Money drawer HS-410A",
+      "meta_description": ""
+    },
+    {
+      "slug": "sertar-de-bani-hs-170",
+      "url": "https://rti.md/product/sertar-de-bani-hs-170",
+      "api_url": "https://api.ecommerce.rti.md/api/products/slug/sertar-de-bani-hs-170?lang=ro",
+      "title": "Sertar de bani HS 170",
+      "category": "Echipamente POS suplimentare",
+      "stock_status": "In stoc",
+      "price": "0 MDL",
+      "images": [
+        "/img/products/c0bd21f0-3c69-4b18-b6a7-080a6e1eedf0.jpg",
+        "/img/products/df58e3b8-313a-4084-b8f3-a5e8b0b8abe8.jpg"
+      ],
+      "description": "Sertarul de numerar modelul HS-170 de tip „Flip Top”, de regula, este utilizat in sistemele frontale ale locului de munca al casieriei. Spre deosebire de un sertar standard, capacul flip top se deschide in sus, fara inconveniente pentru casier. Utilizarea acestuia va creste semnificativ eficienta colectarii numerarului in magazinele in care functioneaza mai multe ture de casierie. Particularitati: Caseta detasabila cu capac, incuietoare si maner de transport Lacat electric cu trei pozitii Capac superior din otel inoxidabil sau vopsit Sectiuni reglabile pentru depozitarea bonurilor Sectiune suplimentara pentru stocarea bonurilor de vanzare Se monteaza pe suprafete verticale si orizontale MTBF ridicat - peste 1.000.000 de deschideri Utilizarea acestuia va creste semnificativ eficienta colectarii numerarului in magazinele in care functioneaza mai multe ture de casieri. Avantajul acestui echipament este capacitatea de a inlocui insertia la schimbarea casieriei. Fiecare insertie este echipata cu propriul capac incuiat, asigurand depozitarea in siguranta a numerarului. Tot ce trebuie sa faca casierul este sa scoata o insertie si sa o introduca pe cealalta. Dimensiunea compacta a sertarului Flip Top il face usor de incadrat in spatiile inguste. O comoditate suplimentara a utilizarii acestui echipament este capacitatea de a-l conecta la orice model de registre fiscale. Sertarele de numerar HS-170 combina designul ergonomic, performanta excelenta, calitatea inalta si fiabilitatea. HS-170 sunt realizate intr-o carcasa metalica, echipata cu o incuietoare electrica in trei pozitii si o caseta detasabila care are un capac cu incuietoare si un maner, ceea ce este foarte util pentru a transporta banii dupa inchiderea turei de casa. O caracteristica distinctiva a sertarelor de numerar HS-170 este prezenta unui numar mare de sectiuni reglabile pentru depozitarea bancnotelor si sectiuni fixe pentru monede. In plus, cutiile au o sectiune suplimentara (compartiment secret) pentru depozitarea documentelor, bancnotelor mari si bonuri de vanzare. HS-170 vine in mai multe culori - bej, gri, negru, dar si cu un capac superior din otel inoxidabil sau complet vopsit in culoarea cutiei.",
+      "characteristics": "Color: Galaxy White  Special Black\nDimensions (H x W x L): 460(L)X170(W)X100(H)\nWeight: Net weight: 5.1KG;  Gross weight: 6.1KG\nInterface: RJ12, with micro switch\nMedia slot: single media slot\nLock: two locks, can be opened manually\nPackage: PE bag+Foam bag+Carton\nNeutral packing dimension: 505(L)X220(W)X140(H)\nBill tray: Six position depth: 83; Length of five of the six position (can be added to six)180; width: 23/17/17/17/29.5; Length of one position(stable): 157; Width: 26\nCoin tray: Eight position depth: 60; Length of the middle two position: 72; Width: 55; the four position on the left: 71; Width: 59\nBody, flip top, lid: 1.0mm SPCC powder spray the surface of cold rolled plate",
+      "specifications": {
+        "Color": "Galaxy White  Special Black",
+        "Dimensions (H x W x L)": "460(L)X170(W)X100(H)",
+        "Weight": "Net weight: 5.1KG;  Gross weight: 6.1KG",
+        "Interface": "RJ12, with micro switch",
+        "Media slot": "single media slot",
+        "Lock": "two locks, can be opened manually",
+        "Package": "PE bag+Foam bag+Carton",
+        "Neutral packing dimension": "505(L)X220(W)X140(H)",
+        "Bill tray": "Six position depth: 83; Length of five of the six position (can be added to six)180; width: 23/17/17/17/29.5; Length of one position(stable): 157; Width: 26",
+        "Coin tray": "Eight position depth: 60; Length of the middle two position: 72; Width: 55; the four position on the left: 71; Width: 59",
+        "Body, flip top, lid": "1.0mm SPCC powder spray the surface of cold rolled plate"
+      },
+      "tags": [
+        "sertar de bani"
+      ],
+      "published_at": "2021-11-19T11:42:11.876Z",
+      "meta_title": "HS-170 cash drawer ",
+      "meta_description": ""
+    },
+    {
+      "slug": "tableta-rs-wt-101-all-in-one-specializat-101-windows",
+      "url": "https://rti.md/product/tableta-rs-wt-101-all-in-one-specializat-101-windows",
+      "api_url": "https://api.ecommerce.rti.md/api/products/slug/tableta-rs-wt-101-all-in-one-specializat-101-windows?lang=ro",
+      "title": "Tableta specializata Windows RS - WT All-in-one ",
+      "category": "POS/PC specializat",
+      "stock_status": "In stoc",
+      "price": "",
+      "images": [
+        "/img/products/b1cb0b7e-3c85-41f2-8c31-86737983edaa.jpg",
+        "/img/products/fca238c6-4dc4-4372-9e5b-25a5a7692a59.jpg",
+        "/img/products/5cc096f9-1d3a-4c32-a3f6-1edfb38a0704.jpg"
+      ],
+      "description": "Windows All-in-one este o serie de tablete pe OS WINDOWS proiectată pentru a fi folosita în calitate de POS ll-in-One. Disponibil cu diagonala 10.1”, 15.6”, 21.5” sau 32” widescreen Interfata intuitiva Montare usoara, VESA mounting",
+      "characteristics": "Industrial Windows Tablet: RS-WT 101\nScreen size: 10.1”\nPixel Resolution: 1280 x 800\nContrast Ratio: 800:1\nAspect Ratio: 16:10\nActive Display Area : 134.8 x 216.2 mm\nViewing angle: H:170°/ V:170°\nTouch Tech.: 10 point cap touch ( 6H semi-tempered glass )\nCPU: Intel Celeron J1900 (Quad Core)\nBase Frequency: 2.0 GHz\nCPU Turbo Boost : 2.42 GHz\nCPU Cache: 2MB\nRAM: 4GB DDR3L @1333 MHz (upgradable)\nStorage: 32GB SSD (upgradable\nSupported OS: Pre-installed Windows 10 IoT core (License is optional)\nGPU chipset: Intel HD Graphic (Bay Trail, 688 - 854 MHz)\nVGA: Yes\nHDMI: Yes\n# of display supported : 2\nI/O Ports: Line-out x 1, Mic-in x 1\nCamera: Front Facing Camera 2/5 MP fixed focus (Optional)",
+      "specifications": {
+        "Industrial Windows Tablet": "RS-WT 101",
+        "Screen size": "10.1”",
+        "Pixel Resolution": "1280 x 800",
+        "Contrast Ratio": "800:1",
+        "Aspect Ratio": "16:10",
+        "Active Display Area ": "134.8 x 216.2 mm",
+        "Viewing angle": "H:170°/ V:170°",
+        "Touch Tech.": "10 point cap touch ( 6H semi-tempered glass )",
+        "CPU": "Intel Celeron J1900 (Quad Core)",
+        "Base Frequency": "2.0 GHz",
+        "CPU Turbo Boost ": "2.42 GHz",
+        "CPU Cache": "2MB",
+        "RAM": "4GB DDR3L @1333 MHz (upgradable)",
+        "Storage": "32GB SSD (upgradable",
+        "Supported OS": "Pre-installed Windows 10 IoT core (License is optional)",
+        "GPU chipset": "Intel HD Graphic (Bay Trail, 688 - 854 MHz)",
+        "VGA": "Yes",
+        "HDMI": "Yes",
+        "# of display supported ": "2",
+        "I/O Ports": "Line-out x 1, Mic-in x 1",
+        "Camera": "Front Facing Camera 2/5 MP fixed focus (Optional)"
+      },
+      "tags": [
+        "pos",
+        "rsistems"
+      ],
+      "published_at": "2021-11-19T12:46:53.717Z",
+      "meta_title": "RS-WT 101 All-in-one specialized 10.1 ”Windows tablet",
+      "meta_description": ""
+    }
+  ]
+}
