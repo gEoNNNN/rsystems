@@ -42,9 +42,9 @@ function ProductDetailPage() {
       <div className="pd-page">
         <Header />
         <div className="pd-not-found">
-          <h2>Produs neg\u0103sit</h2>
+          <h2>Produs negăsit</h2>
           <Link to={categorySlug ? `/produse/${categorySlug}` : '/'} className="pd-back-link">
-            \u2190 \u00cenapoi la categorie
+            ← Înapoi la categorie
           </Link>
         </div>
         <Footer />
@@ -61,7 +61,7 @@ function ProductDetailPage() {
       {/* Breadcrumb */}
       <div className="pd-breadcrumb-bar">
         <nav className="pd-breadcrumb">
-          <Link to="/">Acas\u0103</Link>
+          <Link to="/">Acasă</Link>
           <svg width="5" height="9" viewBox="0 0 6 10" fill="none"><path d="M1 1l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/></svg>
           <span>Produse</span>
           <svg width="5" height="9" viewBox="0 0 6 10" fill="none"><path d="M1 1l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/></svg>
@@ -117,14 +117,28 @@ function ProductDetailPage() {
           {product.description && (
             <div className="pd-desc-box">
               <h3 className="pd-desc-label">Descriere</h3>
-              <p className="pd-desc">{product.description}</p>
+              <div className="pd-desc-sentences">
+                {product.description
+                  .split(/(?<=[.!?])\s+/)
+                  .filter(s => s.trim())
+                  .map((sentence, i) => (
+                    <p key={i} className="pd-desc-sentence">{sentence.trim()}</p>
+                  ))}
+              </div>
             </div>
           )}
 
-          {product.characteristics && (
-            <div className="pd-desc-box">
-              <h3 className="pd-desc-label">Caracteristici</h3>
-              <p className="pd-desc">{product.characteristics}</p>
+          {Object.keys(product.specifications ?? {}).length > 0 && (
+            <div className="pd-specs-box">
+              <h3 className="pd-desc-label">Specificații tehnice</h3>
+              <div className="pd-specs-grid">
+                {Object.entries(product.specifications).map(([key, val], i) => (
+                  <div key={i} className="pd-spec-row">
+                    <span className="pd-spec-key">{key.trim()}</span>
+                    <span className="pd-spec-val">{val}</span>
+                  </div>
+                ))}
+              </div>
             </div>
           )}
 
@@ -160,7 +174,7 @@ function ProductDetailPage() {
             <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
               <path d="M13 8H3M3 8L7.5 3.5M3 8L7.5 12.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
-            \u00cenapoi la {config.label}
+            Înapoi la {config.label}
           </Link>
         </div>
       </section>

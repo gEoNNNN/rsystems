@@ -191,15 +191,71 @@
   text-transform: uppercase;
   letter-spacing: 0.6px;
   color: #999;
-  margin: 0 0 0.5rem 0;
+  margin: 0 0 0.6rem 0;
 }
 
-.pd-desc {
+/* Description formatted as readable sentences */
+.pd-desc-sentences {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.pd-desc-sentence {
   font-size: 0.85rem;
   color: #444;
   line-height: 1.7;
   margin: 0;
-  white-space: pre-line;
+  padding-left: 0.8rem;
+  border-left: 2px solid #e8f8f8;
+}
+
+/* Specifications grid */
+.pd-specs-box {
+  background: #ffffff;
+  border: 1px solid #efefef;
+  border-radius: 12px;
+  padding: 1rem 1.2rem;
+}
+
+.pd-specs-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #efefef;
+  margin-top: 0.2rem;
+}
+
+.pd-spec-row {
+  display: flex;
+  align-items: baseline;
+  gap: 0;
+}
+
+.pd-spec-row:nth-child(even) {
+  background: #f9fbfb;
+}
+
+.pd-spec-row:nth-child(odd) {
+  background: #ffffff;
+}
+
+.pd-spec-key {
+  flex: 0 0 45%;
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: #555;
+  padding: 0.5rem 0.8rem;
+  border-right: 1px solid #efefef;
+}
+
+.pd-spec-val {
+  flex: 1;
+  font-size: 0.76rem;
+  color: #222;
+  padding: 0.5rem 0.8rem;
 }
 
 .pd-tags {

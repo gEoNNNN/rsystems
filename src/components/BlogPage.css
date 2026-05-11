@@ -203,7 +203,7 @@
 
 /* ── Sidebar ── */
 .blog-sidebar {
-  flex: 0 0 200px;
+  flex: 0 0 270px;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -256,6 +256,20 @@
 .blog-sidebar-list li a span {
   font-size: clamp(0.65rem, 0.75vw, 0.78rem);
   color: #777;
+}
+
+.blog-pop-time {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.65rem !important;
+  font-weight: 600;
+  color: #1FB6B2 !important;
+  background: #f0fafa;
+  padding: 2px 8px;
+  border-radius: 20px;
+  margin-top: 2px;
+  width: fit-content;
 }
 
 .blog-sidebar-list li a:hover {

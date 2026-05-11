@@ -36,22 +36,6 @@ const articles = [
     href: '/blog/reducere-pierderi-horeca',
     img: '/img/blogph.svg',
   },
-  {
-    title: 'Ghid Complet pentru Automatizarea Fast Food-urilor',
-    desc: 'Optimizează timpul de preparare și fluxul comenzilor cu soluții digitale dedicate fast food-urilor moderne.',
-    category: 'Fast Food',
-    readTime: '7 minute',
-    href: '/blog/automatizare-fast-food',
-    img: '/img/blogph.svg',
-  },
-  {
-    title: 'Panouri Digitale pentru Restaurante și Meniuri Interactive',
-    desc: 'Modernizează experiența clienților prin afișaje digitale atractive, meniuri interactive și promoții automate.',
-    category: 'Digital Signage',
-    readTime: '5 minute',
-    href: '/blog/panouri-digitale-restaurante',
-    img: '/img/blogph.svg',
-  },
 ]
 
 const categories = [
@@ -68,9 +52,9 @@ const categories = [
 ]
 
 const popular = [
-  { title: 'Top 5 Greșeli Care Încetinesc un Restaurant', desc: 'Cum identifici problemele operaționale care afectează servirea și profitabilitatea.' },
-  { title: 'Ce Înseamnă Gestiune Integrată pentru HoReCa', desc: 'Explicație completă despre automatizarea stocurilor, rapoartelor și vânzărilor.' },
-  { title: 'Cum Alegi Cel Mai Bun Sistem POS pentru Afacerea Ta', desc: 'Ghid practic pentru alegerea unui sistem modern și scalabil pentru HoReCa.' },
+  { title: 'Top 5 Greșeli Care Încetinesc un Restaurant', desc: 'Cum identifici problemele operaționale care afectează servirea și profitabilitatea.', readTime: '5 min' },
+  { title: 'Ce Înseamnă Gestiune Integrată pentru HoReCa', desc: 'Explicație completă despre automatizarea stocurilor, rapoartelor și vânzărilor.', readTime: '7 min' },
+  { title: 'Cum Alegi Cel Mai Bun Sistem POS pentru Afacerea Ta', desc: 'Ghid practic pentru alegerea unui sistem modern și scalabil pentru HoReCa.', readTime: '6 min' },
 ]
 
 function BlogPage() {
@@ -164,6 +148,7 @@ function BlogPage() {
                   <a href="#">
                     <strong>{p.title}</strong>
                     <span>{p.desc}</span>
+                    <span className="blog-pop-time">{p.readTime}</span>
                   </a>
                 </li>
               ))}
