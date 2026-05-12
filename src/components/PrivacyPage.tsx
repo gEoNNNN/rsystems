@@ -2,12 +2,14 @@ import { useEffect } from 'react'
 import './LegalPage.css'
 import Header from './Header'
 import Footer from './Footer'
+import SEO from './SEO'
 
 function PrivacyPage() {
   useEffect(() => { window.scrollTo(0, 0) }, [])
 
   return (
     <div className="legal-page">
+      <SEO title="Politica de Confidențialitate" description="Politica de confidențialitate și protecția datelor personale pe platforma RSistems." canonical="/confidentialitate" noindex />
       <Header />
 
       <section className="legal-hero">

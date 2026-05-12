@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import './BlogPage.css'
 import Header from './Header'
 import Footer from './Footer'
+import SEO from './SEO'
 
 const featured = {
   title: 'Cum Automatizarea HoReCa Crește Profitul și Reduce Pierderile',
@@ -89,6 +90,11 @@ function BlogPage() {
   }, [])
   return (
     <div className="blog-page">
+      <SEO
+        title="Blog RSistems – Sfaturi și Noutăți HoReCa"
+        description="Articole despre digitalizarea restaurantelor, gestionarea unui business HoReCa de succes, sisteme POS și tendințe din industria ospitalității."
+        canonical="/blog"
+      />
       <Header />
 
       {/* ── Hero ── */}

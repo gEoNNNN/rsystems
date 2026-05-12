@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /termeni
+Disallow: /confidentialitate
+
+Sitemap: https://rsistems.ro/sitemap.xml

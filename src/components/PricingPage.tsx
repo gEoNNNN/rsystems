@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import './PricingPage.css'
 import Header from './Header'
 import Footer from './Footer'
+import SEO from './SEO'
 
 const plans = [
   {
@@ -156,6 +157,11 @@ function PricingPage() {
 
   return (
     <div className="pricing-page">
+      <SEO
+        title="Prețuri și Pachete POS HoReCa"
+        description="Descoperă pachetele RSistems pentru restaurant, cafenea sau bar. Prețuri transparente, fără costuri ascunse. Poți schimba planul oricând."
+        canonical="/preturi"
+      />
       <Header />
 
       {/* ── Pricing Cards ── */}

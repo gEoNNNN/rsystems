@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import './FrontOfHousePage.css'
 import Header from './Header'
 import Footer from './Footer'
+import SEO from './SEO'
 
 const partnerLogos = [
   '/img/LogoDesktop 1.svg',  '/img/LogoDesktop 2.svg',  '/img/LogoDesktop 3.svg',
@@ -211,6 +212,11 @@ function FrontOfHousePage() {
 
   return (
     <div className="foh-page">
+      <SEO
+        title="Front of House – Soluții Sală RSistems"
+        description="Soluții POS complete pentru sala restaurantului: comenzi la masă, meniu QR, kiosk autoservire și plăți rapide. Demo gratuit RSistems."
+        canonical="/front-of-house"
+      />
       <Header />
 
       {/* ── Hero ── */}

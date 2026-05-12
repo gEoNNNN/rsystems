@@ -3,6 +3,7 @@ import { useParams, Link } from 'react-router-dom'
 import './BlogArticlePage.css'
 import Header from './Header'
 import Footer from './Footer'
+import SEO from './SEO'
 import blogArticles, { type ArticleSection } from './blogArticlesData'
 
 const popularLinks = [
@@ -68,6 +69,20 @@ function BlogArticlePage() {
 
   return (
     <div className="ba-page">
+      <SEO
+        title={article.title}
+        description={article.intro ?? article.title}
+        canonical={`/blog/${article.slug}`}
+        ogType="article"
+        jsonLd={{
+          '@context': 'https://schema.org',
+          '@type': 'Article',
+          headline: article.title,
+          description: article.intro ?? article.title,
+          url: `https://rsistems.ro/blog/${article.slug}`,
+          publisher: { '@type': 'Organization', name: 'RSistems', url: 'https://rsistems.ro' },
+        }}
+      />
       <Header />
 
       {/* ── Hero (split layout) ── */}

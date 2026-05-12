@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
+import SEO from './SEO'
 import './RestaurantPage.css'
 import Header from './Header'
 import Footer from './Footer'
@@ -115,8 +116,19 @@ function RestaurantPage() {
     }
   }
 
+  const seoMeta: Record<string, { title: string; description: string }> = {
+    restaurant:      { title: 'Sistem POS Restaurant România', description: 'Sistem POS complet pentru restaurante. Comenzi rapide, gestionare mese, rapoarte vânzări și integrare cu bucătăria. Demo gratuit.' },
+    cafenea:         { title: 'Sistem POS Cafenea', description: 'Software POS pentru cafenele și coffee shop-uri. Comenzi rapide, abonamente fideliție și rapoarte zilnice. Demo gratuit.' },
+    bar:             { title: 'Sistem POS Bar și Pub', description: 'Sistem POS pentru baruri și pub-uri. Gestiune băuturi, comenzi instant, control angajați. Soluție completă HoReCa.' },
+    'fast-food':     { title: 'Sistem POS Fast-Food', description: 'POS pentru fast-food. Comenzi rapide, ecran client, integrare livrare și gestiune stocuri în timp real.' },
+    livrare:         { title: 'Sistem POS Delivery & Takeaway', description: 'Soluție POS pentru livrare și takeaway. Integrare platforme de livrare, gestiune comenzi online și rapoarte complete.' },
+    'sala-evenimente': { title: 'Sistem POS Sală de Evenimente', description: 'POS pentru săli de evenimente. Gestiune rezervări, facturare și control meniuri pentru industria ospitalității.' },
+  }
+  const meta = seoMeta[pathId] ?? seoMeta['restaurant']
+
   return (
     <div className="rp-page">
+      <SEO title={meta.title} description={meta.description} canonical={`/${pathId}`} />
       <Header />
 
       {/* Hero */}

@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import './IntegrationsPage.css'
 import Header from './Header'
 import Footer from './Footer'
+import SEO from './SEO'
 
 const partnerLogos = [
   '/img/LogoDesktop 1.svg',  '/img/LogoDesktop 2.svg',  '/img/LogoDesktop 3.svg',
@@ -37,8 +38,6 @@ function IntegrationsPage() {
   const [selectedCountries, setSelectedCountries] = useState<string[]>([])
   const [typeOpen, setTypeOpen] = useState(false)
   const [countryOpen, setCountryOpen] = useState(false)
-
-  const itemWidthPercent = 12.5
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -96,6 +95,11 @@ function IntegrationsPage() {
 
   return (
     <div className="int-page">
+      <SEO
+        title="Integrări RSistems – POS, Livrare, Contabilitate"
+        description="RSistems se integrează cu platformele de livrare, sisteme de contabilitate și soluții de fidelizare. Conectează-ți afacerea HoReCa cu ecosistemul digital."
+        canonical="/integrations"
+      />
       <Header />
 
       {/* ── Hero ── */}

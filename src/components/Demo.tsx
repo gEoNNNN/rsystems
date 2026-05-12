@@ -1,6 +1,8 @@
-import { useState, useEffect, FormEvent } from 'react'
+import { useState, useEffect } from 'react'
+import type { FormEvent } from 'react'
 import Header from './Header'
 import Footer from './Footer'
+import SEO from './SEO'
 import './Demo.css'
 
 const videos = [
@@ -73,6 +75,11 @@ function Demo() {
 
   return (
     <>
+      <SEO
+        title="Rezervă Demo Gratuit – Sistem POS HoReCa"
+        description="Programează o demonstrație gratuită a sistemului RSistems POS pentru restaurant, cafenea sau bar. Implementare în 24h, training inclus, suport 24/7."
+        canonical="/demo"
+      />
       <Header />
       <main className="demo-page">
 

@@ -3,6 +3,7 @@ import { useParams, Link } from 'react-router-dom'
 import './ProductDetailPage.css'
 import Header from './Header'
 import Footer from './Footer'
+import SEO from './SEO'
 import { CATEGORY_MAP, type Product } from './productsData'
 
 function ProductDetailPage() {
@@ -56,6 +57,22 @@ function ProductDetailPage() {
 
   return (
     <div className="pd-page">
+      <SEO
+        title={`${product.title} – ${config.label}`}
+        description={product.description ? product.description.slice(0, 155) : `${product.title} – echipament profesional din gama ${config.label} RSistems. Ideal pentru restaurante și afaceri HoReCa din România.`}
+        canonical={`/produse/${categorySlug}/${productSlug}`}
+        ogImage={product.images?.[0] ? `https://rsistems.ro${product.images[0]}` : undefined}
+        ogType="product"
+        jsonLd={{
+          '@context': 'https://schema.org',
+          '@type': 'Product',
+          name: product.title,
+          description: product.description ?? product.title,
+          image: product.images?.map(i => `https://rsistems.ro${i}`) ?? [],
+          brand: { '@type': 'Brand', name: 'RSistems' },
+          offers: { '@type': 'Offer', url: `https://rsistems.ro/produse/${categorySlug}/${productSlug}`, priceCurrency: 'RON', availability: 'https://schema.org/InStock' },
+        }}
+      />
       <Header />
 
       {/* Breadcrumb */}

@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from 'react'
 import './App.css'
 import Header from './components/Header'
 import Footer from './components/Footer'
+import SEO from './components/SEO'
 import { NomenclatorUI as NomenclatorPreview, BasicIndicatorsUI as BasicIndicatorsPreview, ProfitLossUI as ProfitLossPreview } from './components/PosModal'
 import { XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Area, AreaChart } from 'recharts'
 
@@ -109,8 +110,71 @@ function App() {
     return () => observer.disconnect()
   }, [])
 
+  const localBusinessJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'LocalBusiness',
+    name: 'RSistems',
+    description: 'Sisteme POS profesionale pentru restaurante, cafenele, baruri și fast-food din România.',
+    url: 'https://rsistems.ro',
+    telephone: '+40517508772',
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'București',
+      addressCountry: 'RO',
+    },
+    sameAs: ['https://wa.me/40517508772'],
+    priceRange: '$$',
+    openingHours: 'Mo-Fr 09:00-18:00',
+    serviceArea: { '@type': 'Country', name: 'Romania' },
+  }
+
+  const faqJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'Ce este RSistems?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'RSistems este un sistem POS (Point of Sale) profesional destinat afacerilor HoReCa din România: restaurante, cafenele, baruri, fast-food și livrare.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Cum funcționează sistemul POS RSistems?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'RSistems gestionează comenzile, stocurile, angajații și vânzările în timp real. Funcționează pe tablete și PC-uri, cu sau fără conexiune la internet.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'RSistems se potrivește pentru restaurantul meu?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Da. RSistems oferă soluții personalizate pentru restaurante, cafenele, baruri, fast-food, livrare și săli de evenimente din toată România.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Există o demonstrație gratuită?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Da, poți rezerva o demonstrație gratuită a sistemului RSistems direct pe site la pagina /demo sau sunând la +40517508772.',
+        },
+      },
+    ],
+  }
+
   return (
     <>
+      <SEO
+        title="RSistems – Sisteme POS pentru HoReCa | Restaurant, Cafenea, Bar"
+        description="Sisteme POS profesionale pentru restaurante, cafenele, baruri și fast-food din România. Gestionare comenzi, stocuri și personal. Demo gratuit."
+        canonical="/"
+        jsonLd={[localBusinessJsonLd, faqJsonLd]}
+      />
       <Header />
 
       {/* Hero Section */}

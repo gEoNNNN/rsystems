@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import './AboutPage.css'
 import Header from './Header'
 import Footer from './Footer'
+import SEO from './SEO'
 
 const values = [
   {
@@ -68,6 +69,29 @@ function AboutPage() {
 
   return (
     <div className="about-page">
+      <SEO
+        title="Despre RSistems – Echipă și Misiune"
+        description="RSistems este partenerul de digitalizare pentru afacerile HoReCa din România. Implementări rapide, suport real și soluții personalizate pentru restaurante, cafenele și baruri."
+        canonical="/despre"
+        jsonLd={{
+          '@context': 'https://schema.org',
+          '@type': 'Organization',
+          name: 'RSistems',
+          url: 'https://rsistems.ro',
+          telephone: '+40517508772',
+          address: {
+            '@type': 'PostalAddress',
+            addressLocality: 'București',
+            addressCountry: 'RO',
+          },
+          contactPoint: {
+            '@type': 'ContactPoint',
+            telephone: '+40517508772',
+            contactType: 'customer service',
+            availableLanguage: 'Romanian',
+          },
+        }}
+      />
       <Header />
 
       {/* ── Hero ── */}

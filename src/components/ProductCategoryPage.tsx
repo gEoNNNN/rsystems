@@ -3,6 +3,7 @@ import { useParams, Link } from 'react-router-dom'
 import './ProductCategoryPage.css'
 import Header from './Header'
 import Footer from './Footer'
+import SEO from './SEO'
 import { CATEGORY_MAP, type Product } from './productsData'
 
 const ACTIVE_CATEGORY_SLUGS = [
@@ -45,6 +46,11 @@ function ProductCategoryPage() {
 
   return (
     <div className="pc-page">
+      <SEO
+        title={`${config.label} – Echipamente HoReCa`}
+        description={`Descoperă gama de ${config.label.toLowerCase()} RSistems. Echipamente profesionale pentru restaurante, cafenele și baruri din România.`}
+        canonical={`/produse/${slug}`}
+      />
       <Header />
 
       {/* Hero */}

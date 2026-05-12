@@ -2,12 +2,14 @@ import { useEffect } from 'react'
 import './LegalPage.css'
 import Header from './Header'
 import Footer from './Footer'
+import SEO from './SEO'
 
 function TermsPage() {
   useEffect(() => { window.scrollTo(0, 0) }, [])
 
   return (
     <div className="legal-page">
+      <SEO title="Termeni și Condiții" description="Termenii și condițiile de utilizare ale platformei RSistems." canonical="/termeni" noindex />
       <Header />
 
       <section className="legal-hero">
