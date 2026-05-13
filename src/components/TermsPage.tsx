@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+﻿import { useEffect } from 'react'
 import './LegalPage.css'
 import Header from './Header'
 import Footer from './Footer'

@@ -1,4 +1,4 @@
-import './PosModal.css'
+﻿import './PosModal.css'
 
 type ModalType = 'pos' | 'rapoarte' | 'management'
 

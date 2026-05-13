@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+﻿import { useState, useEffect } from 'react'
 import './IntegrationsPage.css'
 import Header from './Header'
 import Footer from './Footer'

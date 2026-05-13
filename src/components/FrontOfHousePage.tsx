@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+﻿import { useState, useEffect } from 'react'
 import './FrontOfHousePage.css'
 import Header from './Header'
 import Footer from './Footer'

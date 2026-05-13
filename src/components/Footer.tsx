@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+ï»¿import { Link } from 'react-router-dom'
 import './Footer.css'
 
 const solutiiLinks = [
@@ -11,7 +11,7 @@ const solutiiLinks = [
 const produseLinks = [
   { label: 'POS/PC Specializat', to: '/produse/pos-pc' },
   { label: 'Imprimante', to: '/produse/imprimante' },
-  { label: 'Cântare Comerciale', to: '/produse/cantare-comerciale' },
+  { label: 'Cï¿½ntare Comerciale', to: '/produse/cantare-comerciale' },
   { label: 'Scanare Coduri de Bare', to: '/produse/scanare-coduri-de-bare' },
   { label: 'Sistem Numarare Vizitatori', to: '/produse/sistem-numarare-vizitatori' },
 ]
@@ -110,7 +110,7 @@ function Footer() {
         <span className="footer-copy">&copy; {new Date().getFullYear()} RSistems. Toate drepturile rezervate.</span>
         <div className="footer-legal">
           <Link to="/termeni">Termeni &amp; condi?ii</Link>
-          <span className="footer-legal-dot" aria-hidden="true">·</span>
+          <span className="footer-legal-dot" aria-hidden="true">ï¿½</span>
           <Link to="/confidentialitate">Politica de confiden?ialitate</Link>
         </div>
       </div>
