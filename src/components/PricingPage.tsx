@@ -122,6 +122,11 @@ const comparisonSections = [
   ]},
 ]
 
+const stripDiacritics = (s: string) =>
+  s.normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+   .replace(/[șşȘŞ]/g, c => c === c.toUpperCase() ? 'S' : 's')
+   .replace(/[țţȚŢ]/g, c => c === c.toUpperCase() ? 'T' : 't')
+
 const Checkmark = () => (
   <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
     <path d="M3.5 9L7.5 13L14.5 5" stroke="#1FB6B2" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"/>
@@ -225,7 +230,7 @@ function PricingPage() {
 
           {/* Accordion sections */}
           {comparisonSections.map((section, idx) => {
-            const firstWord = section.title.split(' ')[0]
+            const firstWord = stripDiacritics(section.title.split(' ')[0])
             const isOpen = openSection === idx
             const sortedFeatures = [...section.features].sort((a, b) => {
               const countA = (a.basic ? 1 : 0) + (a.pro ? 1 : 0) + (a.enterprise ? 1 : 0)

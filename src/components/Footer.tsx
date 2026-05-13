@@ -11,14 +11,14 @@ const solutiiLinks = [
 const produseLinks = [
   { label: 'POS/PC Specializat', to: '/produse/pos-pc' },
   { label: 'Imprimante', to: '/produse/imprimante' },
-  { label: 'C�ntare Comerciale', to: '/produse/cantare-comerciale' },
+  { label: 'Cântare Comerciale', to: '/produse/cantare-comerciale' },
   { label: 'Scanare Coduri de Bare', to: '/produse/scanare-coduri-de-bare' },
   { label: 'Sistem Numarare Vizitatori', to: '/produse/sistem-numarare-vizitatori' },
 ]
 
 const companieLinks = [
   { label: 'Despre noi', to: '/despre' },
-  { label: 'Pre?uri', to: '/preturi' },
+  { label: 'Prețuri', to: '/preturi' },
   { label: 'Blog', to: '/blog' },
 ]
 
@@ -50,7 +50,7 @@ function Footer() {
 
         {/* Solu?ii */}
         <div className="footer-col">
-          <h4 className="footer-col-title">Solu?ii</h4>
+          <h4 className="footer-col-title">Soluții</h4>
           <ul className="footer-col-list">
             {solutiiLinks.map(l => (
               <li key={l.to}><Link to={l.to}>{l.label}</Link></li>
@@ -109,9 +109,9 @@ function Footer() {
       <div className="footer-bottom">
         <span className="footer-copy">&copy; {new Date().getFullYear()} RSistems. Toate drepturile rezervate.</span>
         <div className="footer-legal">
-          <Link to="/termeni">Termeni &amp; condi?ii</Link>
-          <span className="footer-legal-dot" aria-hidden="true">�</span>
-          <Link to="/confidentialitate">Politica de confiden?ialitate</Link>
+          <Link to="/termeni">Termeni &amp; condiții</Link>
+          <span className="footer-legal-dot" aria-hidden="true">·</span>
+          <Link to="/confidentialitate">Politica de confidențialitate</Link>
         </div>
       </div>
     </footer>
