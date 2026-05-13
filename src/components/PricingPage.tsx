@@ -190,7 +190,7 @@ function PricingPage() {
                     </li>
                   ))}
                 </ul>
-                <a href="https://wa.me/40517508772?text=Bună! Vreau să încep să folosesc RSistems." className="pricing-btn" target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/40751088772?text=Bună! Vreau să încep să folosesc RSistems." className="pricing-btn" target="_blank" rel="noopener noreferrer">
                   Începe acum
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                     <path d="M3 8H13M13 8L8.5 3.5M13 8L8.5 12.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
@@ -282,7 +282,7 @@ function PricingPage() {
             Cere o demonstrație personalizată pentru lanțuri de restaurante.
             Vă arătăm exact cum RSistems va reduce costurile și va crește profitul fiecărei locații.
           </p>
-          <a href="https://wa.me/40517508772?text=Bun%C4%83!%20Vreau%20s%C4%83%20%C3%AEncep%20s%C4%83%20folosesc%20RSistems." className="pricing-cta-btn" target="_blank" rel="noopener noreferrer">
+          <a href="https://wa.me/40751088772?text=Bun%C4%83!%20Vreau%20s%C4%83%20%C3%AEncep%20s%C4%83%20folosesc%20RSistems." className="pricing-cta-btn" target="_blank" rel="noopener noreferrer">
             Începe acum
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
               <path d="M3 8H13M13 8L8.5 3.5M13 8L8.5 12.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>

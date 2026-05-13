@@ -166,7 +166,7 @@ function ProductDetailPage() {
           {/* CTAs */}
           <div className="pd-ctas">
             <a
-              href={`https://wa.me/40517508772?text=Bun%C4%83!+Sunt+interesat+de+produsul+${encodeURIComponent(product.title)}`}
+              href={`https://wa.me/40751088772?text=Bun%C4%83!+Sunt+interesat+de+produsul+${encodeURIComponent(product.title)}`}
               target="_blank"
               rel="noopener noreferrer"
               className="pd-cta-whatsapp"

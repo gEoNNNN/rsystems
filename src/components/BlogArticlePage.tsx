@@ -141,7 +141,7 @@ function BlogArticlePage() {
             <h3>Vrei să automatizezi afacerea ta?</h3>
             <p>Contactează echipa RSistems și descoperă soluțiile potrivite pentru restaurantul, cafeneaua sau fast food-ul tău.</p>
             <a
-              href="https://wa.me/40517508772?text=Bun%C4%83!+Vreau+s%C4%83+aflu+mai+multe+despre+automatizare+HoReCa."
+              href="https://wa.me/40751088772?text=Bun%C4%83!+Vreau+s%C4%83+aflu+mai+multe+despre+automatizare+HoReCa."
               className="ba-cta-btn"
               target="_blank"
               rel="noopener noreferrer"
@@ -201,7 +201,7 @@ function BlogArticlePage() {
             <h4>Ai nevoie de o soluție personalizată?</h4>
             <p>Experții RSistems sunt disponibili pentru o consultanță gratuită.</p>
             <a
-              href="https://wa.me/40517508772"
+              href="https://wa.me/40751088772"
               className="ba-sidebar-cta-btn"
               target="_blank"
               rel="noopener noreferrer"

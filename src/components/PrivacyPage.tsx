@@ -159,7 +159,7 @@ function PrivacyPage() {
             <p>Pentru orice întrebări, solicitări sau plângeri legate de prelucrarea datelor tale personale, poți contacta responsabilul nostru cu protecția datelor:</p>
             <ul>
               <li><strong>Email:</strong> <a href="mailto:welcome@rsistems.ro">welcome@rsistems.ro</a></li>
-              <li><strong>Telefon:</strong> <a href="tel:+40517508772">+40 517 508 772</a></li>
+              <li><strong>Telefon:</strong> <a href="tel:+40751088772">+40 751 088 772</a></li>
             </ul>
             <p>Ai, de asemenea, dreptul de a depune o plângere la <strong>Autoritatea Națională de Supraveghere a Prelucrării Datelor cu Caracter Personal (ANSPDCP)</strong> — <a href="https://www.dataprotection.ro" target="_blank" rel="noopener noreferrer">www.dataprotection.ro</a>.</p>
           </div>

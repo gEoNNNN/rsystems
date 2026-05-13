@@ -153,8 +153,8 @@ function TermsPage() {
             <p>Pentru orice întrebări legate de acești Termeni și Condiții, ne poți contacta:</p>
             <ul>
               <li><strong>Email:</strong> <a href="mailto:welcome@rsistems.ro">welcome@rsistems.ro</a></li>
-              <li><strong>Telefon:</strong> <a href="tel:+40517508772">+40 517 508 772</a></li>
-              <li><strong>WhatsApp:</strong> <a href="https://wa.me/40517508772" target="_blank" rel="noopener noreferrer">Deschide conversația</a></li>
+              <li><strong>Telefon:</strong> <a href="tel:+40751088772">+40 751 088 772</a></li>
+              <li><strong>WhatsApp:</strong> <a href="https://wa.me/40751088772" target="_blank" rel="noopener noreferrer">Deschide conversația</a></li>
             </ul>
           </div>
 

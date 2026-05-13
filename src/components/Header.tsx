@@ -74,14 +74,14 @@ function Header() {
 
         {/* Contact & CTA */}
         <div className="header-actions">
-          <a href="tel:+40517508772" className="contact-item">
+          <a href="tel:+40751088772" className="contact-item">
             <img src="/img/phone.svg" alt="Phone" className="icon" />
-            <span>+40517508772</span>
+            <span>+40751088772</span>
           </a>
           <a href="mailto:welcome@rsistems.ro" className="contact-item contact-item--icon-only" title="Trimite email">
             <img src="/img/email.svg" alt="Email" className="icon" />
           </a>
-          <a href="https://wa.me/40517508772?text=Bună! Vreau să încep să folosesc RSistems." className="cta-button" target="_blank" rel="noopener noreferrer">Începe acum</a>
+          <a href="https://wa.me/40751088772?text=Bună! Vreau să încep să folosesc RSistems." className="cta-button" target="_blank" rel="noopener noreferrer">Începe acum</a>
         </div>
 
         {/* Hamburger Button */}
@@ -131,15 +131,15 @@ function Header() {
           <Link to="/blog" className="mobile-nav-link" onClick={() => setMobileOpen(false)}>Blog</Link>
           <Link to="/despre" className="mobile-nav-link" onClick={() => setMobileOpen(false)}>Despre noi</Link>
           <div className="mobile-actions">
-            <a href="tel:+40517508772" className="mobile-contact">
+            <a href="tel:+40751088772" className="mobile-contact">
               <img src="/img/phone.svg" alt="Phone" className="icon" />
-              +40517508772
+              +40 751 088 772
             </a>
             <a href="mailto:welcome@rsistems.ro" className="mobile-contact">
               <img src="/img/email.svg" alt="Email" className="icon" />
               welcome@rsistems.ro
             </a>
-            <a href="https://wa.me/40517508772?text=Bună! Vreau să încep să folosesc RSistems." className="cta-button" target="_blank" rel="noopener noreferrer" onClick={() => setMobileOpen(false)}>Începe acum</a>
+            <a href="https://wa.me/40751088772?text=Bună! Vreau să încep să folosesc RSistems." className="cta-button" target="_blank" rel="noopener noreferrer" onClick={() => setMobileOpen(false)}>Începe acum</a>
           </div>
         </div>
       )}

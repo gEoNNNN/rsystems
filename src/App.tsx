@@ -116,13 +116,13 @@ function App() {
     name: 'RSistems',
     description: 'Sisteme POS profesionale pentru restaurante, cafenele, baruri și fast-food din România.',
     url: 'https://rsistems.ro',
-    telephone: '+40517508772',
+    telephone: '+40751088772',
     address: {
       '@type': 'PostalAddress',
       addressLocality: 'București',
       addressCountry: 'RO',
     },
-    sameAs: ['https://wa.me/40517508772'],
+    sameAs: ['https://wa.me/40751088772'],
     priceRange: '$$',
     openingHours: 'Mo-Fr 09:00-18:00',
     serviceArea: { '@type': 'Country', name: 'Romania' },
@@ -161,7 +161,7 @@ function App() {
         name: 'Există o demonstrație gratuită?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Da, poți rezerva o demonstrație gratuită a sistemului RSistems direct pe site la pagina /demo sau sunând la +40517508772.',
+          text: 'Da, poți rezerva o demonstrație gratuită a sistemului RSistems direct pe site la pagina /demo sau sunând la +40751088772.',
         },
       },
     ],
@@ -200,7 +200,7 @@ function App() {
               Soluția completă pentru afacerea ta în HoReCa. Comenzi, stocuri și rapoarte în timp real, într-o singură platformă.
             </p>
             <div className="hero-buttons">
-              <a href="https://wa.me/40517508772?text=Bună! Vreau să încep să folosesc RSistems." className="hero-cta-primary" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/40751088772?text=Bună! Vreau să încep să folosesc RSistems." className="hero-cta-primary" target="_blank" rel="noopener noreferrer">
                 Începe acum
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                   <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
@@ -551,7 +551,7 @@ function App() {
               Programează o demonstrație gratuită și descoperă cum te putem ajuta.
             </p>
           </div>
-          <a href="https://wa.me/40517508772?text=Bună! Vreau să programez un demo gratuit." className="cta-button-large" target="_blank" rel="noopener noreferrer">
+          <a href="https://wa.me/40751088772?text=Bună! Vreau să programez un demo gratuit." className="cta-button-large" target="_blank" rel="noopener noreferrer">
             Programează demo gratuit
             <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
               <path d="M8 5v14l11-7z"/>

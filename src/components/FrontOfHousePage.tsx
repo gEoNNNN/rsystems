@@ -232,7 +232,7 @@ function FrontOfHousePage() {
             Gestionează toate comenzile într-un singur loc, fără a avea nevoie de mai multe dispozitive.
             Servește mai rapid. Îmbunătățiți eficiența și susțineți creșterea pe termen lung.
           </p>
-          <a href="https://wa.me/40517508772?text=Bun%C4%83!%20Vreau%20s%C4%83%20%C3%AEncep%20s%C4%83%20folosesc%20RSistems." className="foh-hero-btn" target="_blank" rel="noopener noreferrer">
+          <a href="https://wa.me/40751088772?text=Bun%C4%83!%20Vreau%20s%C4%83%20%C3%AEncep%20s%C4%83%20folosesc%20RSistems." className="foh-hero-btn" target="_blank" rel="noopener noreferrer">
             Începe acum
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
               <path d="M3 8H13M13 8L8.5 3.5M13 8L8.5 12.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
@@ -323,7 +323,7 @@ function FrontOfHousePage() {
             RSistems este un sistem POS și de management pentru restaurante, care utilizează analiza
             datelor pentru a oferi mai multă putere afacerilor din domeniul serviciilor alimentare.
           </p>
-          <a href="https://wa.me/40517508772?text=Bun%C4%83!%20Vreau%20s%C4%83%20%C3%AEncep%20s%C4%83%20folosesc%20RSistems." className="foh-platform-btn" target="_blank" rel="noopener noreferrer">
+          <a href="https://wa.me/40751088772?text=Bun%C4%83!%20Vreau%20s%C4%83%20%C3%AEncep%20s%C4%83%20folosesc%20RSistems." className="foh-platform-btn" target="_blank" rel="noopener noreferrer">
             Începe acum
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
               <path d="M3 8H13M13 8L8.5 3.5M13 8L8.5 12.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>

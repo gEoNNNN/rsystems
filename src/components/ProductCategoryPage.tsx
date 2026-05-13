@@ -108,7 +108,7 @@ function ProductCategoryPage() {
           <div className="pc-sidebar-cta">
             <div className="pc-sidebar-cta-icon">💬</div>
             <p>Ai nevoie de ajutor la alegerea produsului?</p>
-            <a href="https://wa.me/40517508772?text=Bun%C4%83!+Am+nevoie+de+ajutor." target="_blank" rel="noopener noreferrer" className="pc-sidebar-cta-btn">
+            <a href="https://wa.me/40751088772?text=Bun%C4%83!+Am+nevoie+de+ajutor." target="_blank" rel="noopener noreferrer" className="pc-sidebar-cta-btn">
               Contactăm acum
             </a>
           </div>

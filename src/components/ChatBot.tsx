@@ -544,7 +544,7 @@ export default function ChatBot() {
               </button>
               <a
                 className="chatbot-cta chatbot-cta--whatsapp"
-                href="https://wa.me/40517508772"
+                href="https://wa.me/40751088772"
                 target="_blank"
                 rel="noopener noreferrer"
               >

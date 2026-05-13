@@ -69,7 +69,7 @@ function Demo() {
     const msg = encodeURIComponent(
       `Bună! Mă numesc ${form.name} și aș dori să programez o demonstrație gratuită RSistems.\n\nAfacere: ${form.business}\nTip: ${form.type}\nTelefon: ${form.phone}`
     )
-    window.open(`https://wa.me/40517508772?text=${msg}`, '_blank', 'noopener,noreferrer')
+    window.open(`https://wa.me/40751088772?text=${msg}`, '_blank', 'noopener,noreferrer')
     setSubmitted(true)
   }
 

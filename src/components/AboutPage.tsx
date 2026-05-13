@@ -78,7 +78,7 @@ function AboutPage() {
           '@type': 'Organization',
           name: 'RSistems',
           url: 'https://rsistems.ro',
-          telephone: '+40517508772',
+          telephone: '+40751088772',
           address: {
             '@type': 'PostalAddress',
             addressLocality: 'București',
@@ -86,7 +86,7 @@ function AboutPage() {
           },
           contactPoint: {
             '@type': 'ContactPoint',
-            telephone: '+40517508772',
+            telephone: '+40751088772',
             contactType: 'customer service',
             availableLanguage: 'Romanian',
           },
@@ -106,7 +106,7 @@ function AboutPage() {
               Din 2018 ajutăm restaurante, cafenele și baruri să funcționeze mai eficient — cu sisteme POS, gestiune stocuri, kitchen display și integrare fiscală, toate dintr-un singur ecosistem.
             </p>
             <div className="ab-hero-actions">
-              <a href="https://wa.me/40517508772" className="ab-btn-primary" target="_blank" rel="noopener noreferrer">Discută cu noi</a>
+              <a href="https://wa.me/40751088772" className="ab-btn-primary" target="_blank" rel="noopener noreferrer">Discută cu noi</a>
               <Link to="/preturi" className="ab-btn-ghost">Vezi prețuri</Link>
             </div>
           </div>
@@ -190,13 +190,13 @@ function AboutPage() {
             <p>Contactează-ne pentru o demonstrație gratuită sau pentru orice întrebare despre soluțiile noastre.</p>
           </div>
           <div className="ab-contact-cards">
-            <a href="tel:+40517508772" className="ab-contact-card">
+            <a href="tel:+40751088772" className="ab-contact-card">
               <div className="ab-contact-icon-wrap">
                 <img src="/img/phone.svg" alt="" />
               </div>
               <div>
                 <div className="ab-contact-label">Telefon</div>
-                <div className="ab-contact-val">+40 517 508 772</div>
+                <div className="ab-contact-val">+40 751 088 772</div>
               </div>
             </a>
             <a href="mailto:welcome@rsistems.ro" className="ab-contact-card">
@@ -208,7 +208,7 @@ function AboutPage() {
                 <div className="ab-contact-val">welcome@rsistems.ro</div>
               </div>
             </a>
-            <a href="https://wa.me/40517508772" className="ab-contact-card" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/40751088772" className="ab-contact-card" target="_blank" rel="noopener noreferrer">
               <div className="ab-contact-icon-wrap">
                 <img src="/img/planeta.svg" alt="" />
               </div>
