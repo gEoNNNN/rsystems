@@ -30,10 +30,10 @@ function Footer() {
         {/* Brand */}
         <div className="footer-brand">
           <Link to="/" className="footer-logo">
-            <img src="/img/Logo.svg" alt="RSistems" />
+            <img src="/img/logofooter.svg" alt="RSistems" />
           </Link>
           <p className="footer-tagline">
-            Software de management complet<br />pentru afacerea ta HoReCa.
+            Software de management complet pentru afacerea ta HoReCa, Retail ...
           </p>
           <div className="footer-social">
             <a href="https://www.facebook.com/rusivsistems/" className="footer-social-btn" aria-label="Facebook" target="_blank" rel="noopener noreferrer">

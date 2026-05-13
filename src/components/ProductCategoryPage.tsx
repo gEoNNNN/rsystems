@@ -12,6 +12,7 @@ const ACTIVE_CATEGORY_SLUGS = [
   'cantare-comerciale',
   'scanare-coduri-de-bare',
   'sistem-numarare-vizitatori',
+  'case-de-autoservire',
 ]
 
 function ProductCategoryPage() {
@@ -56,7 +57,7 @@ function ProductCategoryPage() {
       {/* Hero */}
       <section className="pc-hero">
         <div className="pc-hero-overlay" />
-        <img src="/img/tip bg.svg" alt="" className="pc-hero-bg" />
+        <img src="/img/tip-bg.svg" alt="" className="pc-hero-bg" />
         <div className="pc-hero-content">
           <nav className="pc-breadcrumb">
             <Link to="/">Acasă</Link>
@@ -160,7 +161,7 @@ function ProductCard({ product, categorySlug }: { product: Product; categorySlug
         <h3 className="pc-card-title">{product.title}</h3>
         <p className="pc-card-desc">{desc}</p>
         <div className="pc-card-footer">
-          {product.price ? <span className="pc-card-price">{product.price}</span> : <span />}
+          <span />
           <span className="pc-card-btn">
             Vezi produs
             <svg width="13" height="13" viewBox="0 0 16 16" fill="none">

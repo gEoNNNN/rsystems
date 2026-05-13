@@ -42,12 +42,12 @@ const whyFallback = [
 ]
 
 const menuItems = [
-  { id: 'cafenea',         label: 'Cafenea',             icon: '/img/Cafenele.svg',                    bg: '/img/Cafenele bg.svg',                    bg2: '/img/Cafenele bg2.svg' },
-  { id: 'bar',             label: 'Bar',                 icon: '/img/Pub-uri și Baruri.svg',            bg: '/img/Pub-uri și Baruri bg.svg',            bg2: '/img/Pub-uri și Baruri bg2.svg' },
-  { id: 'fast-food',       label: 'Fast Food',           icon: '/img/Fast-food.svg',                    bg: '/img/Fast-food bg.svg',                    bg2: '/img/Fast-food bg2.svg' },
-  { id: 'livrare',         label: 'Livrare',             icon: '/img/Food truck.svg',                   bg: '/img/Food truck bg.svg',                   bg2: '/img/Food truck bg2.svg' },
-  { id: 'restaurant',      label: 'Restaurant',          icon: '/img/Servicii Dining.svg',              bg: '/img/Servicii Dining bg.svg',              bg2: '/img/Servicii Dining bg2.svg' },
-  { id: 'sala-evenimente', label: 'Sală de Evenimente',  icon: '/img/Industria ospitalității.svg',       bg: '/img/Industria ospitalității bg.svg',       bg2: '/img/Industria ospitalității bg2.svg' },
+  { id: 'cafenea',         label: 'Cafenea',             icon: '/img/Cafenele.svg',                    bg: '/img/cafenele-bg.svg',                    bg2: '/img/cafenele-bg2.svg' },
+  { id: 'bar',             label: 'Bar',                 icon: '/img/pub-uri-si-baruri.svg',            bg: '/img/pub-uri-si-baruri-bg.svg',            bg2: '/img/pub-uri-si-baruri-bg2.svg' },
+  { id: 'fast-food',       label: 'Fast Food',           icon: '/img/Fast-food.svg',                    bg: '/img/fast-food-bg.svg',                    bg2: '/img/fast-food-bg2.svg' },
+  { id: 'livrare',         label: 'Livrare',             icon: '/img/food-truck.svg',                   bg: '/img/food-truck-bg.svg',                   bg2: '/img/food-truck-bg2.svg' },
+  { id: 'restaurant',      label: 'Restaurant',          icon: '/img/servicii-dining.svg',              bg: '/img/servicii-dining-bg.svg',              bg2: '/img/servicii-dining-bg2.svg' },
+  { id: 'sala-evenimente', label: 'Sală de Evenimente',  icon: '/img/industria-ospitalitatii.svg',       bg: '/img/industria-ospitalitatii-bg.svg',       bg2: '/img/industria-ospitalitatii-bg2.svg' },
 ]
 
 function RestaurantPage() {
@@ -133,7 +133,7 @@ function RestaurantPage() {
 
       {/* Hero */}
       <section className="rp-hero">
-        <img src="/img/tip bg.svg" alt="" className="rp-hero-bg" />
+        <img src="/img/tip-bg.svg" alt="" className="rp-hero-bg" />
         <div className="rp-hero-content">
           <h1 className="rp-hero-heading">
             Administrează-ți restaurantul<br />

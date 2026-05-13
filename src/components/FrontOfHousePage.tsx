@@ -5,12 +5,12 @@ import Footer from './Footer'
 import SEO from './SEO'
 
 const partnerLogos = [
-  '/img/LogoDesktop 1.svg',  '/img/LogoDesktop 2.svg',  '/img/LogoDesktop 3.svg',
-  '/img/LogoDesktop 4.svg',  '/img/LogoDesktop 5.svg',  '/img/LogoDesktop 6.svg',
-  '/img/LogoDesktop 7.svg',  '/img/LogoDesktop 8.svg',  '/img/LogoDesktop 9.svg',
-  '/img/LogoDesktop 10.svg', '/img/LogoDesktop 11.svg', '/img/LogoDesktop 12.svg',
-  '/img/LogoDesktop 13.svg', '/img/LogoDesktop 14.svg', '/img/LogoDesktop 15.svg',
-  '/img/LogoDesktop 16.svg', '/img/LogoDesktop 17.svg', '/img/LogoDesktop 18.svg',
+  '/img/logodesktop-1.svg',  '/img/logodesktop-2.svg',  '/img/logodesktop-3.svg',
+  '/img/logodesktop-4.svg',  '/img/logodesktop-5.svg',  '/img/logodesktop-6.svg',
+  '/img/logodesktop-7.svg',  '/img/logodesktop-8.svg',  '/img/logodesktop-9.svg',
+  '/img/logodesktop-10.svg', '/img/logodesktop-11.svg', '/img/logodesktop-12.svg',
+  '/img/logodesktop-13.svg', '/img/logodesktop-14.svg', '/img/logodesktop-15.svg',
+  '/img/logodesktop-16.svg', '/img/logodesktop-17.svg', '/img/logodesktop-18.svg',
 ]
 
 const faqIcons = [
@@ -85,7 +85,7 @@ const subTabContent: Record<string, { heading: string; paragraphs: string[]; ima
       'Recommend menu-specific items to customers during order-taking to boost sales and improve average spend.',
       'Recommend menu-specific items to customers during order-taking to boost sales and improve average spend.',
     ],
-    image: '/img/POS 1.jpg',
+    image: '/img/pos-1.jpg',
   },
   pizza: {
     heading: 'Build Custom Pizzas With Flexible Ingredient Options',
@@ -94,7 +94,7 @@ const subTabContent: Record<string, { heading: string; paragraphs: string[]; ima
       'Set ingredient combinations, pricing rules, and visual previews to guide the customer experience.',
       'Sync custom orders directly to the kitchen display for accurate and efficient preparation.',
     ],
-    image: '/img/POS 2.jpg',
+    image: '/img/pos-2.jpg',
   },
   combo: {
     heading: 'Boost Revenue With Smart Combo Set Recommendations',
@@ -103,7 +103,7 @@ const subTabContent: Record<string, { heading: string; paragraphs: string[]; ima
       'Configure bundle discounts and limited-time offers to drive higher transaction values.',
       'Track combo performance with built-in analytics to refine your promotions over time.',
     ],
-    image: '/img/POS 3.jpg',
+    image: '/img/pos-3.jpg',
   },
   floor: {
     heading: 'Manage Your Floor Plan With a Real-Time Visual Layout',
@@ -112,7 +112,7 @@ const subTabContent: Record<string, { heading: string; paragraphs: string[]; ima
       'View table status, party size, and open time at a glance from the host station or any device.',
       'Reassign tables and merge checks instantly without disrupting the guest experience.',
     ],
-    image: '/img/POS 1.jpg',
+    image: '/img/pos-1.jpg',
   },
   display: {
     heading: 'Keep Customers Informed With a Centralised Display Screen',
@@ -121,7 +121,7 @@ const subTabContent: Record<string, { heading: string; paragraphs: string[]; ima
       'Customise display layouts per location or time of day for maximum relevance and engagement.',
       'Integrate with kitchen operations to automatically update customers when their order is ready.',
     ],
-    image: '/img/POS 2.jpg',
+    image: '/img/pos-2.jpg',
   },
 }
 
@@ -221,7 +221,7 @@ function FrontOfHousePage() {
 
       {/* ── Hero ── */}
       <section className="foh-hero">
-        <img src="/img/tip bg.svg" alt="" className="foh-hero-bg" />
+        <img src="/img/tip-bg.svg" alt="" className="foh-hero-bg" />
         <div className="foh-hero-content">
           <h1 className="foh-hero-heading">
             Software<br />
@@ -303,7 +303,7 @@ function FrontOfHousePage() {
               ))}
             </div>
             <div className="foh-subtab-right">
-              <img src="/img/image 1.svg" alt={currentSubTab.heading} className="foh-subtab-img" />
+              <img src="/img/image-1.svg" alt={currentSubTab.heading} className="foh-subtab-img" />
             </div>
           </div>
         </div>
@@ -365,7 +365,7 @@ function FrontOfHousePage() {
                 <div><div className="foh-mid-title">Team</div><div className="foh-mid-sub">Management</div></div>
               </div>
               <div className="foh-mid-item">
-                <img src="/img/Scalable growth.svg" alt="" className="foh-mid-icon" />
+                <img src="/img/scalable-growth.svg" alt="" className="foh-mid-icon" />
                 <div><div className="foh-mid-title">Scalable growth</div><div className="foh-mid-sub">Growth</div></div>
               </div>
             </div>

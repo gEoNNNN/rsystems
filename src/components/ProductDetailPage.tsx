@@ -127,10 +127,6 @@ function ProductDetailPage() {
             </div>
           )}
 
-          {product.price && (
-            <div className="pd-price">{product.price}</div>
-          )}
-
           {product.description && (
             <div className="pd-desc-box">
               <h3 className="pd-desc-label">Descriere</h3>

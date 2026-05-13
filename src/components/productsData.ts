@@ -5,9 +5,9 @@ import fiscaleData    from '../../scraper/output/echipamente-fiscale.json'
 import imprimanteData from '../../scraper/output/imprimante.json'
 import cantareData    from '../../scraper/output/cantare-comerciale.json'
 import scanereData    from '../../scraper/output/scanere-coduri-de-bare.json'
+import caseData       from '../../scraper/output/case-de-autodeservire.json'
 /* ASCUNS TEMPORAR – nu șterge
 import terminaleData  from '../../scraper/output/terminale-colectare-date.json'
-import caseData       from '../../scraper/output/case-de-autodeservire.json'
 */
 import numarareData   from '../../scraper/output/sistem-numarare-vizitatori.json'
 /* ASCUNS TEMPORAR – nu șterge
@@ -41,15 +41,15 @@ export type CategoryEntry = {
 }
 
 export const CATEGORY_MAP: Record<string, CategoryEntry> = {
-  'pos-pc':                             { label: 'POS/PC Specializat',                   icon: '/img/iPOS.svg',           products: (posData as any).products.filter((p: any) => p.category === 'Sistem POS') },
+  'pos-pc':                             { label: 'POS/PC Specializat',                   icon: '/img/iPOS.svg',           products: (posData as any).products.filter((p: any) => p.category === 'Sistem POS' && p.slug !== 'pos-terminal-beetle-ipos-plus-diebold-nixdorf') },
   'imprimante':                         { label: 'Imprimante',                            icon: '/img/iImprimante.svg',    products: (imprimanteData as any).products.filter((p: any) => p.title === 'RPrinter 421 L') },
   'cantare-comerciale':                 { label: 'Cântare Comerciale',                   icon: '/img/iCantare.svg',       products: (cantareData as any).products.filter((p: any) => p.title === 'Cantar Dibal serie G') },
   'scanare-coduri-de-bare':             { label: 'Scanare Coduri de Bare',               icon: '/img/iScanare.svg',       products: (scanereData as any).products.filter((p: any) => ['Scaner 2D coduri de bare manual RScan RSC 2410', 'Scaner 2D coduri de bare wireless RScan RSC 8410'].includes(p.title)) },
   'sistem-numarare-vizitatori':         { label: 'Sistem Numărare Vizitatori',           icon: '/img/iSistem.svg',        products: (numarareData as any).products },
+  'case-de-autoservire':                { label: 'Case de Autoservire',                  icon: '/img/iCase.svg',          products: (caseData as any).products.filter((p: any) => p.category.trim() === 'Solutii HoReCa') },
   /* ASCUNS TEMPORAR – nu șterge
   'echipamente-fiscale':                { label: 'Echipamente Fiscale',                  icon: '/img/iEchipamente.svg',   products: (fiscaleData as any).products },
   'terminale-colectare-date':           { label: 'Terminale Colectare Date',             icon: '/img/iTerminale.svg',     products: (terminaleData as any).products },
-  'case-de-autoservire':                { label: 'Case de Autoservire',                  icon: '/img/iCase.svg',          products: (caseData as any).products },
   'sistem-antifurt':                    { label: 'Sistem Antifurt',                      icon: '/img/iSistem1.svg',       products: (antifurtData as any).products },
   'echipamente-de-parcare':             { label: 'Echipamente de Parcare',               icon: '/img/iEchipamente1.svg',  products: (parcareData as any).products },
   'sisteme-supraveghere-video':         { label: 'Sisteme Supraveghere Video',           icon: '/img/iSisteme.svg',       products: (videoData as any).products },

@@ -8,10 +8,10 @@ const produseItems = [
   { label: 'Cântare comerciale',           icon: '/img/iCantare.svg',    href: '/produse/cantare-comerciale' },
   { label: 'Scanare coduri de bare',      icon: '/img/iScanare.svg',    href: '/produse/scanare-coduri-de-bare' },
   { label: 'Sistem numărare vizitatori',  icon: '/img/iSistem.svg',     href: '/produse/sistem-numarare-vizitatori' },
+  { label: 'Case de autoservire',          icon: '/img/iCase.svg',       href: '/produse/case-de-autoservire' },
   /* ASCUNS TEMPORAR – nu șterge
   { label: 'Echipamente fiscale',               icon: '/img/iEchipamente.svg',  href: '/produse/echipamente-fiscale' },
   { label: 'Terminale colectare date',          icon: '/img/iTerminale.svg',    href: '/produse/terminale-colectare-date' },
-  { label: 'Case de autoservire',               icon: '/img/iCase.svg',         href: '/produse/case-de-autoservire' },
   { label: 'Sistem antifurt',                   icon: '/img/iSistem1.svg',      href: '/produse/sistem-antifurt' },
   { label: 'Echipamente de parcare',            icon: '/img/iEchipamente1.svg', href: '/produse/echipamente-de-parcare' },
   { label: 'Sisteme supraveghere video',        icon: '/img/iSisteme.svg',      href: '/produse/sisteme-supraveghere-video' },

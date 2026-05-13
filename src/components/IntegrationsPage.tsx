@@ -5,30 +5,30 @@ import Footer from './Footer'
 import SEO from './SEO'
 
 const partnerLogos = [
-  '/img/LogoDesktop 1.svg',  '/img/LogoDesktop 2.svg',  '/img/LogoDesktop 3.svg',
-  '/img/LogoDesktop 4.svg',  '/img/LogoDesktop 5.svg',  '/img/LogoDesktop 6.svg',
-  '/img/LogoDesktop 7.svg',  '/img/LogoDesktop 8.svg',  '/img/LogoDesktop 9.svg',
-  '/img/LogoDesktop 10.svg', '/img/LogoDesktop 11.svg', '/img/LogoDesktop 12.svg',
-  '/img/LogoDesktop 13.svg', '/img/LogoDesktop 14.svg', '/img/LogoDesktop 15.svg',
-  '/img/LogoDesktop 16.svg', '/img/LogoDesktop 17.svg', '/img/LogoDesktop 18.svg',
+  '/img/logodesktop-1.svg',  '/img/logodesktop-2.svg',  '/img/logodesktop-3.svg',
+  '/img/logodesktop-4.svg',  '/img/logodesktop-5.svg',  '/img/logodesktop-6.svg',
+  '/img/logodesktop-7.svg',  '/img/logodesktop-8.svg',  '/img/logodesktop-9.svg',
+  '/img/logodesktop-10.svg', '/img/logodesktop-11.svg', '/img/logodesktop-12.svg',
+  '/img/logodesktop-13.svg', '/img/logodesktop-14.svg', '/img/logodesktop-15.svg',
+  '/img/logodesktop-16.svg', '/img/logodesktop-17.svg', '/img/logodesktop-18.svg',
 ]
 
 const integrationTypes = ['Accounting', 'Delivery Robots', 'Payment', 'CRM', 'HR', 'Inventory']
 const countries = ['Moldova', 'Romania', 'Bulgaria', 'Ukraine']
 
 const integrations = [
-  { name: 'Viva Wallet', logo: '/img/LogoDesktop 1.svg', type: 'Payment', country: 'Romania', desc: 'LoyaltyPlant is a full-featured, white-label loyalty and mobile ordering platform built for restaurants and hospitality brands.' },
-  { name: 'Viva Wallet', logo: '/img/LogoDesktop 2.svg', type: 'Payment', country: 'Moldova', desc: 'LoyaltyPlant is a full-featured, white-label loyalty and mobile ordering platform built for restaurants and hospitality brands.' },
-  { name: 'Viva Wallet', logo: '/img/LogoDesktop 3.svg', type: 'Accounting', country: 'Romania', desc: 'LoyaltyPlant is a full-featured, white-label loyalty and mobile ordering platform built for restaurants and hospitality brands.' },
-  { name: 'Viva Wallet', logo: '/img/LogoDesktop 4.svg', type: 'Delivery Robots', country: 'Moldova', desc: 'LoyaltyPlant is a full-featured, white-label loyalty and mobile ordering platform built for restaurants and hospitality brands.' },
-  { name: 'Viva Wallet', logo: '/img/LogoDesktop 5.svg', type: 'Payment', country: 'Romania', desc: 'LoyaltyPlant is a full-featured, white-label loyalty and mobile ordering platform built for restaurants and hospitality brands.' },
-  { name: 'Viva Wallet', logo: '/img/LogoDesktop 6.svg', type: 'Accounting', country: 'Romania', desc: 'LoyaltyPlant is a full-featured, white-label loyalty and mobile ordering platform built for restaurants and hospitality brands.' },
-  { name: 'Viva Wallet', logo: '/img/LogoDesktop 7.svg', type: 'CRM', country: 'Moldova', desc: 'LoyaltyPlant is a full-featured, white-label loyalty and mobile ordering platform built for restaurants and hospitality brands.' },
-  { name: 'Viva Wallet', logo: '/img/LogoDesktop 8.svg', type: 'HR', country: 'Romania', desc: 'LoyaltyPlant is a full-featured, white-label loyalty and mobile ordering platform built for restaurants and hospitality brands.' },
-  { name: 'Viva Wallet', logo: '/img/LogoDesktop 9.svg', type: 'Inventory', country: 'Moldova', desc: 'LoyaltyPlant is a full-featured, white-label loyalty and mobile ordering platform built for restaurants and hospitality brands.' },
-  { name: 'Viva Wallet', logo: '/img/LogoDesktop 10.svg', type: 'Payment', country: 'Romania', desc: 'LoyaltyPlant is a full-featured, white-label loyalty and mobile ordering platform built for restaurants and hospitality brands.' },
-  { name: 'Viva Wallet', logo: '/img/LogoDesktop 11.svg', type: 'Delivery Robots', country: 'Romania', desc: 'LoyaltyPlant is a full-featured, white-label loyalty and mobile ordering platform built for restaurants and hospitality brands.' },
-  { name: 'Viva Wallet', logo: '/img/LogoDesktop 12.svg', type: 'Accounting', country: 'Moldova', desc: 'LoyaltyPlant is a full-featured, white-label loyalty and mobile ordering platform built for restaurants and hospitality brands.' },
+  { name: 'Viva Wallet', logo: '/img/logodesktop-1.svg', type: 'Payment', country: 'Romania', desc: 'LoyaltyPlant is a full-featured, white-label loyalty and mobile ordering platform built for restaurants and hospitality brands.' },
+  { name: 'Viva Wallet', logo: '/img/logodesktop-2.svg', type: 'Payment', country: 'Moldova', desc: 'LoyaltyPlant is a full-featured, white-label loyalty and mobile ordering platform built for restaurants and hospitality brands.' },
+  { name: 'Viva Wallet', logo: '/img/logodesktop-3.svg', type: 'Accounting', country: 'Romania', desc: 'LoyaltyPlant is a full-featured, white-label loyalty and mobile ordering platform built for restaurants and hospitality brands.' },
+  { name: 'Viva Wallet', logo: '/img/logodesktop-4.svg', type: 'Delivery Robots', country: 'Moldova', desc: 'LoyaltyPlant is a full-featured, white-label loyalty and mobile ordering platform built for restaurants and hospitality brands.' },
+  { name: 'Viva Wallet', logo: '/img/logodesktop-5.svg', type: 'Payment', country: 'Romania', desc: 'LoyaltyPlant is a full-featured, white-label loyalty and mobile ordering platform built for restaurants and hospitality brands.' },
+  { name: 'Viva Wallet', logo: '/img/logodesktop-6.svg', type: 'Accounting', country: 'Romania', desc: 'LoyaltyPlant is a full-featured, white-label loyalty and mobile ordering platform built for restaurants and hospitality brands.' },
+  { name: 'Viva Wallet', logo: '/img/logodesktop-7.svg', type: 'CRM', country: 'Moldova', desc: 'LoyaltyPlant is a full-featured, white-label loyalty and mobile ordering platform built for restaurants and hospitality brands.' },
+  { name: 'Viva Wallet', logo: '/img/logodesktop-8.svg', type: 'HR', country: 'Romania', desc: 'LoyaltyPlant is a full-featured, white-label loyalty and mobile ordering platform built for restaurants and hospitality brands.' },
+  { name: 'Viva Wallet', logo: '/img/logodesktop-9.svg', type: 'Inventory', country: 'Moldova', desc: 'LoyaltyPlant is a full-featured, white-label loyalty and mobile ordering platform built for restaurants and hospitality brands.' },
+  { name: 'Viva Wallet', logo: '/img/logodesktop-10.svg', type: 'Payment', country: 'Romania', desc: 'LoyaltyPlant is a full-featured, white-label loyalty and mobile ordering platform built for restaurants and hospitality brands.' },
+  { name: 'Viva Wallet', logo: '/img/logodesktop-11.svg', type: 'Delivery Robots', country: 'Romania', desc: 'LoyaltyPlant is a full-featured, white-label loyalty and mobile ordering platform built for restaurants and hospitality brands.' },
+  { name: 'Viva Wallet', logo: '/img/logodesktop-12.svg', type: 'Accounting', country: 'Moldova', desc: 'LoyaltyPlant is a full-featured, white-label loyalty and mobile ordering platform built for restaurants and hospitality brands.' },
 ]
 
 function IntegrationsPage() {
@@ -104,7 +104,7 @@ function IntegrationsPage() {
 
       {/* ── Hero ── */}
       <section className="int-hero" data-animate>
-        <img src="/img/tip bg.svg" alt="" className="int-hero-bg" />
+        <img src="/img/tip-bg.svg" alt="" className="int-hero-bg" />
         <div className="int-hero-content">
           <h1 className="int-hero-heading">Integrations</h1>
           <p className="int-hero-description">
