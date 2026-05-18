@@ -76,9 +76,14 @@ function Demo() {
   return (
     <>
       <SEO
-        title="Rezervă Demo Gratuit – Sistem POS HoReCa"
-        description="Programează o demonstrație gratuită a sistemului RSistems POS pentru restaurant, cafenea sau bar. Implementare în 24h, training inclus, suport 24/7."
+        title="Demo Gratuit Sistem POS Restaurant – Programează Demonstrație RSistems"
+        description="Programează o demonstrație gratuită a sistemului POS RSistems pentru restaurant, cafenea, bar sau fast-food. Vezi funcționalitățile POS, gestiune stocuri, rapoarte și KDS în acțiune. Implementare în 24h!"
         canonical="/demo"
+        keywords="demo sistem POS, demonstratie POS restaurant, demo gratuit POS, RSistems demo, incercare gratuita POS, test sistem POS restaurant"
+        breadcrumbs={[
+          { name: 'Acasă', url: '/' },
+          { name: 'Demo Gratuit', url: '/demo' },
+        ]}
       />
       <Header />
       <main className="demo-page">

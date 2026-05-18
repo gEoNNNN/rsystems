@@ -116,19 +116,63 @@ function RestaurantPage() {
     }
   }
 
-  const seoMeta: Record<string, { title: string; description: string }> = {
-    restaurant:      { title: 'Sistem POS Restaurant România', description: 'Sistem POS complet pentru restaurante. Comenzi rapide, gestionare mese, rapoarte vânzări și integrare cu bucătăria. Demo gratuit.' },
-    cafenea:         { title: 'Sistem POS Cafenea', description: 'Software POS pentru cafenele și coffee shop-uri. Comenzi rapide, abonamente fideliție și rapoarte zilnice. Demo gratuit.' },
-    bar:             { title: 'Sistem POS Bar și Pub', description: 'Sistem POS pentru baruri și pub-uri. Gestiune băuturi, comenzi instant, control angajați. Soluție completă HoReCa.' },
-    'fast-food':     { title: 'Sistem POS Fast-Food', description: 'POS pentru fast-food. Comenzi rapide, ecran client, integrare livrare și gestiune stocuri în timp real.' },
-    livrare:         { title: 'Sistem POS Delivery & Takeaway', description: 'Soluție POS pentru livrare și takeaway. Integrare platforme de livrare, gestiune comenzi online și rapoarte complete.' },
-    'sala-evenimente': { title: 'Sistem POS Sală de Evenimente', description: 'POS pentru săli de evenimente. Gestiune rezervări, facturare și control meniuri pentru industria ospitalității.' },
+  const seoMeta: Record<string, { title: string; description: string; keywords: string }> = {
+    restaurant: {
+      title: 'Sistem POS Restaurant România – Automatizare și Gestiune Completă',
+      description: 'Sistem POS profesional pentru restaurante din România. Automatizare comenzi, KDS bucătărie, gestiune stocuri, rapoarte vânzări în timp real, integrare delivery Glovo, Tazz, Bolt Food. Demo gratuit RSistems!',
+      keywords: 'sistem POS restaurant, automatizare restaurant, software restaurant, POS restaurant Romania, gestiune restaurant, KDS bucatarie, comenzi digitale restaurant, rapoarte vanzari restaurant, casa de marcat restaurant, digitalizare restaurant',
+    },
+    cafenea: {
+      title: 'Sistem POS Cafenea și Coffee Shop – Software Automatizare Cafenea',
+      description: 'Software POS pentru cafenele și coffee shop-uri. Servire rapidă, gestiune stocuri, programe fidelizare, rapoarte zilnice, fiscalizare ANAF. Soluție completă RSistems. Demo gratuit!',
+      keywords: 'POS cafenea, sistem POS cafenea, automatizare cafenea, software cafenea, gestiune cafenea, coffee shop POS, program fidelizare cafenea, gestiune stocuri cafenea',
+    },
+    bar: {
+      title: 'Sistem POS Bar și Pub – Automatizare și Gestiune Băuturi',
+      description: 'Sistem POS profesional pentru baruri și pub-uri. Gestiune băuturi și ingrediente, comenzi instant, control angajați, rapoarte vânzări, prevenire pierderi. Soluție HoReCa completă.',
+      keywords: 'POS bar, sistem POS bar, automatizare bar, software bar, gestiune bar, POS pub, gestiune bauturi, control vanzari bar',
+    },
+    'fast-food': {
+      title: 'Sistem POS Fast-Food – Automatizare, Kiosk și Integrare Delivery',
+      description: 'POS profesional pentru fast-food. Self-order kiosk, KDS bucătărie, integrare Glovo Tazz Bolt Food, gestiune stocuri în timp real, comenzi rapide. Soluție completă RSistems.',
+      keywords: 'POS fast-food, sistem POS fast food, automatizare fast food, kiosk autoservire fast food, integrare delivery, comenzi rapide fast food, KDS fast food',
+    },
+    livrare: {
+      title: 'Sistem POS Delivery și Takeaway – Integrare Glovo, Tazz, Bolt Food',
+      description: 'Soluție POS completă pentru delivery și takeaway. Integrare directă cu Glovo, Tazz și Bolt Food, gestiune comenzi online centralizată și rapoarte per canal de vânzare.',
+      keywords: 'POS delivery, sistem POS livrare, automatizare delivery, integrare Glovo, integrare Tazz, integrare Bolt Food, comenzi online restaurant, takeaway POS',
+    },
+    'sala-evenimente': {
+      title: 'Sistem POS Sală de Evenimente – Gestiune Rezervări și Meniuri',
+      description: 'POS profesional pentru săli de evenimente și industria ospilalității. Gestiune rezervări, facturare, control meniuri, rapoarte complete. Soluție RSistems.',
+      keywords: 'POS sala evenimente, sistem POS evenimente, automatizare sala evenimente, gestiune rezervari, software evenimente, POS ospitalitate',
+    },
   }
   const meta = seoMeta[pathId] ?? seoMeta['restaurant']
 
+  const faqPageJsonLd = content?.faq && content.faq.length > 0 ? {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: content.faq.map(f => ({
+      '@type': 'Question',
+      name: f.q,
+      acceptedAnswer: { '@type': 'Answer', text: f.a },
+    })),
+  } : null
+
   return (
     <div className="rp-page">
-      <SEO title={meta.title} description={meta.description} canonical={`/${pathId}`} />
+      <SEO
+        title={meta.title}
+        description={meta.description}
+        canonical={`/${pathId}`}
+        keywords={meta.keywords}
+        breadcrumbs={[
+          { name: 'Acasă', url: '/' },
+          { name: menuItems.find(m => m.id === pathId)?.label ?? 'Restaurant', url: `/${pathId}` },
+        ]}
+        jsonLd={faqPageJsonLd ? [faqPageJsonLd] : undefined}
+      />
       <Header />
 
       {/* Hero */}

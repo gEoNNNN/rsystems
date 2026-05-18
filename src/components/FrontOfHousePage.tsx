@@ -213,9 +213,23 @@ function FrontOfHousePage() {
   return (
     <div className="foh-page">
       <SEO
-        title="Front of House – Soluții Sală RSistems"
-        description="Soluții POS complete pentru sala restaurantului: comenzi la masă, meniu QR, kiosk autoservire și plăți rapide. Demo gratuit RSistems."
+        title="Software Front of House Restaurant – POS, Kiosk, QR Menu, Delivery"
+        description="Soluții POS complete pentru sala restaurantului: comenzi la masă, meniu QR, kiosk autoservire, arrival screen, integrare delivery și plăți rapide RSistem Pay. Demo gratuit RSistems."
         canonical="/front-of-house"
+        keywords="front of house restaurant, POS restaurant, kiosk autoservire, meniu QR restaurant, QR order, delivery restaurant, software sala restaurant, RSistem Pay, comenzi la masa"
+        breadcrumbs={[
+          { name: 'Acasă', url: '/' },
+          { name: 'Front of House', url: '/front-of-house' },
+        ]}
+        jsonLd={{
+          '@context': 'https://schema.org',
+          '@type': 'FAQPage',
+          mainEntity: faqData.map(f => ({
+            '@type': 'Question',
+            name: f.q,
+            acceptedAnswer: { '@type': 'Answer', text: f.a },
+          })),
+        }}
       />
       <Header />
 

@@ -163,9 +163,14 @@ function PricingPage() {
   return (
     <div className="pricing-page">
       <SEO
-        title="Prețuri și Pachete POS HoReCa"
-        description="Descoperă pachetele RSistems pentru restaurant, cafenea sau bar. Prețuri transparente, fără costuri ascunse. Poți schimba planul oricând."
+        title="Prețuri Sistem POS Restaurant România – Pachete de la 39€/lună"
+        description="Prețuri transparente RSistems: Basic 39€, Professional 59€, Enterprise 99€ pe lună. Sisteme POS complete pentru restaurante, cafenele, baruri și fast-food. Fără costuri ascunse, suport inclus."
         canonical="/preturi"
+        keywords="preturi sistem POS, pret POS restaurant, cat costa POS restaurant, pachete POS HoReCa, pret software restaurant, abonament POS, RSistems preturi, cost automatizare restaurant"
+        breadcrumbs={[
+          { name: 'Acasă', url: '/' },
+          { name: 'Prețuri', url: '/preturi' },
+        ]}
       />
       <Header />
 

@@ -71,17 +71,45 @@ function BlogArticlePage() {
     <div className="ba-page">
       <SEO
         title={article.title}
-        description={article.intro ?? article.title}
+        description={article.metaDesc || article.intro || article.title}
         canonical={`/blog/${article.slug}`}
         ogType="article"
-        jsonLd={{
-          '@context': 'https://schema.org',
-          '@type': 'Article',
-          headline: article.title,
-          description: article.intro ?? article.title,
-          url: `https://rsistems.ro/blog/${article.slug}`,
-          publisher: { '@type': 'Organization', name: 'RSistems', url: 'https://rsistems.ro' },
-        }}
+        keywords={`${article.category}, automatizare HoReCa, sisteme POS, software restaurant, ${article.title.toLowerCase().split(' ').slice(0, 5).join(', ')}`}
+        breadcrumbs={[
+          { name: 'Acasă', url: '/' },
+          { name: 'Blog', url: '/blog' },
+          { name: article.title, url: `/blog/${article.slug}` },
+        ]}
+        jsonLd={[
+          {
+            '@context': 'https://schema.org',
+            '@type': 'Article',
+            headline: article.title,
+            description: article.metaDesc || article.intro || article.title,
+            url: `https://rsistems.ro/blog/${article.slug}`,
+            datePublished: article.date,
+            dateModified: article.date,
+            image: `https://rsistems.ro${article.img}`,
+            author: { '@type': 'Organization', name: 'RSistems', url: 'https://rsistems.ro' },
+            publisher: {
+              '@type': 'Organization',
+              name: 'RSistems',
+              url: 'https://rsistems.ro',
+              logo: { '@type': 'ImageObject', url: 'https://rsistems.ro/img/Logo.svg' },
+            },
+            mainEntityOfPage: { '@type': 'WebPage', '@id': `https://rsistems.ro/blog/${article.slug}` },
+            inLanguage: 'ro',
+          },
+          ...(article.faq.length > 0 ? [{
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: article.faq.map(f => ({
+              '@type': 'Question',
+              name: f.q,
+              acceptedAnswer: { '@type': 'Answer', text: f.a },
+            })),
+          }] : []),
+        ]}
       />
       <Header />
 

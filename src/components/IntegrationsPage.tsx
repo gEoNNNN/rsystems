@@ -96,9 +96,14 @@ function IntegrationsPage() {
   return (
     <div className="int-page">
       <SEO
-        title="Integrări RSistems – POS, Livrare, Contabilitate"
-        description="RSistems se integrează cu platformele de livrare, sisteme de contabilitate și soluții de fidelizare. Conectează-ți afacerea HoReCa cu ecosistemul digital."
+        title="Integrări POS Restaurant – Delivery, Contabilitate, Plăți, CRM"
+        description="RSistems se integrează cu Glovo, Tazz, Bolt Food, sisteme de contabilitate, soluții de plată Viva Wallet, CRM și HR. Conectează-ți restaurantul cu ecosistemul digital complet."
         canonical="/integrations"
+        keywords="integrari POS restaurant, integrare Glovo POS, integrare Tazz, integrare Bolt Food, POS contabilitate, integrare plati restaurant, CRM restaurant, software integrat HoReCa"
+        breadcrumbs={[
+          { name: 'Acasă', url: '/' },
+          { name: 'Integrări', url: '/integrations' },
+        ]}
       />
       <Header />
 

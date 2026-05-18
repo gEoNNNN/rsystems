@@ -1,5 +1,10 @@
 ﻿import { Helmet } from 'react-helmet-async'
 
+interface BreadcrumbItem {
+  name: string
+  url: string
+}
+
 interface SEOProps {
   title: string
   description: string
@@ -8,11 +13,27 @@ interface SEOProps {
   ogType?: string
   jsonLd?: object | object[]
   noindex?: boolean
+  keywords?: string
+  breadcrumbs?: BreadcrumbItem[]
 }
 
 const SITE_NAME = 'RSistems'
 const BASE_URL = 'https://rsistems.ro'
 const DEFAULT_OG = `${BASE_URL}/img/og-default.jpg`
+const DEFAULT_KEYWORDS = 'sisteme POS, automatizare restaurant, software HoReCa, POS Romania, automatizare HoReCa, gestiune restaurant'
+
+function buildBreadcrumbJsonLd(items: BreadcrumbItem[]) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: items.map((item, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      name: item.name,
+      item: `${BASE_URL}${item.url}`,
+    })),
+  }
+}
 
 export default function SEO({
   title,
@@ -22,9 +43,20 @@ export default function SEO({
   ogType = 'website',
   jsonLd,
   noindex = false,
+  keywords,
+  breadcrumbs,
 }: SEOProps) {
   const fullTitle = title.includes(SITE_NAME) ? title : `${title} | ${SITE_NAME}`
   const url = canonical ? `${BASE_URL}${canonical}` : BASE_URL
+
+  const allJsonLd: object[] = []
+  if (breadcrumbs && breadcrumbs.length > 0) {
+    allJsonLd.push(buildBreadcrumbJsonLd(breadcrumbs))
+  }
+  if (jsonLd) {
+    if (Array.isArray(jsonLd)) allJsonLd.push(...jsonLd)
+    else allJsonLd.push(jsonLd)
+  }
 
   return (
     <Helmet>
@@ -32,7 +64,9 @@ export default function SEO({
       <title>{fullTitle}</title>
       <meta name="description" content={description} />
       <link rel="canonical" href={url} />
+      <meta name="keywords" content={keywords || DEFAULT_KEYWORDS} />
       {noindex && <meta name="robots" content="noindex,nofollow" />}
+      <link rel="alternate" hrefLang="ro" href={url} />
 
       {/* ── Open Graph ──────────────────────────────── */}
       <meta property="og:type"        content={ogType} />
@@ -50,9 +84,9 @@ export default function SEO({
       <meta name="twitter:image"       content={ogImage} />
 
       {/* ── JSON-LD ─────────────────────────────────── */}
-      {jsonLd && (
+      {allJsonLd.length > 0 && (
         <script type="application/ld+json">
-          {JSON.stringify(Array.isArray(jsonLd) ? jsonLd : [jsonLd])}
+          {JSON.stringify(allJsonLd)}
         </script>
       )}
     </Helmet>

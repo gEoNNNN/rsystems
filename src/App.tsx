@@ -114,7 +114,8 @@ function App() {
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
     name: 'RSistems',
-    description: 'Sisteme POS profesionale pentru restaurante, cafenele, baruri și fast-food din România.',
+    alternateName: 'R Sistems',
+    description: 'RSistems oferă sisteme POS profesionale și soluții complete de automatizare pentru restaurante, cafenele, baruri, fast-food și industria HoReCa din România. Gestiune stocuri, comenzi digitale, rapoarte în timp real, KDS, kiosk autoservire și integrare delivery.',
     url: 'https://rsistems.ro',
     telephone: '+40751088772',
     address: {
@@ -122,10 +123,20 @@ function App() {
       addressLocality: 'București',
       addressCountry: 'RO',
     },
-    sameAs: ['https://wa.me/40751088772'],
+    sameAs: [
+      'https://wa.me/40751088772',
+      'https://www.facebook.com/rusivsistems/',
+      'https://www.instagram.com/rsistemsro/',
+      'https://www.linkedin.com/company/rsistems/',
+    ],
     priceRange: '$$',
     openingHours: 'Mo-Fr 09:00-18:00',
     serviceArea: { '@type': 'Country', name: 'Romania' },
+    knowsAbout: [
+      'Sisteme POS', 'Automatizare restaurante', 'Software gestiune HoReCa',
+      'Kitchen Display System', 'Kiosk autoservire', 'Meniu QR',
+      'Digital signage', 'Integrare delivery', 'Fiscalizare ANAF',
+    ],
   }
 
   const faqJsonLd = {
@@ -134,34 +145,90 @@ function App() {
     mainEntity: [
       {
         '@type': 'Question',
-        name: 'Ce este RSistems?',
+        name: 'Ce este un sistem POS pentru restaurant?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'RSistems este un sistem POS (Point of Sale) profesional destinat afacerilor HoReCa din România: restaurante, cafenele, baruri, fast-food și livrare.',
+          text: 'Un sistem POS (Point of Sale) pentru restaurant este un software profesional care gestionează comenzile, plățile, stocurile și operațiunile zilnice. RSistems oferă sisteme POS complete pentru restaurante, cafenele, baruri și fast-food din România, cu funcționalități precum Kitchen Display System (KDS), meniu QR, kiosk autoservire și integrare cu platformele de delivery.',
         },
       },
       {
         '@type': 'Question',
-        name: 'Cum funcționează sistemul POS RSistems?',
+        name: 'Ce înseamnă automatizare restaurant și de ce este importantă?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'RSistems gestionează comenzile, stocurile, angajații și vânzările în timp real. Funcționează pe tablete și PC-uri, cu sau fără conexiune la internet.',
+          text: 'Automatizarea restaurantului presupune digitalizarea tuturor proceselor operaționale: preluarea comenzilor prin POS sau tabletă, transmiterea automată către bucătărie prin KDS, gestiunea stocurilor în timp real, emiterea bonurilor fiscale și generarea de rapoarte. Automatizarea reduce erorile umane, accelerează servirea, scade pierderile de stoc cu până la 30% și crește profitabilitatea afacerii.',
         },
       },
       {
         '@type': 'Question',
-        name: 'RSistems se potrivește pentru restaurantul meu?',
+        name: 'Cât costă un sistem POS pentru restaurant în România?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Da. RSistems oferă soluții personalizate pentru restaurante, cafenele, baruri, fast-food, livrare și săli de evenimente din toată România.',
+          text: 'RSistems oferă 3 pachete de preț: Basic la 39€/lună pentru cafenele și restaurante mici, Professional la 59€/lună pentru restaurante medii cu funcționalități avansate, și Enterprise la 99€/lună pentru lanțuri HoReCa cu multiple locații. Toate pachetele includ suport tehnic și actualizări.',
         },
       },
       {
         '@type': 'Question',
-        name: 'Există o demonstrație gratuită?',
+        name: 'Ce este un software de gestiune restaurant?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Da, poți rezerva o demonstrație gratuită a sistemului RSistems direct pe site la pagina /demo sau sunând la +40751088772.',
+          text: 'Un software de gestiune restaurant controlează stocurile, costurile, rețetele, comenzile și fluxul operațional complet. RSistems oferă gestiune integrată cu POS, rapoarte în timp real, management angajați și inventar automat, reducând pierderile și optimizând activitatea zilnică.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Funcționează sistemul POS RSistems fără internet?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Da, partea de vânzare (POS) funcționează complet offline. Comenzile, plățile și bonurile fiscale se procesează normal fără conexiune la internet. Rapoartele și managementul centralizat necesită conexiune pentru sincronizare.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Ce este un Kitchen Display System (KDS)?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Kitchen Display System (KDS) este un ecran digital montat în bucătăria restaurantului care afișează comenzile în timp real, organizate pe stații de preparare. Elimină biletele pe hârtie și comunicarea verbală, reducând erorile și timpul de preparare. RSistems oferă KDS integrat cu sistemul POS.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Cum pot integra comenzile Glovo, Tazz și Bolt Food?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'RSistems permite integrarea completă a platformelor de delivery (Glovo, Tazz, Bolt Food) direct în sistemul POS. Toate comenzile de livrare ajung automat în KDS-ul bucătăriei și sunt gestionate centralizat, eliminând comenzile duplicate și simplificând operarea.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'RSistems se potrivește pentru cafenea sau bar?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Da. RSistems oferă soluții personalizate pentru cafenele, baruri și pub-uri, cu funcționalități specifice: servire rapidă, programe de fidelizare, gestiune băuturi și ingrediente, rapoarte per categorie și integrare cu echipamentele existente.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Există o demonstrație gratuită a sistemului POS?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Da, poți rezerva o demonstrație gratuită a sistemului RSistems direct pe site-ul rsistems.ro la pagina /demo, sau contactând echipa la +40751088772 prin telefon sau WhatsApp.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'În cât timp se implementează sistemul POS în restaurant?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Implementarea sistemului RSistems durează între 2 și 4 zile, în funcție de complexitatea afacerii. Include instalare, configurare, transfer de date și training complet pentru personal, fără întreruperea activității restaurantului.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Ce echipamente POS sunt necesare pentru un restaurant?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Pentru un restaurant sunt necesare: terminal POS (PC sau tabletă), imprimantă de bonuri fiscale, și opțional Kitchen Display System (KDS), terminal mobil pentru ospătari, kiosk de autoservire și scanner de coduri de bare. RSistems oferă toate echipamentele necesare cu instalare și configurare incluse.',
         },
       },
     ],
@@ -170,9 +237,11 @@ function App() {
   return (
     <>
       <SEO
-        title="RSistems – Sisteme POS pentru HoReCa | Restaurant, Cafenea, Bar"
-        description="Sisteme POS profesionale pentru restaurante, cafenele, baruri și fast-food din România. Gestionare comenzi, stocuri și personal. Demo gratuit."
+        title="RSistems – Sisteme POS și Automatizare Restaurant, Cafenea, Bar, Fast-Food România"
+        description="RSistems oferă sisteme POS profesionale și automatizare completă pentru restaurante, cafenele, baruri și fast-food din România. Gestiune stocuri, comenzi digitale, KDS, kiosk, rapoarte în timp real și integrare delivery Glovo, Tazz, Bolt Food. Demo gratuit!"
         canonical="/"
+        keywords="sisteme POS, sistem POS restaurant, automatizare restaurant, automatizare HoReCa, software restaurant, software gestiune restaurant, POS cafenea, POS bar, POS fast-food, digitalizare HoReCa, casa de marcat restaurant, gestiune stocuri restaurant, KDS, kitchen display system, kiosk autoservire, meniu QR, integrare delivery, POS Romania, comenzi online restaurant, rapoarte vanzari"
+        breadcrumbs={[{ name: 'Acasă', url: '/' }]}
         jsonLd={[localBusinessJsonLd, faqJsonLd]}
       />
       <Header />
