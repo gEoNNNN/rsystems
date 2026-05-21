@@ -1,10 +1,21 @@
-﻿import { StrictMode, lazy, Suspense } from 'react'
+﻿import { StrictMode, lazy, Suspense, useEffect } from 'react'
 import { createRoot } from 'react-dom/client'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
 import { HelmetProvider } from 'react-helmet-async'
+
 import './index.css'
 import App from './App.tsx'
 import ChatBot from './components/ChatBot.tsx'
+
+function FbPageView() {
+  const location = useLocation()
+  useEffect(() => {
+    if (typeof window !== 'undefined' && (window as any).fbq) {
+      (window as any).fbq('track', 'PageView')
+    }
+  }, [location.pathname])
+  return null
+}
 
 const Demo               = lazy(() => import('./components/Demo.tsx'))
 const RestaurantPage     = lazy(() => import('./components/RestaurantPage.tsx'))
@@ -23,6 +34,7 @@ createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <HelmetProvider>
       <BrowserRouter>
+        <FbPageView />
         <Suspense fallback={null}>
           <Routes>
           <Route path="/" element={<App />} />

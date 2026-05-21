@@ -65,6 +65,7 @@ function RestaurantPage() {
 
   useEffect(() => {
     window.scrollTo(0, 0)
+    if ((window as any).fbq) (window as any).fbq('track', 'ViewContent', { content_name: meta.title, content_category: 'Industry' })
   }, [])
 
   useEffect(() => {

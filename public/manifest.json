@@ -1,0 +1,28 @@
+{
+  "name": "RSistems – Sisteme POS HoReCa",
+  "short_name": "RSistems",
+  "description": "Sisteme POS profesionale și automatizare pentru restaurante, cafenele, baruri și fast-food din România.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#863bff",
+  "lang": "ro",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/img/logo1x1.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/img/logo1x1.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

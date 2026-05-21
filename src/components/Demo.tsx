@@ -59,7 +59,10 @@ const features = [
 type FormState = { name: string; phone: string; business: string; type: string }
 
 function Demo() {
-  useEffect(() => { window.scrollTo(0, 0) }, [])
+  useEffect(() => {
+    window.scrollTo(0, 0)
+    if ((window as any).fbq) (window as any).fbq('track', 'ViewContent', { content_name: 'Demo Gratuit', content_category: 'Demo' })
+  }, [])
 
   const [form, setForm] = useState<FormState>({ name: '', phone: '', business: '', type: '' })
   const [submitted, setSubmitted] = useState(false)

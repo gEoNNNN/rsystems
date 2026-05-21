@@ -1,7 +1,7 @@
 ﻿import { useState, useRef, useEffect } from 'react'
 import './ChatBot.css'
 
-const API_BASE = 'https://rsistemschatbot-humming-meadowland-6553.fly.dev'
+const API_BASE = 'https://rsistems.ro/bot-api'
 
 const BUSINESS_TYPES = [
   'Restaurant',

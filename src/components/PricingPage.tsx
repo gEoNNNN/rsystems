@@ -137,6 +137,10 @@ function PricingPage() {
   const [openSection, setOpenSection] = useState<number>(0)
 
   useEffect(() => {
+    if ((window as any).fbq) (window as any).fbq('track', 'ViewContent', { content_name: 'Preturi POS', content_category: 'Pricing' })
+  }, [])
+
+  useEffect(() => {
     const observer = new IntersectionObserver(
       entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('is-visible') }),
       { threshold: 0.1 }

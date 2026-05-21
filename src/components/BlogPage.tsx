@@ -91,9 +91,14 @@ function BlogPage() {
   return (
     <div className="blog-page">
       <SEO
-        title="Blog RSistems – Sfaturi și Noutăți HoReCa"
-        description="Articole despre digitalizarea restaurantelor, gestionarea unui business HoReCa de succes, sisteme POS și tendințe din industria ospitalității."
+        title="Blog RSistems – Automatizare HoReCa, Sisteme POS, Gestiune Restaurant"
+        description="Articole despre automatizare restaurant, sisteme POS, gestiune stocuri, digitalizare HoReCa, KDS, kiosk autoservire și tendințe din industria ospitalității în România."
         canonical="/blog"
+        keywords="blog HoReCa, articole automatizare restaurant, ghid POS restaurant, sfaturi gestiune restaurant, digitalizare HoReCa, tendinte restaurante 2026"
+        breadcrumbs={[
+          { name: 'Acasă', url: '/' },
+          { name: 'Blog', url: '/blog' },
+        ]}
       />
       <Header />
 

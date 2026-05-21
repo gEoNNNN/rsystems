@@ -70,9 +70,14 @@ function AboutPage() {
   return (
     <div className="about-page">
       <SEO
-        title="Despre RSistems – Echipă și Misiune"
-        description="RSistems este partenerul de digitalizare pentru afacerile HoReCa din România. Implementări rapide, suport real și soluții personalizate pentru restaurante, cafenele și baruri."
+        title="Despre RSistems – Automatizare HoReCa România | Echipă și Misiune"
+        description="RSistems este partenerul de digitalizare și automatizare pentru afacerile HoReCa din România. Peste 500 de implementări, suport tehnic dedicat și soluții POS personalizate pentru restaurante, cafenele și baruri."
         canonical="/despre"
+        keywords="despre RSistems, echipa RSistems, automatizare HoReCa Romania, companie software restaurant, implementare POS Romania, suport tehnic HoReCa"
+        breadcrumbs={[
+          { name: 'Acasă', url: '/' },
+          { name: 'Despre Noi', url: '/despre' },
+        ]}
         jsonLd={{
           '@context': 'https://schema.org',
           '@type': 'Organization',
@@ -114,7 +119,7 @@ function AboutPage() {
             <div className="ab-hero-card">
               <img src="/img/clienti.svg" alt="" className="ab-hero-card-icon" />
               <div className="ab-hero-card-text">
-                <span className="ab-hero-card-val" data-count="100" data-suffix="+" data-start="0">0+</span>
+                <span className="ab-hero-card-val" data-count="220" data-suffix="+" data-start="0">0+</span>
                 <span className="ab-hero-card-lbl">Clienți activi</span>
               </div>
             </div>
