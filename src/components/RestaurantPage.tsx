@@ -62,6 +62,7 @@ function RestaurantPage() {
   const [descOpen, setDescOpen] = useState(false)
   const [formData, setFormData] = useState({ phone: '', firstName: '', lastName: '', email: '' })
   const [formStatus, setFormStatus] = useState<'idle' | 'sending' | 'sent' | 'error'>('idle')
+  const [formErrors, setFormErrors] = useState<{ phone?: string; email?: string }>({})
 
   useEffect(() => {
     window.scrollTo(0, 0)
@@ -90,7 +91,17 @@ function RestaurantPage() {
   }, [activeItem])
 
   const handleSubmit = async () => {
-    if (!formData.phone && !formData.email) return
+    const errors: { phone?: string; email?: string } = {}
+    if (!formData.phone) {
+      errors.phone = 'Introduceți numărul de telefon.'
+    } else if (!/^(\+40|0)[0-9]{9}$/.test(formData.phone.trim())) {
+      errors.phone = 'Format invalid. Ex: 07xxxxxxxx sau +40xxxxxxxx'
+    }
+    if (formData.email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email.trim())) {
+      errors.email = 'Adresa de email nu este validă.'
+    }
+    if (Object.keys(errors).length > 0) { setFormErrors(errors); return }
+    setFormErrors({})
     setFormStatus('sending')
     const text =
       `📋 *Lead nou RSistems*\n` +
@@ -99,11 +110,11 @@ function RestaurantPage() {
       `📧 Email: ${formData.email || '—'}`
     try {
       const res = await fetch(
-        `https://api.telegram.org/bot8689527569:AAHHCHXuJW1D9bio0dsnjnSRyIUSDH7sMQ4/sendMessage`,
+        `https://api.telegram.org/bot8663226776:AAHyExDonAoOomaCH5mgqj5auz-yU_MR9BA/sendMessage`,
         {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ chat_id: 5599538468, text, parse_mode: 'Markdown' }),
+          body: JSON.stringify({ chat_id: 59143981, text, parse_mode: 'Markdown' }),
         }
       )
       if (res.ok) {
@@ -359,8 +370,9 @@ function RestaurantPage() {
               type="tel"
               placeholder=""
               value={formData.phone}
-              onChange={e => setFormData(p => ({ ...p, phone: e.target.value }))}
+              onChange={e => { setFormData(p => ({ ...p, phone: e.target.value })); setFormErrors(p => ({ ...p, phone: undefined })) }}
             />
+            {formErrors.phone && <p style={{ color: '#e53935', fontSize: '0.78rem', marginTop: '4px' }}>{formErrors.phone}</p>}
           </div>
           <div className="rp-form-row">
             <div className="rp-form-group">
@@ -388,8 +400,9 @@ function RestaurantPage() {
               type="email"
               placeholder=""
               value={formData.email}
-              onChange={e => setFormData(p => ({ ...p, email: e.target.value }))}
+              onChange={e => { setFormData(p => ({ ...p, email: e.target.value })); setFormErrors(p => ({ ...p, email: undefined })) }}
             />
+            {formErrors.email && <p style={{ color: '#e53935', fontSize: '0.78rem', marginTop: '4px' }}>{formErrors.email}</p>}
           </div>
           <button
             className="rp-form-submit"
