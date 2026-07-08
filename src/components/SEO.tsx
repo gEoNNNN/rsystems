@@ -66,7 +66,11 @@ export default function SEO({
       <link rel="canonical" href={url} />
       <meta name="keywords" content={keywords || DEFAULT_KEYWORDS} />
       {noindex && <meta name="robots" content="noindex,nofollow" />}
-      <link rel="alternate" hrefLang="ro" href={url} />
+      <link rel="alternate" hrefLang="ro-RO" href={url} />
+      <link rel="alternate" hrefLang="x-default" href={url} />
+      <meta name="geo.region" content="RO" />
+      <meta name="geo.country" content="Romania" />
+      <meta name="geo.placename" content="București, România" />
 
       {/* ── Open Graph ──────────────────────────────── */}
       <meta property="og:type"        content={ogType} />
