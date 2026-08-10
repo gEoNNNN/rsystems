@@ -67,8 +67,10 @@ function Header() {
                 ))}
               </div>
           </div>
+          <Link to="/magazin" className="nav-item">Magazin</Link>
           <Link to="/preturi" className="nav-item">Prețuri</Link>
           <Link to="/blog" className="nav-item">Blog</Link>
+          <Link to="/devino-partener" className="nav-item">Devino Partener</Link>
           <Link to="/despre" className="nav-item">Despre noi</Link>
         </nav>
 
@@ -127,8 +129,10 @@ function Header() {
               ))}
             </div>
           )}
+          <Link to="/magazin" className="mobile-nav-link" onClick={() => setMobileOpen(false)}>Magazin</Link>
           <Link to="/preturi" className="mobile-nav-link" onClick={() => setMobileOpen(false)}>Prețuri</Link>
           <Link to="/blog" className="mobile-nav-link" onClick={() => setMobileOpen(false)}>Blog</Link>
+          <Link to="/devino-partener" className="mobile-nav-link" onClick={() => setMobileOpen(false)}>Devino Partener</Link>
           <Link to="/despre" className="mobile-nav-link" onClick={() => setMobileOpen(false)}>Despre noi</Link>
           <div className="mobile-actions">
             <a href="tel:+40751088772" className="mobile-contact">

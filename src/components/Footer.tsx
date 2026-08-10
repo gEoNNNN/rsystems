@@ -18,8 +18,10 @@ const produseLinks = [
 
 const companieLinks = [
   { label: 'Despre noi', to: '/despre' },
+  { label: 'Magazin', to: '/magazin' },
   { label: 'Prețuri', to: '/preturi' },
   { label: 'Blog', to: '/blog' },
+  { label: 'Devino Partener', to: '/devino-partener' },
 ]
 
 function Footer() {
