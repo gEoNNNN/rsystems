@@ -129,8 +129,8 @@ function ProductDetailPage() {
             </div>
           )}
 
-          {isPartner && product.price && (
-            <div className="pd-price">{product.price}</div>
+          {isPartner && (
+            <div className="pd-price">{product.price || '1 RON'}</div>
           )}
 
           {product.description && (

@@ -211,12 +211,13 @@ function ProductCard({ product, categorySlug, isPartner }: { product: Product; c
         {product.category && <span className="magazin-card-tag">{product.category}</span>}
         <h3 className="magazin-card-title">{product.title}</h3>
         <p className="magazin-card-desc">{desc}</p>
-        {isPartner && product.price && (
-          <div className="magazin-card-price">{product.price}</div>
-        )}
         <div className="magazin-card-footer">
           <button className="magazin-card-btn-details">Vezi detalii</button>
-          <button className="magazin-card-btn-order">Solicită ofertă</button>
+          {isPartner ? (
+            <div className="magazin-card-price">{product.price || '1 RON'}</div>
+          ) : (
+            <button className="magazin-card-btn-order">Solicită ofertă</button>
+          )}
         </div>
       </div>
     </Link>
