@@ -3,6 +3,7 @@ import './ParteneriPage.css'
 import Header from './Header'
 import Footer from './Footer'
 import SEO from './SEO'
+import { FiDollarSign, FiAward } from 'react-icons/fi'
 
 const partnerLogos = [
   '/img/logoparteneri/27.sushi_master_png.png',
@@ -40,6 +41,11 @@ function ParteneriPage() {
     return () => observer.disconnect()
   }, [])
 
+  const scrollTo = (id: string) => (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault()
+    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
+  }
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     const message = `Bună! Vreau să devin partener RSistems.%0A%0ANume: ${formData.name}%0AEmail: ${formData.email}%0ATelefon: ${formData.phone}%0ACompanie: ${formData.company}%0ATip activitate: ${formData.activity}%0AMesaj: ${formData.message}`
@@ -56,26 +62,76 @@ function ParteneriPage() {
       <Header />
 
       <section className="parteneri-hero">
-        <div className="parteneri-hero-overlay" />
-        <img src="/img/tip-bg.svg" alt="" className="parteneri-hero-bg" />
+        <div className="parteneri-hero-bg-glow" />
+        <div className="parteneri-hero-dots" />
         <div className="parteneri-hero-container">
           <div className="parteneri-hero-left">
-            <p className="parteneri-hero-eyebrow">Creștem împreună.</p>
-            <h1 className="parteneri-hero-title">Devino partener RSistems</h1>
+            <h1 className="parteneri-hero-title">
+              Construim viitorul<br/>
+              <span className="parteneri-hero-accent">HoReCa</span> împreună
+            </h1>
             <p className="parteneri-hero-subtitle">
               Oferă clienților tăi soluții performante pentru automatizarea restaurantelor și descoperă o nouă sursă de venit.
             </p>
-            <a href="#formular" className="parteneri-hero-btn">
-              Devino partener
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-              </svg>
-            </a>
+            <div className="parteneri-hero-stats">
+              <div className="parteneri-hero-stat">
+                <span className="parteneri-hero-stat-val">500+</span>
+                <span className="parteneri-hero-stat-label">Clienți deserviți</span>
+              </div>
+              <div className="parteneri-hero-stat-sep" />
+              <div className="parteneri-hero-stat">
+                <span className="parteneri-hero-stat-val">30+</span>
+                <span className="parteneri-hero-stat-label">Parteneri activi</span>
+              </div>
+              <div className="parteneri-hero-stat-sep" />
+              <div className="parteneri-hero-stat">
+                <span className="parteneri-hero-stat-val">24h</span>
+                <span className="parteneri-hero-stat-label">Timp de răspuns</span>
+              </div>
+            </div>
+            <div className="parteneri-hero-btns">
+              <a href="#formular" className="parteneri-hero-btn" onClick={scrollTo('formular')}>
+                Devino partener
+                <svg width="18" height="18" viewBox="0 0 20 20" fill="none">
+                  <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </a>
+              <a href="#cum-functioneaza" className="parteneri-hero-btn-ghost" onClick={scrollTo('cum-functioneaza')}>
+                Cum funcționează
+                <svg width="15" height="15" viewBox="0 0 20 20" fill="none">
+                  <path d="M10 5v10M5 12.5L10 17.5L15 12.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </a>
+            </div>
           </div>
           <div className="parteneri-hero-right">
-            <img src="/img/pos-1.jpg" alt="Parteneriat RSistems" className="parteneri-hero-image" />
+            <div className="parteneri-hero-img-wrap">
+              <div className="parteneri-hero-img-glow" />
+              <img src="/img/pos-1.jpg" alt="Parteneriat RSistems" className="parteneri-hero-image" />
+              <div className="parteneri-hero-card parteneri-hero-card--tl">
+                <div className="parteneri-hero-card-icon"><FiDollarSign size={22} color="#1fb6b2" /></div>
+                <div className="parteneri-hero-card-text">
+                  <span className="parteneri-hero-card-val">Comisioane atractive</span>
+                  <span className="parteneri-hero-card-sub">La fiecare client recomandat</span>
+                </div>
+              </div>
+              <div className="parteneri-hero-card parteneri-hero-card--br">
+                <div className="parteneri-hero-card-icon"><FiAward size={22} color="#1fb6b2" /></div>
+                <div className="parteneri-hero-card-text">
+                  <span className="parteneri-hero-card-val">Partener certificat</span>
+                  <span className="parteneri-hero-card-sub">Training & materiale incluse</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+      </section>
+
+      <section className="parteneri-logos" data-animate>
+        <div className="parteneri-logos-header">
+          <h2 className="parteneri-logos-title">Partenerii noștri de încredere</h2>
+        </div>
+        <LogoCarousel logos={partnerLogos} />
       </section>
 
       <section className="parteneri-benefits" data-animate>
@@ -133,6 +189,20 @@ function ParteneriPage() {
               Beneficiezi de materiale promoționale, prezentări și suport pentru promovarea soluțiilor RSistems.
             </p>
           </div>
+
+          <div className="parteneri-benefit-card">
+            <div className="parteneri-benefit-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" stroke="#1fb6b2" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                <polyline points="3.27 6.96 12 12.01 20.73 6.96" stroke="#1fb6b2" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                <line x1="12" y1="22.08" x2="12" y2="12" stroke="#1fb6b2" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+            </div>
+            <h3 className="parteneri-benefit-title">Flexibilitate în colaborare</h3>
+            <p className="parteneri-benefit-text">
+              Adaptăm programul de parteneriat la nevoile tale specifice și ale clienților tăi.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -161,12 +231,12 @@ function ParteneriPage() {
             </div>
           </div>
           <div className="parteneri-program-right">
-            <img src="/img/pos-2.jpg" alt="Program parteneriat" className="parteneri-program-image" />
+            <img src="/img/tip-bg.svg" alt="Program parteneriat" className="parteneri-program-image" />
           </div>
         </div>
       </section>
 
-      <section className="parteneri-process" data-animate>
+      <section className="parteneri-process" id="cum-functioneaza" data-animate>
         <div className="parteneri-process-header">
           <h2 className="parteneri-process-title">Cum funcționează</h2>
           <p className="parteneri-process-subtitle">Un proces simplu, beneficii reale</p>
@@ -202,7 +272,7 @@ function ParteneriPage() {
             </div>
           </div>
 
-          <div className="parteneri-process-step">
+          <div className="parteneri-process-step parteneri-process-step--center">
             <div className="parteneri-process-number">4</div>
             <div className="parteneri-process-content">
               <h3 className="parteneri-process-step-title">Începi să vinzi</h3>
@@ -340,13 +410,6 @@ function ParteneriPage() {
             </form>
           </div>
         </div>
-      </section>
-
-      <section className="parteneri-logos" data-animate>
-        <div className="parteneri-logos-header">
-          <h2 className="parteneri-logos-title">Partenerii noștri de încredere</h2>
-        </div>
-        <LogoCarousel logos={partnerLogos} />
       </section>
 
       <section className="parteneri-cta" data-animate>

@@ -1,6 +1,7 @@
 ﻿import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import './Header.css'
+import { useAuth } from './AuthContext'
 
 const produseItems = [
   { label: 'POS/PC specializat',          icon: '/img/iPOS.svg',        href: '/produse/pos-pc' },
@@ -26,8 +27,27 @@ function Header() {
   const [mobileOpen, setMobileOpen] = useState(false)
   const [mobileSolutii, setMobileSolutii] = useState(false)
   const [mobileProduse, setMobileProduse] = useState(false)
+  const [loginOpen, setLoginOpen] = useState(false)
+  const [loginUser, setLoginUser] = useState('')
+  const [loginPass, setLoginPass] = useState('')
+  const [loginError, setLoginError] = useState('')
+  const { isPartner, login, logout } = useAuth()
+
+  const handleLogin = (e: React.FormEvent) => {
+    e.preventDefault()
+    const ok = login(loginUser, loginPass)
+    if (ok) {
+      setLoginOpen(false)
+      setLoginUser('')
+      setLoginPass('')
+      setLoginError('')
+    } else {
+      setLoginError('Credențiale incorecte. Încearcă din nou.')
+    }
+  }
 
   return (
+    <>
     <header className="header">
       <div className="header-container">
         {/* Logo */}
@@ -54,7 +74,7 @@ function Header() {
           <div
             className="nav-item dropdown"
           >
-            <span>Produse</span>
+            <Link to="/magazin" className="nav-produse-label">Produse</Link>
             <svg className="arrow-down" width="12" height="8" viewBox="0 0 12 8" fill="none">
               <path d="M1 1L6 6L11 1" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
             </svg>
@@ -67,7 +87,6 @@ function Header() {
                 ))}
               </div>
           </div>
-          <Link to="/magazin" className="nav-item">Magazin</Link>
           <Link to="/preturi" className="nav-item">Prețuri</Link>
           <Link to="/blog" className="nav-item">Blog</Link>
           <Link to="/devino-partener" className="nav-item">Devino Partener</Link>
@@ -83,6 +102,11 @@ function Header() {
           <a href="mailto:welcome@rsistems.ro" className="contact-item contact-item--icon-only" title="Trimite email">
             <img src="/img/email.svg" alt="Email" className="icon" />
           </a>
+          {isPartner ? (
+            <button className="partner-btn partner-btn--out" onClick={logout}>Deconectare</button>
+          ) : (
+            <button className="partner-btn" onClick={() => setLoginOpen(true)}>Partener</button>
+          )}
           <a href="https://wa.me/40751088772?text=Bună! Vreau să încep să folosesc RSistems." className="cta-button" target="_blank" rel="noopener noreferrer">Începe acum</a>
         </div>
 
@@ -113,11 +137,13 @@ function Header() {
               {/* ASCUNS TEMPORAR: <Link to="/front-of-house" onClick={() => setMobileOpen(false)}>Front-of-House</Link> */}
             </div>
           )}
-          <div className="mobile-nav-item" onClick={() => setMobileProduse(!mobileProduse)}>
-            <span>Produse</span>
-            <svg className={`arrow-down${mobileProduse ? ' rotated' : ''}`} width="12" height="8" viewBox="0 0 12 8" fill="none">
-              <path d="M1 1L6 6L11 1" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-            </svg>
+          <div className="mobile-nav-item mobile-nav-item--split">
+            <Link to="/magazin" className="mobile-nav-item-label" onClick={() => setMobileOpen(false)}>Produse</Link>
+            <span className="mobile-nav-item-toggle" onClick={() => setMobileProduse(!mobileProduse)}>
+              <svg className={`arrow-down${mobileProduse ? ' rotated' : ''}`} width="12" height="8" viewBox="0 0 12 8" fill="none">
+                <path d="M1 1L6 6L11 1" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+              </svg>
+            </span>
           </div>
           {mobileProduse && (
             <div className="mobile-submenu">
@@ -129,12 +155,16 @@ function Header() {
               ))}
             </div>
           )}
-          <Link to="/magazin" className="mobile-nav-link" onClick={() => setMobileOpen(false)}>Magazin</Link>
           <Link to="/preturi" className="mobile-nav-link" onClick={() => setMobileOpen(false)}>Prețuri</Link>
           <Link to="/blog" className="mobile-nav-link" onClick={() => setMobileOpen(false)}>Blog</Link>
           <Link to="/devino-partener" className="mobile-nav-link" onClick={() => setMobileOpen(false)}>Devino Partener</Link>
           <Link to="/despre" className="mobile-nav-link" onClick={() => setMobileOpen(false)}>Despre noi</Link>
           <div className="mobile-actions">
+            {isPartner ? (
+              <button className="partner-btn partner-btn--out" style={{width:'100%'}} onClick={() => { logout(); setMobileOpen(false) }}>Deconectare partener</button>
+            ) : (
+              <button className="partner-btn" style={{width:'100%'}} onClick={() => { setMobileOpen(false); setLoginOpen(true) }}>Login Partener</button>
+            )}
             <a href="tel:+40751088772" className="mobile-contact">
               <img src="/img/phone.svg" alt="Phone" className="icon" />
               +40 751 088 772
@@ -148,6 +178,50 @@ function Header() {
         </div>
       )}
     </header>
+
+    {loginOpen && (
+      <div className="login-overlay" onClick={() => setLoginOpen(false)}>
+        <div className="login-modal" onClick={e => e.stopPropagation()}>
+          <button className="login-close" onClick={() => setLoginOpen(false)} aria-label="Închide">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M2 2L14 14M14 2L2 14" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+            </svg>
+          </button>
+          <div className="login-header">
+            <img src="/img/Logo.svg" alt="RSistems" className="login-logo" />
+            <h2 className="login-title">Acces Parteneri</h2>
+            <p className="login-subtitle">Autentifică-te pentru a vedea prețurile</p>
+          </div>
+          <form className="login-form" onSubmit={handleLogin}>
+            <div className="login-field">
+              <label className="login-label">Utilizator</label>
+              <input
+                className="login-input"
+                type="text"
+                placeholder="Utilizator"
+                value={loginUser}
+                onChange={e => { setLoginUser(e.target.value); setLoginError('') }}
+                autoComplete="username"
+              />
+            </div>
+            <div className="login-field">
+              <label className="login-label">Parolă</label>
+              <input
+                className="login-input"
+                type="password"
+                placeholder="Parolă"
+                value={loginPass}
+                onChange={e => { setLoginPass(e.target.value); setLoginError('') }}
+                autoComplete="current-password"
+              />
+            </div>
+            {loginError && <p className="login-error">{loginError}</p>}
+            <button type="submit" className="login-submit">Autentificare</button>
+          </form>
+        </div>
+      </div>
+    )}
+    </>
   )
 }
 

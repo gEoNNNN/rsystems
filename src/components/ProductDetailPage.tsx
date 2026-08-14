@@ -5,10 +5,12 @@ import Header from './Header'
 import Footer from './Footer'
 import SEO from './SEO'
 import { CATEGORY_MAP, type Product } from './productsData'
+import { useAuth } from './AuthContext'
 
 function ProductDetailPage() {
   const { categorySlug, productSlug } = useParams<{ categorySlug: string; productSlug: string }>()
   const [activeImg, setActiveImg] = useState(0)
+  const { isPartner } = useAuth()
 
   const config = categorySlug ? CATEGORY_MAP[categorySlug] : undefined
   const products: Product[] = config?.products ?? []
@@ -125,6 +127,10 @@ function ProductDetailPage() {
               <span className="pd-stock-dot" />
               {product.stock_status}
             </div>
+          )}
+
+          {isPartner && product.price && (
+            <div className="pd-price">{product.price}</div>
           )}
 
           {product.description && (

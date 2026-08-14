@@ -5,6 +5,7 @@ import Header from './Header'
 import Footer from './Footer'
 import SEO from './SEO'
 import { CATEGORY_MAP, type Product } from './productsData'
+import { useAuth } from './AuthContext'
 
 const ACTIVE_CATEGORY_SLUGS = [
   'pos-pc',
@@ -17,8 +18,7 @@ const ACTIVE_CATEGORY_SLUGS = [
 
 function MagazinPage() {
   const [selectedCategory, setSelectedCategory] = useState<string>('toate')
-  const [priceFilter, setPriceFilter] = useState<[number, number]>([0, 10000])
-  const [searchQuery, setSearchQuery] = useState('')
+  const { isPartner } = useAuth()
 
   useEffect(() => { window.scrollTo(0, 0) }, [])
 
@@ -41,7 +41,6 @@ function MagazinPage() {
 
   const filteredProducts = allProducts.filter(p => {
     if (selectedCategory !== 'toate' && p.categorySlug !== selectedCategory) return false
-    if (searchQuery && !p.title.toLowerCase().includes(searchQuery.toLowerCase())) return false
     return true
   })
 
@@ -120,30 +119,6 @@ function MagazinPage() {
           </div>
 
           <div className="magazin-sidebar-box">
-            <h3 className="magazin-sidebar-title">Filtrează după</h3>
-            <div className="magazin-filter-group">
-              <label className="magazin-filter-label">Preț</label>
-              <div className="magazin-price-inputs">
-                <input
-                  type="number"
-                  placeholder="0"
-                  value={priceFilter[0]}
-                  onChange={e => setPriceFilter([+e.target.value, priceFilter[1]])}
-                  className="magazin-price-input"
-                />
-                <span>-</span>
-                <input
-                  type="number"
-                  placeholder="10,000"
-                  value={priceFilter[1]}
-                  onChange={e => setPriceFilter([priceFilter[0], +e.target.value])}
-                  className="magazin-price-input"
-                />
-              </div>
-            </div>
-          </div>
-
-          <div className="magazin-sidebar-box">
             <div className="magazin-help-icon">💬</div>
             <h3 className="magazin-help-title">Ai nevoie de ajutor?</h3>
             <p className="magazin-help-text">Echipa noastră te ajută să alegi produsele potrivite pentru afacerea ta.</p>
@@ -178,7 +153,7 @@ function MagazinPage() {
 
           <div className="magazin-grid" data-stagger>
             {filteredProducts.map((p, i) => (
-              <ProductCard key={i} product={p} categorySlug={p.categorySlug} />
+              <ProductCard key={i} product={p} categorySlug={p.categorySlug} isPartner={isPartner} />
             ))}
           </div>
 
@@ -212,7 +187,7 @@ function MagazinPage() {
   )
 }
 
-function ProductCard({ product, categorySlug }: { product: Product; categorySlug: string }) {
+function ProductCard({ product, categorySlug, isPartner }: { product: Product; categorySlug: string; isPartner: boolean }) {
   const [imgIdx, setImgIdx] = useState(0)
   const img = product.images?.[imgIdx] || '/img/blogph.svg'
   const desc = product.description?.slice(0, 90) + (product.description?.length > 90 ? '…' : '')
@@ -236,6 +211,9 @@ function ProductCard({ product, categorySlug }: { product: Product; categorySlug
         {product.category && <span className="magazin-card-tag">{product.category}</span>}
         <h3 className="magazin-card-title">{product.title}</h3>
         <p className="magazin-card-desc">{desc}</p>
+        {isPartner && product.price && (
+          <div className="magazin-card-price">{product.price}</div>
+        )}
         <div className="magazin-card-footer">
           <button className="magazin-card-btn-details">Vezi detalii</button>
           <button className="magazin-card-btn-order">Solicită ofertă</button>

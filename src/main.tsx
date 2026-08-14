@@ -6,6 +6,7 @@ import { HelmetProvider } from 'react-helmet-async'
 import './index.css'
 import App from './App.tsx'
 import ChatBot from './components/ChatBot.tsx'
+import { AuthProvider } from './components/AuthContext.tsx'
 
 function FbPageView() {
   const location = useLocation()
@@ -35,6 +36,7 @@ const PrivacyPage        = lazy(() => import('./components/PrivacyPage.tsx'))
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <HelmetProvider>
+      <AuthProvider>
       <BrowserRouter>
         <FbPageView />
         <Suspense fallback={null}>
@@ -63,6 +65,7 @@ createRoot(document.getElementById('root')!).render(
       </Suspense>
       <ChatBot />
     </BrowserRouter>
+      </AuthProvider>
     </HelmetProvider>
   </StrictMode>
 )

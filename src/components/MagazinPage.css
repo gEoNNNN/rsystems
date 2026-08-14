@@ -413,6 +413,13 @@
   background: #1a9a96;
 }
 
+.magazin-card-price {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1FB6B2;
+  margin-bottom: 4px;
+}
+
 .magazin-no-results {
   text-align: center;
   padding: 60px 20px;
@@ -493,11 +500,11 @@
   }
 
   .magazin-sidebar {
-    order: 2;
+    order: 1;
   }
 
   .magazin-main {
-    order: 1;
+    order: 2;
   }
 }
 
