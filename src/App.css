@@ -2238,6 +2238,11 @@
   margin: 0;
 }
 
+.cookie-text-secondary a {
+  color: #1FB6B2;
+  text-decoration: underline;
+}
+
 .cookie-actions {
   display: flex;
   gap: 12px;

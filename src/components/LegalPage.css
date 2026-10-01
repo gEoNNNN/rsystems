@@ -183,6 +183,73 @@
   padding-top: 2.8rem;
 }
 
+/* Cookie inventory table */
+.legal-table-wrap {
+  overflow-x: auto;
+  margin: 0 0 1rem;
+  border: 1px solid #e8e8e8;
+  border-radius: 12px;
+  background: #ffffff;
+}
+
+.legal-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+
+.legal-table th {
+  text-align: left;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #666;
+  padding: 0.8rem 1rem;
+  border-bottom: 1px solid #e8e8e8;
+  background: #fafafa;
+  white-space: nowrap;
+}
+
+.legal-table td {
+  padding: 0.8rem 1rem;
+  color: #444;
+  line-height: 1.6;
+  border-bottom: 1px solid #f0f0f0;
+  vertical-align: top;
+}
+
+.legal-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.legal-table code {
+  font-size: 0.8rem;
+  background: #f0f4f4;
+  padding: 0.15rem 0.45rem;
+  border-radius: 6px;
+  color: #0d5c5a;
+  white-space: nowrap;
+}
+
+/* Consent reset button */
+.legal-consent-btn {
+  margin-top: 0.4rem;
+  padding: 0.7rem 1.6rem;
+  background: #1FB6B2;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.legal-consent-btn:hover {
+  background: #0d9e9a;
+}
+
 /* ── Responsive ── */
 @media (max-width: 768px) {
   .legal-hero { padding: 8vw 5vw 6vw; }

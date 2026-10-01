@@ -16,7 +16,7 @@ function TermsPage() {
         <div className="legal-hero-inner">
           <span className="legal-tag">Legal</span>
           <h1 className="legal-hero-h1">Termeni &amp; Condiții</h1>
-          <p className="legal-hero-meta">Ultima actualizare: 11 mai 2026</p>
+          <p className="legal-hero-meta">Ultima actualizare: 1 octombrie 2026</p>
         </div>
       </section>
 
@@ -56,7 +56,7 @@ function TermsPage() {
           <div className="legal-section" id="acceptare">
             <span className="legal-section-num">Secțiunea 2</span>
             <h2>Acceptarea termenilor</h2>
-            <p>Prin accesarea, înregistrarea sau utilizarea Platformei RSistems, confirmi că ai citit, înțeles și ești de acord să respecți acești Termeni și Condiții, împreună cu Politica de Confidențialitate.</p>
+            <p>Prin accesarea, înregistrarea sau utilizarea Platformei RSistems, confirmi că ai citit, înțeles și ești de acord să respecți acești Termeni și Condiții, împreună cu <a href="/confidentialitate">Politica de Confidențialitate</a> și <a href="/politica-cookieuri">Politica de cookieuri</a>.</p>
             <p>Dacă utilizezi Platforma în numele unei organizații, declari că ești autorizat să angajezi respectiva organizație prin acceptarea acestor termeni.</p>
             <div className="legal-highlight">
               <p>Dacă nu ești de acord cu oricare dintre termenii de mai jos, te rugăm să nu utilizezi serviciile RSistems.</p>

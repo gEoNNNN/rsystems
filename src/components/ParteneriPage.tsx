@@ -398,7 +398,7 @@ function ParteneriPage() {
               <div className="parteneri-form-footer">
                 <label className="parteneri-form-checkbox">
                   <input type="checkbox" required />
-                  <span>Sunt de acord cu prelucrarea datelor personale. Citește <a href="/politica-confidentialitate">Politica de confidențialitate</a></span>
+                  <span>Sunt de acord cu prelucrarea datelor personale. Citește <a href="/confidentialitate">Politica de confidențialitate</a></span>
                 </label>
                 <button type="submit" className="parteneri-form-submit">
                   Trimite solicitarea

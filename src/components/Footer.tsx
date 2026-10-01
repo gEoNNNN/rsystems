@@ -114,6 +114,8 @@ function Footer() {
           <Link to="/termeni">Termeni &amp; condiții</Link>
           <span className="footer-legal-dot" aria-hidden="true">·</span>
           <Link to="/confidentialitate">Politica de confidențialitate</Link>
+          <span className="footer-legal-dot" aria-hidden="true">·</span>
+          <Link to="/politica-cookieuri">Politica de cookieuri</Link>
         </div>
       </div>
     </footer>

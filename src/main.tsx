@@ -32,6 +32,7 @@ const MagazinPage        = lazy(() => import('./components/MagazinPage.tsx'))
 const ParteneriPage      = lazy(() => import('./components/ParteneriPage.tsx'))
 const TermsPage          = lazy(() => import('./components/TermsPage.tsx'))
 const PrivacyPage        = lazy(() => import('./components/PrivacyPage.tsx'))
+const CookiePage         = lazy(() => import('./components/CookiePage.tsx'))
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -61,6 +62,7 @@ createRoot(document.getElementById('root')!).render(
           <Route path="/devino-partener" element={<ParteneriPage />} />
           <Route path="/termeni" element={<TermsPage />} />
           <Route path="/confidentialitate" element={<PrivacyPage />} />
+          <Route path="/politica-cookieuri" element={<CookiePage />} />
         </Routes>
       </Suspense>
       <ChatBot />

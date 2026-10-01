@@ -717,7 +717,7 @@ function App() {
                 Acest site utilizează cookie-uri pentru a îmbunătăți experiența ta de navigare. Folosim aceste informații pentru a personaliza conținutul și pentru analiză.
               </p>
               <p className="cookie-text-secondary">
-                Dacă refuzi, informațiile tale nu vor fi urmărite când vizitezi acest site. Un singur cookie va fi folosit în browser-ul tău pentru a reține preferința ta de a nu fi urmărit.
+                Dacă refuzi, informațiile tale nu vor fi urmărite când vizitezi acest site. Un singur cookie va fi folosit în browser-ul tău pentru a reține preferința ta de a nu fi urmărit. Citește <a href="/politica-cookieuri">Politica de cookieuri</a>.
               </p>
             </div>
             <div className="cookie-actions">

@@ -16,7 +16,7 @@ function PrivacyPage() {
         <div className="legal-hero-inner">
           <span className="legal-tag">Legal</span>
           <h1 className="legal-hero-h1">Politica de Confidențialitate</h1>
-          <p className="legal-hero-meta">Ultima actualizare: 11 mai 2026</p>
+          <p className="legal-hero-meta">Ultima actualizare: 1 octombrie 2026</p>
         </div>
       </section>
 
@@ -109,14 +109,14 @@ function PrivacyPage() {
           <div className="legal-section" id="cookies">
             <span className="legal-section-num">Secțiunea 6</span>
             <h2>Cookies</h2>
-            <p>Folosim cookies și tehnologii similare pentru a îmbunătăți experiența ta pe platforma noastră. Tipurile de cookies utilizate:</p>
+            <p>Folosim cookie-uri și tehnologii similare pentru funcționarea site-ului, memorarea preferințelor, analiză ori marketing. Cookie-urile necesare sunt utilizate pentru funcțiile solicitate; celelalte categorii sunt activate numai după alegerea ta. Categoriile utilizate:</p>
             <ul>
-              <li><strong>Cookies esențiale:</strong> Necesare pentru funcționarea de bază a site-ului (autentificare, sesiune). Nu pot fi dezactivate.</li>
-              <li><strong>Cookies de performanță:</strong> Colectează informații anonime despre modul de utilizare a site-ului pentru a ne ajuta să îl îmbunătățim.</li>
-              <li><strong>Cookies de funcționalitate:</strong> Rețin preferințele tale (limbă, regiune) pentru a personaliza experiența.</li>
-              <li><strong>Cookies de marketing:</strong> Utilizate pentru a afișa anunțuri relevante. Activarea lor necesită consimțământul tău.</li>
+              <li><strong>Necesare:</strong> securitate, autentificare, sesiune și funcții esențiale.</li>
+              <li><strong>Preferințe:</strong> funcții opționale și conținut extern.</li>
+              <li><strong>Analiză:</strong> statistici și măsurarea utilizării.</li>
+              <li><strong>Marketing:</strong> măsurarea campaniilor și publicitate.</li>
             </ul>
-            <p>Poți gestiona preferințele tale de cookies din setările browser-ului sau prin bannerul de cookies afișat la prima vizită.</p>
+            <p>Lista completă a cookie-urilor și a tehnologiilor similare, împreună cu duratele de stocare și scopurile fiecăruia, este disponibilă în <a href="/politica-cookieuri">Politica de cookieuri</a>. Poți gestiona preferințele din bannerul de cookie-uri sau din setările browser-ului.</p>
           </div>
 
           <div className="legal-section" id="retentie">
