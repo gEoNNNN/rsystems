@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
 import { HelmetProvider } from 'react-helmet-async'
 
 import './index.css'
-import App from './App.tsx'
+import App, { CookieConsent } from './App.tsx'
 import ChatBot from './components/ChatBot.tsx'
 import { AuthProvider } from './components/AuthContext.tsx'
 
@@ -65,6 +65,7 @@ createRoot(document.getElementById('root')!).render(
           <Route path="/politica-cookieuri" element={<CookiePage />} />
         </Routes>
       </Suspense>
+      <CookieConsent />
       <ChatBot />
     </BrowserRouter>
       </AuthProvider>

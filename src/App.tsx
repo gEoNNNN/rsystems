@@ -6,6 +6,261 @@ import SEO from './components/SEO'
 import { NomenclatorUI as NomenclatorPreview, BasicIndicatorsUI as BasicIndicatorsPreview, ProfitLossUI as ProfitLossPreview } from './components/PosModal'
 import { XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Area, AreaChart } from 'recharts'
 
+const cookieTranslations: Record<string, {
+  primary: string
+  secondaryBefore: string
+  termsLabel: string
+  andBetween1: string
+  privacyLabel: string
+  andBetween2: string
+  cookieLabel: string
+  secondaryAfter: string
+  accept: string
+  decline: string
+}> = {
+  ro: {
+    primary: 'Acest site utilizează cookie-uri pentru a îmbunătăți experiența ta de navigare. Folosim aceste informații pentru a personaliza conținutul și pentru analiză.',
+    secondaryBefore: 'Prin apăsarea butonului „Acceptă”, confirmi că ai citit și ești de acord cu ',
+    termsLabel: 'Termenii și Condițiile',
+    andBetween1: ', ',
+    privacyLabel: 'Politica de Confidențialitate',
+    andBetween2: ' și ',
+    cookieLabel: 'Politica de cookieuri',
+    secondaryAfter: '. Dacă refuzi, informațiile tale nu vor fi urmărite când vizitezi acest site. Un singur cookie va fi folosit în browser-ul tău pentru a reține preferința ta de a nu fi urmărit.',
+    accept: 'Acceptă',
+    decline: 'Refuză',
+  },
+  en: {
+    primary: 'This website uses cookies to improve your browsing experience. We use this information to personalize content and for analytics.',
+    secondaryBefore: 'By clicking "Accept", you confirm that you have read and agree to our ',
+    termsLabel: 'Terms & Conditions',
+    andBetween1: ', ',
+    privacyLabel: 'Privacy Policy',
+    andBetween2: ', and ',
+    cookieLabel: 'Cookie Policy',
+    secondaryAfter: '. If you decline, your information will not be tracked when visiting this site. A single cookie will be used in your browser to remember your preference not to be tracked.',
+    accept: 'Accept',
+    decline: 'Decline',
+  },
+  ru: {
+    primary: 'Этот сайт использует файлы cookie для улучшения вашего опыта навигации. Мы используем эту информацию для персонализации контента и аналитики.',
+    secondaryBefore: 'Нажимая «Принять», вы подтверждаете, что прочитали и согласны с ',
+    termsLabel: 'Условиями использования',
+    andBetween1: ', ',
+    privacyLabel: 'Политикой конфиденциальности',
+    andBetween2: ' и ',
+    cookieLabel: 'Политикой использования файлов cookie',
+    secondaryAfter: '. Если вы откажетесь, ваша информация не будет отслеживаться при посещении этого сайта. В вашем браузере будет использоваться только один файл cookie для сохранения вашего выбора.',
+    accept: 'Принять',
+    decline: 'Отклонить',
+  },
+  de: {
+    primary: 'Diese Website verwendet Cookies, um Ihr Surferlebnis zu verbessern. Wir nutzen diese Informationen zur Personalisierung von Inhalten und zur Analyse.',
+    secondaryBefore: 'Mit Klick auf „Akzeptieren“ bestätigen Sie, dass Sie unsere ',
+    termsLabel: 'Allgemeinen Geschäftsbedingungen',
+    andBetween1: ', die ',
+    privacyLabel: 'Datenschutzerklärung',
+    andBetween2: ' und die ',
+    cookieLabel: 'Cookie-Richtlinie',
+    secondaryAfter: ' gelesen haben und akzeptieren. Wenn Sie ablehnen, werden Ihre Daten beim Besuch dieser Website nicht nachverfolgt. Es wird lediglich ein einzelnes Cookie in Ihrem Browser gespeichert, um Ihre Präferenz zu speichern.',
+    accept: 'Akzeptieren',
+    decline: 'Ablehnen',
+  },
+  fr: {
+    primary: 'Ce site utilise des cookies pour améliorer votre expérience de navigation. Nous utilisons ces informations pour personnaliser le contenu et à des fins d\'analyse.',
+    secondaryBefore: 'En cliquant sur « Accepter », vous confirmez avoir lu et accepté nos ',
+    termsLabel: 'Conditions générales',
+    andBetween1: ', notre ',
+    privacyLabel: 'Politique de confidentialité',
+    andBetween2: ' et notre ',
+    cookieLabel: 'Politique de cookies',
+    secondaryAfter: '. Si vous refusez, vos informations ne seront pas suivies lors de votre visite sur ce site. Un seul cookie sera utilisé dans votre navigateur pour mémoriser votre préférence.',
+    accept: 'Accepter',
+    decline: 'Refuser',
+  },
+  es: {
+    primary: 'Este sitio web utiliza cookies para mejorar su experiencia de navegación. Utilizamos esta información para personalizar el contenido y para análisis.',
+    secondaryBefore: 'Al hacer clic en «Aceptar», confirma que ha leído y acepta nuestros ',
+    termsLabel: 'Términos y Condiciones',
+    andBetween1: ', la ',
+    privacyLabel: 'Política de Privacidad',
+    andBetween2: ' y la ',
+    cookieLabel: 'Política de Cookies',
+    secondaryAfter: '. Si rechaza, su información no será rastreada cuando visite este sitio. Se utilizará una única cookie en su navegador para recordar su preferencia.',
+    accept: 'Aceptar',
+    decline: 'Rechazar',
+  },
+  it: {
+    primary: 'Questo sito utilizza i cookie per migliorare la tua esperienza di navigazione. Utilizziamo queste informazioni per personalizzare i contenuti e per l\'analisi.',
+    secondaryBefore: 'Cliccando su "Accetta", confermi di aver letto e accettato i nostri ',
+    termsLabel: 'Termini e Condizioni',
+    andBetween1: ', l\'',
+    privacyLabel: 'Informativa sulla Privacy',
+    andBetween2: ' e la ',
+    cookieLabel: 'Politica sui Cookie',
+    secondaryAfter: '. Se rifiuti, le tue informazioni non verranno tracciate quando visiti questo sito. Verrà utilizzato un solo cookie nel tuo browser per ricordare la tua preferenza.',
+    accept: 'Accetta',
+    decline: 'Rifiuta',
+  },
+  hu: {
+    primary: 'Ez a weboldal sütiket (cookie-kat) használ a böngészési élmény javítása érdekében. Ezeket az információkat a tartalom személyre szabására és elemzésre használjuk.',
+    secondaryBefore: 'Az „Elfogadom” gombra kattintva megerősíti, hogy elolvasta és elfogadja az ',
+    termsLabel: 'Általános Szerződési Feltételeket',
+    andBetween1: ', az ',
+    privacyLabel: 'Adatvédelmi irányelveket',
+    andBetween2: ' és a ',
+    cookieLabel: 'Süti szabályzatot',
+    secondaryAfter: '. Ha elutasítja, adatait nem követjük nyomon az oldal látogatásakor. Egyetlen süti kerül elhelyezésre a böngészőjében a választása megjegyzéséhez.',
+    accept: 'Elfogadom',
+    decline: 'Elutasítom',
+  },
+  uk: {
+    primary: 'Цей сайт використовує файли cookie для покращення вашого досвіду навігації. Ми використовуємо цю інформацію для персоналізації контенту та аналітики.',
+    secondaryBefore: 'Натискаючи «Прийняти», ви підтверджуєте, що прочитали та погоджуєтеся з ',
+    termsLabel: 'Умовами використання',
+    andBetween1: ', ',
+    privacyLabel: 'Політикою конфіденційності',
+    andBetween2: ' та ',
+    cookieLabel: 'Політикою щодо файлів cookie',
+    secondaryAfter: '. Якщо ви відмовитеся, ваша інформація не відстежуватиметься під час відвідування цього сайту. У вашому браузері буде використано лише один файл cookie для збереження вашого вибору.',
+    accept: 'Прийняти',
+    decline: 'Відхилити',
+  },
+  bg: {
+    primary: 'Този сайт използва бисквитки, за да подобри вашето сърфиране. Използваме тази информация за персонализиране на съдържанието и за анализ.',
+    secondaryBefore: 'С натискането на „Приемам“ потвърждавате, че сте прочели и се съгласявате с нашите ',
+    termsLabel: 'Общи условия',
+    andBetween1: ', ',
+    privacyLabel: 'Политика за поверителност',
+    andBetween2: ' и ',
+    cookieLabel: 'Политика за бисквитките',
+    secondaryAfter: '. Ако откажете, вашата информация няма да бъде проследявана при посещение на този сайт. Само една бисквитка ще бъде използвана във вашия браузър, за да запомни предпочитанието ви.',
+    accept: 'Приемам',
+    decline: 'Отказвам',
+  },
+  pl: {
+    primary: 'Ta strona używa plików cookie, aby poprawić komfort przeglądania. Wykorzystujemy te informacje do personalizacji treści i analizy.',
+    secondaryBefore: 'Klikając „Akceptuję”, potwierdzasz przeczytanie i akceptację ',
+    termsLabel: 'Regulaminu',
+    andBetween1: ', ',
+    privacyLabel: 'Polityki prywatności',
+    andBetween2: ' oraz ',
+    cookieLabel: 'Polityki plików cookie',
+    secondaryAfter: '. Jeśli odrzucisz, Twoje dane nie będą śledzone podczas wizyty na tej stronie. W przeglądarce zostanie zapisany tylko jeden plik cookie, aby zapamiętać Twój wybór.',
+    accept: 'Akceptuję',
+    decline: 'Odrzuć',
+  },
+  tr: {
+    primary: 'Bu web sitesi gezinme deneyiminizi geliştirmek için çerezleri kullanır. Bu bilgileri içeriği kişiselleştirmek ve analiz için kullanıyoruz.',
+    secondaryBefore: '"Kabul Et" düğmesine tıklayarak ',
+    termsLabel: 'Şartlar ve Koşulları',
+    andBetween1: ', ',
+    privacyLabel: 'Gizlilik Politikasını',
+    andBetween2: ' ve ',
+    cookieLabel: 'Çerez Politikasını',
+    secondaryAfter: ' okuduğunuzu ve kabul ettiğinizi onaylarsınız. Reddederseniz, bu siteyi ziyaret ettiğinizde bilgileriniz izlenmeyecektir. Tercihinizi hatırlamak için tarayıcınızda tek bir çerez kullanılacaktır.',
+    accept: 'Kabul Et',
+    decline: 'Reddet',
+  },
+  pt: {
+    primary: 'Este site utiliza cookies para melhorar a sua experiência de navegação. Usamos essas informações para personalizar o conteúdo e para análise.',
+    secondaryBefore: 'Ao clicar em "Aceitar", confirma que leu e concorda com os nossos ',
+    termsLabel: 'Termos e Condições',
+    andBetween1: ', a ',
+    privacyLabel: 'Política de Privacidade',
+    andBetween2: ' e a ',
+    cookieLabel: 'Política de Cookies',
+    secondaryAfter: '. Se recusar, as suas informações não serão rastreadas ao visitar este site. Apenas um único cookie será utilizado no seu navegador para memorizar a sua preferência.',
+    accept: 'Aceitar',
+    decline: 'Recusar',
+  },
+  nl: {
+    primary: 'Deze website gebruikt cookies om uw surfervaring te verbeteren. We gebruiken deze informatie om inhoud te personaliseren en voor analyse.',
+    secondaryBefore: 'Door op "Accepteren" te klikken, bevestigt u dat u onze ',
+    termsLabel: 'Algemene Voorwaarden',
+    andBetween1: ', het ',
+    privacyLabel: 'Privacybeleid',
+    andBetween2: ' en het ',
+    cookieLabel: 'Cookiebeleid',
+    secondaryAfter: ' hebt gelezen en hiermee akkoord gaat. Als u weigert, worden uw gegevens niet gevolgd wanneer u deze site bezoekt. Er wordt slechts één cookie in uw browser gebruikt om uw voorkeur te onthouden.',
+    accept: 'Accepteren',
+    decline: 'Weigeren',
+  },
+}
+
+function detectCookieLang(): string {
+  if (typeof document === 'undefined') return 'ro'
+  const htmlLang = (document.documentElement.lang || 'ro').slice(0, 2).toLowerCase()
+  if (htmlLang && cookieTranslations[htmlLang]) {
+    return htmlLang
+  }
+  return 'ro'
+}
+
+export function CookieConsent() {
+  const [showCookieConsent, setShowCookieConsent] = useState(() => {
+    const saved = localStorage.getItem('cookieConsent')
+    return saved === null
+  })
+  const [cookieLang, setCookieLang] = useState<string>('ro')
+
+  useEffect(() => {
+    setCookieLang(detectCookieLang())
+    const observer = new MutationObserver(() => {
+      setCookieLang(detectCookieLang())
+    })
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ['lang'],
+    })
+    return () => observer.disconnect()
+  }, [])
+
+  const cookieT = cookieTranslations[cookieLang] || cookieTranslations.ro
+
+  const handleCookieConsent = (accepted: boolean) => {
+    localStorage.setItem('cookieConsent', accepted ? 'accepted' : 'declined')
+    setShowCookieConsent(false)
+  }
+
+  if (!showCookieConsent) return null
+
+  return (
+    <div className="cookie-consent-overlay">
+      <div className="cookie-consent">
+        <div className="cookie-content">
+          <p className="cookie-text">
+            {cookieT.primary}
+          </p>
+          <p className="cookie-text-secondary">
+            {cookieT.secondaryBefore}
+            <a href="/termeni">{cookieT.termsLabel}</a>
+            {cookieT.andBetween1}
+            <a href="/confidentialitate">{cookieT.privacyLabel}</a>
+            {cookieT.andBetween2}
+            <a href="/politica-cookieuri">{cookieT.cookieLabel}</a>
+            {cookieT.secondaryAfter}
+          </p>
+        </div>
+        <div className="cookie-actions">
+          <button
+            className="cookie-btn cookie-accept"
+            onClick={() => handleCookieConsent(true)}
+          >
+            {cookieT.accept}
+          </button>
+          <button
+            className="cookie-btn cookie-decline"
+            onClick={() => handleCookieConsent(false)}
+          >
+            {cookieT.decline}
+          </button>
+        </div>
+      </div>
+    </div>
+  )
+}
+
 function App() {
   const [currentSlide, setCurrentSlide] = useState(0)
   const [openFaq, setOpenFaq] = useState<number | null>(null)
@@ -16,15 +271,6 @@ function App() {
   useEffect(() => {
     if (videoRef.current) videoRef.current.playbackRate = 0.99
   }, [])
-  const [showCookieConsent, setShowCookieConsent] = useState(() => {
-    const saved = localStorage.getItem('cookieConsent')
-    return saved === null
-  })
-
-  const handleCookieConsent = (accepted: boolean) => {
-    localStorage.setItem('cookieConsent', accepted ? 'accepted' : 'declined')
-    setShowCookieConsent(false)
-  }
 
   const getItemWidthPercent = () => {
     if (window.innerWidth <= 700) return 20
@@ -707,36 +953,6 @@ function App() {
 
       {/* Footer */}
       <Footer />
-
-      {/* Cookie Consent Popup */}
-      {showCookieConsent && (
-        <div className="cookie-consent-overlay">
-          <div className="cookie-consent">
-            <div className="cookie-content">
-              <p className="cookie-text">
-                Acest site utilizează cookie-uri pentru a îmbunătăți experiența ta de navigare. Folosim aceste informații pentru a personaliza conținutul și pentru analiză.
-              </p>
-              <p className="cookie-text-secondary">
-                Dacă refuzi, informațiile tale nu vor fi urmărite când vizitezi acest site. Un singur cookie va fi folosit în browser-ul tău pentru a reține preferința ta de a nu fi urmărit. Citește <a href="/politica-cookieuri">Politica de cookieuri</a>.
-              </p>
-            </div>
-            <div className="cookie-actions">
-              <button 
-                className="cookie-btn cookie-accept"
-                onClick={() => handleCookieConsent(true)}
-              >
-                Accept
-              </button>
-              <button 
-                className="cookie-btn cookie-decline"
-                onClick={() => handleCookieConsent(false)}
-              >
-                Decline
-              </button>
-            </div>
-          </div>
-        </div>
-      )}
 
       {/* Demo Fullscreen Modal */}
       {demoFullscreen && (
